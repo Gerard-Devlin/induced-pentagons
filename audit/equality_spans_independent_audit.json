@@ -1,0 +1,105 @@
+{
+  "schema": "induced-pentagons.equality-spans-independent-audit.v1",
+  "status": "target_normalization_verified; main_certificate_gate_tested; actual_main_and_spans_verified_exact",
+  "source_sha256": "e2e3e557b23acdacedc991406ebe98040e0150845cea973d6a34debf8676c42d",
+  "manuscript_locators": [
+    "Lemma 4.3",
+    "Lemma 4.4, equation (30)",
+    "Lemma 4.5, equation (31)",
+    "Proposition 7.1"
+  ],
+  "conditional_expectations": {
+    "g_or_h": "24(e(r,3)+e(r,4))-5 averages to 48 d(x_r)-5",
+    "k": "5 sum_j e(r,j)e(2,j)-2 sum_j e(2,j) averages to 10 c(x_r,x_2)-4 d(x_2)",
+    "sampling": "Conditional on fixed root locations and the root type; root-type factor omitted. Both extension vertices are sampled independently. Passing to unordered extension flag orbits does not insert a factorial."
+  },
+  "fractional_graphon_cases_checked": [
+    {
+      "block": "path3",
+      "root_latent_classes": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "block": "edge_isolate",
+      "root_latent_classes": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "block": "path3",
+      "root_latent_classes": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "block": "edge_isolate",
+      "root_latent_classes": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "block": "path3",
+      "root_latent_classes": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "block": "edge_isolate",
+      "root_latent_classes": [
+        2,
+        0,
+        2
+      ]
+    }
+  ],
+  "expectation_identities_checked": 30,
+  "triangle_free_path_coordinates": 24,
+  "triangle_free_edge_isolate_coordinates": 32,
+  "equality_kernel_targets_checked": [
+    "triangle_indicator",
+    "path_degree",
+    "edge_codegree_0",
+    "edge_codegree_1",
+    "edge_degree_0",
+    "edge_degree_1"
+  ],
+  "exact_linear_solver_tests": [
+    "rational underdetermined consistent system",
+    "inconsistent augmented system",
+    "empty zero system"
+  ],
+  "fix": "verify_spans now verifies the entire main SOS before checking any spans, including standalone --verify-only calls.",
+  "invalid_main_certificate_rejected_at": "exact host coefficient identity in verify_certificate",
+  "actual_certificate_verification": {
+    "status": "verified_exact",
+    "triangle_coordinates": 72,
+    "triangle_free_path_coordinates": 24,
+    "codegree_coordinates_each": 32,
+    "certificate_sha256": "e024cce41195cb99b923eeee8608f3b6e5c0035af05bb886971bdef7ea94e2ca",
+    "main_certificate_verification": {
+      "status": "verified_exact",
+      "host_identities": 1044,
+      "positive_squares": 184,
+      "positive_host_slacks": 826,
+      "positive_variational_terms": 2,
+      "slope_lower_bound": "22325856599/35712115200",
+      "slope_exceeds_5_over_8": true
+    }
+  },
+  "remaining_limitations": [
+    "The current main certificate and both span files passed the exact checker. The independent normalization audit is supplementary; it is not a formalization of the analytic proof.",
+    "The LP fallback for a triangle-dominating vector is a discovery method; rational reconstruction may fail even if a witness exists. It checks final signs exactly and fails closed.",
+    "The verifier uses Python assertions and must be run without -O; this matches the rest of the supplied exact-verification pipeline."
+  ]
+}

@@ -1,0 +1,30 @@
+__pycache__/
+manuscript/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+logs/
+tmp/
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.log
+*.synctex.gz
+*.pending
+*.tmp
+*.exe
+*.so
+*.dat-s
+*.sol
+# The exact certificates and the numeric discovery checkpoint are tracked.
+# Only this reproducible, potentially large search cache is omitted.
+certificates/symmetry_blocks.npz
+results/independent_certificate_verification.json
+results/combinatorial_input_verification.json
+results/profile_checks.json
+results/ci_*.json

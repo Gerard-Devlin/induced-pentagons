@@ -1,0 +1,202 @@
+PROOF DEPENDENCY GUIDE
+
+This guide locates the statements, equations and arguments in the manuscript.
+Its parser checks numbering, source coverage and reference targets; it does not
+automatically verify mathematical deductions. The computational witnesses are
+checked separately by python src/verify_project.py.
+
+Canonical source order: paper/sections01-05.tex, paper/sections06-10.tex, paper/sections11-14.tex, paper/appendixA.tex
+Numbered statements: 43
+Proof environments: 43
+Numbered equations: 91
+Unique labels: 115
+
+Run python src/check_manuscript_inventory.py to check this index.
+Run with --write after reviewing a source edit to regenerate the index.
+
+STATEMENT AND PROOF INDEX
+
+Section 1: Introduction and results
+  Theorem 1.1: Sharp weighted bound and equality
+    Label: thm:weighted
+  Corollary 1.2: Asymptotic edge inducibility
+    Label: cor:asymptotic
+  Theorem 1.3: Graphon bound and equality
+    Label: thm:graphon
+
+Section 2: Global extremizers and their variations
+  Lemma 2.1: Finite-template attainment
+    Label: lem:finite-attainment
+  Lemma 2.2: A global graphon maximum
+    Label: lem:global-maximum
+  Lemma 2.3: Necessary conditions at a global maximum
+    Label: lem:variations
+  Lemma 2.4: Profile insertion
+    Label: lem:profile-insertion
+  Lemma 2.5: Padding
+    Label: lem:padding
+
+Section 3: A lower bound on the active density
+  Lemma 3.1: Universal link bounds
+    Label: lem:universal-links
+  Lemma 3.2: A second-order moment inequality
+    Label: lem:second-order-moment
+  Proposition 3.3: Active density
+    Label: prop:active-density
+
+Section 4: A single exact certificate
+  Proposition 4.1: Exact finite identity
+    Label: prop:finite-certificate
+  Corollary 4.2: Bound at a global maximum
+    Label: cor:certificate-bound
+  Lemma 4.3: Triangle domination
+    Label: lem:triangle-domination
+  Lemma 4.4: Degree span
+    Label: lem:degree-span
+  Lemma 4.5: Codegree span
+    Label: lem:codegree-span
+
+Section 5: The sharp inequality
+
+Section 6: Eliminating triangles at equality
+  Proposition 6.1: Triangle elimination at reference-density equality
+    Label: prop:triangle-elimination
+
+Section 7: Classification of equality
+  Proposition 7.1: Balanced Clebsch classification at reference density
+    Label: prop:reference-equality
+
+Section 8: Stability on the edge scale
+  Theorem 8.1: Edge-scaled stability
+    Label: thm:edge-stability
+  Lemma 8.2: Weighted peeling
+    Label: lem:peeling
+  Lemma 8.3: Positive-minimum-degree near-maxima approach full Clebsch in L1
+    Label: lem:positive-degree-compactness
+  Lemma 8.4: Integral rounding
+    Label: lem:integral-rounding
+  Proposition 8.5: Optimality of the square-root edit-stability exponent
+    Label: prop:sqrt-optimality
+
+Section 9: Linear structural stability and quadratic mass stability
+  Proposition 9.1: The two local defects
+    Label: prop:two-defects
+  Lemma 9.2: Rounding without balancing
+    Label: lem:unbalanced-rounding
+  Theorem 9.3: Linear structural stability
+    Label: thm:linear-stability
+  Proposition 9.4: Optimality of linear structural stability
+    Label: prop:linear-optimality
+  Proposition 9.5: Two-sided structural energy
+    Label: prop:structural-energy
+
+Section 10: The arithmetic size of the finite-edge deficit
+  Theorem 10.1: Arithmetic deficit law
+    Label: thm:arithmetic-deficit
+  Corollary 10.2: The m^2 error is uniformly optimal
+    Label: cor:arithmetic-optimality
+  Remark 10.3: Scope of the arithmetic deficit comparison and the phase law
+    Label: rem:arithmetic-scale
+
+Section 11: Root profiles and the two arithmetic constructions
+  Lemma 11.1: The profile envelope
+    Label: lem:profile-envelope
+  Proposition 11.2: Uniform constructive upper error
+    Label: prop:constructive-error
+
+Section 12: A sharp arithmetic phase law
+  Lemma 12.1: The scalar profile problem
+    Label: lem:scalar-profile
+  Theorem 12.2: Sharp phase-dependent second-order asymptotic
+    Label: thm:phase-law
+  Corollary 12.3: The optimal uniform second-order coefficient
+    Label: cor:uniform-coefficient
+
+Section 13: The lattice correction at a fixed edge offset
+  Theorem 13.1: Fixed-offset asymptotic
+    Label: thm:fixed-offset
+  Corollary 13.2: Two exact finite-edge values
+    Label: cor:two-exact-offsets
+
+Section 14: Eventual polynomiality at every fixed offset
+  Theorem 14.1: Computable eventual polynomial
+    Label: thm:eventual-polynomial
+
+Appendix A: Local stability in edit distance
+  Theorem A.1: Local quadratic stability
+    Label: thm:local-stability
+  Lemma A.2: The neighborhood inequality
+    Label: lem:neighborhood
+  Lemma A.3: Two-vertex coefficients
+    Label: lem:two-vertex
+  Lemma A.4: The template Hessian
+    Label: lem:template-hessian
+
+DEPENDENCY STAGES
+
+direct_construction: Introduction: Clebsch counts
+  Requires: no earlier stage
+  Direct construction gives ratio R* as a lower example; no upper bound is assumed.
+
+unconditional_links: 3.1
+  Requires: no earlier stage
+  Universal kernel inequalities; this proof is independent of global attainment.
+
+finite_attainment: 2.1
+  Requires: no earlier stage
+  Fixed-template compactification at E=1 uses finitely many monomials.
+
+global_attainment: 2.2
+  Requires: direct_construction, unconditional_links, finite_attainment
+  Template stationarity, sampling, padding to 1/80, and standard cut compactness.
+
+global_variations: 2.3, 2.4, 2.5
+  Requires: global_attainment
+  Globality justifies edge/profile variations; padding preserves the global ratio.
+
+active_density: 3.2, 3.3
+  Requires: global_variations, unconditional_links, direct_construction
+  Moment/compression argument and the construction lower bound yield active density > p*.
+
+finite_certificate: 4.1, 4.3, 4.4, 4.5
+  Requires: no earlier stage
+  Separate exact finite identities and spans; theorem truth is not assumed by their verification.
+
+sharp_bound: 4.2, 1.1:inequality, 1.3:bound
+  Requires: active_density, global_variations, finite_certificate
+  Pad the global maximum, apply the certificate and positive slope, compare with construction.
+
+equality: 6.1, 7.1, 1.3:equality, 1.1:equality
+  Requires: sharp_bound, finite_certificate, global_variations, active_density
+  After the bound, equality kernels are global; zero squares imply triangle removal and the twin quotient.
+
+local_stability: A.1, A.2, A.3, A.4
+  Requires: no earlier stage
+  Self-contained local Clebsch analysis, including the unnumbered fractional and variation arguments.
+
+global_stability: 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 9.3
+  Requires: sharp_bound, equality, local_stability
+  Peeling, positive-degree compactness, local defects and whole-vertex rounding.
+
+arithmetic_scale: 9.5, 10.1, 10.2
+  Requires: global_stability
+  Structural energy and integer class variance give the order of the edge deficit.
+
+arithmetic_profiles: 11.1, 11.2, 12.1
+  Requires: no earlier stage
+  Clebsch profile geometry, its finite envelope, explicit constructions and the scalar profile optimization.
+
+arithmetic_phase: 12.2, 12.3
+  Requires: global_stability, arithmetic_profiles, local_stability
+  Structural reduction, profile optimization and the finite pair/template coefficients.
+
+fixed_offset: 13.1, 13.2
+  Requires: global_stability, local_stability
+  Finite integral mass deviations and pair errors yield the lattice correction and exact +/-1 cases.
+
+eventual_polynomial: 14.1
+  Requires: fixed_offset, global_stability, local_stability
+  Bounded defect data produce a finite polynomial list; this does not compute a global k_0(j).
+
+The JSON index contains every proof mapping and equation locator.
+A located proof is a supplied mathematical argument, not an automated validity verdict.

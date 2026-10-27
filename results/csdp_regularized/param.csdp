@@ -1,0 +1,6 @@
+axtol=1e-9
+atytol=1e-9
+objtol=1e-10
+maxiter=150
+printlevel=1
+perturbobj=0

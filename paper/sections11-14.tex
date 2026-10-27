@@ -1,0 +1,873 @@
+\section{Root profiles and the two arithmetic constructions}
+\label{sec:profiles}
+
+Write $P(x)$ for the Clebsch pentagon polynomial and $A$ for its adjacency
+matrix. An added vertex has fractional adjacency proportions
+$p=(p_i)_{i=1}^{16}\in[0,1]^{16}$ to sixteen unit classes. Its degree and
+pentagon link are
+\[
+ d(p)=\sum_i p_i,\qquad
+ c(p)=\sum_{\mathrm{Cl}[U]\cong P_4}
+       \prod_{\substack{i\text{ endpoint}\\\text{of }U}}p_i
+       \prod_{\substack{j\text{ internal}\\\text{in }U}}(1-p_j).
+\]
+
+\begin{lemma}[The profile envelope]\label{lem:profile-envelope}
+For every fractional profile,
+\[
+ c(p)\leq\min\left\{\frac{12}{5}d(p)^2,60\right\}.
+\]
+For every $0\leq d\leq5$, the first bound is attained by setting
+$p_i=d/5$ on a Clebsch neighborhood and zero elsewhere.
+\end{lemma}
+\begin{proof}
+Every nonadjacent pair of Clebsch vertices is the endpoint pair of exactly
+six induced four-vertex paths; adjacent pairs are endpoints of none.
+Dropping the internal nonneighbor factors therefore gives
+\[
+ c(p)\leq6\sum_{\substack{i<j\\ij\notin E(\mathrm{Cl})}}p_i p_j.
+\]
+The independence number of $\mathrm{Cl}$ is five. Indeed, after translating
+an independent set to contain $0$, its other vertices lie in the ten pair
+vertices of the standard labeling. Pairwise nonadjacency there means
+pairwise intersection of two-subsets of $[5]$. Such a family has at most
+four members, since a family of size four must be a star. Clebsch
+neighborhoods attain size five.
+
+For completeness, the weighted clique inequality of Motzkin and
+Straus~\cite{MotzkinStraus1965} used here follows by repeatedly merging the
+weights of two nonadjacent vertices in the support of a graph. With their
+sum fixed, the edge quadratic form is linear in the two weights, so one
+of the two mergers does not decrease it. Eventually the support is a
+clique of size $r$, where its value is at most $(1-1/r)d^2/2$ by
+Cauchy--Schwarz. Apply this to the complement of $\mathrm{Cl}$, whose
+clique number is five, to obtain the first bound.
+
+The bound $c(p)\leq60$ is a finite exact ingredient: for every one of the
+$65,536$ Boolean neighborhoods $N$, count the $480$ induced $P_4$ subsets
+with endpoints in $N$ and internal vertices outside $N$. The supplied
+standard-library program \texttt{verify\_profile\_envelope.py} constructs
+these paths from the Cayley edge list and checks every count. It finds
+$c(N)\leq60$, with equality precisely at the sixteen open and sixteen
+closed neighborhoods. The degreewise maxima, for degrees zero through
+sixteen, are
+\[
+ 0,0,6,18,36,60,60,54,48,44,42,35,25,18,12,0,0.
+\]
+Multilinearity represents $c(p)$ as the expectation of $c(N)$ for an
+independent Bernoulli subset, so the Boolean inequality gives the
+fractional one.
+
+Finally, a neighborhood is an independent five-set. An induced
+four-vertex path with endpoints in that neighborhood has its two internal
+vertices outside it. There are six paths per endpoint pair and ten pairs,
+yielding $c(p)=60(d/5)^2$ for the stated profile.
+\end{proof}
+
+Define
+\[
+ x_m=\sqrt{\frac{32m}{5}},\qquad
+ \alpha_m=x_m-\lfloor x_m\rfloor,\qquad
+ k_m=\sqrt{\frac{m}{40}}=\frac{x_m}{16},
+\]
+and put
+\[
+ f(\alpha)=\frac{(1-\alpha)\min\{3\alpha,1\}}{80},
+ \qquad 0\leq\alpha<1.
+\]
+As usual $\Delta(m)=c_\ast m^{5/2}-\rho(C_5,m)$.
+
+\begin{proposition}[Uniform constructive upper error]
+\label{prop:constructive-error}
+As $m\to\infty$ through the integers,
+\[
+ \Delta(m)\leq m^2 f(\alpha_m)+O(m^{7/4}),
+\]
+with an absolute implicit constant.
+\end{proposition}
+\begin{proof}
+Write $k=k_m$ and $\alpha=\alpha_m$. All estimates below are uniform for
+$0\leq\alpha<1$.
+
+For the first construction let $N=\lfloor x_m\rfloor$ and distribute $N$
+vertices into sixteen classes whose sizes differ by at most one. Their
+Clebsch blow-up $B$ has
+\[
+ e(B)=\frac{5N^2}{32}+O(1),\qquad
+ I_5(B)=192\left(\frac{N}{16}\right)^5+O(k^3).
+\]
+Fix a template vertex $v$. Add a single new vertex, with neighbors only
+in the five classes indexed by $N_{\mathrm{Cl}}(v)$, and choose its degree
+as close to $m-e(B)$ as feasibility permits. This leaves at most $O(1)$
+edges to add or delete: the available number of neighbors is $5k+O(1)$,
+whereas $m-e(B)=5k\alpha+O(1)$. Within those five classes choose the
+neighbor counts to be $\alpha k+O(1)$, with their total equal to the
+chosen degree. Such simultaneous rounding is possible by distributing
+the bounded integer remainder among the five classes.
+
+There are sixty induced path templates with their endpoints in the
+selected neighborhood. Consequently the added vertex lies in
+$60\alpha^2k^4+O(k^3)$ induced pentagons. Correct the bounded edge
+remainder by adding a disjoint matching or deleting edges. Each deletion
+destroys at most $O(k^3)$ of the existing pentagons; adding the matching
+changes none. The resulting graph has exactly $m$ edges and
+\begin{align*}
+ I_5(G)&=192(k-\alpha/16)^5+60\alpha^2k^4+O(k^3)\\
+       &=192k^5-60\alpha(1-\alpha)k^4+O(k^3).
+\end{align*}
+Thus $\Delta(m)\leq60\alpha(1-\alpha)k^4+O(k^3)$.
+
+For the second construction put $N=\lfloor x_m\rfloor+1$,
+$\beta=1-\alpha$, and $t=N/16=k+\beta/16$. The Clebsch matrix has a
+zero-sum vector $w\in\{-1,1\}^{16}$ satisfying $Aw=-3w$. Explicitly, at
+the vertex $u\in\mathbb F_2^4$ take $w_u=(-1)^{u_1+u_2+u_3}$; it has
+squared norm sixteen. Set
+\[
+ r^2=\frac{40t^2-m}{24},\qquad y_i=t+rw_i.
+\]
+Then $\sum_i y_i=N$, all $y_i$ are positive for large $m$, and
+\[
+ E(y)=40t^2-24r^2=m,\qquad
+ \sum_i(y_i-t)^2=16r^2=\frac23(40t^2-m).
+\]
+Round the $y_i$ to integers $n_i$ preserving their sum $N$ and with
+$|n_i-y_i|\leq1$. Since $r=O(\sqrt{k})$ and the rounding error has sum
+zero, the resulting blow-up $B$ satisfies
+\[
+ e(B)=m+O(\sqrt{k}),\qquad
+ V:=\sum_i(n_i-t)^2=\frac23(40t^2-m)+O(\sqrt{k}).
+\]
+The logarithmic Hessian calculation for the template, or direct
+polynomial expansion, gives uniformly for zero-sum $h=O(\sqrt{k})$,
+\[
+ c_\ast E(t\mathbf1+h)^{5/2}-P(t\mathbf1+h)
+   =6t^3\lVert h\rVert_2^2+O(k^{7/2}).
+\]
+Hence the deficit of $B$ at its own edge count is
+\[
+ 6k^3\frac23(40t^2-m)+O(k^{7/2})
+   =20\beta k^4+O(k^{7/2}).
+\]
+Correct $e(B)-m$ by adding a disjoint matching or deleting edges. The
+number of changes is $O(\sqrt{k})$, and each deletion destroys at most
+$O(k^3)$ pentagons. The change in the comparison expression
+$c_\ast e(B)^{5/2}$ is also $O(k^{7/2})$. Thus this construction gives
+$\Delta(m)\leq20(1-\alpha)k^4+O(k^{7/2})$.
+
+Take the better construction and use $k^4=m^2/1600$.
+\end{proof}
+
+\section{A sharp arithmetic phase law}\label{sec:phase-law}
+
+We retain $k=\sqrt{m/40}$, $x=16k=\sqrt{32m/5}$,
+$\alpha=x-\lfloor x\rfloor$, and the function
+\[
+ f(\alpha)=\frac{(1-\alpha)\min\{3\alpha,1\}}{80}
+\]
+from the preceding section.
+
+\begin{lemma}[The scalar profile problem]\label{lem:scalar-profile}
+Put $\phi(u)=\max\{12u,-4u\}$. For arbitrary fractional profiles
+$p_1,\ldots,p_b\in[0,1]^{16}$ and any integer $\ell$,
+\begin{equation}\tag{58}\label{eq:scalar-profile}
+ \sum_{j=1}^b\bigl(12d(p_j)-c(p_j)\bigr)
+ +\phi\left(5(\alpha+\ell)-\sum_{j=1}^bd(p_j)\right)
+ \geq20(1-\alpha)\min\{3\alpha,1\}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Write $z_j=d(p_j)/5$ and $\Phi(u)=\phi(5u)$. Lemma~11.1 gives
+\[
+ 12d(p_j)-c(p_j)\geq g(z_j),\qquad
+ g(z)=\begin{cases}
+       60z(1-z),&0\leq z\leq1,\\
+       60(z-1),&z\geq1.
+      \end{cases}
+\]
+The function $\Phi$ is Lipschitz with constant sixty. Thus replacing any
+$z_j>1$ by one can only decrease
+$\sum_jg(z_j)+\Phi(\alpha+\ell-\sum_jz_j)$: its profile cost drops by
+$60(z_j-1)$ and the other term rises by at most that amount. We may
+consequently suppose $0\leq z_j\leq1$.
+
+For a fixed sum $\sum_jz_j=a+t$, where $a$ is an integer and $0\leq t<1$,
+the sum $\sum_jz_j^2$ is maximized by $a$ ones, one entry $t$, and zeros.
+One can see this by moving mass between any two entries strictly between
+zero and one until one reaches an endpoint. Hence
+\[
+ \sum_j60z_j(1-z_j)\geq60t(1-t).
+\]
+Absorbing $a$ into $\ell$ reduces the problem to minimizing
+\[
+ 60t(1-t)+\Phi(\alpha+\ell-t),\qquad 0\leq t\leq1,\quad\ell\in\mathbb Z.
+\]
+For $\ell\leq-1$, the second term alone is at least $20(1-\alpha)$; for
+$\ell\geq1$, the minimum over $t$ is at least $60\alpha$. For $\ell=0$
+and $t\leq\alpha$ the expression is $60(\alpha-t^2)$, whose minimum is
+$60\alpha(1-\alpha)$. For $t\geq\alpha$ it is the concave quadratic
+$80t-60t^2-20\alpha$, so its minimum is attained at $t=\alpha$ or $t=1$.
+The two values are $60\alpha(1-\alpha)$ and $20(1-\alpha)$, respectively.
+Their minimum is the asserted right side.
+\end{proof}
+
+\begin{theorem}[Sharp phase-dependent second-order asymptotic]
+\label{thm:phase-law}
+As $m\to\infty$ through the positive integers,
+\begin{equation}\tag{59}\label{eq:phase-law}
+ \begin{gathered}
+ \rho(C_5,m)=c_\ast m^{5/2}
+   -\frac{m^2}{80}(1-\alpha_m)\min\{3\alpha_m,1\}+O(m^{15/8}),\\
+ \alpha_m=\left\{\sqrt{\frac{32m}{5}}\right\}.
+ \end{gathered}
+\end{equation}
+The implicit constant is absolute; in particular the remainder is uniform
+as the phase approaches either endpoint.
+\end{theorem}
+\begin{proof}
+The constructive upper bound for the deficit is Proposition~11.2. We
+prove the matching lower bound with error $O(k^{15/4})=O(m^{15/8})$.
+Choose an extremal graph $G$ with $m$ edges. The coarse lower construction
+gives $\Delta(m)=O(m^2)=O(k^4)$, so the linear structural stability
+theorem supplies a Clebsch blow-up $H$, with isolates, on the same vertex
+set such that
+\begin{equation}\tag{60}\label{eq:phase-structure}
+ T:=|E(G)\mathbin\triangle E(H)|=O(k),\qquad
+ N_H=16k+O(1),\qquad n_i^H=k+O(\sqrt{k}),
+\end{equation}
+and $\sum_i(n_i^H-N_H/16)^2=O(k)$. All constants in this proof are
+independent of $m$ and $\alpha$.
+
+Discard vertices isolated in both $G$ and $H$. Every remaining isolated
+vertex of $H$ is incident with an edge in $E(G)\setminus E(H)$, so there
+are at most $2T$ such vertices. The total number of remaining vertices is
+therefore $O(k)$. This observation allows the counting estimates below to
+be independent of the original number of isolates.
+
+Let the wrong degree of a vertex be its number of incident pairs in
+$E(G)\mathbin\triangle E(H)$. Call a vertex bad if its wrong degree
+exceeds $k^{3/4}$. The bad set $B$ has size
+\[
+ b\leq2T/k^{3/4}=O(k^{1/4}).
+\]
+Let $G_0,H_0$ be the graphs remaining after deleting $B$. Write $n_i$ for
+the sixteen active class sizes of $H_0$, put $N=\sum_i n_i$, $q=N/16$, and
+$h_i=n_i-q$. Then
+\begin{equation}\tag{61}\label{eq:phase-masses}
+ q=k+O(k^{1/4}),\qquad n_i=k+O(\sqrt{k}),\qquad
+ V:=\sum_i h_i^2=O(k).
+\end{equation}
+In particular every class is nonempty for all sufficiently large $m$. If
+$A$ is the Clebsch adjacency matrix, put
+\[
+ a=\frac{h^TAh}{2k},\qquad v=V/k.
+\]
+The identity $A^2=3I-2A+2J$ shows that the eigenvalues on the sum-zero
+subspace are $1$ and $-3$. Consequently
+\begin{equation}\tag{62}\label{eq:phase-spectrum}
+ -\frac32v\leq a\leq\frac12v.
+\end{equation}
+
+For a bad vertex $j$, let $p_{ji}$ be the proportion of the $i$th active
+class of $H_0$ adjacent to $j$ in $G$. Denote this profile by $p_j$, and
+abbreviate $d_j=d(p_j)$, $c_j=c(p_j)$. Let $t_-$ count the edges of $H_0$
+missing from $G_0$, and let $t_+$ count the edges added to $H_0$ inside
+$G_0$, together with the edges from $B$ to the isolated class of $H_0$.
+Both are $O(k)$: the latter additional edges are all wrong pairs in the
+original comparison with $H$. Let $t_n$ count those added edges inside
+$G_0$ whose endpoints have distinct nonadjacent active types; thus
+$0\leq t_n\leq t_+$.
+
+The edge count is
+\begin{equation}\tag{63}\label{eq:phase-edge-count}
+ \frac{m-5N^2/32}{k}
+ =a+\sum_{j\in B}d_j+\frac{t_+-t_-}{k}+O(k^{-1/4}).
+\end{equation}
+Indeed, $e(H_0)=5N^2/32+ka$. The exact number of edges from a bad
+vertex to the active classes is $\sum_i n_i p_{ji}$; replacing this by
+$kd_j$ has error $O(\sqrt{k})$ per bad vertex and thus $O(k^{3/4})$ in
+total. There are at most $b^2=O(k^{1/2})$ edges within $B$. These are all
+the remaining terms.
+
+We next expand the pentagon count and give the needed error estimates
+explicitly. Every good vertex has wrong degree at most $k^{3/4}$. If
+$r_u$ denotes its wrong degree in the comparison of $G_0$ and $H_0$, then
+\[
+ \sum_u r_u^2\leq k^{3/4}\sum_u r_u=O(k^{7/4}).
+\]
+An intersecting pair of wrong edges fixes three vertices and belongs to
+$O(k^2)$ five-sets; a disjoint pair fixes four vertices and belongs to
+$O(k)$ five-sets. The number of five-sets containing at least two wrong
+edges is therefore
+\begin{equation}\tag{64}\label{eq:wrong-pair-error}
+ O\left(k^2\sum_u r_u^2+kT^2\right)=O(k^{15/4}).
+\end{equation}
+For a five-set with at most one wrong pair, the change of its
+induced-pentagon indicator is exactly its one-edge change. For every
+other five-set, the difference between the actual change and the sum of
+its one-edge changes has absolute value at most eleven. Hence (64)
+bounds the entire higher-order error.
+
+By the two-vertex coefficients of Lemma~A.3, one deleted template edge
+loses $24k^3+O(k^{5/2})$ pentagons, and an added edge between distinct
+nonadjacent active types has change $-6k^3+O(k^{5/2})$. Edges added
+within a class or meeting an isolated type have one-edge change zero.
+The estimates are uniform because of (61); excluding the two fixed
+endpoints from the available old classes introduces only $O(k^2)$
+further error. There are $O(k)$ wrong edges. Thus
+\begin{equation}\tag{65}\label{eq:good-pentagons}
+ I_5(G_0)=P(n)-24k^3t_--6k^3t_n+O(k^{15/4}).
+\end{equation}
+
+Pentagons containing at least two bad vertices number at most
+$O(b^2k^3)=O(k^{7/2})$. For a fixed bad vertex, changing the background
+on the other four vertices from $G_0$ to $H_0$ affects at most
+$O(Tk^2)$ five-sets. Summing over $B$ costs $O(bTk^2)=O(k^{13/4})$.
+In the perfect background $H_0$, the root link is obtained from $c(p_j)$
+by giving its four distinct classes weights $n_i$. Each product of four
+such weights is $k^4+O(k^{7/2})$. There are only $480$ path templates, so
+this link is $k^4c_j+O(k^{7/2})$, uniformly in the profile. Summing the
+latter errors over $B$ gives $O(k^{15/4})$. Isolated background vertices
+lie in no such path. We conclude from (65) that
+\begin{equation}\tag{66}\label{eq:phase-pentagon-count}
+ I_5(G)=P(n)+k^4\sum_{j\in B}c_j-24k^3t_--6k^3t_n+O(k^{15/4}).
+\end{equation}
+
+It remains to expand the smooth template defect. For
+$Q(x)=c_\ast E(x)^{5/2}-P(x)$, the Clebsch counts yield
+\[
+ Q(\mathbf1)=0,\qquad\nabla Q(\mathbf1)=0,\qquad
+ \nabla^2Q(\mathbf1)=12I-\tfrac34J.
+\]
+Homogeneity, $\sum_i h_i=0$, and Taylor's theorem give
+\[
+ Q(n)=6q^3V+O(q^2\lVert h\rVert_2^3)=6k^3V+O(k^{7/2}).
+\]
+Also $e(H_0)=m+O(k^{5/4})$, by (61) and $V=O(k)$. Since
+$(5/2)c_\ast m^{3/2}=12k^3$, another Taylor expansion gives
+\[
+ c_\ast m^{5/2}-c_\ast e(H_0)^{5/2}
+   =12k^3\bigl(m-e(H_0)\bigr)+O(k^{7/2}).
+\]
+Combining these identities with (63) and (66) produces
+\begin{equation}\tag{67}\label{eq:phase-deficit}
+ \frac{\Delta(m)}{k^4}
+ =6v+\sum_{j\in B}(12d_j-c_j)
+    +12\frac{t_++t_-}{k}+6\frac{t_n}{k}+O(k^{-1/4}).
+\end{equation}
+
+The scalar function $\phi$ is subadditive and Lipschitz with constant
+twelve. Equation (62) implies $6v\geq\phi(a)$, while
+\[
+ 12(t_++t_-)/k\geq\phi\bigl((t_+-t_-)/k\bigr).
+\]
+Drop the nonnegative $t_n$ term and apply (63). If
+$r=(m-5N^2/32)/k$, we obtain
+\[
+ \frac{\Delta(m)}{k^4}
+ \geq\sum_{j\in B}(12d_j-c_j)
+    +\phi\left(r-\sum_{j\in B}d_j\right)-O(k^{-1/4}).
+\]
+Since $N=16k+O(k^{1/4})$,
+\begin{align*}
+ r&=5(16k-N)-\frac{5}{32k}(16k-N)^2\\
+  &=5(\alpha+\ell)+O(k^{-1/2}),\qquad
+       \ell=\lfloor16k\rfloor-N\in\mathbb Z.
+\end{align*}
+Apply Lemma~12.1 and use the Lipschitz bound once more. The result is
+\[
+ \Delta(m)\geq20k^4(1-\alpha)\min\{3\alpha,1\}-O(k^{15/4}).
+\]
+Because $m^2=1600k^4$, this is the desired lower bound.
+Proposition~11.2 has an upper error $O(m^{7/4})$, which is absorbed in
+$O(m^{15/8})$.
+\end{proof}
+
+\begin{corollary}[The optimal uniform second-order coefficient]
+\label{cor:uniform-coefficient}
+The finite-edge deficit satisfies
+\[
+ \limsup_{m\to\infty}\frac{\Delta(m)}{m^2}=\frac1{120},\qquad
+ \liminf_{m\to\infty}\frac{\Delta(m)}{m^2}=0.
+\]
+Its set of subsequential limits is the whole interval $[0,1/120]$. In
+particular, the coefficient $1/120$ in the uniform estimate
+\[
+ \rho(C_5,m)\geq c_\ast m^{5/2}-\frac{m^2}{120}-O(m^{15/8})
+\]
+cannot be decreased.
+\end{corollary}
+\begin{proof}
+The function $f$ is continuous on the unit circle, vanishes at phase zero,
+and has maximum $1/120$ at phase $1/3$. For each fixed $0<\beta<1$,
+choose an integer $m_k$ nearest to $(5/32)(16k+\beta)^2$. Factoring the
+difference of squares gives
+$\sqrt{32m_k/5}=16k+\beta+O(k^{-1})$, so $\alpha_{m_k}\to\beta$.
+The exact equality sequence $m=40k^2$ provides phase zero. The theorem
+therefore yields all values of the continuous range
+$f([0,1])=[0,1/120]$ and excludes all other limit points.
+\end{proof}
+
+\section{The lattice correction at a fixed edge offset}
+\label{sec:lattice-offset}
+
+The phase law describes the $m^2$ scale. In a bounded edge neighborhood
+of the equality sequence, the deficit instead has order $m^{3/2}$. Its
+leading coefficient is a finite lattice optimization determined by the
+Clebsch adjacency matrix.
+
+For $h\in\mathbb Z^{16}$ with $\sum_i h_i=0$, put
+\[
+ Q(h)=\sum_{uv\in E(\mathrm{Cl})}h_uh_v=\tfrac12h^TAh.
+\]
+For an integer $j$, define
+\begin{equation}\tag{68}\label{eq:lattice-objective}
+ \Lambda(j)=\min_{\substack{h\in\mathbb Z^{16}\\\sum_i h_i=0}}
+ \bigl(6\lVert h\rVert_2^2+12|j-Q(h)|\bigr).
+\end{equation}
+The minimum may be restricted to $\lVert h\rVert_2^2\leq2|j|$: the zero
+vector gives value $12|j|$, and every vector outside that ball has
+strictly greater cost. In particular this is a finite, explicitly
+decidable optimization for each $j$.
+
+\begin{theorem}[Fixed-offset asymptotic]\label{thm:fixed-offset}
+For every fixed integer $j$, as the positive integer $k$ tends to infinity,
+\begin{equation}\tag{69}\label{eq:fixed-offset-asymptotic}
+ \rho(C_5,40k^2+j)
+   =c_\ast(40k^2+j)^{5/2}-\Lambda(j)k^3+O_j(k^2).
+\end{equation}
+The coefficients satisfy
+\[
+ \Lambda(j)=12j\quad(j\geq0),\qquad
+ 4|j|\leq\Lambda(j)\leq12|j|\quad(j<0),
+\]
+and $\Lambda(-12)=48$. Thus the fixed-offset correction is not symmetric
+under $j\mapsto-j$.
+\end{theorem}
+\begin{proof}
+Write $m=40k^2+j$ and $\Delta(m)=c_\ast m^{5/2}-\rho(C_5,m)$. Start
+from the balanced blow-up of class size $k$. If $j\geq0$, add a disjoint
+matching with $j$ edges; if $j<0$, delete $|j|$ edges. Since a single
+deletion affects $O(k^3)$ pentagons, this gives the preliminary estimate
+$\Delta(m)=O_j(k^3)$.
+
+Let $G$ be extremal with $m$ edges. Its normalized deficit is
+$O_j(k^{-2})$, so Theorem~9.3 supplies a Clebsch blow-up $H$, with
+isolates, for which
+\[
+ |E(G)\mathbin\triangle E(H)|=O_j(1),\qquad
+ \sum_i(n_i-N/16)^2=O_j(1),
+\]
+\[
+ N=\sqrt{32m/5}+O_j(k^{-1})=16k+O_j(k^{-1}).
+\]
+The integer $N$ therefore equals $16k$ for all sufficiently large $k$.
+Consequently $n_i=k+h_i$ for an integer vector $h$ satisfying
+$\sum_i h_i=0$ and $\lVert h\rVert_2=O_j(1)$, and
+\begin{equation}\tag{70}\label{eq:offset-edge-count}
+ e(H)=40k^2+Q(h).
+\end{equation}
+After discarding common isolates, the two graphs have $O(k)$ vertices:
+every remaining isolated vertex of $H$ is incident with one of the
+$O_j(1)$ wrong edges.
+
+Let $t_+$ and $t_-$ be the numbers of added and deleted edges in passing
+from $H$ to $G$, and let $t_n$ count added edges between distinct
+nonadjacent active classes. All these numbers are $O_j(1)$, and
+\[
+ j-Q(h)=t_+-t_-.
+\]
+The one-edge pentagon changes are $-24k^3+O_j(k^2)$ for a deleted
+template edge, $-6k^3+O_j(k^2)$ for an added edge of the latter
+nonadjacent type, and zero for an edge within a class or meeting an
+isolated type. Five-sets containing at least two wrong pairs number
+$O_j(k^2)$, by the same pair counting used in (64). Therefore
+\[
+ I_5(G)=P(k\mathbf1+h)-24k^3t_--6k^3t_n+O_j(k^2).
+\]
+The template Hessian gives
+\[
+ c_\ast e(H)^{5/2}-P(k\mathbf1+h)
+   =6k^3\lVert h\rVert_2^2+O_j(k^2).
+\]
+Since $m-e(H)=j-Q(h)=O_j(1)$, the comparison between the two edge
+powers is
+\[
+ c_\ast m^{5/2}-c_\ast e(H)^{5/2}
+   =12k^3\bigl(j-Q(h)\bigr)+O_j(k).
+\]
+Combining these formulas yields
+\begin{align*}
+ \Delta(m)
+ &=k^3\bigl(6\lVert h\rVert_2^2+12(t_++t_-)+6t_n\bigr)+O_j(k^2)\\
+ &\geq k^3\bigl(6\lVert h\rVert_2^2+12|j-Q(h)|\bigr)-O_j(k^2)\\
+ &\geq\Lambda(j)k^3-O_j(k^2).
+\end{align*}
+
+For the reverse inequality, fix a minimizing vector $h$ in (68). The
+class sizes $k+h_i$ are positive for large $k$. If $j-Q(h)>0$, add that
+many edges within a class; if it is negative, delete its absolute value
+in template edges. There is ample capacity for either operation once
+$k$ is large. All added edges are within a class, so $t_n=0$, and the
+number of edits is exactly $|j-Q(h)|$. The same expansion gives a graph
+with exactly $m$ edges whose deficit is $\Lambda(j)k^3+O_j(k^2)$. This
+proves (69).
+
+On the sum-zero subspace, the eigenvalues of $A$ are $1$ and $-3$. Hence
+\[
+ -\tfrac32\lVert h\rVert_2^2\leq Q(h)\leq\tfrac12\lVert h\rVert_2^2.
+\]
+For $j\geq0$ this implies
+\[
+ 6\lVert h\rVert_2^2+12|j-Q(h)|
+ \geq12Q(h)+12|j-Q(h)|\geq12j,
+\]
+and $h=0$ attains equality. For $j<0$, it implies
+\[
+ 6\lVert h\rVert_2^2+12|j-Q(h)|
+ \geq-4Q(h)+4|j-Q(h)|\geq4|j|.
+\]
+The upper bound $12|j|$ again follows from $h=0$.
+
+To evaluate the example $j=-12$, use the Cayley labeling
+$u\in\mathbb F_2^4$ and the characters $\chi_a(u)=(-1)^{a\cdot u}$.
+For the bit masks $a=7$ and $a=11$, each character has Clebsch eigenvalue
+$-3$. The vector
+\[
+ h=\tfrac12(\chi_7+\chi_{11})
+\]
+is integral, has sum zero, has eight nonzero entries in $\{-1,1\}$, and
+satisfies $Ah=-3h$. Thus $\lVert h\rVert_2^2=8$, $Q(h)=-12$, and its
+objective value is $48$. The lower bound $4|j|$ proves that this value is
+optimal.
+\end{proof}
+
+\begin{corollary}[Two exact finite-edge values]
+\label{cor:two-exact-offsets}
+For all sufficiently large integers $k$,
+\[
+ \rho(C_5,40k^2+1)=192k^5,\qquad
+ \rho(C_5,40k^2-1)=192k^5-24k^3.
+\]
+Up to isolated vertices, all extremal graphs at $40k^2+1$ edges are
+obtained from the balanced Clebsch blow-up of class size $k$ by adding
+one edge either within a class or incident with an isolated vertex. At
+$40k^2-1$ edges, all extremal graphs are either a balanced blow-up with
+one edge deleted, or a Clebsch blow-up in which two adjacent classes
+have sizes $k+1,k-1$ and the other fourteen classes have size $k$.
+\end{corollary}
+\begin{proof}
+For $j=1$, the lattice minimum is $12$ by the theorem. For $j=-1$, it is
+also $12$: the zero vector attains this value, and every nonzero integral
+sum-zero vector has squared norm at least two, so its first cost term
+alone is at least twelve.
+
+For an extremal graph and its template from the proof above, write
+\[
+ L=6V+12(t_++t_-)+6t_n.
+\]
+This is an integer multiple of six and is at least twelve. The same
+proof gives $\Delta(m)=Lk^3+O(k^2)$, with a constant uniform over the
+bounded family of permitted $h$ and wrong-edge counts. The elementary
+constructions for $j=\pm1$ have deficit $12k^3+O(k)$. Hence $L>12$,
+which would imply $L\geq18$, is impossible for all sufficiently large
+$k$.
+
+The nonnegative integer solutions to $L=12$ are therefore
+$V=0$, $t_++t_-=1$, $t_n=0$, or $V=2$, $t_++t_-=t_n=0$. Here we used
+that an integer sum-zero vector has even squared norm. In the second
+case $h$ has one entry $1$, one entry $-1$, and all others zero, so
+$Q(h)$ is zero or $-1$.
+
+For $j=1$, only the first case is possible. The single modification is
+an added edge, and $t_n=0$ says that it lies within a class or meets an
+isolated vertex. Such an edge changes no pentagon count: in the first
+case its endpoints are true twins, and in the other cases any formerly
+isolated endpoint has degree one. This gives the asserted value and
+classification.
+
+For $j=-1$, the first case deletes one edge of the balanced template.
+Exactly $24k^3$ old pentagons use that edge. There are no newly induced
+pentagons: the deleted endpoints have no common neighbor, whereas a
+nonadjacent pair in a five-cycle must have one. In the second case
+$Q(h)=-1$ forces the two perturbed classes to be adjacent.
+Multilinearity of the pentagon polynomial gives exactly
+\[
+ P(k\mathbf1+h)=192k^5+60k^4\sum_i h_i-24k^3=192k^5-24k^3.
+\]
+These constructions attain the common value, completing both the upper
+bound and the equality classification.
+\end{proof}
+
+\section{Eventual polynomiality at every fixed offset}
+\label{sec:eventual-polynomial}
+
+The lattice coefficient has a further consequence. For each fixed edge
+offset, the exact extremal function is eventually a polynomial, and the
+polynomial can be determined by a finite enumeration. This statement
+does not provide an explicit threshold beyond which the polynomial is
+valid.
+
+\begin{theorem}[Computable eventual polynomial]
+\label{thm:eventual-polynomial}
+For every integer $j$, there are computable integers $a_j,b_j,c_j$ and
+an integer $k_0(j)$ such that, for every integer $k\geq k_0(j)$,
+\begin{equation}\tag{71}\label{eq:eventual-polynomial}
+ \rho(C_5,40k^2+j)
+ =192k^5+\bigl(12j-\Lambda(j)\bigr)k^3+a_jk^2+b_jk+c_j.
+\end{equation}
+Moreover, a finite procedure produces a finite list of graph
+constructions that, for all sufficiently large $k$, contains all
+extremal graphs up to isomorphism and the addition of isolates. The
+proof determines the eventual polynomial and this list; it does not
+give an explicit value or an algorithm for $k_0(j)$.
+\end{theorem}
+\begin{proof}
+We first strengthen the discrete conclusion in the fixed-offset
+argument. Its template has integer class sizes $k+h_i$ with
+$\sum_i h_i=0$ and bounded $V=\lVert h\rVert_2^2$, and a bounded number
+$T=t_++t_-$ of wrong pairs. As in that proof, put
+\[
+ L=6V+12T+6t_n.
+\]
+The edge-offset constraint and the definition of $\Lambda(j)$ give
+$L\geq\Lambda(j)$. Both numbers are integer multiples of six. The same
+uniformly bounded-template expansion gives
+\[
+ \Delta(40k^2+j)=Lk^3+O_j(k^2).
+\]
+On the other hand, the construction in Theorem~13.1 gives
+$\Delta(40k^2+j)\leq\Lambda(j)k^3+O_j(k^2)$. The positive gap between
+distinct multiples of six therefore forces
+\begin{equation}\tag{72}\label{eq:energy-equality}
+ L=\Lambda(j)
+\end{equation}
+for every extremal graph and all sufficiently large $k$. Since
+$\Lambda(j)\leq12|j|$, this implies the explicit bounds
+\begin{equation}\tag{73}\label{eq:explicit-discrete-bounds}
+ V\leq2|j|,\qquad T\leq|j|.
+\end{equation}
+The initial boundedness and the uniform error in this argument come
+from strong stability, before imposing the explicit bounds (73); thus
+there is no circular assumption about the extremal family.
+
+We now describe a finite list depending only on $j$. Enumerate:
+\begin{enumerate}
+\item integer vectors $h\in\mathbb Z^{16}$ with $\sum_i h_i=0$ and
+      $\lVert h\rVert_2^2\leq2|j|$;
+\item a set $X$ of $s\leq2|j|$ labeled exceptional vertices, each
+      assigned a type $\tau(x)\in\{0,1,\ldots,16\}$;
+\item a set $F\subseteq\binom{X}{2}$ of at most $|j|$ wrong pairs, with
+      every vertex of $X$ incident with a member of $F$.
+\end{enumerate}
+Type zero is the isolated type. The case $F=X=\varnothing$ is allowed.
+The template adjacency between two exceptional vertices is Clebsch
+adjacency between their positive types, and is zero if either type is
+zero. A wrong pair toggles this template adjacency. Thus $F$ determines
+$t_+,t_-$, and $t_n$ without any further choices. Retain precisely the
+data satisfying
+\begin{equation}\tag{74}\label{eq:admissible-data}
+ Q(h)+t_+-t_-=j,\qquad
+ 6\lVert h\rVert_2^2+12|F|+6t_n=\Lambda(j).
+\end{equation}
+All these tests use integer arithmetic, and the enumeration is finite
+with explicit bounds.
+
+Each retained datum defines a graph for all sufficiently large $k$. Let
+$e_i$ be the number of exceptional vertices of type $i$, and put
+$k+h_i-e_i$ ordinary vertices in each active class $i$. Together with
+the exceptional vertices, the active class sizes of the underlying
+template are exactly $k+h_i$. Include the $e_0$ exceptional vertices of
+type zero, place all template edges, and toggle the pairs in $F$. The
+counts $k+h_i-e_i$ are nonnegative for sufficiently large $k$; this
+capacity requirement has an explicit threshold for each datum. The
+edge count is exactly $40k^2+j$ by (74). Further isolates may be added
+freely.
+
+Conversely, every extremal graph for sufficiently large $k$ has such a
+representation. Take the endpoints of all its wrong pairs relative to
+the strong-stability template as $X$. There are at most $2T\leq2|j|$ of
+them. Outside $X$, all adjacencies agree with the template, and the
+remaining type-zero vertices are isolated. The bounds and both
+admissibility tests follow from (73), the exact edge count, and (72).
+
+For each retained datum $D$, its pentagon count is an integer
+coefficient polynomial $P_D(k)$. To see this without an automorphism
+division, take a subset $S\subseteq X$ of exceptional vertices and a
+subset $I\subseteq[16]$ of ordinary types, with $|S|+|I|=5$. Use one
+formal ordinary representative of every type in $I$, and test whether
+the resulting five-vertex graph is an induced pentagon. Let its
+indicator be $b_D(S,I)$. All ordinary vertices of the same type are
+false twins, even in their adjacencies to $X$, since wrong pairs have
+both endpoints in $X$. An induced pentagon cannot contain two such
+vertices. It follows that the exact count is
+\begin{equation}\tag{75}\label{eq:exact-construction-polynomial}
+ P_D(k)=\sum_{\substack{S\subseteq X,\ I\subseteq[16]\\|S|+|I|=5}}
+              b_D(S,I)\prod_{i\in I}(k+h_i-e_i).
+\end{equation}
+Each five-set is counted once. This formula establishes both
+integrality of the coefficients and an explicit procedure to compute
+them.
+
+Every retained datum has the same three leading coefficients. Indeed,
+the fixed-offset expansion applies to each of these fixed finite
+modifications and gives
+\[
+ c_\ast(40k^2+j)^{5/2}-P_D(k)=\Lambda(j)k^3+O_j(k^2).
+\]
+Since
+\[
+ c_\ast(40k^2+j)^{5/2}=192k^5+12jk^3+O_j(k),
+\]
+the polynomial $P_D$ has coefficient $192$ at degree five, zero at
+degree four, and $12j-\Lambda(j)$ at degree three. Write its remaining
+coefficients as $(a_D,b_D,c_D)$.
+
+The retained family is nonempty. A minimizing lattice vector in (68),
+followed by the addition of within-class edges or deletion of template
+edges as in the fixed-offset proof, supplies such a datum. The wrong
+pairs may be chosen disjoint; their number is at most $|j|$, and their
+endpoints satisfy the stated bound.
+
+For all sufficiently large $k$, every retained graph is feasible, and
+every extremal graph is represented. Thus
+\[
+ \rho(C_5,40k^2+j)=\max_D P_D(k).
+\]
+Among finitely many polynomials, the one with lexicographically largest
+coefficient vector, read from highest degree to lowest, is maximal for
+all sufficiently large arguments. Choose the largest triple
+$(a_D,b_D,c_D)$ and denote it by $(a_j,b_j,c_j)$. This proves (71).
+Retaining all data whose polynomial equals that maximum gives exactly
+the eventual extremal constructions, allowing duplicate isomorphic
+presentations. For $j=0$ the list consists just of the balanced
+template, giving $192k^5$ as required.
+
+Finally, the finite polynomial comparisons and the capacity thresholds
+can be computed from the list. The proof that all extremal graphs
+enter that list uses the qualitative compactness step in strong
+stability. We have not quantified its threshold, so the present
+procedure computes the eventual polynomial and the eventual
+construction list, rather than certifying their validity at an
+arbitrary supplied finite value of $k$.
+\end{proof}
+
+\subsection{Explicit eventual polynomials at small offsets}
+
+The finite procedure can be carried out directly for the first five
+offsets. Its results, valid for all sufficiently large integers $k$, are
+\begin{center}
+\begin{tabular}{rrl}
+\toprule
+$j$&$\Lambda(j)$&$\rho(C_5,40k^2+j)$\\
+\midrule
+$-2$&$24$&$192k^5-48k^3+6k^2$\\
+$-1$&$12$&$192k^5-24k^3$\\
+$0$&$0$&$192k^5$\\
+$1$&$12$&$192k^5$\\
+$2$&$24$&$192k^5+6k^2$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The cases $j=0,\pm1$ were proved above. We explain both the finite
+check and matching constructions for $j=\pm2$.
+
+For both signs, the lattice energy is $24$. For $j=2$ this follows from
+Theorem~13.1. For $j=-2$, a nonzero sum-zero integer vector has $V\geq2$;
+if $V=2$, its edge quadratic form is zero or $-1$, and its total lattice
+cost is at least $24$. Vectors with $V\geq4$ have first cost term at
+least $24$, while the zero vector attains $24$.
+
+At an extremum the energy equality therefore leaves only
+\[
+ (V,T)=(0,2),(2,1),(4,0),\qquad t_n=0.
+\]
+For $V=2$ the class deviation vector has one entry $1$ and one entry
+$-1$. For $V=4$ it has two entries of each sign. Substituting these
+possibilities in the exact polynomial formula (75) gives only the
+corrections
+\[
+ \{0,6k^2\}
+\]
+relative to $192k^5$ when $j=2$. When $j=-2$, the corrections relative
+to $192k^5-48k^3$ are precisely
+\[
+ \{0,2k,6k^2,-6k^2,-2k^2+2k,2k^2+2k,-2k^2,2k^2\}.
+\]
+The enumeration uses the following convention. The sixteen Clebsch types
+remain labeled, and the deviation vector $h$ is not identified under
+Clebsch automorphisms. Exceptional vertices are identified only under
+isomorphisms of their wrong-pair graph $F$ that preserve their types.
+Thus a single wrong pair has unordered endpoint types, a $P_3$ has a
+fixed center and unordered leaf types, and $2K_2$ has two unordered
+endpoint pairs that are themselves unordered. Repeated types are allowed;
+the exceptional vertices themselves are distinct. This convention gives
+\begin{center}
+\begin{tabular}{crr}
+\toprule
+$(V,T)$ & $j=2$ & $j=-2$\\
+\midrule
+$(0,2)$ & $762$ & $1,060$\\
+$(2,1)$ & $0$ & $3,200$\\
+$(4,0)$ & $120$ & $1,200$\\
+\midrule
+Total & $882$ & $5,460$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Here is a direct derivation of every entry. An allowed added edge has
+both endpoints in one active class or at least one endpoint of isolated
+type. There are $16+17=33$ unordered type pairs of this kind. With $V=0$
+and $j=2$, two disjoint additions therefore give $\binom{34}{2}=561$
+presentations. For incident additions, an isolated center gives
+$\binom{18}{2}=153$ unordered leaf-type pairs. An active center has only
+its own type and the isolated type available for either leaf, giving
+$16\binom{3}{2}=48$ presentations. The first total is consequently
+$561+153+48=762$.
+For $j=-2$, a deleted edge has one of the $40$ Clebsch edge types.
+Two disjoint deletions give $\binom{41}{2}=820$ presentations, while
+incident deletions give $16\binom{6}{2}=240$. Their sum is $1,060$.
+
+For $V=2$, write $h=e_u-e_v$, so $Q(h)=-A_{uv}$ is zero or $-1$.
+One modification cannot then produce offset $2$. To produce offset $-2$,
+the ordered pair $(u,v)$ must be adjacent and the modification must be a
+deletion. There are $80\cdot40=3,200$ choices.
+
+For $V=4$, the support of $h$ consists of two positive and two negative
+vertices. The Clebsch graph has $60$ induced copies of $2K_2$ and $480$
+of $P_3+K_1$. To verify these counts directly, the six common nonneighbors
+of the endpoints of an edge induce a matching of size three: each has
+four neighbors in the union of the endpoint neighborhoods and hence one
+among those six vertices. Thus the first count is $40\cdot3/2=60$.
+There are $16\binom{5}{2}=160$ induced paths of order three. The union
+of the neighborhoods of their three vertices has size $13$, so each path
+has exactly three possible isolated fourth vertices. This gives
+$160\cdot3=480$.
+The condition $Q(h)=2$ requires two edges within the sign classes and no
+cross edge, giving $2\cdot60=120$ sign assignments. The condition
+$Q(h)=-2$ requires exactly two cross edges and no edge within a sign
+class: a within-class edge together with the required three or more cross
+edges would create a triangle. The two cross edges are either disjoint,
+with four balanced sign assignments, or form a path with an isolated
+vertex, with two. Hence the last negative-offset count is
+$4\cdot60+2\cdot480=1,200$.
+
+The supplied integer-arithmetic programs independently check this branch
+census and evaluate (75) on every presentation. The two offsets give
+respectively two and eight distinct polynomials, exactly as listed above.
+For $j=-1,0,1$ the same convention gives $120,1,33$ presentations;
+there are $6,496$ in total over the five offsets. In both displayed
+correction lists for $j=\pm2$, the maximum is $6k^2$ for every positive
+$k$. Eventual global extremality uses Theorem~14.1, not merely this finite
+comparison.
+
+For an explicit construction at $j=2$, add a new vertex to the balanced
+blow-up and join it to two old vertices in distinct nonadjacent Clebsch
+classes. There are six induced path templates between those types, and
+the two internal vertices can each be chosen in $k$ ways. Thus exactly
+$6k^2$ induced pentagons are added. At $j=-2$, delete two edges with a
+common endpoint and their other endpoints in distinct classes. Each
+deleted edge lies in $24k^3$ pentagons, and exactly $6k^2$ pentagons
+contain both. Deletions create no new induced pentagons in the
+triangle-free template. This realizes $192k^5-48k^3+6k^2$ and completes
+the two examples.

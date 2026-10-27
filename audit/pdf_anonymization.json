@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "PDF text-operator removal; full-page extracted-text comparison; title and running-head render review",
+  "documents": {
+    "main.pdf": {
+      "pages": 59,
+      "author_metadata_empty": true,
+      "requested_name_absent_from_all_pages": true,
+      "all_other_normalized_page_text_preserved": true
+    },
+    "submission.pdf": {
+      "pages": 59,
+      "author_metadata_empty": true,
+      "requested_name_absent_from_all_pages": true,
+      "all_other_normalized_page_text_preserved": true
+    }
+  }
+}

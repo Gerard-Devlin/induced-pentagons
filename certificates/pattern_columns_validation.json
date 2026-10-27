@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "host_rows": 1044,
+  "patterns": 22,
+  "free_columns": 37,
+  "nonnegative_variational_columns": 4,
+  "reference_p": "5/144",
+  "reference_theta": "5/663552",
+  "independent_python_checks": [
+    {
+      "row": 0,
+      "mask": 0,
+      "patterns_checked": 22
+    },
+    {
+      "row": 522,
+      "mask": 42479,
+      "patterns_checked": 22
+    },
+    {
+      "row": 1043,
+      "mask": 2097151,
+      "patterns_checked": 22
+    }
+  ],
+  "missing": "Positive flag-square certificate coefficients and span witnesses remain separate inputs."
+}

@@ -1,0 +1,130 @@
+COMPUTATIONAL REPRODUCTION
+
+1. Scope
+
+The finite inputs, exact rational certificates, equality spans, Clebsch profiles
+and bounded exceptional-vertex construction families are specified by the paper
+and supplied here. The complete gate is:
+
+  python src/verify_project.py
+
+It independently recounts the combinatorial inputs before checking the rational
+identities. Standalone certificate arithmetic checks read those input tensors;
+use the complete gate when verifying the entire computational argument.
+
+2. Normalization and encodings
+
+A graph of order n is encoded by the integer bit mask on lexicographically
+ordered pairs (i,j), 0 <= i < j < n. Bit zero is (0,1). Seven-vertex hosts use
+the least such mask over vertex permutations. There are 1,044 hosts.
+
+Clebsch vertices are 0,...,15, with adjacency when their binary XOR belongs to
+{1,2,4,8,15}. Finite construction data use isolated type -1. The equality graphon
+has 16 active classes of weight 1/48 and an isolated class of weight 32/48.
+Thus pstar=5/144, tau=5/663552, E=pstar/2 and C=tau/10.
+
+The one-root flag space has order four and 20 coordinates. Each of the four
+three-root spaces has order five and 72 coordinates. Root labels are fixed;
+only extension vertices may be permuted. The host denominators for products
+of disjoint extensions are 140 and 1260, respectively. The root-type factor
+appears once in a conditional square. Primitive partially induced patterns
+use injection denominator (7)_r. Every normalization is independently checked
+against src/proof_specification.py.
+
+The 34 fixed-density columns are the five-vertex induced-graph probabilities
+multiplied by p-pstar. Their sum is p-pstar. The main certificate includes
+three unrestricted variational columns and these 34 density columns, four
+nonnegative additional variational multipliers, positive flag-square weights,
+and nonnegative host slacks. The explicit data use 184 square terms and
+826 strictly positive host slacks.
+
+3. Exact witness verification
+
+  python src/verify_combinatorial_inputs.py
+  python src/rationalize_certificate.py --verify-only
+  python src/verify_certificate_independent.py
+  python src/generate_equality_spans.py --verify-only
+  python src/verify_sharp_bound.py
+
+The first command independently relabels every host by all 7! permutations and
+checks the primitive pattern counts and each flag-product tensor. It also checks
+that the host orbits cover every one of the 2^21 labeled graphs.
+
+The primary and second identity checkers clear denominators and use exact
+integers/rationals. Positive square weights, nonnegative slacks, all coefficients
+of each host identity and the positive-slope inequalities are checked explicitly.
+The equality-span witnesses must name the SHA256 of the exact main certificate
+and use only its strictly positive square sources. The sharp-bound checker
+constructs the equality model directly and checks the vanishing of every term.
+
+4. Exact finite structure and arithmetic
+
+  python -S src/verify_finite.py --out certificates/finite_checks.json
+  python -S src/verify_profiles.py --out certificates/profile_checks.json
+  python -S src/verify_offsets.py --out certificates/eventual_polynomials_small_offsets.json
+  python -S src/verify_presentation_census.py
+  python -S src/verify_offset_polynomials.py
+
+The profile check enumerates all 65,536 Boolean neighborhoods. The offset
+procedure produces the complete candidate lists for j=-2,-1,0,1,2 and evaluates
+their polynomial coefficients exactly. Its default run checks the formulas
+against actual finite graphs at k=3 and k=4. These are construction counts,
+not a claim of global extremality at those small k.
+
+For another fixed integer j, use the --j option of verify_offsets.py. The finite
+search bound is explicit but the cost grows quickly with |j|. The procedure does
+not compute the global eventual-validity threshold k_0(j).
+
+The presentation equivalence relation is specified in Section 14.1: Clebsch types
+are fixed and only type-preserving automorphisms of the wrong-pair graph are
+identified. The direct census checks every branch. The independent polynomial
+checker generates candidates separately, maps them to precisely that same
+family, and tests formula (75) for every retained presentation.
+
+5. Generating the combinatorial inputs and witnesses
+
+  python scripts/build_flag_basis.py
+  python scripts/build_pattern_columns.py
+  python scripts/build_equality_host_support.py
+
+These generators require the packages in the requirements files and a C++17
+compiler for the counting accelerators. The checked exact data are already
+included, so regeneration is not necessary merely to verify the proof.
+
+Optional numerical discovery programs are search_certificate.py,
+search_certificate_symmetry.py, search_certificate_csdp.py, and
+search_certificate_csdp_eliminated.py. Their --help options expose the solver
+and output settings. The successful numerical matrix checkpoint is supplied as
+results/sdp_csdp_regularized_solution.npz. It is a discovery input, not evidence
+of an exact inequality. The exact rationalization program and equality-span
+generator check their final outputs before accepting them:
+
+  python src/rationalize_certificate.py
+  python src/generate_equality_spans.py
+
+A newly generated valid certificate can have different rational coefficients or
+square representation; rerun the entire verification chain after any such change.
+
+6. Additional checks
+
+  python -S src/verify_foundation_identities.py
+  python -S src/verify_stability_inputs.py
+  python src/audit_equality_spans.py
+  python src/verify_rejection_cases.py
+
+These test the analytic/certificate normalizations on explicit rational models,
+finite local-stability inputs, and correct rejection of deliberately malformed
+or changed inputs. The rejection tests use temporary copies, not the delivered
+proof data. The analytic arguments themselves are stated and proved in the paper.
+
+7. Source, PDF and integrity
+
+  make all
+  make audit
+  make release LABEL=submission_20261027
+
+The build compares every normalized page of the flattened and modular sources.
+The complete verification manifest binds current source, manuscript and exact
+data bytes. The package manifest checks every included file. A stale verification
+result cannot be used to label a changed package as verified. SHA256 integrity
+checks detect byte changes; they do not replace the mathematical verification.

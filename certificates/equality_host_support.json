@@ -1,0 +1,8111 @@
+{
+  "schema": "induced-pentagons.equality-host-support.v1",
+  "status": "exact exhaustive realizability computation",
+  "supported_host_count": 88,
+  "supported_host_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    22,
+    24,
+    26,
+    27,
+    28,
+    30,
+    32,
+    33,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    72,
+    74,
+    78,
+    80,
+    84,
+    89,
+    92,
+    96,
+    99,
+    102,
+    127,
+    129,
+    141,
+    145,
+    147,
+    151,
+    159,
+    161,
+    175,
+    177,
+    181,
+    183,
+    193,
+    194,
+    195,
+    215,
+    218,
+    221,
+    225,
+    235,
+    255,
+    259,
+    265,
+    271,
+    291,
+    294,
+    297,
+    301,
+    305,
+    317,
+    323,
+    326,
+    329,
+    339,
+    342,
+    349,
+    355,
+    499,
+    505,
+    588,
+    623,
+    760
+  ],
+  "total_search_nodes": 4982,
+  "class_convention": "0..15 Clebsch vertices, 16 isolated; repetitions allowed",
+  "hosts": [
+    {
+      "host_index": 0,
+      "host_mask": 0,
+      "supported": true,
+      "latent_assignment": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 1
+    },
+    {
+      "host_index": 1,
+      "host_mask": 1,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 3
+    },
+    {
+      "host_index": 2,
+      "host_mask": 3,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        1,
+        16,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 4
+    },
+    {
+      "host_index": 3,
+      "host_mask": 7,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        1,
+        1,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 5
+    },
+    {
+      "host_index": 4,
+      "host_mask": 15,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 5,
+      "host_mask": 31,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 6,
+      "host_mask": 63,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 7,
+      "host_mask": 67,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 8,
+      "host_mask": 68,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        7,
+        1,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 5
+    },
+    {
+      "host_index": 9,
+      "host_mask": 69,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        4,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 5
+    },
+    {
+      "host_index": 10,
+      "host_mask": 71,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 11,
+      "host_mask": 76,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        7,
+        1,
+        1,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 12,
+      "host_mask": 77,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        4,
+        4,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 13,
+      "host_mask": 79,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 14,
+      "host_mask": 92,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        7,
+        1,
+        1,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 15,
+      "host_mask": 93,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        4,
+        4,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 16,
+      "host_mask": 95,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 17,
+      "host_mask": 124,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 18,
+      "host_mask": 125,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 19,
+      "host_mask": 127,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 20,
+      "host_mask": 198,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        1,
+        1,
+        16,
+        16,
+        16
+      ],
+      "search_nodes": 5
+    },
+    {
+      "host_index": 21,
+      "host_mask": 199,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 22,
+      "host_mask": 202,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        7,
+        4,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 23,
+      "host_mask": 203,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 24,
+      "host_mask": 206,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        4,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 25,
+      "host_mask": 207,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 26,
+      "host_mask": 216,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        7,
+        7,
+        1,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 27,
+      "host_mask": 217,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        3,
+        4,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 28,
+      "host_mask": 218,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        7,
+        4,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 29,
+      "host_mask": 219,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 30,
+      "host_mask": 222,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        4,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 31,
+      "host_mask": 223,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 32,
+      "host_mask": 248,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        7,
+        7,
+        1,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 33,
+      "host_mask": 249,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 34,
+      "host_mask": 250,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        7,
+        4,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 35,
+      "host_mask": 251,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 36,
+      "host_mask": 254,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 37,
+      "host_mask": 255,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 38,
+      "host_mask": 462,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 39,
+      "host_mask": 463,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 40,
+      "host_mask": 470,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        7,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 41,
+      "host_mask": 471,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 42,
+      "host_mask": 478,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 43,
+      "host_mask": 479,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 44,
+      "host_mask": 498,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        7,
+        7,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 45,
+      "host_mask": 499,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 46,
+      "host_mask": 502,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        7,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 47,
+      "host_mask": 503,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 48,
+      "host_mask": 510,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 49,
+      "host_mask": 511,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 50,
+      "host_mask": 990,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 51,
+      "host_mask": 991,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 52,
+      "host_mask": 1006,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        7,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 53,
+      "host_mask": 1007,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 54,
+      "host_mask": 1022,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        1,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 55,
+      "host_mask": 1023,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 56,
+      "host_mask": 2046,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 57,
+      "host_mask": 2047,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 58,
+      "host_mask": 2247,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 59,
+      "host_mask": 2248,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 60,
+      "host_mask": 2249,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 61,
+      "host_mask": 2251,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 62,
+      "host_mask": 2255,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 63,
+      "host_mask": 2264,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 62
+    },
+    {
+      "host_index": 64,
+      "host_mask": 2265,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 65,
+      "host_mask": 2267,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 66,
+      "host_mask": 2271,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 67,
+      "host_mask": 2296,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 68,
+      "host_mask": 2297,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 69,
+      "host_mask": 2299,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 70,
+      "host_mask": 2303,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 71,
+      "host_mask": 2319,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 72,
+      "host_mask": 2320,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        10,
+        11,
+        7,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 73,
+      "host_mask": 2321,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 74,
+      "host_mask": 2323,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        2,
+        6,
+        5,
+        8,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 75,
+      "host_mask": 2326,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 76,
+      "host_mask": 2327,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 77,
+      "host_mask": 2335,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 78,
+      "host_mask": 2352,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        10,
+        11,
+        7,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 79,
+      "host_mask": 2353,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 80,
+      "host_mask": 2355,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        2,
+        6,
+        5,
+        8,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 81,
+      "host_mask": 2358,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 82,
+      "host_mask": 2359,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 83,
+      "host_mask": 2367,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 84,
+      "host_mask": 2380,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        8,
+        16,
+        16
+      ],
+      "search_nodes": 6
+    },
+    {
+      "host_index": 85,
+      "host_mask": 2381,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 86,
+      "host_mask": 2383,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 87,
+      "host_mask": 2387,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 88,
+      "host_mask": 2388,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 89,
+      "host_mask": 2389,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        8,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 90,
+      "host_mask": 2390,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 91,
+      "host_mask": 2391,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 92,
+      "host_mask": 2396,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        8,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 93,
+      "host_mask": 2397,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 94,
+      "host_mask": 2399,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 95,
+      "host_mask": 2416,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 92
+    },
+    {
+      "host_index": 96,
+      "host_mask": 2417,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        7,
+        9,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 97,
+      "host_mask": 2419,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 98,
+      "host_mask": 2420,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 99,
+      "host_mask": 2421,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        8,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 100,
+      "host_mask": 2422,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 101,
+      "host_mask": 2423,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 102,
+      "host_mask": 2428,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        8,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 103,
+      "host_mask": 2429,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 104,
+      "host_mask": 2431,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 105,
+      "host_mask": 2510,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 106,
+      "host_mask": 2511,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 107,
+      "host_mask": 2518,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 108,
+      "host_mask": 2519,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 109,
+      "host_mask": 2520,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 110,
+      "host_mask": 2521,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 111,
+      "host_mask": 2522,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 112,
+      "host_mask": 2523,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 113,
+      "host_mask": 2526,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 114,
+      "host_mask": 2527,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 115,
+      "host_mask": 2544,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 116,
+      "host_mask": 2545,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 117,
+      "host_mask": 2546,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 118,
+      "host_mask": 2547,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 119,
+      "host_mask": 2550,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 120,
+      "host_mask": 2551,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 121,
+      "host_mask": 2552,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 122,
+      "host_mask": 2553,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 123,
+      "host_mask": 2554,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 124,
+      "host_mask": 2555,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 125,
+      "host_mask": 2558,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 126,
+      "host_mask": 2559,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 127,
+      "host_mask": 2840,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        6,
+        7,
+        1,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 128,
+      "host_mask": 2841,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 129,
+      "host_mask": 2842,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        1,
+        5,
+        2,
+        2,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 130,
+      "host_mask": 2843,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 131,
+      "host_mask": 2846,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 132,
+      "host_mask": 2847,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 133,
+      "host_mask": 2856,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 134,
+      "host_mask": 2857,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 135,
+      "host_mask": 2858,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 136,
+      "host_mask": 2859,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 137,
+      "host_mask": 2862,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 138,
+      "host_mask": 2863,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 139,
+      "host_mask": 2872,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 47
+    },
+    {
+      "host_index": 140,
+      "host_mask": 2873,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 141,
+      "host_mask": 2874,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        1,
+        5,
+        2,
+        2,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 142,
+      "host_mask": 2875,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 143,
+      "host_mask": 2878,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 144,
+      "host_mask": 2879,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 145,
+      "host_mask": 2906,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        1,
+        5,
+        2,
+        2,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 146,
+      "host_mask": 2907,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 147,
+      "host_mask": 2908,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        8,
+        8,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 148,
+      "host_mask": 2909,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 149,
+      "host_mask": 2910,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 150,
+      "host_mask": 2911,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 151,
+      "host_mask": 2922,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        5,
+        2,
+        11,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 152,
+      "host_mask": 2923,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 153,
+      "host_mask": 2924,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 154,
+      "host_mask": 2925,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 155,
+      "host_mask": 2926,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 156,
+      "host_mask": 2927,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 157,
+      "host_mask": 2936,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 107
+    },
+    {
+      "host_index": 158,
+      "host_mask": 2937,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 159,
+      "host_mask": 2938,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        5,
+        2,
+        2,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 160,
+      "host_mask": 2939,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 161,
+      "host_mask": 2940,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        8,
+        8,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 162,
+      "host_mask": 2941,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 163,
+      "host_mask": 2942,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 164,
+      "host_mask": 2943,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 165,
+      "host_mask": 3038,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 166,
+      "host_mask": 3039,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 167,
+      "host_mask": 3054,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 168,
+      "host_mask": 3055,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 169,
+      "host_mask": 3064,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 170,
+      "host_mask": 3065,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 171,
+      "host_mask": 3066,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 172,
+      "host_mask": 3067,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 173,
+      "host_mask": 3070,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 174,
+      "host_mask": 3071,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 175,
+      "host_mask": 3896,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        6,
+        7,
+        1,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 176,
+      "host_mask": 3897,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 177,
+      "host_mask": 3898,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        1,
+        5,
+        2,
+        2,
+        2
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 178,
+      "host_mask": 3899,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 179,
+      "host_mask": 3902,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 180,
+      "host_mask": 3903,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 181,
+      "host_mask": 3962,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        1,
+        5,
+        2,
+        2,
+        2
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 182,
+      "host_mask": 3963,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 183,
+      "host_mask": 3964,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        8,
+        8,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 184,
+      "host_mask": 3965,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 185,
+      "host_mask": 3966,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 186,
+      "host_mask": 3967,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 187,
+      "host_mask": 4094,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 188,
+      "host_mask": 4095,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 189,
+      "host_mask": 6543,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 190,
+      "host_mask": 6549,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 191,
+      "host_mask": 6551,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 192,
+      "host_mask": 6559,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 193,
+      "host_mask": 6576,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        6,
+        7,
+        7,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 194,
+      "host_mask": 6577,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        7,
+        3,
+        3,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 195,
+      "host_mask": 6579,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        1,
+        3,
+        3,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 196,
+      "host_mask": 6581,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 197,
+      "host_mask": 6583,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 198,
+      "host_mask": 6591,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 199,
+      "host_mask": 6607,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 200,
+      "host_mask": 6612,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 201,
+      "host_mask": 6613,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 202,
+      "host_mask": 6615,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 203,
+      "host_mask": 6620,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 204,
+      "host_mask": 6621,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 205,
+      "host_mask": 6623,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 206,
+      "host_mask": 6640,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 207,
+      "host_mask": 6641,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 208,
+      "host_mask": 6643,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 209,
+      "host_mask": 6644,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 210,
+      "host_mask": 6645,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 211,
+      "host_mask": 6647,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 212,
+      "host_mask": 6652,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 213,
+      "host_mask": 6653,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 214,
+      "host_mask": 6655,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 215,
+      "host_mask": 6808,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        3,
+        7,
+        1,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 216,
+      "host_mask": 6809,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 217,
+      "host_mask": 6811,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 218,
+      "host_mask": 6812,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        5,
+        1,
+        4,
+        2,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 219,
+      "host_mask": 6813,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 220,
+      "host_mask": 6815,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 221,
+      "host_mask": 6820,
+      "supported": true,
+      "latent_assignment": [
+        1,
+        2,
+        8,
+        0,
+        7,
+        13,
+        14
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 222,
+      "host_mask": 6821,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 223,
+      "host_mask": 6823,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 224,
+      "host_mask": 6824,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 225,
+      "host_mask": 6825,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        1,
+        7,
+        3,
+        8,
+        14,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 226,
+      "host_mask": 6826,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 227,
+      "host_mask": 6827,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 228,
+      "host_mask": 6828,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 147
+    },
+    {
+      "host_index": 229,
+      "host_mask": 6829,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 230,
+      "host_mask": 6830,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 231,
+      "host_mask": 6831,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 232,
+      "host_mask": 6840,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 233,
+      "host_mask": 6841,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 234,
+      "host_mask": 6843,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 235,
+      "host_mask": 6844,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        5,
+        1,
+        4,
+        2,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 236,
+      "host_mask": 6845,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 237,
+      "host_mask": 6847,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 238,
+      "host_mask": 6875,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 239,
+      "host_mask": 6876,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 240,
+      "host_mask": 6877,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 241,
+      "host_mask": 6879,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 242,
+      "host_mask": 6887,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 243,
+      "host_mask": 6890,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 244,
+      "host_mask": 6891,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 245,
+      "host_mask": 6892,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 246,
+      "host_mask": 6893,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 247,
+      "host_mask": 6894,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 248,
+      "host_mask": 6895,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 249,
+      "host_mask": 6904,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 250,
+      "host_mask": 6905,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 251,
+      "host_mask": 6907,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 252,
+      "host_mask": 6908,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 253,
+      "host_mask": 6909,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 254,
+      "host_mask": 6911,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 255,
+      "host_mask": 7068,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        3,
+        1,
+        1,
+        4,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 256,
+      "host_mask": 7069,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 257,
+      "host_mask": 7070,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 258,
+      "host_mask": 7071,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 259,
+      "host_mask": 7084,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        9,
+        1,
+        1,
+        7,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 260,
+      "host_mask": 7085,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 261,
+      "host_mask": 7086,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 262,
+      "host_mask": 7087,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 263,
+      "host_mask": 7088,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 47
+    },
+    {
+      "host_index": 264,
+      "host_mask": 7089,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 265,
+      "host_mask": 7090,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        1,
+        3,
+        3,
+        8,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 266,
+      "host_mask": 7091,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 267,
+      "host_mask": 7092,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 107
+    },
+    {
+      "host_index": 268,
+      "host_mask": 7093,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 269,
+      "host_mask": 7094,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 270,
+      "host_mask": 7095,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 271,
+      "host_mask": 7100,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        5,
+        1,
+        1,
+        2,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 272,
+      "host_mask": 7101,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 273,
+      "host_mask": 7102,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 274,
+      "host_mask": 7103,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 275,
+      "host_mask": 7134,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 276,
+      "host_mask": 7135,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 277,
+      "host_mask": 7150,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 278,
+      "host_mask": 7151,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 279,
+      "host_mask": 7152,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 280,
+      "host_mask": 7153,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 281,
+      "host_mask": 7154,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 282,
+      "host_mask": 7155,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 283,
+      "host_mask": 7156,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 284,
+      "host_mask": 7157,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 285,
+      "host_mask": 7158,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 286,
+      "host_mask": 7159,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 287,
+      "host_mask": 7164,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 288,
+      "host_mask": 7165,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 289,
+      "host_mask": 7166,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 290,
+      "host_mask": 7167,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 291,
+      "host_mask": 7740,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        3,
+        1,
+        1,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 292,
+      "host_mask": 7741,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 293,
+      "host_mask": 7743,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 294,
+      "host_mask": 7804,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        1,
+        8,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 295,
+      "host_mask": 7805,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 296,
+      "host_mask": 7807,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 297,
+      "host_mask": 7860,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        3,
+        1,
+        7,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 298,
+      "host_mask": 7861,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 299,
+      "host_mask": 7862,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 300,
+      "host_mask": 7863,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 301,
+      "host_mask": 7864,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        6,
+        3,
+        7,
+        1,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 302,
+      "host_mask": 7865,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 303,
+      "host_mask": 7866,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 304,
+      "host_mask": 7867,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 305,
+      "host_mask": 7868,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        5,
+        1,
+        4,
+        2,
+        2
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 306,
+      "host_mask": 7869,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 307,
+      "host_mask": 7870,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 308,
+      "host_mask": 7871,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 309,
+      "host_mask": 7926,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 310,
+      "host_mask": 7927,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 311,
+      "host_mask": 7930,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 312,
+      "host_mask": 7931,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 313,
+      "host_mask": 7932,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 314,
+      "host_mask": 7933,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 315,
+      "host_mask": 7934,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 316,
+      "host_mask": 7935,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 317,
+      "host_mask": 8124,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        3,
+        1,
+        1,
+        4,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 318,
+      "host_mask": 8125,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 319,
+      "host_mask": 8126,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 320,
+      "host_mask": 8127,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 321,
+      "host_mask": 8190,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 322,
+      "host_mask": 8191,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 323,
+      "host_mask": 15260,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        16
+      ],
+      "search_nodes": 7
+    },
+    {
+      "host_index": 324,
+      "host_mask": 15261,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 325,
+      "host_mask": 15263,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 326,
+      "host_mask": 15276,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        3,
+        1,
+        1,
+        7,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 327,
+      "host_mask": 15277,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 328,
+      "host_mask": 15279,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 329,
+      "host_mask": 15292,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        3,
+        1,
+        1,
+        1,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 330,
+      "host_mask": 15293,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 331,
+      "host_mask": 15295,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 332,
+      "host_mask": 15327,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 333,
+      "host_mask": 15340,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 334,
+      "host_mask": 15341,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 335,
+      "host_mask": 15343,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 336,
+      "host_mask": 15356,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 337,
+      "host_mask": 15357,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 338,
+      "host_mask": 15359,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 339,
+      "host_mask": 15796,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        5,
+        1,
+        7,
+        4,
+        2
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 340,
+      "host_mask": 15797,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 341,
+      "host_mask": 15799,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 342,
+      "host_mask": 15804,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        5,
+        1,
+        1,
+        4,
+        2
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 343,
+      "host_mask": 15805,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 344,
+      "host_mask": 15807,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 345,
+      "host_mask": 15863,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 346,
+      "host_mask": 15868,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 347,
+      "host_mask": 15869,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 348,
+      "host_mask": 15871,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 349,
+      "host_mask": 16316,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        3,
+        1,
+        1,
+        1,
+        4
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 350,
+      "host_mask": 16317,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 351,
+      "host_mask": 16318,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 352,
+      "host_mask": 16319,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 353,
+      "host_mask": 16382,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 354,
+      "host_mask": 16383,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 355,
+      "host_mask": 32700,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 356,
+      "host_mask": 32701,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 357,
+      "host_mask": 32703,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 358,
+      "host_mask": 32767,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 359,
+      "host_mask": 39375,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 360,
+      "host_mask": 39376,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 361,
+      "host_mask": 39377,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 362,
+      "host_mask": 39379,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 363,
+      "host_mask": 39383,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 364,
+      "host_mask": 39391,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 365,
+      "host_mask": 39408,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 366,
+      "host_mask": 39409,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 367,
+      "host_mask": 39411,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 368,
+      "host_mask": 39415,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 369,
+      "host_mask": 39423,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 370,
+      "host_mask": 39441,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 371,
+      "host_mask": 39443,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 372,
+      "host_mask": 39447,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 373,
+      "host_mask": 39455,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 374,
+      "host_mask": 39456,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 375,
+      "host_mask": 39457,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 376,
+      "host_mask": 39458,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 377,
+      "host_mask": 39459,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 378,
+      "host_mask": 39462,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 379,
+      "host_mask": 39463,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 380,
+      "host_mask": 39470,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 381,
+      "host_mask": 39471,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 382,
+      "host_mask": 39473,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 383,
+      "host_mask": 39475,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 384,
+      "host_mask": 39479,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 385,
+      "host_mask": 39487,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 386,
+      "host_mask": 39509,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 387,
+      "host_mask": 39511,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 388,
+      "host_mask": 39516,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 389,
+      "host_mask": 39517,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 390,
+      "host_mask": 39518,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 391,
+      "host_mask": 39519,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 392,
+      "host_mask": 39522,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 147
+    },
+    {
+      "host_index": 393,
+      "host_mask": 39523,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 394,
+      "host_mask": 39524,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 395,
+      "host_mask": 39525,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 396,
+      "host_mask": 39526,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 397,
+      "host_mask": 39527,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 398,
+      "host_mask": 39532,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 399,
+      "host_mask": 39533,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 400,
+      "host_mask": 39534,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 401,
+      "host_mask": 39535,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 402,
+      "host_mask": 39536,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 403,
+      "host_mask": 39537,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 404,
+      "host_mask": 39538,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 47
+    },
+    {
+      "host_index": 405,
+      "host_mask": 39539,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 406,
+      "host_mask": 39540,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 407,
+      "host_mask": 39541,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 408,
+      "host_mask": 39542,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 409,
+      "host_mask": 39543,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 410,
+      "host_mask": 39548,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 411,
+      "host_mask": 39549,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 412,
+      "host_mask": 39550,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 413,
+      "host_mask": 39551,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 414,
+      "host_mask": 39639,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 415,
+      "host_mask": 39642,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 416,
+      "host_mask": 39643,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 417,
+      "host_mask": 39646,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 418,
+      "host_mask": 39647,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 419,
+      "host_mask": 39654,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 420,
+      "host_mask": 39655,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 421,
+      "host_mask": 39658,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 422,
+      "host_mask": 39659,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 423,
+      "host_mask": 39662,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 424,
+      "host_mask": 39663,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 425,
+      "host_mask": 39664,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 426,
+      "host_mask": 39665,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 427,
+      "host_mask": 39666,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 428,
+      "host_mask": 39667,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 429,
+      "host_mask": 39670,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 430,
+      "host_mask": 39671,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 431,
+      "host_mask": 39672,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 432,
+      "host_mask": 39673,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 433,
+      "host_mask": 39674,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 434,
+      "host_mask": 39675,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 435,
+      "host_mask": 39678,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 436,
+      "host_mask": 39679,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 437,
+      "host_mask": 39902,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 438,
+      "host_mask": 39903,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 439,
+      "host_mask": 39918,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 440,
+      "host_mask": 39919,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 441,
+      "host_mask": 39920,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 442,
+      "host_mask": 39921,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 443,
+      "host_mask": 39922,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 444,
+      "host_mask": 39923,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 445,
+      "host_mask": 39926,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 446,
+      "host_mask": 39927,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 447,
+      "host_mask": 39934,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 448,
+      "host_mask": 39935,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 449,
+      "host_mask": 40496,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 107
+    },
+    {
+      "host_index": 450,
+      "host_mask": 40497,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 451,
+      "host_mask": 40498,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 452,
+      "host_mask": 40499,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 453,
+      "host_mask": 40502,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 454,
+      "host_mask": 40503,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 455,
+      "host_mask": 40510,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 456,
+      "host_mask": 40511,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 457,
+      "host_mask": 40562,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 72
+    },
+    {
+      "host_index": 458,
+      "host_mask": 40563,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 459,
+      "host_mask": 40564,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 460,
+      "host_mask": 40565,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 461,
+      "host_mask": 40566,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 462,
+      "host_mask": 40567,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 463,
+      "host_mask": 40572,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 464,
+      "host_mask": 40573,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 465,
+      "host_mask": 40574,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 466,
+      "host_mask": 40575,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 467,
+      "host_mask": 40694,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 468,
+      "host_mask": 40695,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 469,
+      "host_mask": 40698,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 470,
+      "host_mask": 40699,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 471,
+      "host_mask": 40702,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 472,
+      "host_mask": 40703,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 473,
+      "host_mask": 40958,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 474,
+      "host_mask": 40959,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 475,
+      "host_mask": 41950,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 476,
+      "host_mask": 41951,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 477,
+      "host_mask": 41952,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 478,
+      "host_mask": 41953,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 479,
+      "host_mask": 41954,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 480,
+      "host_mask": 41955,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 481,
+      "host_mask": 41958,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 482,
+      "host_mask": 41959,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 483,
+      "host_mask": 41964,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 484,
+      "host_mask": 41965,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 485,
+      "host_mask": 41966,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 486,
+      "host_mask": 41967,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 487,
+      "host_mask": 41982,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 488,
+      "host_mask": 41983,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 489,
+      "host_mask": 42047,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 490,
+      "host_mask": 42096,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 207
+    },
+    {
+      "host_index": 491,
+      "host_mask": 42097,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 492,
+      "host_mask": 42099,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 493,
+      "host_mask": 42100,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 87
+    },
+    {
+      "host_index": 494,
+      "host_mask": 42101,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 495,
+      "host_mask": 42103,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 496,
+      "host_mask": 42108,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 497,
+      "host_mask": 42109,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 498,
+      "host_mask": 42111,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 499,
+      "host_mask": 42218,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        1,
+        7,
+        8,
+        14,
+        2
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 500,
+      "host_mask": 42219,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 501,
+      "host_mask": 42220,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 502,
+      "host_mask": 42221,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 503,
+      "host_mask": 42222,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 504,
+      "host_mask": 42223,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 505,
+      "host_mask": 42232,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        6,
+        3,
+        1,
+        4,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 506,
+      "host_mask": 42233,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 507,
+      "host_mask": 42234,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 508,
+      "host_mask": 42235,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 509,
+      "host_mask": 42238,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 510,
+      "host_mask": 42239,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 511,
+      "host_mask": 42412,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 512,
+      "host_mask": 42413,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 513,
+      "host_mask": 42414,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 514,
+      "host_mask": 42415,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 515,
+      "host_mask": 42418,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 516,
+      "host_mask": 42419,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 517,
+      "host_mask": 42422,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 518,
+      "host_mask": 42423,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 519,
+      "host_mask": 42430,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 520,
+      "host_mask": 42431,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 521,
+      "host_mask": 42478,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 32
+    },
+    {
+      "host_index": 522,
+      "host_mask": 42479,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 523,
+      "host_mask": 42486,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 524,
+      "host_mask": 42487,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 525,
+      "host_mask": 42492,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 526,
+      "host_mask": 42493,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 527,
+      "host_mask": 42494,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 528,
+      "host_mask": 42495,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 529,
+      "host_mask": 43006,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 530,
+      "host_mask": 43007,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 531,
+      "host_mask": 43807,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 532,
+      "host_mask": 43814,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 533,
+      "host_mask": 43815,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 534,
+      "host_mask": 43821,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 535,
+      "host_mask": 43823,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 536,
+      "host_mask": 43839,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 537,
+      "host_mask": 43868,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 538,
+      "host_mask": 43869,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 539,
+      "host_mask": 43871,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 540,
+      "host_mask": 43878,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 541,
+      "host_mask": 43879,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 542,
+      "host_mask": 43884,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 543,
+      "host_mask": 43885,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 544,
+      "host_mask": 43887,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 545,
+      "host_mask": 43888,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 546,
+      "host_mask": 43889,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 547,
+      "host_mask": 43891,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 548,
+      "host_mask": 43892,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 549,
+      "host_mask": 43893,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 550,
+      "host_mask": 43894,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 551,
+      "host_mask": 43895,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 552,
+      "host_mask": 43900,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 553,
+      "host_mask": 43901,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 554,
+      "host_mask": 43903,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 555,
+      "host_mask": 43998,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 556,
+      "host_mask": 43999,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 557,
+      "host_mask": 44006,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 558,
+      "host_mask": 44007,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 559,
+      "host_mask": 44008,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 560,
+      "host_mask": 44009,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 561,
+      "host_mask": 44010,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 562,
+      "host_mask": 44011,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 563,
+      "host_mask": 44012,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 564,
+      "host_mask": 44013,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 565,
+      "host_mask": 44014,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 566,
+      "host_mask": 44015,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 567,
+      "host_mask": 44024,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 568,
+      "host_mask": 44025,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 569,
+      "host_mask": 44026,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 570,
+      "host_mask": 44027,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 571,
+      "host_mask": 44030,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 572,
+      "host_mask": 44031,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 573,
+      "host_mask": 44280,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 574,
+      "host_mask": 44281,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 575,
+      "host_mask": 44283,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 576,
+      "host_mask": 44287,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 577,
+      "host_mask": 44336,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 578,
+      "host_mask": 44337,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 579,
+      "host_mask": 44339,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 580,
+      "host_mask": 44340,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 27
+    },
+    {
+      "host_index": 581,
+      "host_mask": 44341,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 582,
+      "host_mask": 44342,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 583,
+      "host_mask": 44343,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 584,
+      "host_mask": 44348,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 585,
+      "host_mask": 44349,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 586,
+      "host_mask": 44351,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 587,
+      "host_mask": 44403,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 588,
+      "host_mask": 44404,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        7,
+        3,
+        1,
+        5,
+        2,
+        8
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 589,
+      "host_mask": 44405,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 590,
+      "host_mask": 44406,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 591,
+      "host_mask": 44407,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 592,
+      "host_mask": 44412,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 593,
+      "host_mask": 44413,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 594,
+      "host_mask": 44415,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 595,
+      "host_mask": 44460,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 596,
+      "host_mask": 44461,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 597,
+      "host_mask": 44462,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 598,
+      "host_mask": 44463,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 599,
+      "host_mask": 44466,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 600,
+      "host_mask": 44467,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 601,
+      "host_mask": 44470,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 602,
+      "host_mask": 44471,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 603,
+      "host_mask": 44472,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 604,
+      "host_mask": 44473,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 605,
+      "host_mask": 44474,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 606,
+      "host_mask": 44475,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 607,
+      "host_mask": 44476,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 608,
+      "host_mask": 44477,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 609,
+      "host_mask": 44478,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 610,
+      "host_mask": 44479,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 611,
+      "host_mask": 44526,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 612,
+      "host_mask": 44527,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 613,
+      "host_mask": 44534,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 614,
+      "host_mask": 44535,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 615,
+      "host_mask": 44536,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 616,
+      "host_mask": 44537,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 617,
+      "host_mask": 44538,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 618,
+      "host_mask": 44539,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 619,
+      "host_mask": 44540,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 620,
+      "host_mask": 44541,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 621,
+      "host_mask": 44542,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 622,
+      "host_mask": 44543,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 623,
+      "host_mask": 44856,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        0,
+        6,
+        9,
+        1,
+        2,
+        15
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 624,
+      "host_mask": 44857,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 625,
+      "host_mask": 44858,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 626,
+      "host_mask": 44859,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 627,
+      "host_mask": 44862,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 628,
+      "host_mask": 44863,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 629,
+      "host_mask": 44922,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 630,
+      "host_mask": 44923,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 631,
+      "host_mask": 44924,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 632,
+      "host_mask": 44925,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 633,
+      "host_mask": 44926,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 634,
+      "host_mask": 44927,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 635,
+      "host_mask": 45054,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 636,
+      "host_mask": 45055,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 637,
+      "host_mask": 48029,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 638,
+      "host_mask": 48031,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 639,
+      "host_mask": 48044,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 640,
+      "host_mask": 48045,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 641,
+      "host_mask": 48047,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 642,
+      "host_mask": 48048,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 643,
+      "host_mask": 48049,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 644,
+      "host_mask": 48051,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 645,
+      "host_mask": 48052,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 646,
+      "host_mask": 48053,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 647,
+      "host_mask": 48055,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 648,
+      "host_mask": 48060,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 649,
+      "host_mask": 48061,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 650,
+      "host_mask": 48063,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 651,
+      "host_mask": 48095,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 652,
+      "host_mask": 48108,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 653,
+      "host_mask": 48109,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 654,
+      "host_mask": 48111,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 655,
+      "host_mask": 48112,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 656,
+      "host_mask": 48113,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 657,
+      "host_mask": 48115,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 658,
+      "host_mask": 48116,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 659,
+      "host_mask": 48117,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 660,
+      "host_mask": 48119,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 661,
+      "host_mask": 48124,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 662,
+      "host_mask": 48125,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 663,
+      "host_mask": 48127,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 664,
+      "host_mask": 48560,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 665,
+      "host_mask": 48561,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 666,
+      "host_mask": 48563,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 667,
+      "host_mask": 48564,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 668,
+      "host_mask": 48565,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 669,
+      "host_mask": 48567,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 670,
+      "host_mask": 48572,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 671,
+      "host_mask": 48573,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 672,
+      "host_mask": 48575,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 673,
+      "host_mask": 48624,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 674,
+      "host_mask": 48625,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 675,
+      "host_mask": 48627,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 676,
+      "host_mask": 48628,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 677,
+      "host_mask": 48629,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 678,
+      "host_mask": 48631,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 679,
+      "host_mask": 48636,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 680,
+      "host_mask": 48637,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 681,
+      "host_mask": 48639,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 682,
+      "host_mask": 48689,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 683,
+      "host_mask": 48690,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 684,
+      "host_mask": 48691,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 685,
+      "host_mask": 48692,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 686,
+      "host_mask": 48693,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 687,
+      "host_mask": 48694,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 688,
+      "host_mask": 48695,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 689,
+      "host_mask": 48700,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 690,
+      "host_mask": 48701,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 691,
+      "host_mask": 48702,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 692,
+      "host_mask": 48703,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 693,
+      "host_mask": 48754,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 694,
+      "host_mask": 48755,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 695,
+      "host_mask": 48756,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 696,
+      "host_mask": 48757,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 697,
+      "host_mask": 48758,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 698,
+      "host_mask": 48759,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 699,
+      "host_mask": 48764,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 700,
+      "host_mask": 48765,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 701,
+      "host_mask": 48766,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 702,
+      "host_mask": 48767,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 703,
+      "host_mask": 48820,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 52
+    },
+    {
+      "host_index": 704,
+      "host_mask": 48821,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 705,
+      "host_mask": 48822,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 706,
+      "host_mask": 48823,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 707,
+      "host_mask": 48824,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 708,
+      "host_mask": 48825,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 709,
+      "host_mask": 48826,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 710,
+      "host_mask": 48827,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 711,
+      "host_mask": 48828,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 712,
+      "host_mask": 48829,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 713,
+      "host_mask": 48830,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 714,
+      "host_mask": 48831,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 715,
+      "host_mask": 48886,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 716,
+      "host_mask": 48887,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 717,
+      "host_mask": 48890,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 718,
+      "host_mask": 48891,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 719,
+      "host_mask": 48892,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 720,
+      "host_mask": 48893,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 721,
+      "host_mask": 48894,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 722,
+      "host_mask": 48895,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 723,
+      "host_mask": 49084,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 724,
+      "host_mask": 49085,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 725,
+      "host_mask": 49086,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 726,
+      "host_mask": 49087,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 727,
+      "host_mask": 49150,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 728,
+      "host_mask": 49151,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 729,
+      "host_mask": 58931,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 730,
+      "host_mask": 58935,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 731,
+      "host_mask": 58943,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 732,
+      "host_mask": 58995,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 733,
+      "host_mask": 58997,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 734,
+      "host_mask": 58999,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 735,
+      "host_mask": 59004,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 736,
+      "host_mask": 59005,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 737,
+      "host_mask": 59007,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 738,
+      "host_mask": 59063,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 739,
+      "host_mask": 59065,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 740,
+      "host_mask": 59066,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 741,
+      "host_mask": 59067,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 742,
+      "host_mask": 59069,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 743,
+      "host_mask": 59070,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 744,
+      "host_mask": 59071,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 745,
+      "host_mask": 59126,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 746,
+      "host_mask": 59127,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 747,
+      "host_mask": 59130,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 748,
+      "host_mask": 59131,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 749,
+      "host_mask": 59132,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 750,
+      "host_mask": 59133,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 751,
+      "host_mask": 59134,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 752,
+      "host_mask": 59135,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 753,
+      "host_mask": 59324,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 754,
+      "host_mask": 59325,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 755,
+      "host_mask": 59326,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 756,
+      "host_mask": 59327,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 757,
+      "host_mask": 59390,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 758,
+      "host_mask": 59391,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 759,
+      "host_mask": 61111,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 760,
+      "host_mask": 61112,
+      "supported": true,
+      "latent_assignment": [
+        0,
+        3,
+        3,
+        7,
+        8,
+        1,
+        1
+      ],
+      "search_nodes": 8
+    },
+    {
+      "host_index": 761,
+      "host_mask": 61113,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 762,
+      "host_mask": 61115,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 763,
+      "host_mask": 61116,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 764,
+      "host_mask": 61117,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 765,
+      "host_mask": 61119,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 766,
+      "host_mask": 61175,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 767,
+      "host_mask": 61176,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 768,
+      "host_mask": 61177,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 769,
+      "host_mask": 61179,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 770,
+      "host_mask": 61180,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 771,
+      "host_mask": 61181,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 772,
+      "host_mask": 61183,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 773,
+      "host_mask": 61244,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 774,
+      "host_mask": 61245,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 775,
+      "host_mask": 61247,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 776,
+      "host_mask": 61308,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 777,
+      "host_mask": 61309,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 778,
+      "host_mask": 61311,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 779,
+      "host_mask": 61372,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 780,
+      "host_mask": 61373,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 781,
+      "host_mask": 61374,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 782,
+      "host_mask": 61375,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 783,
+      "host_mask": 61438,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 784,
+      "host_mask": 61439,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 785,
+      "host_mask": 65468,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 786,
+      "host_mask": 65469,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 787,
+      "host_mask": 65471,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 788,
+      "host_mask": 65535,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 789,
+      "host_mask": 111582,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 790,
+      "host_mask": 111583,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 791,
+      "host_mask": 111594,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 792,
+      "host_mask": 111595,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 793,
+      "host_mask": 111598,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 794,
+      "host_mask": 111599,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 795,
+      "host_mask": 111614,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 796,
+      "host_mask": 111615,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 797,
+      "host_mask": 111979,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 798,
+      "host_mask": 111980,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 799,
+      "host_mask": 111981,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 800,
+      "host_mask": 111982,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 801,
+      "host_mask": 111983,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 802,
+      "host_mask": 111988,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 803,
+      "host_mask": 111989,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 804,
+      "host_mask": 111990,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 805,
+      "host_mask": 111991,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 806,
+      "host_mask": 111998,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 807,
+      "host_mask": 111999,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 808,
+      "host_mask": 112110,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 809,
+      "host_mask": 112111,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 810,
+      "host_mask": 112118,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 811,
+      "host_mask": 112119,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 812,
+      "host_mask": 112122,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 813,
+      "host_mask": 112123,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 814,
+      "host_mask": 112126,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 815,
+      "host_mask": 112127,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 816,
+      "host_mask": 112638,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 817,
+      "host_mask": 112639,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 818,
+      "host_mask": 113631,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 819,
+      "host_mask": 113640,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 820,
+      "host_mask": 113641,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 821,
+      "host_mask": 113643,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 822,
+      "host_mask": 113647,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 823,
+      "host_mask": 113656,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 824,
+      "host_mask": 113657,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 825,
+      "host_mask": 113659,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 826,
+      "host_mask": 113663,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 827,
+      "host_mask": 113961,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 828,
+      "host_mask": 113963,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 829,
+      "host_mask": 113967,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 830,
+      "host_mask": 113969,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 831,
+      "host_mask": 113970,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 832,
+      "host_mask": 113971,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 833,
+      "host_mask": 113974,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 834,
+      "host_mask": 113975,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 835,
+      "host_mask": 113977,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 836,
+      "host_mask": 113978,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 837,
+      "host_mask": 113979,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 838,
+      "host_mask": 113982,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 839,
+      "host_mask": 113983,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 840,
+      "host_mask": 114029,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 841,
+      "host_mask": 114031,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 842,
+      "host_mask": 114034,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 843,
+      "host_mask": 114035,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 844,
+      "host_mask": 114036,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 845,
+      "host_mask": 114037,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 846,
+      "host_mask": 114038,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 847,
+      "host_mask": 114039,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 848,
+      "host_mask": 114040,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 849,
+      "host_mask": 114041,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 850,
+      "host_mask": 114042,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 851,
+      "host_mask": 114043,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 852,
+      "host_mask": 114044,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 853,
+      "host_mask": 114045,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 854,
+      "host_mask": 114046,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 855,
+      "host_mask": 114047,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 856,
+      "host_mask": 114159,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 857,
+      "host_mask": 114166,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 858,
+      "host_mask": 114167,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 859,
+      "host_mask": 114168,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 860,
+      "host_mask": 114169,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 861,
+      "host_mask": 114170,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 862,
+      "host_mask": 114171,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 863,
+      "host_mask": 114174,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 864,
+      "host_mask": 114175,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 865,
+      "host_mask": 114489,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 866,
+      "host_mask": 114490,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 867,
+      "host_mask": 114491,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 868,
+      "host_mask": 114494,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 869,
+      "host_mask": 114495,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 870,
+      "host_mask": 114554,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 871,
+      "host_mask": 114555,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 872,
+      "host_mask": 114556,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 873,
+      "host_mask": 114557,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 874,
+      "host_mask": 114558,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 875,
+      "host_mask": 114559,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 876,
+      "host_mask": 114686,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 877,
+      "host_mask": 114687,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 878,
+      "host_mask": 120383,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 879,
+      "host_mask": 120443,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 880,
+      "host_mask": 120444,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 881,
+      "host_mask": 120445,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 882,
+      "host_mask": 120447,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 883,
+      "host_mask": 120568,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 884,
+      "host_mask": 120569,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 885,
+      "host_mask": 120570,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 886,
+      "host_mask": 120571,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 887,
+      "host_mask": 120574,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 888,
+      "host_mask": 120575,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 889,
+      "host_mask": 120639,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 890,
+      "host_mask": 120699,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 891,
+      "host_mask": 120700,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 892,
+      "host_mask": 120701,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 893,
+      "host_mask": 120702,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 894,
+      "host_mask": 120703,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 895,
+      "host_mask": 120830,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 896,
+      "host_mask": 120831,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 897,
+      "host_mask": 122616,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 898,
+      "host_mask": 122617,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 899,
+      "host_mask": 122619,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 900,
+      "host_mask": 122623,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 901,
+      "host_mask": 122681,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 902,
+      "host_mask": 122682,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 903,
+      "host_mask": 122683,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 904,
+      "host_mask": 122686,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 905,
+      "host_mask": 122687,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 906,
+      "host_mask": 122746,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 907,
+      "host_mask": 122747,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 908,
+      "host_mask": 122748,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 909,
+      "host_mask": 122749,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 910,
+      "host_mask": 122750,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 911,
+      "host_mask": 122751,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 912,
+      "host_mask": 122878,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 913,
+      "host_mask": 122879,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 914,
+      "host_mask": 128831,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 915,
+      "host_mask": 128891,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 916,
+      "host_mask": 128892,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 917,
+      "host_mask": 128893,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 918,
+      "host_mask": 128895,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 919,
+      "host_mask": 128956,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 920,
+      "host_mask": 128957,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 921,
+      "host_mask": 128958,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 922,
+      "host_mask": 128959,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 923,
+      "host_mask": 129022,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 924,
+      "host_mask": 129023,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 925,
+      "host_mask": 131004,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 926,
+      "host_mask": 131005,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 927,
+      "host_mask": 131007,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 928,
+      "host_mask": 131071,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 929,
+      "host_mask": 259903,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 930,
+      "host_mask": 259963,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 931,
+      "host_mask": 259964,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 932,
+      "host_mask": 259965,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 933,
+      "host_mask": 259967,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 934,
+      "host_mask": 260094,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 935,
+      "host_mask": 260095,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 936,
+      "host_mask": 262143,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 937,
+      "host_mask": 375775,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 938,
+      "host_mask": 375776,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 939,
+      "host_mask": 375777,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 940,
+      "host_mask": 375779,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 941,
+      "host_mask": 375783,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 942,
+      "host_mask": 375791,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 943,
+      "host_mask": 375807,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 944,
+      "host_mask": 375841,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 945,
+      "host_mask": 375843,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 7
+    },
+    {
+      "host_index": 946,
+      "host_mask": 375847,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 947,
+      "host_mask": 375855,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 948,
+      "host_mask": 375871,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 949,
+      "host_mask": 375907,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 950,
+      "host_mask": 375909,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 951,
+      "host_mask": 375911,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 952,
+      "host_mask": 375917,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 953,
+      "host_mask": 375919,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 954,
+      "host_mask": 375932,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 955,
+      "host_mask": 375933,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 956,
+      "host_mask": 375934,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 957,
+      "host_mask": 375935,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 958,
+      "host_mask": 376039,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 959,
+      "host_mask": 376043,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 960,
+      "host_mask": 376047,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 961,
+      "host_mask": 376056,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 962,
+      "host_mask": 376057,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 963,
+      "host_mask": 376058,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 964,
+      "host_mask": 376059,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 965,
+      "host_mask": 376062,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 966,
+      "host_mask": 376063,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 967,
+      "host_mask": 376303,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 968,
+      "host_mask": 376310,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 969,
+      "host_mask": 376311,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 970,
+      "host_mask": 376318,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 971,
+      "host_mask": 376319,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 972,
+      "host_mask": 376830,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 973,
+      "host_mask": 376831,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 974,
+      "host_mask": 377983,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 975,
+      "host_mask": 378106,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 976,
+      "host_mask": 378107,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 977,
+      "host_mask": 378111,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 978,
+      "host_mask": 378358,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 979,
+      "host_mask": 378359,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 980,
+      "host_mask": 378366,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 981,
+      "host_mask": 378367,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 982,
+      "host_mask": 378878,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 983,
+      "host_mask": 378879,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 984,
+      "host_mask": 380275,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 985,
+      "host_mask": 380278,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 986,
+      "host_mask": 380279,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 987,
+      "host_mask": 380287,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 988,
+      "host_mask": 380406,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 989,
+      "host_mask": 380407,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 990,
+      "host_mask": 380410,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 991,
+      "host_mask": 380411,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 992,
+      "host_mask": 380415,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 993,
+      "host_mask": 380731,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 994,
+      "host_mask": 380735,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 995,
+      "host_mask": 380795,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 996,
+      "host_mask": 380796,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 997,
+      "host_mask": 380797,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 998,
+      "host_mask": 380798,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 999,
+      "host_mask": 380799,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1000,
+      "host_mask": 380863,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1001,
+      "host_mask": 380926,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1002,
+      "host_mask": 380927,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1003,
+      "host_mask": 384501,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1004,
+      "host_mask": 384503,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1005,
+      "host_mask": 384511,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1006,
+      "host_mask": 384697,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1007,
+      "host_mask": 384699,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1008,
+      "host_mask": 384701,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1009,
+      "host_mask": 384703,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1010,
+      "host_mask": 384763,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1011,
+      "host_mask": 384764,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1012,
+      "host_mask": 384765,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1013,
+      "host_mask": 384767,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1014,
+      "host_mask": 384957,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1015,
+      "host_mask": 384958,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1016,
+      "host_mask": 384959,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1017,
+      "host_mask": 385022,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1018,
+      "host_mask": 385023,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1019,
+      "host_mask": 393149,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1020,
+      "host_mask": 393151,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1021,
+      "host_mask": 393215,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1022,
+      "host_mask": 425917,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1023,
+      "host_mask": 425919,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1024,
+      "host_mask": 425983,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1025,
+      "host_mask": 452606,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1026,
+      "host_mask": 452607,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1027,
+      "host_mask": 454463,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1028,
+      "host_mask": 454524,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1029,
+      "host_mask": 454525,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1030,
+      "host_mask": 454527,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1031,
+      "host_mask": 454654,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1032,
+      "host_mask": 454655,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1033,
+      "host_mask": 458685,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1034,
+      "host_mask": 458687,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1035,
+      "host_mask": 458751,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1036,
+      "host_mask": 522111,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1037,
+      "host_mask": 522238,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1038,
+      "host_mask": 522239,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1039,
+      "host_mask": 524287,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1040,
+      "host_mask": 1015743,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1041,
+      "host_mask": 1015807,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1042,
+      "host_mask": 1048575,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    },
+    {
+      "host_index": 1043,
+      "host_mask": 2097151,
+      "supported": false,
+      "latent_assignment": null,
+      "search_nodes": 2
+    }
+  ]
+}

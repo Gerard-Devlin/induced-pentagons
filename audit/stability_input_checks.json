@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact finite checks only; not a machine verification of analytic stability.",
+  "construction": "Vertices 0,...,15, adjacency iff xor is in {1,2,4,8,15}.",
+  "induced_pentagons": 192,
+  "induced_P4s": 480,
+  "boolean_profiles_checked": 65536,
+  "boolean_profile_zero_masks": [
+    0,
+    5761,
+    6241,
+    6278,
+    9289,
+    9362,
+    10562,
+    16937,
+    17044,
+    18724,
+    24856,
+    26753,
+    33046,
+    33128,
+    34328,
+    37412,
+    37954
+  ],
+  "minimum_positive_boolean_profile_deficit": 12,
+  "two_vertex_completion_counts_absent_present": {
+    "equal": [
+      0,
+      0
+    ],
+    "adjacent": [
+      0,
+      24
+    ],
+    "nonadjacent": [
+      12,
+      6
+    ]
+  },
+  "log_ratio_hessian_exact_entries_checked": 256,
+  "fractional_profiles_checked_exactly": 608,
+  "minimum_sampled_fractional_profile_margin": "3263/8704",
+  "prototype_Hamming_distances": [
+    5,
+    6,
+    10
+  ],
+  "balanced_rounding_constant": 897,
+  "arithmetic_psi_trials": 400,
+  "source_sha256": {
+    "paper/sections06-10.tex": "fb18bfded503e1dae770bfc02c585a5d7c8936ad5e20ae0885d189e2a48e0de0",
+    "paper/appendixA.tex": "a162c8183d1fda7948769e801ecb2448c6e03a83f078c5149ea8cad93644df54",
+    "paper/sections01-05.tex": "523fe43ce565a32908f715615a676c551c9863874521869f931a957a5f15cbe9"
+  },
+  "checker_sha256": "a1d08b66f76c0e224923192bb95256c36f736a5dbd860b5afe6f21383e192feb"
+}

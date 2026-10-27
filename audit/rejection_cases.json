@@ -1,0 +1,152 @@
+{
+  "schema": "induced-pentagons.rejection-regression.v1",
+  "status": "PASS",
+  "scope": "Concrete corruption and stale-verdict rejection checks, with valid positive controls; no claim of exhaustive software verification.",
+  "original_project_files_modified": false,
+  "positive_controls": "all required valid-input checkers passed",
+  "rejection_cases": 24,
+  "cases": [
+    {
+      "case": "main host identity: altered slack (primary checker)",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "(0, 'exact host identity failed')"
+    },
+    {
+      "case": "main host identity: altered slack (independent checker)",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "(0, 'exact host identity failed')"
+    },
+    {
+      "case": "retained square must be strictly positive",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "main schema: primary checker",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "Unrecognized main certificate schema"
+    },
+    {
+      "case": "main schema: independent checker",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "Unrecognized main certificate schema"
+    },
+    {
+      "case": "duplicate JSON key: primary checker",
+      "status": "rejected_as_required",
+      "exception_type": "ValueError",
+      "detail": "all_graph_exact_certificate.json: duplicate JSON key 'schema'"
+    },
+    {
+      "case": "duplicate JSON key: independent checker",
+      "status": "rejected_as_required",
+      "exception_type": "ValueError",
+      "detail": "all_graph_exact_certificate.json: duplicate JSON key 'schema'"
+    },
+    {
+      "case": "binary float cannot replace an exact rational field: primary checker",
+      "status": "rejected_as_required",
+      "exception_type": "ValueError",
+      "detail": "all_graph_exact_certificate.json.positive_columns[1].coefficient: rational proof fields must be strings or exact integers, not float"
+    },
+    {
+      "case": "binary float cannot replace an exact rational field: independent checker",
+      "status": "rejected_as_required",
+      "exception_type": "ValueError",
+      "detail": "all_graph_exact_certificate.json.positive_columns[1].coefficient: rational proof fields must be strings or exact integers, not float"
+    },
+    {
+      "case": "span witness binds its actual main certificate",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": ""
+    },
+    {
+      "case": "triangle witness requires the declared schema",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "Unrecognized triangle-span schema"
+    },
+    {
+      "case": "degree/codegree witness requires the declared schema",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "Unrecognized degree/codegree-span schema"
+    },
+    {
+      "case": "span coefficients must be exact rational fields",
+      "status": "rejected_as_required",
+      "exception_type": "ValueError",
+      "detail": "path3 span source 'path3_eedb179779c9d7cd': rational proof fields must be strings or exact integers, not float"
+    },
+    {
+      "case": "saved metadata cannot redefine a mathematical denominator",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "('p', 'denominator', 'mathematical specification differs')"
+    },
+    {
+      "case": "independent recount detects an altered primitive integer count",
+      "status": "rejected_as_required",
+      "exception_type": "AssertionError",
+      "detail": "(0, 'p')"
+    },
+    {
+      "case": "published profile table must equal freshly checked values",
+      "status": "rejected_as_required",
+      "exception_type": "StoredArtifactMismatch",
+      "detail": "profile_envelope.json.counts_by_mask[12345]: expected 27, got 28"
+    },
+    {
+      "case": "every published candidate-to-polynomial mapping is bound",
+      "status": "rejected_as_required",
+      "exception_type": "StoredArtifactMismatch",
+      "detail": "eventual_polynomials_small_offsets.json.offsets.-2.presentations[0].polynomial_index: expected 3, got 4"
+    },
+    {
+      "case": "every published polynomial coefficient is bound, including nonwinners",
+      "status": "rejected_as_required",
+      "exception_type": "StoredArtifactMismatch",
+      "detail": "eventual_polynomials_small_offsets.json.offsets.-2.polynomials[0].ascending_coefficients[0]: expected 0, got 1"
+    },
+    {
+      "case": "published atlas is bound to the recounted host order",
+      "status": "rejected_as_required",
+      "exception_type": "StoredArtifactMismatch",
+      "detail": "graph_atlas_7.json.hosts[0].mask: expected 0, got 1"
+    },
+    {
+      "case": "missing exact certificates cannot yield a partial PASS",
+      "status": "rejected_as_required",
+      "exit_code": 2
+    },
+    {
+      "case": "verified release refuses a changed bound source",
+      "status": "rejected_as_required",
+      "exception_type": "VerificationStateError",
+      "detail": "Verification is stale for ['src/example.py']. Rerun verify_project.py."
+    },
+    {
+      "case": "verified release refuses an unverified added source",
+      "status": "rejected_as_required",
+      "exception_type": "VerificationStateError",
+      "detail": "Verification file set is stale: new=['src/new.py'], missing=[]. Rerun verify_project.py."
+    },
+    {
+      "case": "project verification refuses Python -O",
+      "status": "rejected_as_required",
+      "exit_code": 1
+    },
+    {
+      "case": "project verification refuses Python -OO",
+      "status": "rejected_as_required",
+      "exit_code": 1
+    }
+  ],
+  "checker_sha256": "575fc49bffa42348c0828c33149d4005a64eaced6a947eb829f89d53f06f1ba6"
+}

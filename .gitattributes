@@ -1,0 +1,3 @@
+# Verification manifests bind literal file bytes. Preserve those bytes across
+# Windows and Unix checkouts; do not let core.autocrlf transform the sources.
+* -text

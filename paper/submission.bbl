@@ -1,0 +1,70 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{Balogh2016}
+J{\'o}zsef Balogh, Ping Hu, Bernard Lidick{\'y}, and Florian Pfender,
+  \emph{Maximum density of induced 5-cycle is achieved by an iterated blow-up
+  of 5-cycle}, European Journal of Combinatorics \textbf{52} (2016), 47--58.
+
+\bibitem{Bodnar2026Toolbox}
+Levente Bodn{\'a}r, \emph{{FlagAlgebraToolbox}: Flag algebra computations in
+  {SageMath}}, 2026, arXiv:2601.06590v2.
+
+\bibitem{BodnarEtAl2026Six}
+Levente Bodn{\'a}r, Jun Gao, Jared Le{\'o}n, Xizhi Liu, Oleg Pikhurko, and
+  Shumin Sun, \emph{The inducibility of 6-vertex graphs}, 2026,
+  arXiv:2606.00290v3.
+
+\bibitem{BodnarPikhurko2026}
+Levente Bodn{\'a}r and Oleg Pikhurko, \emph{Some exact inducibility-type
+  results for graphs via flag algebras}, Electronic Journal of Combinatorics
+  \textbf{33} (2026), no.~2, Paper No. P2.39.
+
+\bibitem{Chao2025}
+Ting-Wei Chao, Asaf {Cohen Antonir}, Anqi Li, and Hung-Hsun~Hans Yu, \emph{Edge
+  inducibility via local directed graphs}, 2025, arXiv:2509.24064v1 [math.CO].
+
+\bibitem{Davey2026}
+Eoin Davey, Eoin Hurley, R{\'e}mi {de Joannis de Verclos}, Ross~J. Kang, and
+  Jan Volec, \emph{Local flag algebras}, 2026, arXiv:2607.12461v1 [math.CO].
+
+\bibitem{Lidicky2023}
+Bernard Lidick{\'y}, Connor Mattes, and Florian Pfender, \emph{{$C_5$} is
+  almost a fractalizer}, Journal of Graph Theory \textbf{104} (2023), no.~1,
+  220--244.
+
+\bibitem{LovaszSzegedy2006}
+L{\'a}szl{\'o} Lov{\'a}sz and Bal{\'a}zs Szegedy, \emph{Limits of dense graph
+  sequences}, Journal of Combinatorial Theory, Series B \textbf{96} (2006),
+  no.~6, 933--957.
+
+\bibitem{LovaszSzegedy2007}
+\bysame, \emph{Szemer{\'e}di's lemma for the analyst}, Geometric and Functional
+  Analysis \textbf{17} (2007), no.~1, 252--270.
+
+\bibitem{MotzkinStraus1965}
+T.~S. Motzkin and E.~G. Straus, \emph{Maxima for graphs and a new proof of a
+  theorem of {Tur{\'a}n}}, Canadian Journal of Mathematics \textbf{17} (1965),
+  533--540.
+
+\bibitem{Pikhurko2019}
+Oleg Pikhurko, Jakub Slia{\v c}an, and Konstantinos Tyros, \emph{Strong forms
+  of stability from flag algebra calculations}, Journal of Combinatorial
+  Theory, Series B \textbf{135} (2019), 129--178.
+
+\bibitem{Razborov2007}
+Alexander~A. Razborov, \emph{Flag algebras}, Journal of Symbolic Logic
+  \textbf{72} (2007), no.~4, 1239--1282.
+
+\bibitem{Wang2026}
+Yichen Wang, Xiamiao Zhao, and Mei Lu, \emph{Edge version of the inducibility
+  via the entropy method}, Electronic Journal of Combinatorics \textbf{33}
+  (2026), no.~2, Paper No. P2.17, 16 pp.
+
+\end{thebibliography}

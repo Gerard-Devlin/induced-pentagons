@@ -1,0 +1,1002 @@
+\section{Eliminating triangles at equality}
+\label{sec:triangles}
+
+The equality witness from Lemma 4.3 has a direct consequence for the
+underlying graphon. Its use requires only the positive path-type squares and
+first-order vertex variation. We work on a probability space in this section.
+
+\begin{proposition}\label{prop:triangle-elimination}
+Let $W$ be a global maximizer of $C(W)/E(W)^{5/2}$ among
+graphons of positive edge density, where $C(W)=t_{\mathrm{ind}}(C_5,W)/10$
+and $E(W)=t(K_2,W)/2$. If
+\[
+ p(W)=p_\ast:=\frac5{144},\qquad
+ t_{\mathrm{ind}}(C_5,W)=\tau:=\frac5{663552},
+\]
+then $t(K_3,W)=0$.
+\end{proposition}
+
+\begin{proof}
+Write $d(x)=\int W(x,y)\,dy$ and
+$\kappa=5C(W)/(2E(W))=\tau/(2p_\ast)>0$.
+Let $L(x)$ denote one half of the rooted induced-pentagon density at $x$.
+Bounded signed variations of the vertex measure, followed by normalization
+to total mass one, give
+\begin{equation}\tag{32}\label{eq:32}
+ L(x)=\kappa d(x)\qquad\text{for almost every }x.
+\end{equation}
+Indeed, the normalization cancels from the homogeneous ratio, and its
+derivative in a bounded direction $a$ is a positive constant times
+$\int a(x)(L(x)-\kappa d(x))\,dx$.
+
+At the stated values of $p$ and $t$, the verified certificate is an equality.
+Every strictly positively weighted square in its path-type block therefore
+vanishes. For ordered root locations $x_0,x_1,x_2$, put
+\[
+ \rho(x_0,x_1,x_2)=W(x_0,x_1)W(x_1,x_2)\bigl(1-W(x_0,x_2)\bigr),
+\]
+and let $\phi(x_0,x_1,x_2)$ be the conditional vector of the 72 five-vertex
+flags of this rooted type, with the root-type factor omitted. The entries of
+$\phi$ are nonnegative and sum to one. If $v_j$ is one of the positive square
+vectors, then
+\[
+ \int\rho\,(v_j\cdot\phi)^2=0.
+\]
+Thus all $v_j\cdot\phi$ vanish for
+$\rho(x_0,x_1,x_2)\,dx_0\,dx_1\,dx_2$-almost every root triple.
+Lemma 4.3 supplies a rational linear combination $w$ of these vectors which
+is zero on the triangle-free flags and at least one on every flag containing
+a triangle. Consequently
+\[
+ 0\leq\sum_{F\text{ containing a triangle}}\phi_F\leq w\cdot\phi=0
+\]
+on the same set of root triples.
+
+Define
+\[
+ \begin{split}
+ T(x)&=\int W(x,v)W(x,w)W(v,w)\,dv\,dw,\\
+ r(x)&=\int W(x,y)W(y,z)\bigl(1-W(x,z)\bigr)\,dy\,dz.
+ \end{split}
+\]
+Among the forbidden flag extensions is the event that the endpoint root
+$x_0$ and the two extension vertices span a triangle. Its conditional
+probability is exactly $T(x_0)$: edges from the extensions to roots 1 and 2
+are unrestricted and are summed out. Hence
+\begin{equation}\tag{33}\label{eq:33}
+ 0=\int\rho(x_0,x_1,x_2)T(x_0)\,dx_0\,dx_1\,dx_2
+   =\int r(x)T(x)\,dx.
+\end{equation}
+In the rooted induced cycle $x-a-b-c-d-x$, retain only the factors
+$W(x,a)W(a,b)(1-W(x,b))$. All other factors lie in $[0,1]$, and the two
+remaining variables integrate to one. The factor $1/2$ in the definition of
+$L$ therefore gives
+\[
+ L(x)\leq\frac{r(x)}2.
+\]
+Together with (32), this yields $r(x)\geq2\kappa d(x)$. Since every term
+is nonnegative, (33) implies $\int d(x)T(x)\,dx=0$. Finally
+$0\leq T(x)\leq d(x)^2$. Thus $T$ vanishes both where $d=0$ and where
+$d>0$, up to null sets. It follows that $t(K_3,W)=\int T(x)\,dx=0$.
+\end{proof}
+
+\section{Classification of equality}
+\label{sec:equality}
+
+The preceding triangle-elimination argument reduces equality in the
+unrestricted problem to a triangle-free graphon at the reference density.
+We now restrict the positive-square vectors of the same certificate to
+triangle-free flags and use the two exact conditional spans recorded in
+Section 4.
+
+\subsection{Structure at the reference density}
+
+\begin{proposition}\label{prop:reference-equality}
+Let $W$ be a triangle-free global ratio maximizer with
+$(p,\theta)=(p_\ast,\tau)$. Then $W$ is a balanced Clebsch graphon on an
+active set of measure $1/3$, with isolates outside it.
+\end{proposition}
+
+\begin{proof}
+By Corollary 4.2, every strictly positive square in the exact certificate
+vanishes. For each such square vector $v$, formula (26) gives
+$v\cdot q(\mathbf x)=0$ for almost every root tuple with respect to its
+type measure.
+
+First use the path type $01,12$. The conditional expectation of the vector
+in Lemma 4.4 is $48d(x_1)-5$. Its type probability is
+\[
+ W(x_0,x_1)W(x_1,x_2)(1-W(x_0,x_2)).
+\]
+The last factor is redundant almost everywhere on the product of the first
+two, by triangle-freeness. Integrating over both endpoints therefore gives
+\[
+ \int d(x)^2(48d(x)-5)^2\,dx=0.
+\]
+Thus
+\begin{equation}\tag{34}\label{eq:34}
+ d(x)\in\left\{0,\frac5{48}\right\}\qquad\text{almost everywhere}.
+\end{equation}
+Let $A=\{x:d(x)>0\}$. Its complement has zero rows almost everywhere, and
+\[
+ |A|=\frac{p_\ast}{5/48}=\frac13.
+\]
+Next consider the type consisting of the edge $01$ and isolated root $2$.
+Its two edge endpoints have positive degree for almost every root tuple,
+so the conditional expectations of $h_0,h_1$ in Lemma 4.5 vanish by (34).
+The same lemma then implies
+\begin{equation}\tag{35}\label{eq:35}
+ c(x_i,x_2)=\frac25d(x_2),\qquad i=0,1,
+\end{equation}
+almost everywhere with respect to this type measure. Indeed the conditional
+expectation of $k_i$ is $10c(x_i,x_2)-4d(x_2)$.
+
+Restrict to $A$ and normalize its measure to one. Call the resulting
+graphon $U$. Its degree is $p_0=5/16$. For type tuples entirely in $A$,
+(35) gives codegree $\mu=1/8$ in the new normalization. We now show that
+these relations determine $U$.
+
+Write
+\[
+ c_U(x,z)=\int U(x,y)U(z,y)\,dy.
+\]
+Triangle-freeness gives $U(x,z)c_U(x,z)=0$ almost everywhere. Integrate
+the square of $c_U(x,z)-\mu$ against the edge-plus-isolate type probability
+and integrate out its middle root. Since
+\[
+ \int U(x,y)(1-U(y,z))\,dy=p_0-c_U(x,z),
+\]
+we obtain
+\begin{equation}\tag{36}\label{eq:36}
+ (1-U(x,z))(p_0-c_U(x,z))(c_U(x,z)-\mu)^2=0
+ \quad\text{almost everywhere}.
+\end{equation}
+If $0<U(x,z)<1$, triangle-freeness forces $c_U(x,z)=0$, contradicting
+(36). Hence $U$ is $\{0,1\}$-valued. Edges have codegree zero, and
+nonedges have codegree $\mu$ or $p_0$.
+
+Regard $f_x=U(x,\cdot)$ as an element of $L^2([0,1])$. After a null set
+is discarded, all rows are $\{0,1\}$-valued and have integral $p_0$.
+Therefore
+\[
+ \|f_x-f_z\|_2^2=2p_0-2c_U(x,z).
+\]
+In particular $c_U(x,z)=p_0$ precisely when the two rows agree in $L^2$.
+Each twin class $T_x=\{z:f_z=f_x\}$ is measurable: it is the zero set of
+the measurable function $z\mapsto\int|U(z,y)-U(x,y)|^2\,dy$.
+
+Let $a(x)=|T_x|$. Almost every twin is a nonneighbor, and every other
+nonneighbor has codegree $\mu$. Regularity gives
+$\int c_U(x,z)\,dz=p_0^2$, whence
+\[
+ p_0^2=a(x)p_0+(1-p_0-a(x))\mu.
+\]
+Substituting $p_0=5/16$ and $\mu=1/8$ gives $a(x)=1/16$ for almost every
+$x$. Choose generic representatives successively outside the classes already
+selected. Since each selected class has measure $1/16$, exactly sixteen
+disjoint measurable classes cover the space up to null sets.
+
+The kernel is constant on every class rectangle. To see this, on a twin
+class $A_i$ all rows agree in $L^2$ with one function $f_i$. Fubini and
+symmetry give $U(x,z)=f_i(z)=f_j(x)$ almost everywhere on $A_i\times A_j$.
+Integrating over either coordinate makes this value constant. Every block
+value is zero or one, and diagonal blocks are zero because their pairs have
+positive codegree. The quotient is consequently a simple graph on sixteen
+vertices, of degree five, with zero common neighbors for adjacent vertices
+and two for distinct nonadjacent vertices.
+
+These parameters determine the Clebsch graph elementarily. Fix a vertex
+$v$ with independent neighbors $u_1,\ldots,u_5$. Every other vertex has two
+neighbors among these five. Each pair $u_i,u_j$ has exactly two common
+neighbors, one being $v$; label the other $w_{ij}$. This labels the remaining
+ten vertices by two-element subsets of $\{1,\ldots,5\}$. Two pair vertices
+sharing a label cannot be adjacent, since that would create a triangle. A
+pair vertex needs three further neighbors after $u_i,u_j$, and there are
+exactly three disjoint pairs. It joins precisely those three.
+
+Choose the five Clebsch generators $s_1,\ldots,s_5$ from the introduction.
+The assignment
+\[
+ v\mapsto0,\qquad u_i\mapsto s_i,\qquad w_{ij}\mapsto s_i+s_j
+\]
+is an isomorphism to the Clebsch graph: two pair sums are adjacent exactly
+when their pairs are disjoint. Thus $U$ is balanced Clebsch, proving the
+proposition.
+\end{proof}
+
+\subsection{Arbitrary equality graphons}
+
+\begin{proof}[Equality in Theorem 1.3]
+Every member of $\mathcal E_{\mathrm{Cl}}$ attains the bound by the Clebsch
+counts and homogeneity. Conversely, suppose $R(W)=R_\ast$ and $E(W)>0$.
+The sharp inequality has already been proved for all graphons, so $W$ is
+a global maximum over all positive edge densities. Remove its actual
+zero-degree set and normalize the remaining vertex measure to one; the
+ratio and global maximality are unchanged.
+
+Proposition 3.3 applies to this graphon even if its values are fractional.
+Its active density is therefore greater than $p_\ast$. Pad by isolates as
+in Lemma 2.5. The padded graphon is still a global maximum, has
+$p=p_\ast$ and $\theta=\tau$, and satisfies the vertex first-order
+conditions. Proposition 6.1 makes it triangle-free. Proposition 7.1 then
+identifies its active part as a balanced Clebsch graphon.
+
+Removing the added isolates and undoing the common vertex-measure scaling
+proves $W\in\mathcal E_{\mathrm{Cl}}$. This argument classifies an arbitrary
+equality graphon. It does not infer graphon equality from equality on finite
+graphs, and it does not impose edge optimality on a merely template-optimal
+finite weighting.
+\end{proof}
+
+\begin{proof}[Equality in Theorem 1.1]
+Normalize the total positive vertex weight to one and represent the weighted
+graph as a step graphon with those class measures. At equality, Theorem 1.3
+gives a balanced Clebsch active part and isolates. Each original
+positive-weight vertex has a constant neighborhood row, so its cell belongs
+to one of the twin classes, or to the isolate set, up to null sets. The
+sixteen active classes therefore have equal total vertex weight, and their
+adjacencies are exactly the Clebsch adjacencies. The converse follows from
+the counts $E=40a^2$ and $C=192a^5$ when each active class has total weight
+$a$.
+\end{proof}
+
+\section{Stability on the edge scale}
+\label{sec:stability}
+
+The number of isolated or low-degree vertices is not controlled by an edge
+constraint. We first remove a small amount of edge mass to obtain a core
+with positive normalized minimum degree. Compactness then places that core
+in the neighborhood covered by the local stability theorem. A final
+rounding argument produces equal integer class sizes without an additive
+error term.
+
+\begin{theorem}[Edge-scaled stability]\label{thm:edge-stability}
+There are absolute constants $K<\infty$ and $\varepsilon_0>0$ such that the
+following holds. Let $G$ be a finite graph with $m>0$ edges, and suppose that
+$0\leq\varepsilon\leq\varepsilon_0$ and
+\[
+ I_5(G)\geq(R_\ast-\varepsilon)\left(\frac m5\right)^{5/2}.
+\]
+There is a graph $B$ on the same vertex set, consisting of a Clebsch blow-up
+with sixteen classes of the same positive integer size and isolated
+vertices, for which
+\[
+ |E(G)\mathbin{\triangle}E(B)|\leq K\sqrt\varepsilon\,m.
+\]
+If $s$ is the common class size, then
+\[
+ |m-40s^2|\leq K\sqrt\varepsilon\,m,\qquad
+ s=(1+O(\sqrt\varepsilon))\sqrt{\frac m{40}}.
+\]
+\end{theorem}
+
+There is no restriction on $|V(G)|$ and no additional rounding term. The
+square-root dependence on the deficit is optimal, as shown in Proposition
+8.5 below.
+
+\subsection{Removing low-degree vertices}
+
+\begin{lemma}[Weighted peeling]\label{lem:peeling}
+Let $(H,x)$ be a finite weighted graph with $E(H,x)=1$ and
+$C(H,x)\geq c_\ast-\eta$, where $0\leq\eta\leq c_\ast/4$. Repeatedly remove
+a vertex whose current weighted degree is at most $c_\ast$, keeping the
+other weights fixed. Write $(H',x')$ for the remaining core,
+$E'=E(H',x')$, $C'=C(H',x')$, and
+$W'=\sum_{v\in V(H')}x'_v$. Then
+\begin{align}
+ 1-E'&\leq\frac{4\eta}{3c_\ast},\tag{37}\label{eq:37}\\
+ \frac{C'}{(E')^{5/2}}&\geq C(H,x),\tag{38}\label{eq:38}\\
+ W'&<\frac2{c_\ast}.\tag{39}\label{eq:39}
+\end{align}
+In particular $E'>0$. After the core weights are normalized to have sum one,
+its weighted degrees are all at least $c_\ast^2/2$.
+\end{lemma}
+
+\begin{proof}
+At an intermediate stage, let $E_t$ be the current edge mass and let $d_i$
+be the current weighted degree of a vertex $i$ about to be removed. Fixing
+the edge opposite $i$ in a pentagon gives
+\[
+ C_i\leq\frac14 E_t d_i^2.
+\]
+Indeed, for a fixed opposite edge $uv$, the two neighbors of $i$ lie in the
+exclusive $u$-neighbor and exclusive $v$-neighbor subsets of $N(i)$.
+Inducedness makes these sets disjoint even when the graph has triangles.
+Their weight product is at most $d_i^2/4$. Removing $i$ destroys edge mass
+$x_i d_i$ and pentagon mass $x_i C_i$. As $E_t\leq1$ and $d_i\leq c_\ast$,
+the latter is at most $(c_\ast/4)x_i d_i$.
+
+Put $\alpha=1-E'$. Each removed edge and each destroyed pentagon is charged
+at its first deleted endpoint, so
+\begin{equation}\tag{40}\label{eq:40}
+ 0\leq C(H,x)-C'\leq\frac{c_\ast}4\alpha.
+\end{equation}
+Theorem 1.1, applied to the surviving core, gives
+\[
+ c_\ast-\eta-\frac{c_\ast}4\alpha\leq C'
+ \leq c_\ast(1-\alpha)^{5/2}.
+\]
+Since $1-(1-\alpha)^{5/2}\geq\alpha$ for $0\leq\alpha\leq1$, this proves
+(37), and hence $E'\geq2/3$. Moreover $C(H,x)\geq3c_\ast/4$, so
+\[
+ C'\geq C(H,x)-\frac{c_\ast}4\alpha
+ \geq C(H,x)(1-\alpha)\geq C(H,x)(1-\alpha)^{5/2}.
+\]
+This is (38).
+
+Every surviving vertex has weighted degree greater than $c_\ast$.
+Consequently
+\[
+ c_\ast W'<\sum_{i\in V(H')}x_i d_i=2E'\leq2.
+\]
+After dividing the vertex weights by $W'$, every weighted degree exceeds
+\[
+ \frac{c_\ast}{W'}>\frac{c_\ast^2}{2E'}\geq\frac{c_\ast^2}2.
+\]
+The degrees must be recomputed after each removal; this is why the procedure
+is iterative.
+\end{proof}
+
+\subsection{Entering the local neighborhood}
+Let $W_{\mathrm{Cl}}$ denote a full balanced Clebsch graphon. We use
+$\delta_\square$ for cut distance and $\delta_1$ for $L^1$ distance, in each
+case taking the infimum over measure-preserving relabelings. The standard
+compactness of graphons in cut distance and continuity of fixed finite
+homomorphism densities will be used only qualitatively.
+
+\begin{lemma}\label{lem:positive-degree-compactness}
+Fix $\mu>0$. If $W_j$ are graphons with $d_{W_j}\geq\mu$ almost everywhere
+and $R(W_j)\to R_\ast$, then $\delta_1(W_j,W_{\mathrm{Cl}})\to0$.
+\end{lemma}
+
+\begin{proof}
+Their edge densities are at least $\mu$. From any subsequence, compactness
+extracts a further subsequence converging in cut distance to a graphon $W$.
+Choose relabelings giving cut-norm convergence. For every measurable
+$S\subseteq[0,1]$,
+\[
+ \int_S d_W=\lim_j\int_S d_{W_j}\geq\mu|S|,
+\]
+because the difference of the two integrals is bounded by the cut norm.
+Thus $d_W\geq\mu$ almost everywhere. The equality $R(W)=R_\ast$ passes to
+the limit by induced-density continuity; the denominator in $R$ stays
+bounded away from zero. Theorem 1.3 identifies $W$ as balanced Clebsch on
+its active set, with isolates outside. The minimum-degree condition
+excludes a positive-measure isolate set, so $W$ is a full balanced Clebsch
+graphon.
+
+This proves convergence of the whole sequence in cut distance. To obtain
+$L^1$ convergence, fix the sixteen classes $A_1,\ldots,A_{16}$ of a labeling
+of $W_{\mathrm{Cl}}$. Since $W_{\mathrm{Cl}}$ is $\{0,1\}$-valued,
+$U-W_{\mathrm{Cl}}$ has a constant sign on each $A_i\times A_j$. Hence
+\[
+ \|U-W_{\mathrm{Cl}}\|_1
+ =\sum_{i,j}\left|\int_{A_i\times A_j}(U-W_{\mathrm{Cl}})\right|
+ \leq256\|U-W_{\mathrm{Cl}}\|_\square.
+\]
+Taking infima over relabelings completes the proof.
+\end{proof}
+
+\subsection{Rounding whole vertices}
+Write $\mathcal E_{\mathrm{Cl}}$ for the family defined in the introduction.
+The next lemma is useful because balancing real class masses by rounding
+their sizes separately would introduce an unnecessary additive error.
+
+\begin{lemma}[Integral rounding]\label{lem:integral-rounding}
+Let $W_G$ be the probability graphon of an $n$-vertex graph, and let
+$U\in\mathcal E_{\mathrm{Cl}}$ have active mass $q\geq1/2$. There is a graph
+$B$ on $V(G)$, consisting of sixteen equal integer Clebsch classes and
+isolates, such that
+\[
+ \|W_G-W_B\|_1\leq897\|W_G-U\|_1.
+\]
+The common class size is positive when $\|W_G-U\|_1$ is sufficiently small.
+\end{lemma}
+
+\begin{proof}
+Put $\zeta=\|W_G-U\|_1$. Let $B_0$ be the isolate set of $U$, and let
+$B_1,\ldots,B_{16}$ be its active classes, each of measure $b=q/16$.
+Denote the corresponding row functions by $r_0=0,r_1,\ldots,r_{16}$.
+Different rows have distance at least
+\begin{equation}\tag{41}\label{eq:41}
+ \rho=\frac{5q}{16}\geq\frac5{32}.
+\end{equation}
+A nonzero row meets five classes, while distinct Clebsch rows differ on six
+or ten classes.
+
+For a vertex $v$, let $I_v$ be its cell in $W_G$, of measure $1/n$, and let
+$g_v$ be its constant row. Set
+\[
+ p_{v,i}=n|I_v\cap B_i|,\qquad
+ e_{v,i}=\|g_v-r_i\|_1,\qquad
+ e_v=\sum_{i=0}^{16}p_{v,i}e_{v,i}.
+\]
+Assign the entire vertex $v$ to a type $i(v)$ minimizing $e_{v,i}$. If this
+minimum is at least $\rho/2$, then $e_v\geq\rho/2$. Otherwise, the triangle
+inequality and (41) give $e_{v,j}\geq\rho/2$ for every $j\ne i(v)$. In both
+cases
+\[
+ 1-p_{v,i(v)}\leq\frac{2e_v}{\rho}.
+\]
+The total measure whose type changes is therefore
+\begin{equation}\tag{42}\label{eq:42}
+ M=\frac1n\sum_v(1-p_{v,i(v)})\leq\frac{2\zeta}{\rho}.
+\end{equation}
+Let $T$ be the Clebsch step graphon given by these whole-vertex assignments,
+and let $s_i$ be the mass of its $i$th active class. Changing types on mass
+$M$ gives
+\[
+ \|T-U\|_1\leq2M,\qquad\sum_{i=1}^{16}|s_i-b|\leq2M.
+\]
+Set $s_{\min}=\min_i s_i$. Remove excess vertices from each active class
+until every class has size $ns_{\min}$, assigning the removed vertices to
+the isolate type. This uses whole vertices because all $ns_i$ are integers.
+The total mass reassigned is
+\[
+ \Delta=\sum_{i=1}^{16}(s_i-s_{\min})
+ \leq17\sum_{i=1}^{16}|s_i-b|\leq34M.
+\]
+For the first inequality, if $b\geq s_{\min}$ use
+$b-s_{\min}\leq\sum_i|s_i-b|$; if $b<s_{\min}$, the inequality is immediate.
+The additional $L^1$ cost is at most $2\Delta\leq68M$. The resulting graph
+$B$ is exactly balanced, and
+\[
+ \|W_G-W_B\|_1\leq\zeta+2M+68M
+ \leq\left(1+\frac{140}{\rho}\right)\zeta\leq897\zeta.
+\]
+For sufficiently small $\zeta$, (42) and $b\geq1/32$ also imply $s_i>0$
+for every $i$.
+\end{proof}
+
+This proof applies after arbitrary relabelings: the cells $I_v$ need not be
+intervals. It also handles a nonattained distance infimum. Apply the lemma
+to a sequence of comparison graphons approaching the infimum and use the
+finiteness of the possible edit distances on a fixed vertex set. If the
+infimum is zero, taking the error small enough to permit fewer than one
+edge edit forces an exact copy.
+
+\subsection{Proof of the stability theorem}
+
+\begin{proof}[Proof of Theorem 8.1]
+Give every vertex of $G$ weight $1/\sqrt m$. Then $E=1$ and
+\[
+ C\geq c_\ast-\eta,\qquad\eta=\frac{\varepsilon}{5^{5/2}}.
+\]
+Apply Lemma 8.2. The peeling removes at most
+\begin{equation}\tag{43}\label{eq:43}
+ \frac{4\varepsilon}{3c_\ast5^{5/2}}m
+\end{equation}
+edges and leaves a graph $H$ with
+\[
+ n_H<\frac{2\sqrt m}{c_\ast}.
+\]
+Its probability graphon has minimum degree at least $c_\ast^2/2$ and ratio
+at least $R_\ast-\varepsilon$.
+
+By Lemma 8.3, there is an absolute positive threshold for $\varepsilon$
+below which $W_H$, after a relabeling, lies in the neighborhood of Theorem
+A.1. Let $c_{\mathrm{loc}}>0$ be the constant in that theorem. Its
+induced-pentagon functional is exactly the functional used here, so the
+local conclusion is
+\[
+ d_1(W_H,\mathcal E_{\mathrm{Cl}})\leq
+ \sqrt{\frac{\varepsilon}{c_{\mathrm{loc}}}}.
+\]
+Comparison graphons sufficiently close to this infimum have active mass
+at least $1/2$ when $\varepsilon$ is small. To see this, also choose the
+compactness neighborhood small enough that $W_H$ is close to the full
+Clebsch graphon in $L^1$. Edge-density continuity and
+$t(K_2,U)=(5/16)q^2$ then force $q$ close to one.
+
+Lemma 8.4 gives a balanced Clebsch blow-up $B_H$ with isolates on $V(H)$.
+Taking the comparison distance to its infimum, the number of edits inside
+$H$ is at most
+\[
+ \frac{897n_H^2}2\sqrt{\frac{\varepsilon}{c_{\mathrm{loc}}}}
+ \leq\frac{1794}{c_\ast^2\sqrt{c_{\mathrm{loc}}}}
+ \sqrt\varepsilon\,m.
+\]
+Extend $B_H$ to the original vertex set by making every peeled vertex
+isolated. Adding (43), and using $\varepsilon\leq\sqrt\varepsilon$ for
+$\varepsilon\leq1$, proves the edit bound. For example, once
+$\varepsilon_0$ has been chosen small enough for the preceding neighborhood
+and nonemptiness requirements, one may take
+\[
+ K=\frac{1794}{c_\ast^2\sqrt{c_{\mathrm{loc}}}}
+   +\frac4{3c_\ast5^{5/2}}.
+\]
+The value of $K$ is not optimized. Finally, a balanced Clebsch blow-up with
+common class size $s$ has $40s^2$ edges. Its edge count differs from $m$ by
+at most the number of edits, proving both remaining conclusions.
+\end{proof}
+
+\subsection{Optimality of the exponent}
+
+\begin{proposition}\label{prop:sqrt-optimality}
+The factor $\sqrt\varepsilon$ in Theorem 8.1 cannot be replaced by
+$o(\sqrt\varepsilon)$, uniformly over finite graphs.
+\end{proposition}
+
+\begin{proof}
+Choose two nonadjacent vertices $u,v$ of $\mathrm{Cl}$. For integers
+$k\geq2$ and $1\leq r<k$, form a Clebsch blow-up $G_{k,r}$ with class sizes
+$k+r$ at $u$, $k-r$ at $v$, and $k$ at the other fourteen vertices.
+
+Each Clebsch vertex lies in sixty pentagons, and each nonadjacent pair lies
+in twelve. For the latter count, the pair has two common neighbors and six
+three-edge paths between its endpoints. Each choice of a common neighbor
+and such a path forms a pentagon, by triangle-freeness. The six paths can
+also be counted from the five neighbors of one endpoint: two are adjacent
+to the other endpoint and contribute zero codegree, while the other three
+contribute codegree two.
+
+The edge and pentagon polynomials are affine in each class size. The linear
+changes at $u$ and $v$ cancel, and there is no quadratic edge term because
+$u,v$ are nonadjacent. Thus, exactly,
+\[
+ |V(G_{k,r})|=16k,\qquad m=40k^2,\qquad
+ I_5(G_{k,r})=192k^5-12k^3r^2.
+\]
+Its normalized deficit is
+\[
+ \varepsilon_{k,r}=R_\ast-\frac{I_5(G_{k,r})}{(m/5)^{5/2}}
+ =\frac{R_\ast r^2}{16k^2}.
+\]
+The pair $u,v$ has two common neighbors. Its three exclusive neighbors on
+each side have unchanged class size $k$, so $G_{k,r}$ has $3k$ vertices of
+degree $5k+r$, $3k$ of degree $5k-r$, and $10k$ of degree $5k$.
+
+A balanced Clebsch blow-up with isolates on the same $16k$ vertices has
+common class size at most $k$, and hence maximum degree at most $5k$.
+Each of the $3k$ high-degree vertices must lose at least $r$ in degree. One
+edge edit changes the total absolute degree discrepancy by at most two.
+Therefore every such target $B$ satisfies
+\[
+ |E(G_{k,r})\mathbin{\triangle}E(B)|\geq\frac32kr
+ =\frac3{20\sqrt{R_\ast}}\sqrt{\varepsilon_{k,r}}\,m.
+\]
+Taking $r=1$ and $k\to\infty$ proves the assertion.
+\end{proof}
+
+\section{Linear structural stability and quadratic mass stability}
+\label{sec:linear-stability}
+
+The local repair argument proves a stronger conclusion than its quadratic
+distance estimate alone. Edge errors have a linear cost in the extremal
+deficit; only the imbalance of the sixteen class masses has a quadratic
+cost. We retain these two conclusions separately.
+
+Let $\mathcal T_{\mathrm{Cl}}$ denote the class of graphons obtained from an
+arbitrary sixteen-class Clebsch blow-up and an isolated class. The sixteen
+active masses need not be equal. For a presented member $T$ with active
+masses $s_1,\ldots,s_{16}$, put
+\[
+ q(T)=\sum_{i=1}^{16}s_i,\qquad
+ V(T)^2=\sum_{i=1}^{16}(s_i-q(T)/16)^2.
+\]
+
+\begin{proposition}[The two local defects]\label{prop:two-defects}
+There are constants $A,B>0$ and $\delta>0$ such that, whenever
+$\|W-W_{\mathrm{Cl}}\|_1<\delta$, a graphon $T\in\mathcal T_{\mathrm{Cl}}$
+exists with all active masses at least $1/32$ and
+\begin{equation}\tag{44}\label{eq:44}
+ \|W-T\|_1\leq AD(W),\qquad V(T)^2\leq BD(W),\qquad
+ D(W)=R_\ast-R(W).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Use the sets $B_0,Z,M_1,\ldots,M_{16}$ constructed in the proof of Theorem
+A.1; here $B_0$ denotes its bad-row set to avoid confusion with the constant
+in the present statement. Write $F=C/E^{5/2}=R/5^{5/2}$ as in that proof.
+Take $T$ to be the repaired Clebsch step graphon on $M=\bigcup_i M_i$, and
+put isolates outside $M$. Before balancing the masses, the four-defect
+inequality is
+\[
+ F(W_{\mathrm{Cl}})-F(W)
+ \geq c_B\mu_{B_0}+c_ZD_Z+c_Ee_M+c_HV(T)^2.
+\]
+The three operations that produce $T$ cost at most
+$2\mu_{B_0}+2D_Z+e_M$ in $L^1$. Consequently one may take
+\[
+ A=\frac1{5^{5/2}\min\{c_B/2,c_Z/2,c_E\}},\qquad
+ B=\frac1{5^{5/2}c_H}.
+\]
+The mass-closeness estimate in that proof gives
+$s_i=1/16+O(\|W-W_{\mathrm{Cl}}\|_1)$ uniformly in $i$. Decreasing the
+fixed neighborhood ensures $s_i\geq1/32$.
+\end{proof}
+
+\begin{lemma}[Rounding without balancing]\label{lem:unbalanced-rounding}
+Let $W_G$ be the probability graphon of a graph on $n$ vertices, and let
+$U\in\mathcal T_{\mathrm{Cl}}$ have active masses $s_i\geq1/32$. Set
+$\zeta=\|W_G-U\|_1$ and $\rho=5/32$. There is a Clebsch blow-up $H$, with
+isolates, on the same vertex set, such that
+\begin{align}
+ \|W_G-W_H\|_1&\leq(1+4/\rho)\zeta,\tag{45}\label{eq:45}\\
+ V(W_H)^2&\leq2V(U)^2+32\zeta^2/\rho^2.\tag{46}\label{eq:46}
+\end{align}
+All sixteen active classes of $H$ are nonempty if $\zeta<\rho/128$.
+\end{lemma}
+
+\begin{proof}
+The seventeen row prototypes of $U$ are pairwise separated in $L^1$ by at
+least $\rho$. Indeed, a nonzero Clebsch row meets five classes, while distinct
+nonzero rows differ on at least six classes.
+
+For each vertex cell $I_v$, write $p_{v,i}=n|I_v\cap A_i|$ and
+$e_{v,i}=\|W_G(v,\cdot)-r_i\|_1$, including the isolated type $i=0$.
+Assign the whole vertex to a type minimizing $e_{v,i}$. The argument of
+Lemma 8.4 gives total changed type mass
+\[
+ M=\frac1n\sum_v(1-p_{v,i(v)})\leq\frac{2\zeta}{\rho}.
+\]
+The induced whole-vertex template $W_H$ differs from $U$ only on pairs
+with at least one endpoint in this changed set. Therefore
+$\|U-W_H\|_1\leq2M$, proving (45). No trimming is performed.
+
+Let $s'$ be the vector of the sixteen rounded active masses. The changed
+mass estimate implies $\|s'-s\|_1\leq2M$. Let $P$ be orthogonal projection
+onto the sum-zero subspace of $\mathbb R^{16}$. Then
+\[
+ \|Ps'\|_2^2\leq2\|Ps\|_2^2+2\|P(s'-s)\|_2^2
+ \leq2V(U)^2+8M^2,
+\]
+which is (46). Finally
+$s'_i\geq s_i-2M\geq1/32-4\zeta/\rho>0$ under the stated smallness
+assumption. Each $ns'_i$ is an integer because only whole vertices were
+assigned. The vertex cells can be arbitrary measurable sets, so the argument
+also applies after a graphon relabeling.
+\end{proof}
+
+\begin{theorem}[Linear structural stability]\label{thm:linear-stability}
+There are absolute constants $K<\infty$ and $\varepsilon_0>0$ such that the
+following holds. Suppose $G$ has $m>0$ edges and
+\[
+ I_5(G)\geq(R_\ast-\varepsilon)(m/5)^{5/2},\qquad
+ 0\leq\varepsilon\leq\varepsilon_0.
+\]
+Then a graph $H$ on the same vertex set, consisting of a Clebsch blow-up with
+positive integer class sizes $n_1,\ldots,n_{16}$ and isolated vertices,
+satisfies
+\begin{equation}\tag{47}\label{eq:47}
+ |E(G)\mathbin{\triangle}E(H)|+\sum_{i=1}^{16}(n_i-N/16)^2
+ \leq K\varepsilon m,\qquad N=\sum_{i=1}^{16}n_i.
+\end{equation}
+In particular,
+\begin{equation}\tag{48}\label{eq:48}
+ \left|m-\frac{5N^2}{32}\right|\leq K'\varepsilon m,\qquad
+ N=\sqrt{\frac{32m}5}+O(\varepsilon\sqrt m),
+\end{equation}
+and every class satisfies
+\[
+ n_i=(1+O(\sqrt\varepsilon))\sqrt{m/40}.
+\]
+All constants are absolute. There is no additive rounding term.
+\end{theorem}
+
+\begin{proof}
+Give every vertex weight $1/\sqrt m$. The weighted peeling lemma removes
+at most $4\varepsilon m/(3R_\ast)$ edges, and leaves a core $G'$ with
+$n<2\sqrt m/c_\ast$ vertices, normalized minimum degree at least
+$c_\ast^2/2$, and ratio at least $R_\ast-\varepsilon$. By the positive-degree
+compactness lemma, after relabeling its probability graphon lies in the
+neighborhood of Proposition 9.1 when $\varepsilon_0$ is small enough.
+Obtain the template $U$ there. It satisfies
+\[
+ \zeta\leq A\varepsilon,\qquad V(U)^2\leq B\varepsilon.
+\]
+Decrease $\varepsilon_0$ further so that $A\varepsilon_0<\rho/128$ and
+$\varepsilon_0\leq1$. Lemma 9.2 gives whole-vertex classes with
+\[
+ \begin{split}
+ \|W_{G'}-W_H\|_1&\leq(1+4/\rho)A\varepsilon,\\
+ V(W_H)^2&\leq B'\varepsilon,\qquad B'=2B+32A^2/\rho^2.
+ \end{split}
+\]
+The number of edge edits inside the core is $n^2/2$ times its $L^1$
+distance. Also $\sum_i(n_i-N/16)^2=n^2V(W_H)^2$. Using
+$n^2<4m/c_\ast^2$ and putting all peeled vertices into the isolated class
+proves the two estimates separately with constants
+\[
+ K_E=\frac4{3R_\ast}+\frac{2(1+4/\rho)A}{c_\ast^2},\qquad
+ K_V=\frac{4B'}{c_\ast^2}.
+\]
+Take $K=K_E+K_V$ in (47).
+
+For completeness, let $A_{\mathrm{Cl}}$ be the Clebsch adjacency matrix
+and $h_i=n_i-N/16$. Since the graph is five-regular and $\sum_i h_i=0$,
+\[
+ e(H)=40(N/16)^2+\frac12 h^TA_{\mathrm{Cl}}h
+ =\frac{5N^2}{32}+\frac12 h^TA_{\mathrm{Cl}}h.
+\]
+The elementary bound $|h^TA_{\mathrm{Cl}}h|\leq5\|h\|_2^2$ follows from
+$2|h_i h_j|\leq h_i^2+h_j^2$ summed over the edges. Hence one may take
+$K'=K_E+(5/2)K_V$ in the first estimate of (48). For smaller
+$\varepsilon_0$, this places $N$ between fixed positive multiples of
+$\sqrt m$. Factoring the difference of squares yields the second estimate.
+Finally $|h_i|\leq\|h\|_2=O(\sqrt{\varepsilon m})$, which gives the
+class-size conclusion.
+\end{proof}
+
+\begin{proposition}[Optimality of linear structural stability]
+\label{prop:linear-optimality}
+The factor $\varepsilon$ in the edit-distance conclusion of Theorem 9.3
+cannot be replaced uniformly by $o(\varepsilon)$.
+\end{proposition}
+
+\begin{proof}
+Start with a balanced Clebsch blow-up of common class size $k\geq2$, and
+add a single edge between two vertices in one class. The two endpoints are
+now true twins. An induced pentagon cannot contain both, and all other
+induced pentagons are unchanged. Thus the new graph has
+\[
+ m_k=40k^2+1,\qquad I_5=192k^5,\qquad
+ \varepsilon_k=R_\ast\left[1-\left(\frac{40k^2}{40k^2+1}\right)^{5/2}\right].
+\]
+Its distance to the family of Clebsch blow-ups and isolates is exactly one:
+deleting the added edge suffices, and the graph contains a triangle whereas
+every graph in that family is triangle-free. Furthermore $\varepsilon_k\to0$
+and $\varepsilon_km_k\to(5/2)R_\ast$. A bound of the form
+$o(\varepsilon_k)m_k$ would tend to zero, contradicting this integer
+distance of one.
+\end{proof}
+
+\subsection{A two-sided geometric description of the deficit}
+For a graph $G$ with $m>0$ edges, write
+\[
+ \Delta(G)=c_\ast m^{5/2}-I_5(G).
+\]
+Let $\mathcal B_m(G)$ consist of the Clebsch blow-ups with isolates on
+$V(G)$ whose sixteen class sizes obey
+\[
+ \frac12\sqrt{m/40}\leq n_i\leq2\sqrt{m/40}.
+\]
+For such a template put $N=\sum_i n_i$ and define
+\[
+ J_G(B)=|E(G)\mathbin{\triangle}E(B)|+\sum_i(n_i-N/16)^2.
+\]
+
+\begin{proposition}[Two-sided structural energy]\label{prop:structural-energy}
+For absolute constants $c,C>0$, every graph sufficiently close to the sharp
+ratio satisfies
+\begin{equation}\tag{49}\label{eq:49}
+ c\,m^{3/2}\min_{B\in\mathcal B_m(G)}J_G(B)
+ \leq\Delta(G)\leq
+ C\,m^{3/2}\min_{B\in\mathcal B_m(G)}J_G(B).
+\end{equation}
+In particular $\mathcal B_m(G)$ is nonempty in this range. The upper
+estimate holds whenever $\mathcal B_m(G)$ is nonempty, without a separate
+near-extremality assumption.
+\end{proposition}
+
+\begin{proof}
+For a sufficiently small fixed normalized deficit, the class-size conclusion
+of Theorem 9.3 places its template in $\mathcal B_m(G)$. Substituting
+$\varepsilon=5^{5/2}\Delta(G)/m^{5/2}$ in that theorem proves the lower
+estimate in (49).
+
+For the other direction, fix $B\in\mathcal B_m(G)$ and put
+\[
+ t=|E(G)\mathbin{\triangle}E(B)|,\qquad
+ V=\sum_i(n_i-N/16)^2,\qquad m_B=e(B).
+\]
+An original induced pentagon of $B$ is still induced in $G$ unless one of
+its ten pairs is modified. Each modified pair belongs to at most
+$\binom{N-2}3\leq N^3/6$ original five-sets; pairs meeting an isolated
+vertex of $B$ belong to none. Thus
+\begin{equation}\tag{50}\label{eq:50}
+ I_5(G)\geq I_5(B)-tN^3/6.
+\end{equation}
+This estimate depends on the number of active template vertices, not on the
+possibly much larger number of vertices of $G$.
+
+Consider the weighted-template defect
+\[
+ Q(x)=c_\ast E(x)^{5/2}-P(x).
+\]
+At every positive constant vector $b\mathbf1$ we have $Q=0$ and
+$\nabla Q=0$. The latter follows either by differentiating the sharp equality
+along class weights, or directly from $E(\mathbf1)=40$, $P(\mathbf1)=192$,
+$\nabla E(\mathbf1)=5\mathbf1$ and $\nabla P(\mathbf1)=60\mathbf1$.
+Set $b=N/16$ and $h_i=n_i-b$. Every point of the line segment
+$b\mathbf1+uh$, $0\leq u\leq1$, has coordinates between fixed positive
+multiples of $\sqrt m$. On this segment the Hessian of $Q$ is
+$O(m^{3/2})$: the polynomial $P$ has degree five, and the same scaling
+follows directly by differentiating $E^{5/2}$, with $E$ bounded above and
+below by fixed positive multiples of $m$. Taylor's formula therefore gives
+\[
+ 0\leq c_\ast m_B^{5/2}-I_5(B)=Q(b\mathbf1+h)
+ \leq C_0m^{3/2}\|h\|_2^2=C_0m^{3/2}V.
+\]
+Also $m_B$ and $m$ are within fixed positive constant factors, and
+$|m_B-m|\leq t$, so
+\[
+ |m^{5/2}-m_B^{5/2}|\leq C_1m^{3/2}t.
+\]
+Since $N=O(\sqrt m)$, combine these estimates with (50) to obtain
+$\Delta(G)\leq Cm^{3/2}(t+V)$. Taking the minimum completes the proof.
+There are finitely many vertex partitions, so the minimum is attained
+whenever the family is nonempty.
+\end{proof}
+
+\section{The arithmetic size of the finite-edge deficit}
+\label{sec:arithmetic-size}
+
+The error term in Corollary 1.2 cannot be improved uniformly to $o(m^2)$.
+More precisely, its order is governed by the distance of an effective vertex
+count from the integers. This conclusion uses the linear stability theorem
+for unbalanced Clebsch blow-ups, including its squared class-size estimate.
+
+For an integer $N\geq0$, write $N=16k+r$, with $0\leq r<16$, and put
+\[
+ v(N)=\frac{r(16-r)}{16},\qquad
+ \Psi(m)=\min_{N\in\mathbb Z_{\geq0}}
+ \left(\left|m-\frac5{32}N^2\right|+v(N)\right).
+\]
+The minimum is attained, and $0\leq v(N)\leq4$. As before, let
+$\rho(C_5,m)$ denote the maximum number of induced pentagons among graphs
+with exactly $m$ edges, and set
+\[
+ \Delta(m)=c_\ast m^{5/2}-\rho(C_5,m).
+\]
+
+\begin{theorem}[Arithmetic deficit law]\label{thm:arithmetic-deficit}
+There exist absolute constants $a_0,b_0>0$ and an integer $m_0$ such that,
+for every integer $m\geq m_0$,
+\begin{equation}\tag{51}\label{eq:51}
+ a_0m^{3/2}\Psi(m)\leq\Delta(m)\leq b_0m^{3/2}\Psi(m).
+\end{equation}
+In particular, $\Psi(m)=0$ exactly when $m=40k^2$ for an integer $k\geq0$.
+For all other sufficiently large integers $m$,
+\begin{equation}\tag{52}\label{eq:52}
+ \Delta(m)\asymp m^2\operatorname{dist}
+ \left(\sqrt{\frac{32m}5},\mathbb Z\right)+m^{3/2},
+\end{equation}
+where the two comparison constants are absolute.
+\end{theorem}
+
+\begin{proof}
+We first record the role of the integer class sizes. If
+$n_1,\ldots,n_{16}$ are nonnegative integers with sum $N$, then
+\begin{equation}\tag{53}\label{eq:53}
+ V:=\sum_{i=1}^{16}(n_i-N/16)^2\geq v(N).
+\end{equation}
+Indeed, whenever two entries differ by at least two, moving one unit from
+the larger to the smaller decreases the sum of their squares. The minimum
+is therefore attained by $r$ entries equal to $k+1$ and $16-r$ entries equal
+to $k$; its value is $v(N)$.
+
+Let $A$ be the adjacency matrix of $\mathrm{Cl}$, and write
+$n=(N/16)\mathbf1+h$, where $\sum_i h_i=0$. Since $A\mathbf1=5\mathbf1$,
+the edge count of this blow-up is
+\begin{equation}\tag{54}\label{eq:54}
+ E(n)=\frac12n^TAn=\frac5{32}N^2+\frac12h^TAh.
+\end{equation}
+The operator norm of $A$ is at most five. Consequently
+\begin{equation}\tag{55}\label{eq:55}
+ \left|E(n)-\frac5{32}N^2\right|\leq\frac52 V.
+\end{equation}
+For the lower bound in (51), choose an extremal graph $G$ with $m$ edges.
+Such a graph exists, since discarding isolates leaves at most $2m$ vertices.
+The earlier lower construction gives $\Delta(m)=O(m^2)$. Hence its
+normalized deficit
+\[
+ \varepsilon=R_\ast-\frac{I_5(G)}{(m/5)^{5/2}}
+ =\frac{5^{5/2}\Delta(m)}{m^{5/2}}
+\]
+tends to zero as $m\to\infty$. Apply Theorem 9.3. It supplies a Clebsch
+blow-up $H$, together with isolates, on the same vertex set, such that its
+integer class sizes $n_i$, total active size $N$, squared deviation $V$, and
+edge-edit distance $L$ satisfy
+\[
+ L+V\leq K\varepsilon m=K5^{5/2}\frac{\Delta(m)}{m^{3/2}}.
+\]
+Here and below a constant may be increased without changing its dependence.
+In particular $|m-E(n)|\leq L$. Equations (53) and (55) give
+\[
+ \Psi(m)\leq\left|m-\frac5{32}N^2\right|+v(N)
+ \leq L+\frac72V\leq K'\frac{\Delta(m)}{m^{3/2}}.
+\]
+This proves the first inequality.
+
+For the upper bound, put $t=\sqrt{32m/5}$. An integer $N_0$ nearest to $t$
+satisfies
+\[
+ \left|m-\frac5{32}N_0^2\right|
+ \leq\frac5{32}\left(t+\frac14\right).
+\]
+It follows that $\Psi(m)=O(\sqrt m)$. Any minimizing $N$ therefore
+satisfies $N=\Theta(\sqrt m)$ and tends to infinity. Choose
+$n_1,\ldots,n_{16}$ as equally as possible, so that $V=v(N)$, and let $H$
+be the resulting Clebsch blow-up. With $e=E(n)$, (55) gives
+\begin{equation}\tag{56}\label{eq:56}
+ |e-m|\leq\left|m-\frac5{32}N^2\right|+\frac52v(N)
+ \leq\frac52\Psi(m).
+\end{equation}
+We also need the second-order cost of the integer balancing. For positive
+real class sizes $x$, define
+\[
+ Q(x)=c_\ast E(x)^{5/2}-P(x).
+\]
+The Clebsch counts give $Q(\mathbf1)=0$ and $\nabla Q(\mathbf1)=0$. The
+function $Q$ has a bounded Hessian in a fixed neighborhood of $\mathbf1$.
+Write $q=N/16$ and $n=q\mathbf1+h$, where $|h_i|\leq1$ and
+$\|h\|_2^2=v(N)$. Homogeneity and Taylor's theorem yield, uniformly for
+large $N$,
+\begin{equation}\tag{57}\label{eq:57}
+ 0\leq Q(n)=q^5Q(\mathbf1+h/q)
+ \leq Cq^3\|h\|_2^2\leq C'N^3v(N).
+\end{equation}
+The nonnegativity follows from the sharp weighted bound. If $v(N)=0$, the
+same equation holds exactly, with both sides zero.
+
+If $e\leq m$, add a disjoint matching with $m-e$ edges. If $e>m$, delete
+any $e-m$ edges of $H$. A single edge deletion can destroy at most
+$\binom{N-2}3$ induced pentagons, since every affected pentagon must contain
+both endpoints of that edge. Thus the resulting graph $G_m$ has exactly
+$m$ edges and
+\[
+ I_5(G_m)\geq P(n)-|e-m|\binom{N-2}3.
+\]
+Since $e=m+O(\sqrt m)$ and $N=\Theta(\sqrt m)$, the mean value theorem,
+(56), and (57) imply
+\[
+ \begin{split}
+ \Delta(m)&\leq c_\ast m^{5/2}-I_5(G_m)\\
+ &\leq c_\ast|m^{5/2}-e^{5/2}|+Q(n)+|e-m|\binom{N-2}3\\
+ &\leq C''m^{3/2}\bigl(|e-m|+v(N)\bigr)
+ \leq b_0m^{3/2}\Psi(m).
+ \end{split}
+\]
+This proves (51).
+
+Finally, $\Psi(m)=0$ requires $v(N)=0$, hence $16\mid N$, and then
+$m=5N^2/32=40(N/16)^2$. The converse is immediate. If $m$ is not of this
+form, every term in the minimum is at least $15/16$: for $16\mid N$ the
+nonzero integer $|m-5N^2/32|$ is at least one, and otherwise
+$v(N)\geq15/16$. Let $d=\operatorname{dist}(t,\mathbb Z)$. For every
+$N\geq0$,
+\[
+ \left|m-\frac5{32}N^2\right|=\frac5{32}|t-N|(t+N)
+ \geq\frac5{32}td.
+\]
+Choosing an integer nearest to $t$ gives
+\[
+ \Psi(m)\leq\frac5{32}(2t+1/2)d+4.
+\]
+Together with the lower bound $15/16$, these inequalities show
+$\Psi(m)\asymp\sqrt m\,d+1$ outside the equality sequence. Equation (52)
+follows.
+\end{proof}
+
+\begin{corollary}[The $m^2$ error is uniformly optimal]
+\label{cor:arithmetic-optimality}
+For $m_k=40k^2+\lfloor5k/2\rfloor$,
+\[
+ \Delta(m_k)=\Theta(m_k^2).
+\]
+For each fixed nonzero integer $j$ and sufficiently large $k$,
+\[
+ \Delta(40k^2+j)=\Theta\bigl(|j|(40k^2+j)^{3/2}\bigr).
+\]
+At $m=40k^2$ the deficit is exactly zero.
+\end{corollary}
+
+\begin{proof}
+For the first sequence, the minimizing index in $\Psi$ is $N=16k$, and
+$\Psi(m_k)=\lfloor5k/2\rfloor$. Indeed, the next larger square value is
+$40k^2+5k+5/32$, and all smaller indices have a strictly greater distance
+from $m_k$ than $N=16k$; the nonnegative term $v(N)$ cannot reverse this.
+For fixed $j\ne0$, the same index minimizes for all sufficiently large
+$k$, with $\Psi(40k^2+j)=|j|$. Apply Theorem 10.1. The last assertion is
+the exact Clebsch construction.
+\end{proof}
+
+\begin{remark}\label{rem:arithmetic-scale}
+Theorem 10.1 determines the order of the finite-edge deficit, with constants
+uniform in $m$. It does not identify the exact maximizing graph at each
+integer edge count. Theorem 12.2 below identifies the leading coefficient
+on the $m^2$ scale. Its uniform absolute remainder does not replace the
+present comparison at phases extremely close to zero.
+\end{remark}

@@ -1,0 +1,33 @@
+{
+  "solver": "CSDP 6.2.0",
+  "numerical_discovery_only": true,
+  "delta": 8.806332689315776e-16,
+  "scaled_delta": 1.1686919337321725e-10,
+  "lambda_first3": [
+    -115.69897742858087,
+    802.9743514383508,
+    -492.97307748045085
+  ],
+  "a_positive": [
+    0.0013812273573698193,
+    4.653596417736328e-05,
+    6.430843837442156e-05,
+    8.053487382839578e-05
+  ],
+  "slack_min": -1.3675060582074398e-11,
+  "host_equation_residual_max": 1.3675061230727482e-11,
+  "block_min_eigenvalues": {
+    "one_root__trivial": 1.5533281978702267e-10,
+    "independent3__trivial": 1.4205075261807006e-09,
+    "independent3__sign": 1.9771620857802974e-07,
+    "independent3__standard": 1.9085148479988288e-09,
+    "edge_isolate__plus": 6.925593124796602e-10,
+    "edge_isolate__minus": 3.4117536825926345e-10,
+    "path3__plus": 4.0116819924960167e-10,
+    "path3__minus": 2.2350110496655165e-08,
+    "triangle3__trivial": 2.841849172917549e-09,
+    "triangle3__sign": 1.878187603090522e-05,
+    "triangle3__standard": 1.0822209866582253e-07
+  },
+  "output": "recovered_pentagons/results/sdp_csdp_regularized_solution.npz"
+}

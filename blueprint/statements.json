@@ -1,0 +1,4726 @@
+{
+  "schema": "induced-pentagons.manuscript-inventory.v1",
+  "status": "source_coverage_and_navigation_checks_passed",
+  "claim": "Structural coverage, valid locators and mathematical dependency navigation; not automated proof verification.",
+  "canonical_body_order": [
+    "paper/sections01-05.tex",
+    "paper/sections06-10.tex",
+    "paper/sections11-14.tex",
+    "paper/appendixA.tex"
+  ],
+  "entry_points": [
+    "paper/main.tex",
+    "paper/submission.tex"
+  ],
+  "excluded_duplicate_sources": [
+    "paper/Induced_pentagons_full_source.tex",
+    "paper/Induced_pentagons_submission.tex"
+  ],
+  "optional_missing_inputs": [],
+  "counts": {
+    "main_numbered_sections": 14,
+    "appendices": 1,
+    "numbered_statements": 43,
+    "formal_theorem_lemma_proposition_corollary_results": 42,
+    "numbered_remarks": 1,
+    "proof_environments": 43,
+    "explicit_equation_tags": 91,
+    "unique_labels": 115,
+    "label_based_reference_occurrences": 0,
+    "literal_named_result_reference_occurrences": 59,
+    "literal_named_section_reference_occurrences": 5,
+    "explicitly_named_equation_reference_occurrences": 7,
+    "result_kinds": {
+      "corollary": 5,
+      "lemma": 19,
+      "proposition": 9,
+      "remark": 1,
+      "theorem": 9
+    }
+  },
+  "count_explanation": "43 numbered statements = 42 formal results + Remark 10.3. The 43 proofs include one shared inequality proof for Theorems 1.1/1.3 and their two separate equality proofs.",
+  "checks": {
+    "section_sequence_1_through_14_then_A": true,
+    "equation_tags_1_through_91_once_each_in_order": true,
+    "numbered_statement_labels_unique": true,
+    "all_scanned_labels_unique": true,
+    "all_label_based_references_resolve": true,
+    "all_recognized_named_result_references_resolve_with_correct_kind": true,
+    "every_formal_result_has_a_located_proof": true,
+    "all_proof_environments_mapped": true,
+    "curated_dependency_stages_acyclic": true
+  },
+  "sections": [
+    {
+      "number": "1",
+      "title": "Introduction and results",
+      "appendix": false,
+      "source_file": "paper/sections01-05.tex",
+      "line": 1,
+      "labels": [],
+      "statement_numbers": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "equation_tags": [
+        1,
+        2
+      ],
+      "proof_ids": [
+        "P001"
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Global extremizers and their variations",
+      "appendix": false,
+      "source_file": "paper/sections01-05.tex",
+      "line": 218,
+      "labels": [],
+      "statement_numbers": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5"
+      ],
+      "equation_tags": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "proof_ids": [
+        "P002",
+        "P003",
+        "P004",
+        "P005",
+        "P006"
+      ]
+    },
+    {
+      "number": "3",
+      "title": "A lower bound on the active density",
+      "appendix": false,
+      "source_file": "paper/sections01-05.tex",
+      "line": 470,
+      "labels": [],
+      "statement_numbers": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ],
+      "equation_tags": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "proof_ids": [
+        "P007",
+        "P008",
+        "P009"
+      ]
+    },
+    {
+      "number": "4",
+      "title": "A single exact certificate",
+      "appendix": false,
+      "source_file": "paper/sections01-05.tex",
+      "line": 757,
+      "labels": [],
+      "statement_numbers": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "equation_tags": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "proof_ids": [
+        "P010",
+        "P011",
+        "P012",
+        "P013",
+        "P014"
+      ]
+    },
+    {
+      "number": "5",
+      "title": "The sharp inequality",
+      "appendix": false,
+      "source_file": "paper/sections01-05.tex",
+      "line": 1061,
+      "labels": [],
+      "statement_numbers": [],
+      "equation_tags": [],
+      "proof_ids": [
+        "P015"
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Eliminating triangles at equality",
+      "appendix": false,
+      "source_file": "paper/sections06-10.tex",
+      "line": 1,
+      "labels": [
+        "sec:triangles"
+      ],
+      "statement_numbers": [
+        "6.1"
+      ],
+      "equation_tags": [
+        32,
+        33
+      ],
+      "proof_ids": [
+        "P016"
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Classification of equality",
+      "appendix": false,
+      "source_file": "paper/sections06-10.tex",
+      "line": 83,
+      "labels": [
+        "sec:equality"
+      ],
+      "statement_numbers": [
+        "7.1"
+      ],
+      "equation_tags": [
+        34,
+        35,
+        36
+      ],
+      "proof_ids": [
+        "P017",
+        "P018",
+        "P019"
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Stability on the edge scale",
+      "appendix": false,
+      "source_file": "paper/sections06-10.tex",
+      "line": 243,
+      "labels": [
+        "sec:stability"
+      ],
+      "statement_numbers": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5"
+      ],
+      "equation_tags": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "proof_ids": [
+        "P020",
+        "P021",
+        "P022",
+        "P023",
+        "P024"
+      ]
+    },
+    {
+      "number": "9",
+      "title": "Linear structural stability and quadratic mass stability",
+      "appendix": false,
+      "source_file": "paper/sections06-10.tex",
+      "line": 561,
+      "labels": [
+        "sec:linear-stability"
+      ],
+      "statement_numbers": [
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "9.5"
+      ],
+      "equation_tags": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "proof_ids": [
+        "P025",
+        "P026",
+        "P027",
+        "P028",
+        "P029"
+      ]
+    },
+    {
+      "number": "10",
+      "title": "The arithmetic size of the finite-edge deficit",
+      "appendix": false,
+      "source_file": "paper/sections06-10.tex",
+      "line": 823,
+      "labels": [
+        "sec:arithmetic-size"
+      ],
+      "statement_numbers": [
+        "10.1",
+        "10.2",
+        "10.3"
+      ],
+      "equation_tags": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "proof_ids": [
+        "P030",
+        "P031"
+      ]
+    },
+    {
+      "number": "11",
+      "title": "Root profiles and the two arithmetic constructions",
+      "appendix": false,
+      "source_file": "paper/sections11-14.tex",
+      "line": 1,
+      "labels": [
+        "sec:profiles"
+      ],
+      "statement_numbers": [
+        "11.1",
+        "11.2"
+      ],
+      "equation_tags": [],
+      "proof_ids": [
+        "P032",
+        "P033"
+      ]
+    },
+    {
+      "number": "12",
+      "title": "A sharp arithmetic phase law",
+      "appendix": false,
+      "source_file": "paper/sections11-14.tex",
+      "line": 160,
+      "labels": [
+        "sec:phase-law"
+      ],
+      "statement_numbers": [
+        "12.1",
+        "12.2",
+        "12.3"
+      ],
+      "equation_tags": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "proof_ids": [
+        "P034",
+        "P035",
+        "P036"
+      ]
+    },
+    {
+      "number": "13",
+      "title": "The lattice correction at a fixed edge offset",
+      "appendix": false,
+      "source_file": "paper/sections11-14.tex",
+      "line": 410,
+      "labels": [
+        "sec:lattice-offset"
+      ],
+      "statement_numbers": [
+        "13.1",
+        "13.2"
+      ],
+      "equation_tags": [
+        68,
+        69,
+        70
+      ],
+      "proof_ids": [
+        "P037",
+        "P038"
+      ]
+    },
+    {
+      "number": "14",
+      "title": "Eventual polynomiality at every fixed offset",
+      "appendix": false,
+      "source_file": "paper/sections11-14.tex",
+      "line": 601,
+      "labels": [
+        "sec:eventual-polynomial"
+      ],
+      "statement_numbers": [
+        "14.1"
+      ],
+      "equation_tags": [
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "proof_ids": [
+        "P039"
+      ]
+    },
+    {
+      "number": "A",
+      "title": "Local stability in edit distance",
+      "appendix": true,
+      "source_file": "paper/appendixA.tex",
+      "line": 2,
+      "labels": [
+        "app:local-stability"
+      ],
+      "statement_numbers": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4"
+      ],
+      "equation_tags": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "proof_ids": [
+        "P040",
+        "P041",
+        "P042",
+        "P043"
+      ]
+    }
+  ],
+  "subdivisions": [
+    {
+      "number": "2.1",
+      "level": "subsection",
+      "title": "Finite templates and a compact maximization problem",
+      "source_file": "paper/sections01-05.tex",
+      "line": 236
+    },
+    {
+      "number": "2.2",
+      "level": "subsection",
+      "title": "Vertex and edge variations",
+      "source_file": "paper/sections01-05.tex",
+      "line": 325
+    },
+    {
+      "number": "2.3",
+      "level": "subsection",
+      "title": "Insertion of a new vertex profile",
+      "source_file": "paper/sections01-05.tex",
+      "line": 411
+    },
+    {
+      "number": "4.1",
+      "level": "subsection",
+      "title": "The additional variational columns",
+      "source_file": "paper/sections01-05.tex",
+      "line": 769
+    },
+    {
+      "number": "4.2",
+      "level": "subsection",
+      "title": "Seven-vertex coefficients and flag squares",
+      "source_file": "paper/sections01-05.tex",
+      "line": 839
+    },
+    {
+      "number": "4.3",
+      "level": "subsection",
+      "title": "A uniformly positive slope",
+      "source_file": "paper/sections01-05.tex",
+      "line": 938
+    },
+    {
+      "number": "4.4",
+      "level": "subsection",
+      "title": "Exact spans for equality",
+      "source_file": "paper/sections01-05.tex",
+      "line": 985
+    },
+    {
+      "number": "7.1",
+      "level": "subsection",
+      "title": "Structure at the reference density",
+      "source_file": "paper/sections06-10.tex",
+      "line": 92
+    },
+    {
+      "number": "7.2",
+      "level": "subsection",
+      "title": "Arbitrary equality graphons",
+      "source_file": "paper/sections06-10.tex",
+      "line": 207
+    },
+    {
+      "number": "8.1",
+      "level": "subsection",
+      "title": "Removing low-degree vertices",
+      "source_file": "paper/sections06-10.tex",
+      "line": 277
+    },
+    {
+      "number": "8.2",
+      "level": "subsection",
+      "title": "Entering the local neighborhood",
+      "source_file": "paper/sections06-10.tex",
+      "line": 340
+    },
+    {
+      "number": "8.3",
+      "level": "subsection",
+      "title": "Rounding whole vertices",
+      "source_file": "paper/sections06-10.tex",
+      "line": 380
+    },
+    {
+      "number": "8.4",
+      "level": "subsection",
+      "title": "Proof of the stability theorem",
+      "source_file": "paper/sections06-10.tex",
+      "line": 458
+    },
+    {
+      "number": "8.5",
+      "level": "subsection",
+      "title": "Optimality of the exponent",
+      "source_file": "paper/sections06-10.tex",
+      "line": 513
+    },
+    {
+      "number": "9.1",
+      "level": "subsection",
+      "title": "A two-sided geometric description of the deficit",
+      "source_file": "paper/sections06-10.tex",
+      "line": 745
+    },
+    {
+      "number": "14.1",
+      "level": "subsection",
+      "title": "Explicit eventual polynomials at small offsets",
+      "source_file": "paper/sections11-14.tex",
+      "line": 754
+    },
+    {
+      "number": "A.1",
+      "level": "subsection",
+      "title": "Three finite properties of the Clebsch graph",
+      "source_file": "paper/appendixA.tex",
+      "line": 39
+    },
+    {
+      "number": "A.2",
+      "level": "subsection",
+      "title": "Fractional row profiles",
+      "source_file": "paper/appendixA.tex",
+      "line": 213
+    },
+    {
+      "number": "A.3",
+      "level": "subsection",
+      "title": "Continuity and variations",
+      "source_file": "paper/appendixA.tex",
+      "line": 263
+    },
+    {
+      "number": "A.4",
+      "level": "subsection",
+      "title": "Proof of the local theorem",
+      "source_file": "paper/appendixA.tex",
+      "line": 358
+    }
+  ],
+  "statements": [
+    {
+      "ordinal": 1,
+      "number": "1.1",
+      "kind": "theorem",
+      "section": "1",
+      "title_tex": "Sharp weighted bound and equality",
+      "labels": [
+        "thm:weighted"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 56,
+      "proof_ids": [
+        "P015",
+        "P019"
+      ],
+      "line_end": 64,
+      "source_sha256": "d92c9856ed925f38bd495d327d05cd6ccf249e9273867658297d8f11e01ff65f",
+      "label": "thm:weighted",
+      "title": "Sharp weighted bound and equality",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 2,
+      "number": "1.2",
+      "kind": "corollary",
+      "section": "1",
+      "title_tex": "Asymptotic edge inducibility",
+      "labels": [
+        "cor:asymptotic"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 75,
+      "proof_ids": [
+        "P001"
+      ],
+      "line_end": 81,
+      "source_sha256": "135d1d5618d8e43e4f699cc067c6090332dbc931023e35ef0847e10313cea683",
+      "label": "cor:asymptotic",
+      "title": "Asymptotic edge inducibility",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 3,
+      "number": "1.3",
+      "kind": "theorem",
+      "section": "1",
+      "title_tex": "Graphon bound and equality",
+      "labels": [
+        "thm:graphon"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 112,
+      "proof_ids": [
+        "P015",
+        "P018"
+      ],
+      "line_end": 117,
+      "source_sha256": "df960ac555bf8ec9a1c21dde31eef653a6a9eed80aaae41b949b7be19acc1bda",
+      "label": "thm:graphon",
+      "title": "Graphon bound and equality",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 4,
+      "number": "2.1",
+      "kind": "lemma",
+      "section": "2",
+      "title_tex": "Finite-template attainment",
+      "labels": [
+        "lem:finite-attainment"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 238,
+      "proof_ids": [
+        "P002"
+      ],
+      "line_end": 242,
+      "source_sha256": "6dcabbc2e74e24546be119ecc060aa5e2006d7298440232d031cd7550a9a8c31",
+      "label": "lem:finite-attainment",
+      "title": "Finite-template attainment",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 5,
+      "number": "2.2",
+      "kind": "lemma",
+      "section": "2",
+      "title_tex": "A global graphon maximum",
+      "labels": [
+        "lem:global-maximum"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 261,
+      "proof_ids": [
+        "P003"
+      ],
+      "line_end": 265,
+      "source_sha256": "f2bd9e1e8592b214a5084b71b03ec2c80c3ee8c8ac34d43ad1e9c9b002f4d860",
+      "label": "lem:global-maximum",
+      "title": "A global graphon maximum",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 6,
+      "number": "2.3",
+      "kind": "lemma",
+      "section": "2",
+      "title_tex": "Necessary conditions at a global maximum",
+      "labels": [
+        "lem:variations"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 340,
+      "proof_ids": [
+        "P004"
+      ],
+      "line_end": 361,
+      "source_sha256": "c4c2228e3605c9f1e7c0f57198a8c4c7a0a81d48d7f0c2dc65348b803503875b",
+      "label": "lem:variations",
+      "title": "Necessary conditions at a global maximum",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 7,
+      "number": "2.4",
+      "kind": "lemma",
+      "section": "2",
+      "title_tex": "Profile insertion",
+      "labels": [
+        "lem:profile-insertion"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 424,
+      "proof_ids": [
+        "P005"
+      ],
+      "line_end": 427,
+      "source_sha256": "1c6a8407d32ef352b32c5cb852b004d97e68dad7217db3641c13166a310e8010",
+      "label": "lem:profile-insertion",
+      "title": "Profile insertion",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 8,
+      "number": "2.5",
+      "kind": "lemma",
+      "section": "2",
+      "title_tex": "Padding",
+      "labels": [
+        "lem:padding"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 453,
+      "proof_ids": [
+        "P006"
+      ],
+      "line_end": 461,
+      "source_sha256": "a2e8f1a2062ec52b0344a253cd71227c8ca7064098e4dc9d586e426be9e221e0",
+      "label": "lem:padding",
+      "title": "Padding",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 9,
+      "number": "3.1",
+      "kind": "lemma",
+      "section": "3",
+      "title_tex": "Universal link bounds",
+      "labels": [
+        "lem:universal-links"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 487,
+      "proof_ids": [
+        "P007"
+      ],
+      "line_end": 505,
+      "source_sha256": "34d20a9751dd433217462fed743210b7bc1affac4739125ebf79b400d1dae056",
+      "label": "lem:universal-links",
+      "title": "Universal link bounds",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 10,
+      "number": "3.2",
+      "kind": "lemma",
+      "section": "3",
+      "title_tex": "A second-order moment inequality",
+      "labels": [
+        "lem:second-order-moment"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 564,
+      "proof_ids": [
+        "P008"
+      ],
+      "line_end": 569,
+      "source_sha256": "8a06007c3269f3e972d17b2be4a5807a78e0406100f61126b610a2edfdf5a9d5",
+      "label": "lem:second-order-moment",
+      "title": "A second-order moment inequality",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 11,
+      "number": "3.3",
+      "kind": "proposition",
+      "section": "3",
+      "title_tex": "Active density",
+      "labels": [
+        "prop:active-density"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 683,
+      "proof_ids": [
+        "P009"
+      ],
+      "line_end": 695,
+      "source_sha256": "b1b40f3cb9ce6d3481d3b73630cb91884542fa1a8b77861a74748e3cebc924f4",
+      "label": "prop:active-density",
+      "title": "Active density",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 12,
+      "number": "4.1",
+      "kind": "proposition",
+      "section": "4",
+      "title_tex": "Exact finite identity",
+      "labels": [
+        "prop:finite-certificate"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 893,
+      "proof_ids": [
+        "P010"
+      ],
+      "line_end": 914,
+      "source_sha256": "452831dc8a43bf3c2fe05cc69c872592590a8394fb54a1764b369933ce510829",
+      "label": "prop:finite-certificate",
+      "title": "Exact finite identity",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 13,
+      "number": "4.2",
+      "kind": "corollary",
+      "section": "4",
+      "title_tex": "Bound at a global maximum",
+      "labels": [
+        "cor:certificate-bound"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 958,
+      "proof_ids": [
+        "P011"
+      ],
+      "line_end": 962,
+      "source_sha256": "709c779dd6b58bf8eb03f384e34cc2a700ac6355dea3c2fc21bce87d03a882b4",
+      "label": "cor:certificate-bound",
+      "title": "Bound at a global maximum",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 14,
+      "number": "4.3",
+      "kind": "lemma",
+      "section": "4",
+      "title_tex": "Triangle domination",
+      "labels": [
+        "lem:triangle-domination"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 991,
+      "proof_ids": [
+        "P012"
+      ],
+      "line_end": 1000,
+      "source_sha256": "bd924b40a21b7d2b41c0ee371dd544913fd3224509c71ab8257693861f72def9",
+      "label": "lem:triangle-domination",
+      "title": "Triangle domination",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 15,
+      "number": "4.4",
+      "kind": "lemma",
+      "section": "4",
+      "title_tex": "Degree span",
+      "labels": [
+        "lem:degree-span"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 1020,
+      "proof_ids": [
+        "P013"
+      ],
+      "line_end": 1027,
+      "source_sha256": "6007219c39977194bd509601925a6a5cb769f536d7235776fe65a645aea07316",
+      "label": "lem:degree-span",
+      "title": "Degree span",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 16,
+      "number": "4.5",
+      "kind": "lemma",
+      "section": "4",
+      "title_tex": "Codegree span",
+      "labels": [
+        "lem:codegree-span"
+      ],
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 1037,
+      "proof_ids": [
+        "P014"
+      ],
+      "line_end": 1050,
+      "source_sha256": "779706bc91ca6e7b3a5181739eb2ae902f98cbf571ca97006fe8f284ad20df7d",
+      "label": "lem:codegree-span",
+      "title": "Codegree span",
+      "title_source": "optional LaTeX title",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 17,
+      "number": "6.1",
+      "kind": "proposition",
+      "section": "6",
+      "title_tex": null,
+      "labels": [
+        "prop:triangle-elimination"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 8,
+      "proof_ids": [
+        "P016"
+      ],
+      "line_end": 17,
+      "source_sha256": "9f51155f0dd30004bcb85d8c1cac94f96f01708a142a5920e7204082839242b3",
+      "label": "prop:triangle-elimination",
+      "title": "Triangle elimination at reference-density equality",
+      "title_source": "reviewed statement scope",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 18,
+      "number": "7.1",
+      "kind": "proposition",
+      "section": "7",
+      "title_tex": null,
+      "labels": [
+        "prop:reference-equality"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 94,
+      "proof_ids": [
+        "P017"
+      ],
+      "line_end": 98,
+      "source_sha256": "9608804e444790b401c135846ef13dd58cd55d261c7a59a96a2fb29286c0c661",
+      "label": "prop:reference-equality",
+      "title": "Balanced Clebsch classification at reference density",
+      "title_source": "reviewed statement scope",
+      "subject_area": "foundations",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 19,
+      "number": "8.1",
+      "kind": "theorem",
+      "section": "8",
+      "title_tex": "Edge-scaled stability",
+      "labels": [
+        "thm:edge-stability"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 253,
+      "proof_ids": [
+        "P023"
+      ],
+      "line_end": 271,
+      "source_sha256": "cb90f617b78187b9de61bbaa5cd1bbc41d430c4cd2c6fdf6fe20aaf5c89c2f77",
+      "label": "thm:edge-stability",
+      "title": "Edge-scaled stability",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 20,
+      "number": "8.2",
+      "kind": "lemma",
+      "section": "8",
+      "title_tex": "Weighted peeling",
+      "labels": [
+        "lem:peeling"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 279,
+      "proof_ids": [
+        "P020"
+      ],
+      "line_end": 293,
+      "source_sha256": "7f653080c7dade641593d6620a59a7ecf2b48ff9fe0dcf706cca4821ebfbbaa7",
+      "label": "lem:peeling",
+      "title": "Weighted peeling",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 21,
+      "number": "8.3",
+      "kind": "lemma",
+      "section": "8",
+      "title_tex": null,
+      "labels": [
+        "lem:positive-degree-compactness"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 347,
+      "proof_ids": [
+        "P021"
+      ],
+      "line_end": 350,
+      "source_sha256": "5f7b44370db32b7408891192096eec295c08419db3f9f9cb4f92a1879be04126",
+      "label": "lem:positive-degree-compactness",
+      "title": "Positive-minimum-degree near-maxima approach full Clebsch in L1",
+      "title_source": "reviewed statement scope",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 22,
+      "number": "8.4",
+      "kind": "lemma",
+      "section": "8",
+      "title_tex": "Integral rounding",
+      "labels": [
+        "lem:integral-rounding"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 385,
+      "proof_ids": [
+        "P022"
+      ],
+      "line_end": 394,
+      "source_sha256": "5750ecaec028ffe4942b304bc59ae12d2914b45ad13ab3dd012284b0ffb961aa",
+      "label": "lem:integral-rounding",
+      "title": "Integral rounding",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 23,
+      "number": "8.5",
+      "kind": "proposition",
+      "section": "8",
+      "title_tex": null,
+      "labels": [
+        "prop:sqrt-optimality"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 515,
+      "proof_ids": [
+        "P024"
+      ],
+      "line_end": 518,
+      "source_sha256": "2145973d324e48e6de79a7c9913083cacbb00e6dc695589528d87d40068dad84",
+      "label": "prop:sqrt-optimality",
+      "title": "Optimality of the square-root edit-stability exponent",
+      "title_source": "reviewed statement scope",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 24,
+      "number": "9.1",
+      "kind": "proposition",
+      "section": "9",
+      "title_tex": "The two local defects",
+      "labels": [
+        "prop:two-defects"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 578,
+      "proof_ids": [
+        "P025"
+      ],
+      "line_end": 586,
+      "source_sha256": "fde0c13fb48aa20660365d2cfa3a98d58d34b7609fdc3d636589e7aa43d268a0",
+      "label": "prop:two-defects",
+      "title": "The two local defects",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 25,
+      "number": "9.2",
+      "kind": "lemma",
+      "section": "9",
+      "title_tex": "Rounding without balancing",
+      "labels": [
+        "lem:unbalanced-rounding"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 610,
+      "proof_ids": [
+        "P026"
+      ],
+      "line_end": 620,
+      "source_sha256": "127a43ef0db9152afd9ef9f61b28453bbc4599e9c0c1bca289f40b0e8eec0d96",
+      "label": "lem:unbalanced-rounding",
+      "title": "Rounding without balancing",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 26,
+      "number": "9.3",
+      "kind": "theorem",
+      "section": "9",
+      "title_tex": "Linear structural stability",
+      "labels": [
+        "thm:linear-stability"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 652,
+      "proof_ids": [
+        "P027"
+      ],
+      "line_end": 676,
+      "source_sha256": "da644e89726dc5a15eb3f2653a0a3e4e42c10353ae30a6a908e6ce614ed61a67",
+      "label": "thm:linear-stability",
+      "title": "Linear structural stability",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": "arithmetic: upstream statement/dependency traced, not an independent reproof of stability",
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 27,
+      "number": "9.4",
+      "kind": "proposition",
+      "section": "9",
+      "title_tex": "Optimality of linear structural stability",
+      "labels": [
+        "prop:linear-optimality"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 722,
+      "proof_ids": [
+        "P028"
+      ],
+      "line_end": 726,
+      "source_sha256": "f8d18fb2263adc522a5365aeee7d0083b3dac2064c0d9be51d635661b6a9c2bd",
+      "label": "prop:linear-optimality",
+      "title": "Optimality of linear structural stability",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 28,
+      "number": "9.5",
+      "kind": "proposition",
+      "section": "9",
+      "title_tex": "Two-sided structural energy",
+      "labels": [
+        "prop:structural-energy"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 760,
+      "proof_ids": [
+        "P029"
+      ],
+      "line_end": 771,
+      "source_sha256": "78a13a0e37a456756a30052816a6d80054d51b628e934c897a6cc551f48a5bf8",
+      "label": "prop:structural-energy",
+      "title": "Two-sided structural energy",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 29,
+      "number": "10.1",
+      "kind": "theorem",
+      "section": "10",
+      "title_tex": "Arithmetic deficit law",
+      "labels": [
+        "thm:arithmetic-deficit"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 844,
+      "proof_ids": [
+        "P030"
+      ],
+      "line_end": 857,
+      "source_sha256": "58a4897091b388c170c5b77ad437c4bf3eb9de656c6052d3b2c35ab7b1ac78d6",
+      "label": "thm:arithmetic-deficit",
+      "title": "Arithmetic deficit law",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 30,
+      "number": "10.2",
+      "kind": "corollary",
+      "section": "10",
+      "title_tex": "The $m^2$ error is uniformly optimal",
+      "labels": [
+        "cor:arithmetic-optimality"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 973,
+      "proof_ids": [
+        "P031"
+      ],
+      "line_end": 984,
+      "source_sha256": "b27f33b4a4dfa0c8fa6017213e079f091f9c305b22a32e25fee2e92bca6b4666",
+      "label": "cor:arithmetic-optimality",
+      "title": "The m^2 error is uniformly optimal",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 31,
+      "number": "10.3",
+      "kind": "remark",
+      "section": "10",
+      "title_tex": null,
+      "labels": [
+        "rem:arithmetic-scale"
+      ],
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 996,
+      "proof_ids": [],
+      "line_end": 1002,
+      "source_sha256": "4e5a1eda89bbc471b0d2f0ec91f1486f14329a2737eebeeb4bc1662d711455c8",
+      "label": "rem:arithmetic-scale",
+      "title": "Scope of the arithmetic deficit comparison and the phase law",
+      "title_source": "reviewed statement scope",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "expository remark; no proof environment required"
+    },
+    {
+      "ordinal": 32,
+      "number": "11.1",
+      "kind": "lemma",
+      "section": "11",
+      "title_tex": "The profile envelope",
+      "labels": [
+        "lem:profile-envelope"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 15,
+      "proof_ids": [
+        "P032"
+      ],
+      "line_end": 22,
+      "source_sha256": "4dc6f2055bf9c6cd9ff4e06f56e60cdcbc8044fab9c704f8d834f8640ae3b8ba",
+      "label": "lem:profile-envelope",
+      "title": "The profile envelope",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 33,
+      "number": "11.2",
+      "kind": "proposition",
+      "section": "11",
+      "title_tex": "Uniform constructive upper error",
+      "labels": [
+        "prop:constructive-error"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 80,
+      "proof_ids": [
+        "P033"
+      ],
+      "line_end": 87,
+      "source_sha256": "04860df15839cdbf0387ec0e440a7cb63b41136eb65d6bab334f44bbfecd8420",
+      "label": "prop:constructive-error",
+      "title": "Uniform constructive upper error",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 34,
+      "number": "12.1",
+      "kind": "lemma",
+      "section": "12",
+      "title_tex": "The scalar profile problem",
+      "labels": [
+        "lem:scalar-profile"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 169,
+      "proof_ids": [
+        "P034"
+      ],
+      "line_end": 177,
+      "source_sha256": "8df2ee5d57d758e5e2fd09998d0d430f470e5d859e3a1309d38480690ee6dcd5",
+      "label": "lem:scalar-profile",
+      "title": "The scalar profile problem",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 35,
+      "number": "12.2",
+      "kind": "theorem",
+      "section": "12",
+      "title_tex": "Sharp phase-dependent second-order asymptotic",
+      "labels": [
+        "thm:phase-law"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 213,
+      "proof_ids": [
+        "P035"
+      ],
+      "line_end": 225,
+      "source_sha256": "645056f100383fbcfc8f9979b554bff2f08a128b7a7fa9f55fc2bf730e3c35ae",
+      "label": "thm:phase-law",
+      "title": "Sharp phase-dependent second-order asymptotic",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 36,
+      "number": "12.3",
+      "kind": "corollary",
+      "section": "12",
+      "title_tex": "The optimal uniform second-order coefficient",
+      "labels": [
+        "cor:uniform-coefficient"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 385,
+      "proof_ids": [
+        "P036"
+      ],
+      "line_end": 398,
+      "source_sha256": "fbc8ad9fd5fb63c47f5f70ade61da29da7b35c77dc23c0dfc8ab4601425fef7f",
+      "label": "cor:uniform-coefficient",
+      "title": "The optimal uniform second-order coefficient",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 37,
+      "number": "13.1",
+      "kind": "theorem",
+      "section": "13",
+      "title_tex": "Fixed-offset asymptotic",
+      "labels": [
+        "thm:fixed-offset"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 432,
+      "proof_ids": [
+        "P037"
+      ],
+      "line_end": 445,
+      "source_sha256": "986de9fdf154fb3b020767fa806cfcda6791839469b997ac33ed7126599ec6e3",
+      "label": "thm:fixed-offset",
+      "title": "Fixed-offset asymptotic",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 38,
+      "number": "13.2",
+      "kind": "corollary",
+      "section": "13",
+      "title_tex": "Two exact finite-edge values",
+      "labels": [
+        "cor:two-exact-offsets"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 544,
+      "proof_ids": [
+        "P038"
+      ],
+      "line_end": 557,
+      "source_sha256": "d89e3c1f03ec2b93a027ff9a10c23da8a8dee19110bcc3a827051ab201b846ab",
+      "label": "cor:two-exact-offsets",
+      "title": "Two exact finite-edge values",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 39,
+      "number": "14.1",
+      "kind": "theorem",
+      "section": "14",
+      "title_tex": "Computable eventual polynomial",
+      "labels": [
+        "thm:eventual-polynomial"
+      ],
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 610,
+      "proof_ids": [
+        "P039"
+      ],
+      "line_end": 623,
+      "source_sha256": "e9cc648b74775f41dff30becf4366e9f13bba28e421f1c9543f3e0db5eb605c0",
+      "label": "thm:eventual-polynomial",
+      "title": "Computable eventual polynomial",
+      "title_source": "optional LaTeX title",
+      "subject_area": "arithmetic",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 40,
+      "number": "A.1",
+      "kind": "theorem",
+      "section": "A",
+      "title_tex": "Local quadratic stability",
+      "labels": [
+        "thm:local-stability"
+      ],
+      "source_file": "paper/appendixA.tex",
+      "line_start": 28,
+      "proof_ids": [
+        "P043"
+      ],
+      "line_end": 37,
+      "source_sha256": "63e53fc729790a2c49650cfd64d7adc6e613451e27fcc8c98eacbe87194fe459",
+      "label": "thm:local-stability",
+      "title": "Local quadratic stability",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 41,
+      "number": "A.2",
+      "kind": "lemma",
+      "section": "A",
+      "title_tex": "The neighborhood inequality",
+      "labels": [
+        "lem:neighborhood"
+      ],
+      "source_file": "paper/appendixA.tex",
+      "line_start": 60,
+      "proof_ids": [
+        "P040"
+      ],
+      "line_end": 68,
+      "source_sha256": "5b1a1af2c548fd8926e19c4e4fcebbfa23c5b53f5d77ea5c41eae3abdabfe9d1",
+      "label": "lem:neighborhood",
+      "title": "The neighborhood inequality",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": null,
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 42,
+      "number": "A.3",
+      "kind": "lemma",
+      "section": "A",
+      "title_tex": "Two-vertex coefficients",
+      "labels": [
+        "lem:two-vertex"
+      ],
+      "source_file": "paper/appendixA.tex",
+      "line_start": 133,
+      "proof_ids": [
+        "P041"
+      ],
+      "line_end": 149,
+      "source_sha256": "622d327210cb3a0e57a273d0c43abde605cff381d3c83174b7b2f779872c2331",
+      "label": "lem:two-vertex",
+      "title": "Two-vertex coefficients",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": "arithmetic: finite two-vertex coefficients/template Hessian inputs, not the full local continuum proof",
+      "proof_expectation": "proof location required"
+    },
+    {
+      "ordinal": 43,
+      "number": "A.4",
+      "kind": "lemma",
+      "section": "A",
+      "title_tex": "The template Hessian",
+      "labels": [
+        "lem:template-hessian"
+      ],
+      "source_file": "paper/appendixA.tex",
+      "line_start": 177,
+      "proof_ids": [
+        "P042"
+      ],
+      "line_end": 188,
+      "source_sha256": "32a687cb087ae98dc48b01746d66d95ae822628523915bc4ebafe76bcaa743df",
+      "label": "lem:template-hessian",
+      "title": "The template Hessian",
+      "title_source": "optional LaTeX title",
+      "subject_area": "stability",
+      "additional_subject_area": "arithmetic: finite two-vertex coefficients/template Hessian inputs, not the full local continuum proof",
+      "proof_expectation": "proof location required"
+    }
+  ],
+  "proofs": [
+    {
+      "id": "P001",
+      "caption": null,
+      "section": "1",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 82,
+      "line_end": 87,
+      "source_sha256": "c5c9b9fde1d6a9a93e898d34e644d916258f2b13b0198e37050ce85f427678c9",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "cor:asymptotic",
+          "number": "1.2",
+          "kind": "corollary",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "caption": null,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 243,
+      "line_end": 259,
+      "source_sha256": "a76f597890bc553a89f5fca7bf795e86250f62dc3a1840fe2607abaa6d8a7cfc",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:finite-attainment",
+          "number": "2.1",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "caption": null,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 266,
+      "line_end": 319,
+      "source_sha256": "10411e4be3188d6ea39bf83b150192cd5f93dd5fc74ef9ba3b2e932420a2370e",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:global-maximum",
+          "number": "2.2",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "caption": null,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 362,
+      "line_end": 393,
+      "source_sha256": "7a9e849912ac3e6d154c0de36203071a89775f4b03542a508ac34411a51c613e",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:variations",
+          "number": "2.3",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "caption": null,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 428,
+      "line_end": 440,
+      "source_sha256": "bb96db74200cb2350230a3fe9fcd82231215202357ffbd04c3aadfc835511c40",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:profile-insertion",
+          "number": "2.4",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P006",
+      "caption": null,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 462,
+      "line_end": 468,
+      "source_sha256": "2979e7dd9045b292e008a471e817a49475154be1b1efa94da244cce0d0005223",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:padding",
+          "number": "2.5",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P007",
+      "caption": null,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 506,
+      "line_end": 540,
+      "source_sha256": "3ba7f79942637ce34b951703252b3c1a9ddcb3bb79ddff1a4efbd309a53670a1",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:universal-links",
+          "number": "3.1",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P008",
+      "caption": null,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 570,
+      "line_end": 681,
+      "source_sha256": "a61519452f41cc1e427dce81ec4966413bfca9f7c54e560f9d96c9bf656e04ab",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:second-order-moment",
+          "number": "3.2",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "caption": null,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 696,
+      "line_end": 748,
+      "source_sha256": "29dd964410968de1908f1638fbe0a58c676987e80f7fd8d3ce175ba34b2430c2",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:active-density",
+          "number": "3.3",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P010",
+      "caption": null,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 915,
+      "line_end": 936,
+      "source_sha256": "63d13e94dea5819097aa9e39f3a634fdd52d119079ec389d2bb77a7db1691b56",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:finite-certificate",
+          "number": "4.1",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P011",
+      "caption": null,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 963,
+      "line_end": 983,
+      "source_sha256": "99ece842408e71f6da5ff4290bc68dc2a7407136f74896486cff58f1b5e8c117",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "cor:certificate-bound",
+          "number": "4.2",
+          "kind": "corollary",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P012",
+      "caption": null,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 1001,
+      "line_end": 1013,
+      "source_sha256": "e8dfb6b8574251b5c5d7dd0266f796444dde8136e8651d4a8e0f171743e626ef",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:triangle-domination",
+          "number": "4.3",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P013",
+      "caption": null,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 1028,
+      "line_end": 1035,
+      "source_sha256": "fa9f8fad42e9cbc357bd060a9caf729198787f08348f470128d954fe59f682ac",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:degree-span",
+          "number": "4.4",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P014",
+      "caption": null,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 1051,
+      "line_end": 1059,
+      "source_sha256": "ab8a8d0d5005865602c98684102e0af0cc759578d74c418e03d3245311b66a4d",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:codegree-span",
+          "number": "4.5",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P015",
+      "caption": "Proof of the inequalities in Theorems 1.1 and 1.3",
+      "section": "5",
+      "source_file": "paper/sections01-05.tex",
+      "line_start": 1063,
+      "line_end": 1077,
+      "source_sha256": "c7f6cc955c49c4b237fa1cf85eedc00ae7be92d8b93967005b47bbd61757eb67",
+      "association_basis": "explicit source caption plus reviewed component mapping",
+      "targets": [
+        {
+          "label": "thm:weighted",
+          "number": "1.1",
+          "kind": "theorem",
+          "component": "inequality"
+        },
+        {
+          "label": "thm:graphon",
+          "number": "1.3",
+          "kind": "theorem",
+          "component": "bound"
+        }
+      ]
+    },
+    {
+      "id": "P016",
+      "caption": null,
+      "section": "6",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 19,
+      "line_end": 81,
+      "source_sha256": "7e460d928643f70ed4b7933f57bc3eb8996a46bf36a28b00c24a2b7d6ff20e60",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:triangle-elimination",
+          "number": "6.1",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P017",
+      "caption": null,
+      "section": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 100,
+      "line_end": 205,
+      "source_sha256": "1171483d2f92cc121a473ebd8fcb216bf32a9f5330f33d91e462f2ccb21a0dd1",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:reference-equality",
+          "number": "7.1",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P018",
+      "caption": "Equality in Theorem 1.3",
+      "section": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 209,
+      "line_end": 229,
+      "source_sha256": "85ddf9d1c4bb9208884c9d8f76b17c21a80b903e7f493c1b0212cd85f50b05ea",
+      "association_basis": "explicit source caption plus reviewed component mapping",
+      "targets": [
+        {
+          "label": "thm:graphon",
+          "number": "1.3",
+          "kind": "theorem",
+          "component": "equality"
+        }
+      ]
+    },
+    {
+      "id": "P019",
+      "caption": "Equality in Theorem 1.1",
+      "section": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 231,
+      "line_end": 241,
+      "source_sha256": "ccc53e9701633dfec3c5c75f353a3d5170a4e46dfd413125d95760a04b4b436f",
+      "association_basis": "explicit source caption plus reviewed component mapping",
+      "targets": [
+        {
+          "label": "thm:weighted",
+          "number": "1.1",
+          "kind": "theorem",
+          "component": "equality"
+        }
+      ]
+    },
+    {
+      "id": "P020",
+      "caption": null,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 295,
+      "line_end": 338,
+      "source_sha256": "a50e5803819d76038a6c4dc1a7ab032a0908dc46a366ef8b76794f596e3f2601",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:peeling",
+          "number": "8.2",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P021",
+      "caption": null,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 352,
+      "line_end": 378,
+      "source_sha256": "3053394a3126246a030b23f789907b346930694089eeb86cb032aad6bfed5f15",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:positive-degree-compactness",
+          "number": "8.3",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P022",
+      "caption": null,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 396,
+      "line_end": 449,
+      "source_sha256": "9e9805115d4d6f3991c2ccdd9a11679e12b9c3cfbcbcdd8223e6b607ce1af602",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:integral-rounding",
+          "number": "8.4",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P023",
+      "caption": "Proof of Theorem 8.1",
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 460,
+      "line_end": 511,
+      "source_sha256": "4d07ca742de5a7133530fe22a123f647eb893ae4af9db3f5418fab41e0d214a3",
+      "association_basis": "explicit source caption plus reviewed component mapping",
+      "targets": [
+        {
+          "label": "thm:edge-stability",
+          "number": "8.1",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P024",
+      "caption": null,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 520,
+      "line_end": 559,
+      "source_sha256": "5d5662c6cf9dbbef7434e6f702586b3b91fa17099fe481bb94fda0d10f8a335d",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:sqrt-optimality",
+          "number": "8.5",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P025",
+      "caption": null,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 588,
+      "line_end": 608,
+      "source_sha256": "82e9c3d3fb4da8b06873915cd2f84b4c5d906b330e5dd3095c91b55ab98a4a55",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:two-defects",
+          "number": "9.1",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P026",
+      "caption": null,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 622,
+      "line_end": 650,
+      "source_sha256": "a7f607e24494289b0ed40464b6c353494e20018efc2300bcbf992186731bc25b",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:unbalanced-rounding",
+          "number": "9.2",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P027",
+      "caption": null,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 678,
+      "line_end": 720,
+      "source_sha256": "eb7dfc6e8ec654f8e95ff929abfd2ce8416046742da1240e5c2600c5c8f7d9a8",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "thm:linear-stability",
+          "number": "9.3",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P028",
+      "caption": null,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 728,
+      "line_end": 743,
+      "source_sha256": "7f6ac7a5e9b29ea215af8cce9c8c7c561ccdefe01d0ae1a136c66c1e2b67c515",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:linear-optimality",
+          "number": "9.4",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P029",
+      "caption": null,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 773,
+      "line_end": 821,
+      "source_sha256": "d81510731c54336f6c39788d7b7f0d25c268f891b3af1738a305f91c3e705799",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:structural-energy",
+          "number": "9.5",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P030",
+      "caption": null,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 859,
+      "line_end": 971,
+      "source_sha256": "1dbce1b1d23671ac73b9b5ea34bc31beb433102290244aa263d6ab91ab840ef7",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "thm:arithmetic-deficit",
+          "number": "10.1",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P031",
+      "caption": null,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line_start": 986,
+      "line_end": 994,
+      "source_sha256": "706f2fec1f4b8217ee9ec6d91dec32a1dabd2ae7902c029580e517cf3565afa0",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "cor:arithmetic-optimality",
+          "number": "10.2",
+          "kind": "corollary",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P032",
+      "caption": null,
+      "section": "11",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 23,
+      "line_end": 65,
+      "source_sha256": "8632bcb68ee30ce1785651a484793739ac0a4df00f10aadc33b7e79628d311dd",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:profile-envelope",
+          "number": "11.1",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P033",
+      "caption": null,
+      "section": "11",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 88,
+      "line_end": 158,
+      "source_sha256": "67e2f0691e5ff07fe59ea9a743454369ccae8f2f1685cafa7b25d1e2a0234cab",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "prop:constructive-error",
+          "number": "11.2",
+          "kind": "proposition",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P034",
+      "caption": null,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 178,
+      "line_end": 211,
+      "source_sha256": "82c755e035cc581717888733081abe01aed203f70190fe8ea78258e0d8733a41",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:scalar-profile",
+          "number": "12.1",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P035",
+      "caption": null,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 226,
+      "line_end": 383,
+      "source_sha256": "cc0261f628901e8993ec23becc86440806ea649270c9dc6ab862a3d4fb87cab2",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "thm:phase-law",
+          "number": "12.2",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P036",
+      "caption": null,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 399,
+      "line_end": 408,
+      "source_sha256": "efce8ee0dde58c586565889f6b3f03a135be7becdc1df8f7968df366d2213115",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "cor:uniform-coefficient",
+          "number": "12.3",
+          "kind": "corollary",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P037",
+      "caption": null,
+      "section": "13",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 446,
+      "line_end": 542,
+      "source_sha256": "a0b7b1f2a1c46817258d28c8441ba2b714fc3cb83f647844521dab3e7d511e86",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "thm:fixed-offset",
+          "number": "13.1",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P038",
+      "caption": null,
+      "section": "13",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 558,
+      "line_end": 599,
+      "source_sha256": "346278d53a7611d742adf900f9ab6413af0d939b0397e0e5d196631d236b7abf",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "cor:two-exact-offsets",
+          "number": "13.2",
+          "kind": "corollary",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P039",
+      "caption": null,
+      "section": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line_start": 624,
+      "line_end": 752,
+      "source_sha256": "09abbf6d7061df30fa965e2171dd314890ae6e3f7d7e704c01f3b6aac6d92dcf",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "thm:eventual-polynomial",
+          "number": "14.1",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P040",
+      "caption": null,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line_start": 69,
+      "line_end": 131,
+      "source_sha256": "7ab9db1de23568e98a7f0549e66823075422739cafa09a9fe20bfc99f09e350f",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:neighborhood",
+          "number": "A.2",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P041",
+      "caption": null,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line_start": 150,
+      "line_end": 175,
+      "source_sha256": "b594abcc86f9e8325e9e6f5c8a04087d330d227564c764972c1ad36e2df87da1",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:two-vertex",
+          "number": "A.3",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P042",
+      "caption": null,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line_start": 189,
+      "line_end": 211,
+      "source_sha256": "07b1a0910da0326921d1a5a69886c85cb64ee8383fb3b636da8da80f1fd8be25",
+      "association_basis": "immediately follows the statement, with only whitespace/comments between",
+      "targets": [
+        {
+          "label": "lem:template-hessian",
+          "number": "A.4",
+          "kind": "lemma",
+          "component": "full statement"
+        }
+      ]
+    },
+    {
+      "id": "P043",
+      "caption": "Proof of Theorem A.1",
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line_start": 360,
+      "line_end": 479,
+      "source_sha256": "20dab7e63d22a91a0e12ab82f6bcfa1bbd86815258d79e02d2de8940784e62e9",
+      "association_basis": "explicit source caption plus reviewed component mapping",
+      "targets": [
+        {
+          "label": "thm:local-stability",
+          "number": "A.1",
+          "kind": "theorem",
+          "component": "full statement"
+        }
+      ]
+    }
+  ],
+  "equation_tags": [
+    {
+      "number": 1,
+      "section": "1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 59,
+      "labels": [
+        "eq:weighted"
+      ]
+    },
+    {
+      "number": 2,
+      "section": "1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 145,
+      "labels": []
+    },
+    {
+      "number": 3,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 282,
+      "labels": []
+    },
+    {
+      "number": 4,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 289,
+      "labels": []
+    },
+    {
+      "number": 5,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 348,
+      "labels": []
+    },
+    {
+      "number": 6,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 349,
+      "labels": []
+    },
+    {
+      "number": 7,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 351,
+      "labels": []
+    },
+    {
+      "number": 8,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 359,
+      "labels": []
+    },
+    {
+      "number": 9,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 402,
+      "labels": []
+    },
+    {
+      "number": 10,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 416,
+      "labels": []
+    },
+    {
+      "number": 11,
+      "section": "2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 446,
+      "labels": []
+    },
+    {
+      "number": 12,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 498,
+      "labels": []
+    },
+    {
+      "number": 13,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 503,
+      "labels": []
+    },
+    {
+      "number": 14,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 556,
+      "labels": []
+    },
+    {
+      "number": 15,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 561,
+      "labels": []
+    },
+    {
+      "number": 16,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 567,
+      "labels": []
+    },
+    {
+      "number": 17,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 594,
+      "labels": []
+    },
+    {
+      "number": 18,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 601,
+      "labels": []
+    },
+    {
+      "number": 19,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 640,
+      "labels": []
+    },
+    {
+      "number": 20,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 666,
+      "labels": []
+    },
+    {
+      "number": 21,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 693,
+      "labels": []
+    },
+    {
+      "number": 22,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 701,
+      "labels": []
+    },
+    {
+      "number": 23,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 715,
+      "labels": []
+    },
+    {
+      "number": 24,
+      "section": "3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 723,
+      "labels": []
+    },
+    {
+      "number": 25,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 834,
+      "labels": []
+    },
+    {
+      "number": 26,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 875,
+      "labels": []
+    },
+    {
+      "number": 27,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 902,
+      "labels": []
+    },
+    {
+      "number": 28,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 910,
+      "labels": []
+    },
+    {
+      "number": 29,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 954,
+      "labels": []
+    },
+    {
+      "number": 30,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 1023,
+      "labels": []
+    },
+    {
+      "number": 31,
+      "section": "4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 1046,
+      "labels": []
+    },
+    {
+      "number": 32,
+      "section": "6",
+      "source_file": "paper/sections06-10.tex",
+      "line": 25,
+      "labels": [
+        "eq:32"
+      ]
+    },
+    {
+      "number": 33,
+      "section": "6",
+      "source_file": "paper/sections06-10.tex",
+      "line": 66,
+      "labels": [
+        "eq:33"
+      ]
+    },
+    {
+      "number": 34,
+      "section": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line": 117,
+      "labels": [
+        "eq:34"
+      ]
+    },
+    {
+      "number": 35,
+      "section": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line": 128,
+      "labels": [
+        "eq:35"
+      ]
+    },
+    {
+      "number": 36,
+      "section": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line": 150,
+      "labels": [
+        "eq:36"
+      ]
+    },
+    {
+      "number": 37,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 287,
+      "labels": [
+        "eq:37"
+      ]
+    },
+    {
+      "number": 38,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 288,
+      "labels": [
+        "eq:38"
+      ]
+    },
+    {
+      "number": 39,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 289,
+      "labels": [
+        "eq:39"
+      ]
+    },
+    {
+      "number": 40,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 311,
+      "labels": [
+        "eq:40"
+      ]
+    },
+    {
+      "number": 41,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 401,
+      "labels": [
+        "eq:41"
+      ]
+    },
+    {
+      "number": 42,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 422,
+      "labels": [
+        "eq:42"
+      ]
+    },
+    {
+      "number": 43,
+      "section": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 466,
+      "labels": [
+        "eq:43"
+      ]
+    },
+    {
+      "number": 44,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 582,
+      "labels": [
+        "eq:44"
+      ]
+    },
+    {
+      "number": 45,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 616,
+      "labels": [
+        "eq:45"
+      ]
+    },
+    {
+      "number": 46,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 617,
+      "labels": [
+        "eq:46"
+      ]
+    },
+    {
+      "number": 47,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 662,
+      "labels": [
+        "eq:47"
+      ]
+    },
+    {
+      "number": 48,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 667,
+      "labels": [
+        "eq:48"
+      ]
+    },
+    {
+      "number": 49,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 763,
+      "labels": [
+        "eq:49"
+      ]
+    },
+    {
+      "number": 50,
+      "section": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 788,
+      "labels": [
+        "eq:50"
+      ]
+    },
+    {
+      "number": 51,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 847,
+      "labels": [
+        "eq:51"
+      ]
+    },
+    {
+      "number": 52,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 852,
+      "labels": [
+        "eq:52"
+      ]
+    },
+    {
+      "number": 53,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 862,
+      "labels": [
+        "eq:53"
+      ]
+    },
+    {
+      "number": 54,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 873,
+      "labels": [
+        "eq:54"
+      ]
+    },
+    {
+      "number": 55,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 877,
+      "labels": [
+        "eq:55"
+      ]
+    },
+    {
+      "number": 56,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 913,
+      "labels": [
+        "eq:56"
+      ]
+    },
+    {
+      "number": 57,
+      "section": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 927,
+      "labels": [
+        "eq:57"
+      ]
+    },
+    {
+      "number": 58,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 172,
+      "labels": [
+        "eq:scalar-profile"
+      ]
+    },
+    {
+      "number": 59,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 216,
+      "labels": [
+        "eq:phase-law"
+      ]
+    },
+    {
+      "number": 60,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 233,
+      "labels": [
+        "eq:phase-structure"
+      ]
+    },
+    {
+      "number": 61,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 255,
+      "labels": [
+        "eq:phase-masses"
+      ]
+    },
+    {
+      "number": 62,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 266,
+      "labels": [
+        "eq:phase-spectrum"
+      ]
+    },
+    {
+      "number": 63,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 281,
+      "labels": [
+        "eq:phase-edge-count"
+      ]
+    },
+    {
+      "number": 64,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 301,
+      "labels": [
+        "eq:wrong-pair-error"
+      ]
+    },
+    {
+      "number": 65,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 317,
+      "labels": [
+        "eq:good-pentagons"
+      ]
+    },
+    {
+      "number": 66,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 331,
+      "labels": [
+        "eq:phase-pentagon-count"
+      ]
+    },
+    {
+      "number": 67,
+      "section": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 352,
+      "labels": [
+        "eq:phase-deficit"
+      ]
+    },
+    {
+      "number": 68,
+      "section": "13",
+      "source_file": "paper/sections11-14.tex",
+      "line": 423,
+      "labels": [
+        "eq:lattice-objective"
+      ]
+    },
+    {
+      "number": 69,
+      "section": "13",
+      "source_file": "paper/sections11-14.tex",
+      "line": 434,
+      "labels": [
+        "eq:fixed-offset-asymptotic"
+      ]
+    },
+    {
+      "number": 70,
+      "section": "13",
+      "source_file": "paper/sections11-14.tex",
+      "line": 466,
+      "labels": [
+        "eq:offset-edge-count"
+      ]
+    },
+    {
+      "number": 71,
+      "section": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line": 614,
+      "labels": [
+        "eq:eventual-polynomial"
+      ]
+    },
+    {
+      "number": 72,
+      "section": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line": 641,
+      "labels": [
+        "eq:energy-equality"
+      ]
+    },
+    {
+      "number": 73,
+      "section": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line": 646,
+      "labels": [
+        "eq:explicit-discrete-bounds"
+      ]
+    },
+    {
+      "number": 74,
+      "section": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line": 668,
+      "labels": [
+        "eq:admissible-data"
+      ]
+    },
+    {
+      "number": 75,
+      "section": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line": 703,
+      "labels": [
+        "eq:exact-construction-polynomial"
+      ]
+    },
+    {
+      "number": 76,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 31,
+      "labels": [
+        "eq:local-stability"
+      ]
+    },
+    {
+      "number": 77,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 80,
+      "labels": [
+        "eq:neighborhood-path-count"
+      ]
+    },
+    {
+      "number": 78,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 185,
+      "labels": [
+        "eq:hessian-defect"
+      ]
+    },
+    {
+      "number": 79,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 227,
+      "labels": [
+        "eq:fractional-profile-distance"
+      ]
+    },
+    {
+      "number": 80,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 252,
+      "labels": [
+        "eq:row-profile-distance"
+      ]
+    },
+    {
+      "number": 81,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 274,
+      "labels": [
+        "eq:l1-continuity"
+      ]
+    },
+    {
+      "number": 82,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 287,
+      "labels": [
+        "eq:vertex-density-variation"
+      ]
+    },
+    {
+      "number": 83,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 294,
+      "labels": [
+        "eq:density-deletion-errors"
+      ]
+    },
+    {
+      "number": 84,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 302,
+      "labels": [
+        "eq:background-replacement-error"
+      ]
+    },
+    {
+      "number": 85,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 308,
+      "labels": [
+        "eq:local-small-degree-link"
+      ]
+    },
+    {
+      "number": 86,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 324,
+      "labels": [
+        "eq:edge-variation"
+      ]
+    },
+    {
+      "number": 87,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 341,
+      "labels": [
+        "eq:edge-variation-error"
+      ]
+    },
+    {
+      "number": 88,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 345,
+      "labels": [
+        "eq:edge-sign-margin"
+      ]
+    },
+    {
+      "number": 89,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 423,
+      "labels": [
+        "eq:reclassified-masses"
+      ]
+    },
+    {
+      "number": 90,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 428,
+      "labels": [
+        "eq:reclassified-errors"
+      ]
+    },
+    {
+      "number": 91,
+      "section": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 458,
+      "labels": [
+        "eq:four-defects"
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "label": "thm:weighted",
+      "target_kind": "theorem",
+      "target_number": "1.1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 56
+    },
+    {
+      "label": "eq:weighted",
+      "target_kind": "equation",
+      "target_number": "1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 59
+    },
+    {
+      "label": "cor:asymptotic",
+      "target_kind": "corollary",
+      "target_number": "1.2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 75
+    },
+    {
+      "label": "thm:graphon",
+      "target_kind": "theorem",
+      "target_number": "1.3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 112
+    },
+    {
+      "label": "fig:arithmetic-phase",
+      "target_kind": "figure",
+      "target_number": "1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 215
+    },
+    {
+      "label": "lem:finite-attainment",
+      "target_kind": "lemma",
+      "target_number": "2.1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 238
+    },
+    {
+      "label": "lem:global-maximum",
+      "target_kind": "lemma",
+      "target_number": "2.2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 261
+    },
+    {
+      "label": "lem:variations",
+      "target_kind": "lemma",
+      "target_number": "2.3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 340
+    },
+    {
+      "label": "lem:profile-insertion",
+      "target_kind": "lemma",
+      "target_number": "2.4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 424
+    },
+    {
+      "label": "lem:padding",
+      "target_kind": "lemma",
+      "target_number": "2.5",
+      "source_file": "paper/sections01-05.tex",
+      "line": 453
+    },
+    {
+      "label": "lem:universal-links",
+      "target_kind": "lemma",
+      "target_number": "3.1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 487
+    },
+    {
+      "label": "lem:second-order-moment",
+      "target_kind": "lemma",
+      "target_number": "3.2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 564
+    },
+    {
+      "label": "prop:active-density",
+      "target_kind": "proposition",
+      "target_number": "3.3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 683
+    },
+    {
+      "label": "prop:finite-certificate",
+      "target_kind": "proposition",
+      "target_number": "4.1",
+      "source_file": "paper/sections01-05.tex",
+      "line": 893
+    },
+    {
+      "label": "cor:certificate-bound",
+      "target_kind": "corollary",
+      "target_number": "4.2",
+      "source_file": "paper/sections01-05.tex",
+      "line": 958
+    },
+    {
+      "label": "lem:triangle-domination",
+      "target_kind": "lemma",
+      "target_number": "4.3",
+      "source_file": "paper/sections01-05.tex",
+      "line": 991
+    },
+    {
+      "label": "lem:degree-span",
+      "target_kind": "lemma",
+      "target_number": "4.4",
+      "source_file": "paper/sections01-05.tex",
+      "line": 1020
+    },
+    {
+      "label": "lem:codegree-span",
+      "target_kind": "lemma",
+      "target_number": "4.5",
+      "source_file": "paper/sections01-05.tex",
+      "line": 1037
+    },
+    {
+      "label": "sec:triangles",
+      "target_kind": "section",
+      "target_number": "6",
+      "source_file": "paper/sections06-10.tex",
+      "line": 2
+    },
+    {
+      "label": "prop:triangle-elimination",
+      "target_kind": "proposition",
+      "target_number": "6.1",
+      "source_file": "paper/sections06-10.tex",
+      "line": 8
+    },
+    {
+      "label": "eq:32",
+      "target_kind": "equation",
+      "target_number": "32",
+      "source_file": "paper/sections06-10.tex",
+      "line": 25
+    },
+    {
+      "label": "eq:33",
+      "target_kind": "equation",
+      "target_number": "33",
+      "source_file": "paper/sections06-10.tex",
+      "line": 66
+    },
+    {
+      "label": "sec:equality",
+      "target_kind": "section",
+      "target_number": "7",
+      "source_file": "paper/sections06-10.tex",
+      "line": 84
+    },
+    {
+      "label": "prop:reference-equality",
+      "target_kind": "proposition",
+      "target_number": "7.1",
+      "source_file": "paper/sections06-10.tex",
+      "line": 94
+    },
+    {
+      "label": "eq:34",
+      "target_kind": "equation",
+      "target_number": "34",
+      "source_file": "paper/sections06-10.tex",
+      "line": 117
+    },
+    {
+      "label": "eq:35",
+      "target_kind": "equation",
+      "target_number": "35",
+      "source_file": "paper/sections06-10.tex",
+      "line": 128
+    },
+    {
+      "label": "eq:36",
+      "target_kind": "equation",
+      "target_number": "36",
+      "source_file": "paper/sections06-10.tex",
+      "line": 150
+    },
+    {
+      "label": "sec:stability",
+      "target_kind": "section",
+      "target_number": "8",
+      "source_file": "paper/sections06-10.tex",
+      "line": 244
+    },
+    {
+      "label": "thm:edge-stability",
+      "target_kind": "theorem",
+      "target_number": "8.1",
+      "source_file": "paper/sections06-10.tex",
+      "line": 253
+    },
+    {
+      "label": "lem:peeling",
+      "target_kind": "lemma",
+      "target_number": "8.2",
+      "source_file": "paper/sections06-10.tex",
+      "line": 279
+    },
+    {
+      "label": "eq:37",
+      "target_kind": "equation",
+      "target_number": "37",
+      "source_file": "paper/sections06-10.tex",
+      "line": 287
+    },
+    {
+      "label": "eq:38",
+      "target_kind": "equation",
+      "target_number": "38",
+      "source_file": "paper/sections06-10.tex",
+      "line": 288
+    },
+    {
+      "label": "eq:39",
+      "target_kind": "equation",
+      "target_number": "39",
+      "source_file": "paper/sections06-10.tex",
+      "line": 289
+    },
+    {
+      "label": "eq:40",
+      "target_kind": "equation",
+      "target_number": "40",
+      "source_file": "paper/sections06-10.tex",
+      "line": 311
+    },
+    {
+      "label": "lem:positive-degree-compactness",
+      "target_kind": "lemma",
+      "target_number": "8.3",
+      "source_file": "paper/sections06-10.tex",
+      "line": 347
+    },
+    {
+      "label": "lem:integral-rounding",
+      "target_kind": "lemma",
+      "target_number": "8.4",
+      "source_file": "paper/sections06-10.tex",
+      "line": 385
+    },
+    {
+      "label": "eq:41",
+      "target_kind": "equation",
+      "target_number": "41",
+      "source_file": "paper/sections06-10.tex",
+      "line": 401
+    },
+    {
+      "label": "eq:42",
+      "target_kind": "equation",
+      "target_number": "42",
+      "source_file": "paper/sections06-10.tex",
+      "line": 422
+    },
+    {
+      "label": "eq:43",
+      "target_kind": "equation",
+      "target_number": "43",
+      "source_file": "paper/sections06-10.tex",
+      "line": 466
+    },
+    {
+      "label": "prop:sqrt-optimality",
+      "target_kind": "proposition",
+      "target_number": "8.5",
+      "source_file": "paper/sections06-10.tex",
+      "line": 515
+    },
+    {
+      "label": "sec:linear-stability",
+      "target_kind": "section",
+      "target_number": "9",
+      "source_file": "paper/sections06-10.tex",
+      "line": 562
+    },
+    {
+      "label": "prop:two-defects",
+      "target_kind": "proposition",
+      "target_number": "9.1",
+      "source_file": "paper/sections06-10.tex",
+      "line": 578
+    },
+    {
+      "label": "eq:44",
+      "target_kind": "equation",
+      "target_number": "44",
+      "source_file": "paper/sections06-10.tex",
+      "line": 582
+    },
+    {
+      "label": "lem:unbalanced-rounding",
+      "target_kind": "lemma",
+      "target_number": "9.2",
+      "source_file": "paper/sections06-10.tex",
+      "line": 610
+    },
+    {
+      "label": "eq:45",
+      "target_kind": "equation",
+      "target_number": "45",
+      "source_file": "paper/sections06-10.tex",
+      "line": 616
+    },
+    {
+      "label": "eq:46",
+      "target_kind": "equation",
+      "target_number": "46",
+      "source_file": "paper/sections06-10.tex",
+      "line": 617
+    },
+    {
+      "label": "thm:linear-stability",
+      "target_kind": "theorem",
+      "target_number": "9.3",
+      "source_file": "paper/sections06-10.tex",
+      "line": 652
+    },
+    {
+      "label": "eq:47",
+      "target_kind": "equation",
+      "target_number": "47",
+      "source_file": "paper/sections06-10.tex",
+      "line": 662
+    },
+    {
+      "label": "eq:48",
+      "target_kind": "equation",
+      "target_number": "48",
+      "source_file": "paper/sections06-10.tex",
+      "line": 667
+    },
+    {
+      "label": "prop:linear-optimality",
+      "target_kind": "proposition",
+      "target_number": "9.4",
+      "source_file": "paper/sections06-10.tex",
+      "line": 723
+    },
+    {
+      "label": "prop:structural-energy",
+      "target_kind": "proposition",
+      "target_number": "9.5",
+      "source_file": "paper/sections06-10.tex",
+      "line": 760
+    },
+    {
+      "label": "eq:49",
+      "target_kind": "equation",
+      "target_number": "49",
+      "source_file": "paper/sections06-10.tex",
+      "line": 763
+    },
+    {
+      "label": "eq:50",
+      "target_kind": "equation",
+      "target_number": "50",
+      "source_file": "paper/sections06-10.tex",
+      "line": 788
+    },
+    {
+      "label": "sec:arithmetic-size",
+      "target_kind": "section",
+      "target_number": "10",
+      "source_file": "paper/sections06-10.tex",
+      "line": 824
+    },
+    {
+      "label": "thm:arithmetic-deficit",
+      "target_kind": "theorem",
+      "target_number": "10.1",
+      "source_file": "paper/sections06-10.tex",
+      "line": 844
+    },
+    {
+      "label": "eq:51",
+      "target_kind": "equation",
+      "target_number": "51",
+      "source_file": "paper/sections06-10.tex",
+      "line": 847
+    },
+    {
+      "label": "eq:52",
+      "target_kind": "equation",
+      "target_number": "52",
+      "source_file": "paper/sections06-10.tex",
+      "line": 852
+    },
+    {
+      "label": "eq:53",
+      "target_kind": "equation",
+      "target_number": "53",
+      "source_file": "paper/sections06-10.tex",
+      "line": 862
+    },
+    {
+      "label": "eq:54",
+      "target_kind": "equation",
+      "target_number": "54",
+      "source_file": "paper/sections06-10.tex",
+      "line": 873
+    },
+    {
+      "label": "eq:55",
+      "target_kind": "equation",
+      "target_number": "55",
+      "source_file": "paper/sections06-10.tex",
+      "line": 877
+    },
+    {
+      "label": "eq:56",
+      "target_kind": "equation",
+      "target_number": "56",
+      "source_file": "paper/sections06-10.tex",
+      "line": 913
+    },
+    {
+      "label": "eq:57",
+      "target_kind": "equation",
+      "target_number": "57",
+      "source_file": "paper/sections06-10.tex",
+      "line": 927
+    },
+    {
+      "label": "cor:arithmetic-optimality",
+      "target_kind": "corollary",
+      "target_number": "10.2",
+      "source_file": "paper/sections06-10.tex",
+      "line": 974
+    },
+    {
+      "label": "rem:arithmetic-scale",
+      "target_kind": "remark",
+      "target_number": "10.3",
+      "source_file": "paper/sections06-10.tex",
+      "line": 996
+    },
+    {
+      "label": "sec:profiles",
+      "target_kind": "section",
+      "target_number": "11",
+      "source_file": "paper/sections11-14.tex",
+      "line": 2
+    },
+    {
+      "label": "lem:profile-envelope",
+      "target_kind": "lemma",
+      "target_number": "11.1",
+      "source_file": "paper/sections11-14.tex",
+      "line": 15
+    },
+    {
+      "label": "prop:constructive-error",
+      "target_kind": "proposition",
+      "target_number": "11.2",
+      "source_file": "paper/sections11-14.tex",
+      "line": 81
+    },
+    {
+      "label": "sec:phase-law",
+      "target_kind": "section",
+      "target_number": "12",
+      "source_file": "paper/sections11-14.tex",
+      "line": 160
+    },
+    {
+      "label": "lem:scalar-profile",
+      "target_kind": "lemma",
+      "target_number": "12.1",
+      "source_file": "paper/sections11-14.tex",
+      "line": 169
+    },
+    {
+      "label": "eq:scalar-profile",
+      "target_kind": "equation",
+      "target_number": "58",
+      "source_file": "paper/sections11-14.tex",
+      "line": 172
+    },
+    {
+      "label": "thm:phase-law",
+      "target_kind": "theorem",
+      "target_number": "12.2",
+      "source_file": "paper/sections11-14.tex",
+      "line": 214
+    },
+    {
+      "label": "eq:phase-law",
+      "target_kind": "equation",
+      "target_number": "59",
+      "source_file": "paper/sections11-14.tex",
+      "line": 216
+    },
+    {
+      "label": "eq:phase-structure",
+      "target_kind": "equation",
+      "target_number": "60",
+      "source_file": "paper/sections11-14.tex",
+      "line": 233
+    },
+    {
+      "label": "eq:phase-masses",
+      "target_kind": "equation",
+      "target_number": "61",
+      "source_file": "paper/sections11-14.tex",
+      "line": 255
+    },
+    {
+      "label": "eq:phase-spectrum",
+      "target_kind": "equation",
+      "target_number": "62",
+      "source_file": "paper/sections11-14.tex",
+      "line": 266
+    },
+    {
+      "label": "eq:phase-edge-count",
+      "target_kind": "equation",
+      "target_number": "63",
+      "source_file": "paper/sections11-14.tex",
+      "line": 281
+    },
+    {
+      "label": "eq:wrong-pair-error",
+      "target_kind": "equation",
+      "target_number": "64",
+      "source_file": "paper/sections11-14.tex",
+      "line": 301
+    },
+    {
+      "label": "eq:good-pentagons",
+      "target_kind": "equation",
+      "target_number": "65",
+      "source_file": "paper/sections11-14.tex",
+      "line": 317
+    },
+    {
+      "label": "eq:phase-pentagon-count",
+      "target_kind": "equation",
+      "target_number": "66",
+      "source_file": "paper/sections11-14.tex",
+      "line": 331
+    },
+    {
+      "label": "eq:phase-deficit",
+      "target_kind": "equation",
+      "target_number": "67",
+      "source_file": "paper/sections11-14.tex",
+      "line": 352
+    },
+    {
+      "label": "cor:uniform-coefficient",
+      "target_kind": "corollary",
+      "target_number": "12.3",
+      "source_file": "paper/sections11-14.tex",
+      "line": 386
+    },
+    {
+      "label": "sec:lattice-offset",
+      "target_kind": "section",
+      "target_number": "13",
+      "source_file": "paper/sections11-14.tex",
+      "line": 411
+    },
+    {
+      "label": "eq:lattice-objective",
+      "target_kind": "equation",
+      "target_number": "68",
+      "source_file": "paper/sections11-14.tex",
+      "line": 423
+    },
+    {
+      "label": "thm:fixed-offset",
+      "target_kind": "theorem",
+      "target_number": "13.1",
+      "source_file": "paper/sections11-14.tex",
+      "line": 432
+    },
+    {
+      "label": "eq:fixed-offset-asymptotic",
+      "target_kind": "equation",
+      "target_number": "69",
+      "source_file": "paper/sections11-14.tex",
+      "line": 434
+    },
+    {
+      "label": "eq:offset-edge-count",
+      "target_kind": "equation",
+      "target_number": "70",
+      "source_file": "paper/sections11-14.tex",
+      "line": 466
+    },
+    {
+      "label": "cor:two-exact-offsets",
+      "target_kind": "corollary",
+      "target_number": "13.2",
+      "source_file": "paper/sections11-14.tex",
+      "line": 545
+    },
+    {
+      "label": "sec:eventual-polynomial",
+      "target_kind": "section",
+      "target_number": "14",
+      "source_file": "paper/sections11-14.tex",
+      "line": 602
+    },
+    {
+      "label": "thm:eventual-polynomial",
+      "target_kind": "theorem",
+      "target_number": "14.1",
+      "source_file": "paper/sections11-14.tex",
+      "line": 611
+    },
+    {
+      "label": "eq:eventual-polynomial",
+      "target_kind": "equation",
+      "target_number": "71",
+      "source_file": "paper/sections11-14.tex",
+      "line": 614
+    },
+    {
+      "label": "eq:energy-equality",
+      "target_kind": "equation",
+      "target_number": "72",
+      "source_file": "paper/sections11-14.tex",
+      "line": 641
+    },
+    {
+      "label": "eq:explicit-discrete-bounds",
+      "target_kind": "equation",
+      "target_number": "73",
+      "source_file": "paper/sections11-14.tex",
+      "line": 646
+    },
+    {
+      "label": "eq:admissible-data",
+      "target_kind": "equation",
+      "target_number": "74",
+      "source_file": "paper/sections11-14.tex",
+      "line": 668
+    },
+    {
+      "label": "eq:exact-construction-polynomial",
+      "target_kind": "equation",
+      "target_number": "75",
+      "source_file": "paper/sections11-14.tex",
+      "line": 703
+    },
+    {
+      "label": "app:local-stability",
+      "target_kind": "section",
+      "target_number": "A",
+      "source_file": "paper/appendixA.tex",
+      "line": 2
+    },
+    {
+      "label": "thm:local-stability",
+      "target_kind": "theorem",
+      "target_number": "A.1",
+      "source_file": "paper/appendixA.tex",
+      "line": 28
+    },
+    {
+      "label": "eq:local-stability",
+      "target_kind": "equation",
+      "target_number": "76",
+      "source_file": "paper/appendixA.tex",
+      "line": 31
+    },
+    {
+      "label": "lem:neighborhood",
+      "target_kind": "lemma",
+      "target_number": "A.2",
+      "source_file": "paper/appendixA.tex",
+      "line": 60
+    },
+    {
+      "label": "eq:neighborhood-path-count",
+      "target_kind": "equation",
+      "target_number": "77",
+      "source_file": "paper/appendixA.tex",
+      "line": 80
+    },
+    {
+      "label": "lem:two-vertex",
+      "target_kind": "lemma",
+      "target_number": "A.3",
+      "source_file": "paper/appendixA.tex",
+      "line": 133
+    },
+    {
+      "label": "lem:template-hessian",
+      "target_kind": "lemma",
+      "target_number": "A.4",
+      "source_file": "paper/appendixA.tex",
+      "line": 177
+    },
+    {
+      "label": "eq:hessian-defect",
+      "target_kind": "equation",
+      "target_number": "78",
+      "source_file": "paper/appendixA.tex",
+      "line": 185
+    },
+    {
+      "label": "eq:fractional-profile-distance",
+      "target_kind": "equation",
+      "target_number": "79",
+      "source_file": "paper/appendixA.tex",
+      "line": 227
+    },
+    {
+      "label": "eq:row-profile-distance",
+      "target_kind": "equation",
+      "target_number": "80",
+      "source_file": "paper/appendixA.tex",
+      "line": 252
+    },
+    {
+      "label": "eq:l1-continuity",
+      "target_kind": "equation",
+      "target_number": "81",
+      "source_file": "paper/appendixA.tex",
+      "line": 274
+    },
+    {
+      "label": "eq:vertex-density-variation",
+      "target_kind": "equation",
+      "target_number": "82",
+      "source_file": "paper/appendixA.tex",
+      "line": 287
+    },
+    {
+      "label": "eq:density-deletion-errors",
+      "target_kind": "equation",
+      "target_number": "83",
+      "source_file": "paper/appendixA.tex",
+      "line": 294
+    },
+    {
+      "label": "eq:background-replacement-error",
+      "target_kind": "equation",
+      "target_number": "84",
+      "source_file": "paper/appendixA.tex",
+      "line": 302
+    },
+    {
+      "label": "eq:local-small-degree-link",
+      "target_kind": "equation",
+      "target_number": "85",
+      "source_file": "paper/appendixA.tex",
+      "line": 308
+    },
+    {
+      "label": "eq:edge-variation",
+      "target_kind": "equation",
+      "target_number": "86",
+      "source_file": "paper/appendixA.tex",
+      "line": 324
+    },
+    {
+      "label": "eq:edge-variation-error",
+      "target_kind": "equation",
+      "target_number": "87",
+      "source_file": "paper/appendixA.tex",
+      "line": 341
+    },
+    {
+      "label": "eq:edge-sign-margin",
+      "target_kind": "equation",
+      "target_number": "88",
+      "source_file": "paper/appendixA.tex",
+      "line": 345
+    },
+    {
+      "label": "eq:reclassified-masses",
+      "target_kind": "equation",
+      "target_number": "89",
+      "source_file": "paper/appendixA.tex",
+      "line": 423
+    },
+    {
+      "label": "eq:reclassified-errors",
+      "target_kind": "equation",
+      "target_number": "90",
+      "source_file": "paper/appendixA.tex",
+      "line": 428
+    },
+    {
+      "label": "eq:four-defects",
+      "target_kind": "equation",
+      "target_number": "91",
+      "source_file": "paper/appendixA.tex",
+      "line": 458
+    }
+  ],
+  "references": {
+    "label_based": [],
+    "literal_named_results": [
+      {
+        "kind": "theorem",
+        "number": "1.1",
+        "target_label": "thm:weighted",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 83
+      },
+      {
+        "kind": "theorem",
+        "number": "8.1",
+        "target_label": "thm:edge-stability",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 123
+      },
+      {
+        "kind": "theorem",
+        "number": "12.2",
+        "target_label": "thm:phase-law",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 143
+      },
+      {
+        "kind": "theorem",
+        "number": "10.1",
+        "target_label": "thm:arithmetic-deficit",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 155
+      },
+      {
+        "kind": "theorem",
+        "number": "13.1",
+        "target_label": "thm:fixed-offset",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 159
+      },
+      {
+        "kind": "theorem",
+        "number": "14.1",
+        "target_label": "thm:eventual-polynomial",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 161
+      },
+      {
+        "kind": "corollary",
+        "number": "13.2",
+        "target_label": "cor:two-exact-offsets",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 164
+      },
+      {
+        "kind": "lemma",
+        "number": "3.1",
+        "target_label": "lem:universal-links",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 284
+      },
+      {
+        "kind": "lemma",
+        "number": "3.1",
+        "target_label": "lem:universal-links",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 558
+      },
+      {
+        "kind": "lemma",
+        "number": "3.2",
+        "target_label": "lem:second-order-moment",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 712
+      },
+      {
+        "kind": "theorem",
+        "number": "1.1",
+        "target_label": "thm:weighted",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 1063
+      },
+      {
+        "kind": "theorem",
+        "number": "1.3",
+        "target_label": "thm:graphon",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 1063
+      },
+      {
+        "kind": "lemma",
+        "number": "2.2",
+        "target_label": "lem:global-maximum",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 1064
+      },
+      {
+        "kind": "proposition",
+        "number": "3.3",
+        "target_label": "prop:active-density",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 1066
+      },
+      {
+        "kind": "lemma",
+        "number": "2.5",
+        "target_label": "lem:padding",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 1067
+      },
+      {
+        "kind": "corollary",
+        "number": "4.2",
+        "target_label": "cor:certificate-bound",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 1072
+      },
+      {
+        "kind": "lemma",
+        "number": "4.3",
+        "target_label": "lem:triangle-domination",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 4
+      },
+      {
+        "kind": "lemma",
+        "number": "4.3",
+        "target_label": "lem:triangle-domination",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 47
+      },
+      {
+        "kind": "corollary",
+        "number": "4.2",
+        "target_label": "cor:certificate-bound",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 101
+      },
+      {
+        "kind": "lemma",
+        "number": "4.4",
+        "target_label": "lem:degree-span",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 107
+      },
+      {
+        "kind": "lemma",
+        "number": "4.5",
+        "target_label": "lem:codegree-span",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 126
+      },
+      {
+        "kind": "theorem",
+        "number": "1.3",
+        "target_label": "thm:graphon",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 209
+      },
+      {
+        "kind": "proposition",
+        "number": "3.3",
+        "target_label": "prop:active-density",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 217
+      },
+      {
+        "kind": "lemma",
+        "number": "2.5",
+        "target_label": "lem:padding",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 219
+      },
+      {
+        "kind": "proposition",
+        "number": "6.1",
+        "target_label": "prop:triangle-elimination",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 221
+      },
+      {
+        "kind": "proposition",
+        "number": "7.1",
+        "target_label": "prop:reference-equality",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 221
+      },
+      {
+        "kind": "theorem",
+        "number": "1.1",
+        "target_label": "thm:weighted",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 231
+      },
+      {
+        "kind": "theorem",
+        "number": "1.3",
+        "target_label": "thm:graphon",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 233
+      },
+      {
+        "kind": "proposition",
+        "number": "8.5",
+        "target_label": "prop:sqrt-optimality",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 274
+      },
+      {
+        "kind": "theorem",
+        "number": "1.1",
+        "target_label": "thm:weighted",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 314
+      },
+      {
+        "kind": "theorem",
+        "number": "1.3",
+        "target_label": "thm:graphon",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 363
+      },
+      {
+        "kind": "theorem",
+        "number": "8.1",
+        "target_label": "thm:edge-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 460
+      },
+      {
+        "kind": "lemma",
+        "number": "8.2",
+        "target_label": "lem:peeling",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 465
+      },
+      {
+        "kind": "lemma",
+        "number": "8.3",
+        "target_label": "lem:positive-degree-compactness",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 476
+      },
+      {
+        "kind": "theorem",
+        "number": "A.1",
+        "target_label": "thm:local-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 477
+      },
+      {
+        "kind": "lemma",
+        "number": "8.4",
+        "target_label": "lem:integral-rounding",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 491
+      },
+      {
+        "kind": "theorem",
+        "number": "8.1",
+        "target_label": "thm:edge-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 516
+      },
+      {
+        "kind": "theorem",
+        "number": "A.1",
+        "target_label": "thm:local-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 589
+      },
+      {
+        "kind": "lemma",
+        "number": "8.4",
+        "target_label": "lem:integral-rounding",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 630
+      },
+      {
+        "kind": "proposition",
+        "number": "9.1",
+        "target_label": "prop:two-defects",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 684
+      },
+      {
+        "kind": "lemma",
+        "number": "9.2",
+        "target_label": "lem:unbalanced-rounding",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 690
+      },
+      {
+        "kind": "theorem",
+        "number": "9.3",
+        "target_label": "thm:linear-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 724
+      },
+      {
+        "kind": "theorem",
+        "number": "9.3",
+        "target_label": "thm:linear-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 775
+      },
+      {
+        "kind": "corollary",
+        "number": "1.2",
+        "target_label": "cor:asymptotic",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 826
+      },
+      {
+        "kind": "theorem",
+        "number": "9.3",
+        "target_label": "thm:linear-stability",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 888
+      },
+      {
+        "kind": "theorem",
+        "number": "10.1",
+        "target_label": "thm:arithmetic-deficit",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 992
+      },
+      {
+        "kind": "theorem",
+        "number": "10.1",
+        "target_label": "thm:arithmetic-deficit",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 997
+      },
+      {
+        "kind": "theorem",
+        "number": "12.2",
+        "target_label": "thm:phase-law",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 999
+      },
+      {
+        "kind": "lemma",
+        "number": "11.1",
+        "target_label": "lem:profile-envelope",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 179
+      },
+      {
+        "kind": "proposition",
+        "number": "11.2",
+        "target_label": "prop:constructive-error",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 227
+      },
+      {
+        "kind": "lemma",
+        "number": "A.3",
+        "target_label": "lem:two-vertex",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 310
+      },
+      {
+        "kind": "lemma",
+        "number": "12.1",
+        "target_label": "lem:scalar-profile",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 376
+      },
+      {
+        "kind": "proposition",
+        "number": "11.2",
+        "target_label": "prop:constructive-error",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 381
+      },
+      {
+        "kind": "theorem",
+        "number": "9.3",
+        "target_label": "thm:linear-stability",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 454
+      },
+      {
+        "kind": "theorem",
+        "number": "13.1",
+        "target_label": "thm:fixed-offset",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 638
+      },
+      {
+        "kind": "theorem",
+        "number": "13.1",
+        "target_label": "thm:fixed-offset",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 775
+      },
+      {
+        "kind": "theorem",
+        "number": "14.1",
+        "target_label": "thm:eventual-polynomial",
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 861
+      },
+      {
+        "kind": "lemma",
+        "number": "A.3",
+        "target_label": "lem:two-vertex",
+        "resolved": true,
+        "source_file": "paper/appendixA.tex",
+        "line": 344
+      },
+      {
+        "kind": "theorem",
+        "number": "A.1",
+        "target_label": "thm:local-stability",
+        "resolved": true,
+        "source_file": "paper/appendixA.tex",
+        "line": 360
+      }
+    ],
+    "literal_named_sections": [
+      {
+        "number": "9",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 136
+      },
+      {
+        "number": "2",
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 807
+      },
+      {
+        "number": "4",
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 90
+      },
+      {
+        "number": "14.1",
+        "resolved": true,
+        "source_file": "paper/computational_verification.tex",
+        "line": 19
+      },
+      {
+        "number": "14.1",
+        "resolved": true,
+        "source_file": "paper/computational_verification.tex",
+        "line": 22
+      }
+    ],
+    "explicitly_named_equations": [
+      {
+        "number": 23,
+        "resolved": true,
+        "source_file": "paper/sections01-05.tex",
+        "line": 731
+      },
+      {
+        "number": 53,
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 896
+      },
+      {
+        "number": 52,
+        "resolved": true,
+        "source_file": "paper/sections06-10.tex",
+        "line": 969
+      },
+      {
+        "number": 62,
+        "resolved": true,
+        "source_file": "paper/sections11-14.tex",
+        "line": 359
+      },
+      {
+        "number": 77,
+        "resolved": true,
+        "source_file": "paper/appendixA.tex",
+        "line": 109
+      },
+      {
+        "number": 81,
+        "resolved": true,
+        "source_file": "paper/appendixA.tex",
+        "line": 378
+      },
+      {
+        "number": 81,
+        "resolved": true,
+        "source_file": "paper/appendixA.tex",
+        "line": 441
+      }
+    ],
+    "external_citation_arguments_excluded_from_internal_reference_validation": [
+      {
+        "source": "\\cite[Lemmas~1.4, 7.1, and 7.2]{Davey2026}",
+        "source_file": "paper/sections01-05.tex",
+        "line": 17
+      },
+      {
+        "source": "\\cite[Theorem~1.8]{Chao2025}",
+        "source_file": "paper/sections01-05.tex",
+        "line": 95
+      },
+      {
+        "source": "\\cite[Theorem~5.1]{LovaszSzegedy2007}",
+        "source_file": "paper/sections01-05.tex",
+        "line": 311
+      }
+    ]
+  },
+  "dependency_stages": [
+    {
+      "id": "direct_construction",
+      "items": [
+        "Introduction: Clebsch counts"
+      ],
+      "requires": [],
+      "basis": "Direct construction gives ratio R* as a lower example; no upper bound is assumed."
+    },
+    {
+      "id": "unconditional_links",
+      "items": [
+        "3.1"
+      ],
+      "requires": [],
+      "basis": "Universal kernel inequalities; this proof is independent of global attainment."
+    },
+    {
+      "id": "finite_attainment",
+      "items": [
+        "2.1"
+      ],
+      "requires": [],
+      "basis": "Fixed-template compactification at E=1 uses finitely many monomials."
+    },
+    {
+      "id": "global_attainment",
+      "items": [
+        "2.2"
+      ],
+      "requires": [
+        "direct_construction",
+        "unconditional_links",
+        "finite_attainment"
+      ],
+      "basis": "Template stationarity, sampling, padding to 1/80, and standard cut compactness."
+    },
+    {
+      "id": "global_variations",
+      "items": [
+        "2.3",
+        "2.4",
+        "2.5"
+      ],
+      "requires": [
+        "global_attainment"
+      ],
+      "basis": "Globality justifies edge/profile variations; padding preserves the global ratio."
+    },
+    {
+      "id": "active_density",
+      "items": [
+        "3.2",
+        "3.3"
+      ],
+      "requires": [
+        "global_variations",
+        "unconditional_links",
+        "direct_construction"
+      ],
+      "basis": "Moment/compression argument and the construction lower bound yield active density > p*."
+    },
+    {
+      "id": "finite_certificate",
+      "items": [
+        "4.1",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "requires": [],
+      "basis": "Separate exact finite identities and spans; theorem truth is not assumed by their verification."
+    },
+    {
+      "id": "sharp_bound",
+      "items": [
+        "4.2",
+        "1.1:inequality",
+        "1.3:bound"
+      ],
+      "requires": [
+        "active_density",
+        "global_variations",
+        "finite_certificate"
+      ],
+      "basis": "Pad the global maximum, apply the certificate and positive slope, compare with construction."
+    },
+    {
+      "id": "equality",
+      "items": [
+        "6.1",
+        "7.1",
+        "1.3:equality",
+        "1.1:equality"
+      ],
+      "requires": [
+        "sharp_bound",
+        "finite_certificate",
+        "global_variations",
+        "active_density"
+      ],
+      "basis": "After the bound, equality kernels are global; zero squares imply triangle removal and the twin quotient."
+    },
+    {
+      "id": "local_stability",
+      "items": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4"
+      ],
+      "requires": [],
+      "basis": "Self-contained local Clebsch analysis, including the unnumbered fractional and variation arguments."
+    },
+    {
+      "id": "global_stability",
+      "items": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "9.1",
+        "9.2",
+        "9.3"
+      ],
+      "requires": [
+        "sharp_bound",
+        "equality",
+        "local_stability"
+      ],
+      "basis": "Peeling, positive-degree compactness, local defects and whole-vertex rounding."
+    },
+    {
+      "id": "arithmetic_scale",
+      "items": [
+        "9.5",
+        "10.1",
+        "10.2"
+      ],
+      "requires": [
+        "global_stability"
+      ],
+      "basis": "Structural energy and integer class variance give the order of the edge deficit."
+    },
+    {
+      "id": "arithmetic_profiles",
+      "items": [
+        "11.1",
+        "11.2",
+        "12.1"
+      ],
+      "requires": [],
+      "basis": "Clebsch profile geometry, its finite envelope, explicit constructions and the scalar profile optimization."
+    },
+    {
+      "id": "arithmetic_phase",
+      "items": [
+        "12.2",
+        "12.3"
+      ],
+      "requires": [
+        "global_stability",
+        "arithmetic_profiles",
+        "local_stability"
+      ],
+      "basis": "Structural reduction, profile optimization and the finite pair/template coefficients."
+    },
+    {
+      "id": "fixed_offset",
+      "items": [
+        "13.1",
+        "13.2"
+      ],
+      "requires": [
+        "global_stability",
+        "local_stability"
+      ],
+      "basis": "Finite integral mass deviations and pair errors yield the lattice correction and exact +/-1 cases."
+    },
+    {
+      "id": "eventual_polynomial",
+      "items": [
+        "14.1"
+      ],
+      "requires": [
+        "fixed_offset",
+        "global_stability",
+        "local_stability"
+      ],
+      "basis": "Bounded defect data produce a finite polynomial list; this does not compute a global k_0(j)."
+    }
+  ],
+  "dependency_scope": "Selected mathematical implications, not an exhaustive graph; ordinary source citations are not converted into proof dependencies. Theorem 1.1/1.3 components are kept separate to avoid a spurious cycle.",
+  "limitations": [
+    "This is a parser for the explicit source syntax of this manuscript, not a general TeX interpreter.",
+    "The inventory neither validates mathematical deductions nor turns a review status into a proof.",
+    "Literal named references are checked as navigation targets; bare numerical prose and all possible natural-language reference forms are not interpreted.",
+    "The absence of label-based reference commands is recorded explicitly; current named result references are literal text.",
+    "External citation arguments are excluded from internal result numbering checks.",
+    "A proof location records where an argument is supplied, not that the argument is correct."
+  ],
+  "source_sha256": {
+    "paper/main.tex": "22c1780f0d948be24cac300df62bb5bb1ffbf9d27a86cb7150e31626e3f4f065",
+    "paper/submission.tex": "db8ed7c065416e58d2c1f547cab646cc06e1afcd3b76cbf66e2e1d1f89048580",
+    "paper/author_metadata.tex": "2ab059026a08461774f0de02b7ca5fd2ec8815e961497e9a6e545786dca17b51",
+    "paper/abstract.tex": "35f053908caa0d7c31f0db1825320e3d85e174297eaf1d04f615955d1f07970a",
+    "paper/sections01-05.tex": "523fe43ce565a32908f715615a676c551c9863874521869f931a957a5f15cbe9",
+    "paper/sections06-10.tex": "fb18bfded503e1dae770bfc02c585a5d7c8936ad5e20ae0885d189e2a48e0de0",
+    "paper/sections11-14.tex": "b07f3d16cd3dc4634fdf12aa458d0347e4920bcb176250add39718be0597b405",
+    "paper/appendixA.tex": "a162c8183d1fda7948769e801ecb2448c6e03a83f078c5149ea8cad93644df54",
+    "paper/computational_verification.tex": "bb42aa88da3975999d9273c2a6529ffc73dafcf6b5f86472308bad7e6e94f485",
+    "paper/ai_declaration.tex": "5059581ba229c2708756ff8604a0a93e75ec8136452854d41c8b99dab92a2553"
+  },
+  "generator_sha256": "792b3ca05042c90191c6b398e9723b9311a15d8317af645c53deeee532fc4409"
+}

@@ -1,0 +1,40 @@
+\section*{Computational verification and reproducibility}
+
+The computational proof consists of explicit finite rational identities.
+The supplementary material provides the seven-vertex graph atlas, the
+rooted flag spaces, primitive pattern counts, three rational witness
+files, and their generators and verifiers. The main certificate contains
+$184$ positive square terms, $37$ unrestricted identity columns, and
+$826$ positive host remainders. The multipliers of $\Phi_\triangle$ and
+$J_{\mathrm{del}}$ are positive, while those of $J_0$ and $J_1$ are zero.
+Every one of the $1,044$ host identities is checked with exact integer or
+rational arithmetic. A second implementation contracts integer Gram
+matrices against independently recounted host tensors. The equality-span
+witnesses are bound to the same main certificate and checked coordinate
+by coordinate. Numerical optimization is used only to discover witnesses;
+its floating-point output is not accepted as proof.
+
+The supplementary programs also enumerate all $65,536$ Boolean Clebsch
+profiles and all $6,496$ small-offset presentations under the convention
+in Section~14.1. An independent enumeration of labeled exceptional
+vertices gives the same canonical family. Formula (75) is recomputed for
+every presentation, and the distinct polynomial formulas are additionally
+checked on actual finite graphs. The branch counts in Section~14.1 have
+a separate direct census check. These are verifications of the finite
+inputs and construction formulas. The global bound, stability arguments,
+and passage to eventual extremality are proved in the text. In
+particular, the computations do not provide a numerical global threshold
+$k_0(j)$.
+
+The command \texttt{python3 src/verify\_project.py} reruns the complete
+finite verification chain. Definitions, normalization conventions,
+dependencies, and individual commands are specified in the accompanying
+\texttt{README.md} and computational reproduction guide.
+
+\paragraph{AI-assisted research methodology.}
+ChatGPT (OpenAI) assisted with proof exploration, symbolic calculations,
+implementation of generators and verifiers, and internal mathematical
+cross-checks. Its mathematical output was treated as candidate reasoning,
+not as a certificate of correctness. The supplied deterministic programs
+perform the exact finite checks described above, and the analytic
+arguments are given explicitly in the paper. 

@@ -1,0 +1,479 @@
+\appendix
+\section{Local stability in edit distance}\label{app:local-stability}
+
+We give a self-contained local argument. It permits fractional edge
+values and triangles, which may arise during the modifications in the
+proof. Accordingly, throughout this appendix put
+\[
+ P(W)=\frac1{10}\int_{[0,1]^5}
+       \prod_{ij\in E(C_5)}W(x_i,x_j)
+       \prod_{\substack{i<j\\ij\notin E(C_5)}}(1-W(x_i,x_j))
+       \,dx_1\cdots dx_5,
+\]
+\[
+ F(W)=\frac{P(W)}{E(W)^{5/2}},\qquad
+ R_{\mathrm{ind}}(W)=5^{5/2}F(W).
+\]
+These definitions agree with $P(W)=C(W)$ and $R_{\mathrm{ind}}(W)=R(W)$
+for every graphon in the main text. Let $W_0$ be the Clebsch graphon on
+a fixed partition $A_1,\ldots,A_{16}$ into sets of measure $a=1/16$.
+As before, $\mathcal E_{\mathrm{Cl}}$ includes balanced Clebsch graphons
+on any positive active mass, with isolates on the complement. Set
+\[
+ d_1(W,\mathcal E_{\mathrm{Cl}})
+   =\inf_{U\in\mathcal E_{\mathrm{Cl}}}\lVert W-U\rVert_1.
+\]
+All measurable partitions are allowed in the infimum.
+
+\begin{theorem}[Local quadratic stability]\label{thm:local-stability}
+There exist $\delta_0>0$ and $c_{\mathrm{loc}}>0$ such that every graphon
+$W:[0,1]^2\to[0,1]$ with $\lVert W-W_0\rVert_1<\delta_0$ satisfies
+\begin{equation}\tag{76}\label{eq:local-stability}
+ R_\ast-R_{\mathrm{ind}}(W)
+   \geq c_{\mathrm{loc}}d_1(W,\mathcal E_{\mathrm{Cl}})^2.
+\end{equation}
+Equality in $R_{\mathrm{ind}}(W)\leq R_\ast$ holds precisely when
+$W\in\mathcal E_{\mathrm{Cl}}$ up to null sets.
+\end{theorem}
+
+\subsection{Three finite properties of the Clebsch graph}
+
+Write the five generators of $\mathrm{Cl}$ as $s_1,\ldots,s_5$, with
+$\sum_i s_i=0$. Their only nonempty dependence is the full five-element
+set. Relative to a vertex $u$, its neighbors are $u+s_i$ and its ten
+nonneighbors, other than itself, are $u+s_i+s_j$, indexed by
+$\{i,j\}\in\binom{[5]}{2}$. A pair vertex is adjacent to the two
+neighbors indexed by its elements; two pair vertices are adjacent
+exactly when their pairs are disjoint. In particular, the ten pair
+vertices induce the Petersen graph $\mathrm{KG}(5,2)$.
+
+We will also use the following counts, including their normalizations.
+Every closed walk of length five uses each generator once, and is a
+simple pentagon. Hence $\mathrm{Cl}$ has $16\cdot5!/10=192$ pentagons
+and each vertex belongs to $5!/2=60$ of them. A fixed edge belongs to
+$4!=24$ pentagons: orient it from its specified first endpoint and
+permute the remaining four generators. For a fixed nonedge from $0$ to
+$s_i+s_j$, a rooted closed walk reaches the second endpoint at step two
+or at step three. There are $2!3!$ orders in each case. Dividing the
+total by the two orientations gives $12$ pentagons through that pair.
+
+\begin{lemma}[The neighborhood inequality]\label{lem:neighborhood}
+Add a vertex to $\mathrm{Cl}$ with neighborhood $N\subseteq V(\mathrm{Cl})$,
+and let $c(N)$ count the induced pentagons containing it. Then
+\[
+ c(N)\leq12|N|.
+\]
+Equality holds exactly when $N=\varnothing$ or $N=N_{\mathrm{Cl}}(v)$
+for a vertex $v$.
+\end{lemma}
+\begin{proof}
+Deleting the added vertex from a pentagon leaves an induced $P_4$ with
+its endpoints in $N$ and internal vertices outside $N$. For $u\in N$,
+let $c_u(N)$ count these paths with endpoint $u$, so that
+$2c(N)=\sum_{u\in N}c_u(N)$.
+
+Use the pair labeling relative to $u$. Let $U$ be its ten pair vertices,
+$T=N\cap U$, and $D=\{i:u+s_i\in N\}$. A path counted by $c_u(N)$
+has the form $u,u+s_i,b,v$, where $b\in U\setminus T$, $v\in T$, the
+pairs $b,v$ are disjoint, and $i\in b\setminus D$. These conditions
+are also sufficient. Thus, writing $P=\mathrm{KG}(5,2)$,
+\begin{equation}\tag{77}\label{eq:neighborhood-path-count}
+ c_u(N)=\sum_{b\in U\setminus T}(2-|b\cap D|)d_T(b)
+   \leq2e_P(T,U\setminus T).
+\end{equation}
+
+Here the maximum cut of $P$ has size twelve. To verify this directly,
+$P$ has parameters $(10,3,0,1)$: disjoint pairs have no common
+neighbor, while two intersecting pairs have the unique complementary
+pair as common neighbor. It has no four-cycle. For any fixed edge,
+choose one of the two other neighbors at each endpoint. The two choices
+are nonadjacent and have a unique common neighbor; they therefore
+complete the edge to a pentagon. This gives four pentagons through
+every edge, and $15\cdot4/5=12$ pentagons in total. Every cut leaves
+at least one edge of each odd cycle uncut. Since an edge lies in four
+pentagons, at least three of the fifteen edges are uncut. A star
+\[
+ F_i=\{\{i,j\}:j\ne i\}
+\]
+is an independent four-set with twelve edges leaving it, so the bound
+is attained.
+
+Moreover every twelve-edge cut has a side of size four, and that side
+is independent. Indeed, a side of size at most three has at most nine
+outgoing edges, and a side of size five has an odd number of outgoing
+edges. Four pairwise intersecting two-subsets form a star: if
+$\{1,2\},\{1,3\}$ are present and some pair omits $1$, that pair must
+be $\{2,3\}$ and there can be no fourth distinct pair. Thus the
+maximum cut sides are precisely $F_i$ and $U\setminus F_i$.
+
+Equation (77) proves $c_u(N)\leq24$. If equality holds and $T=F_i$,
+every pair outside this star has two neighbors in it. The loss term in
+(77) vanishes only if $D\subseteq\{i\}$. Consequently
+$N=N_{\mathrm{Cl}}(u+s_i)$ or $N=N_{\mathrm{Cl}}[u+s_i]$, of size five
+or six. If $T=U\setminus F_i$, every pair in $F_i$ has three neighbors
+in $T$, and the pairs in $F_i$ use all five indices. Hence
+$D=\varnothing$ and $N=\{u\}\cup(U\setminus F_i)$ has size seven;
+in this case $u$ has no neighbor in $N$.
+
+Suppose $N\ne\varnothing$ and $c(N)=12|N|$. Then every $u\in N$ has
+$c_u(N)=24$. The size-six case is impossible: at the center of a closed
+neighborhood, the first internal vertex of a counted path cannot lie
+outside $N$, so its count is zero. The size-seven case is also
+impossible. The six pair vertices in that case contain an edge, since
+an independent set in $\mathrm{KG}(5,2)$ has at most four vertices by
+the preceding intersecting-pair argument. An endpoint of this edge has
+a neighbor in $N$, whereas the equality classification at that endpoint
+permits a neighbor in $N$ only in the size-six case. Therefore $N$ is
+a vertex neighborhood. Conversely, adding a clone of a vertex creates
+exactly its sixty pentagons. No such pentagon can contain both clones,
+since $C_5$ has no pair of twins. Thus $c(N)=60=12|N|$ for a vertex
+neighborhood, and the empty case is immediate.
+\end{proof}
+
+\begin{lemma}[Two-vertex coefficients]\label{lem:two-vertex}
+Add two vertices with old neighborhoods $N_{\mathrm{Cl}}(i)$,
+$N_{\mathrm{Cl}}(j)$, and prescribe whether they are adjacent. The
+numbers of induced pentagons containing both added vertices and three
+old vertices are
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+&added pair absent&added pair present\\
+\midrule
+$i=j$&$0$&$0$\\
+$ij\in E(\mathrm{Cl})$&$0$&$24$\\
+$i\ne j,\ ij\notin E(\mathrm{Cl})$&$12$&$6$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{lemma}
+\begin{proof}
+For equal types the added vertices are twins, whether adjacent or not,
+so cannot both occur in an induced pentagon. For distinct types, when
+their prescribed adjacency agrees with that of $i,j$, the counts are
+the ordinary pair counts $24$ and $12$ above. A pentagon cannot use
+two vertices from the same clone class, so the old vertices of types
+$i,j$ introduce no extra completions. When $ij$ is an edge but the
+added pair is absent, the two added vertices have no common old
+neighbor. This rules out a pentagon, in which every nonadjacent pair
+has a common neighbor.
+
+For the last entry translate $i$ to $0$ and write $j=s_1+s_2$. Their
+exclusive old neighbors are, respectively,
+\[
+ \{s_3,s_4,s_5\},\qquad
+ \{s_3+s_4,s_3+s_5,s_4+s_5\}.
+\]
+A pentagon containing the added edge must join one exclusive neighbor
+on either side through a common old vertex outside
+$N_{\mathrm{Cl}}(i)\cup N_{\mathrm{Cl}}(j)$. The two exclusive
+neighbors must be nonadjacent. Thus a pair from
+$\binom{\{3,4,5\}}{2}$ is matched with its unique missing generator,
+giving three choices. For example $s_3+s_4$ and $s_5$ have common
+neighbors $s_1+s_5,s_2+s_5$, both outside the forbidden union. There
+are exactly two completions for each choice, giving six in total.
+\end{proof}
+
+\begin{lemma}[The template Hessian]\label{lem:template-hessian}
+For the Clebsch vertex-weight polynomials $P(x)$ and $E(x)$,
+\[
+ \nabla^2\log(P/E^{5/2})(\mathbf1)=\frac{J-16I}{256}.
+\]
+Consequently there is $c_H>0$ such that, for class masses $s_i$
+sufficiently close to $a$, with $q=\sum_i s_i$ and $T_s$ the
+corresponding Clebsch step graphon,
+\begin{equation}\tag{78}\label{eq:hessian-defect}
+ F(W_0)-F(T_s)\geq c_H\sum_i(s_i-q/16)^2.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Let $A$ be the Clebsch adjacency matrix. The counts above give
+\[
+ P(\mathbf1)=192,\qquad\nabla P(\mathbf1)=60\mathbf1,\qquad
+ \nabla^2P(\mathbf1)=12(J-I+A),
+\]
+whereas $E(\mathbf1)=40$, $\nabla E(\mathbf1)=5\mathbf1$ and
+$\nabla^2E=A$. Hence the logarithmic Hessian is
+\[
+ \frac{12(J-I+A)}{192}-\frac{3600J}{192^2}
+ -\frac52\left(\frac A{40}-\frac{25J}{40^2}\right)
+ =\frac{J-16I}{256}.
+\]
+The gradient vanishes at $\mathbf1$. On the hyperplane $\sum_i h_i=0$,
+Taylor's formula gives
+\[
+ \log F(\mathbf1+h)
+ =\log F(\mathbf1)-\frac{\lVert h\rVert_2^2}{32}
+     +O(\lVert h\rVert_2^3).
+\]
+Apply this with $h_i=16s_i/q-1$ and use scale invariance. Since $q$
+stays close to one, this gives (78) with a uniform positive constant.
+\end{proof}
+
+\subsection{Fractional row profiles}
+
+Let $\mathcal M\subseteq\{0,1\}^{16}$ consist of the zero vector and
+the sixteen Clebsch neighborhood vectors. Extend $c(N)$ multilinearly
+to $p\in[0,1]^{16}$:
+\[
+ c(p)=\sum_{\substack{U\subseteq V(\mathrm{Cl})\\
+                      \mathrm{Cl}[U]\cong P_4}}
+       \prod_{\substack{i\in U\\i\text{ an endpoint}}}p_i
+       \prod_{\substack{j\in U\\j\text{ internal}}}(1-p_j).
+\]
+This is the expectation of $c(N)$ for an independent Bernoulli subset
+with inclusion probabilities $p_i$. The neighborhood lemma implies
+the quantitative bound
+\begin{equation}\tag{79}\label{eq:fractional-profile-distance}
+ 12\sum_i p_i-c(p)\geq\frac{\operatorname{dist}_1(p,\mathcal M)}{272}.
+\end{equation}
+For completeness, let $\epsilon$ be the probability that the Bernoulli
+subset lies outside $\mathcal M$. The Boolean deficit is an integer
+and at least one there, so the left side is at least $\epsilon$. No
+two members of $\mathcal M$ differ in a single coordinate: the
+distances from zero to a neighborhood are five, and between distinct
+neighborhoods are six or ten. Conditioning on all other coordinates
+therefore gives $\min(p_i,1-p_i)\leq\epsilon$ for each $i$. Round
+every coordinate to its nearest Boolean value, obtaining $v$. If
+$\epsilon<1/17$ and $v\notin\mathcal M$, then
+\[
+ \epsilon\geq\Pr(Y=v)
+ \geq1-\sum_i\min(p_i,1-p_i)\geq1-16\epsilon>\epsilon,
+\]
+a contradiction. In this case
+$\operatorname{dist}_1(p,\mathcal M)\leq16\epsilon$. For
+$\epsilon\geq1/17$ the trivial distance bound sixteen gives
+$272\epsilon$, proving (79). In particular, the only zero-deficit
+profiles are the members of $\mathcal M$.
+
+For a measurable row $f:[0,1]\to[0,1]$ set
+$p_i(f)=a^{-1}\int_{A_i}f$. Interpret each element $r\in\mathcal M$
+as its associated step-function row. Since $r$ is Boolean,
+\begin{equation}\tag{80}\label{eq:row-profile-distance}
+ \lVert f-r\rVert_1=a\lVert p(f)-r\rVert_1.
+\end{equation}
+The pentagon link of a new vertex with row $f$ in the perfect
+background $W_0$ is exactly $a^4c(p(f))$, and its degree is
+$a\sum_i p_i(f)$. Indeed, deleting that vertex leaves an induced
+$P_4$. An induced $P_4$ in an independent-class blow-up uses four
+distinct classes, because $P_4$ has no false twins. Its four row
+factors can therefore be integrated separately. The two orientations
+of each such path cancel the factor $1/2$ in the rooted pentagon link.
+
+\subsection{Continuity and variations}
+
+The following estimates hold also on a measurable subspace of total
+mass at most one. The reference values are
+\[
+ E_0=40a^2=\frac5{32},\qquad
+ P_0=192a^5=\frac3{16384},\qquad
+ \kappa_0=\frac{5P_0}{2E_0}=12a^3.
+\]
+For graphons $U,V$, telescoping the ten factors in the induced
+pentagon integrand gives
+\begin{equation}\tag{81}\label{eq:l1-continuity}
+ |P(U)-P(V)|\leq\lVert U-V\rVert_1,\qquad
+ |E(U)-E(V)|\leq\tfrac12\lVert U-V\rVert_1.
+\end{equation}
+Thus $\kappa(W)=5P(W)/(2E(W))$ is Lipschitz in a fixed neighborhood
+of $W_0$.
+
+We also allow a measurable density $z\in[0,1]$ on the vertex measure.
+Write $P(W,z)$, $E(W,z)$ for the resulting integrals,
+$d_z(x)=\int W(x,y)z(y)\,dy$, and $L_z(x)$ for the first variation
+of $P$ at a vertex. Explicitly $L_z$ is one half the integral of the
+rooted induced pentagon product over the other four vertices, with
+their densities included. For a differentiable density path,
+\begin{equation}\tag{82}\label{eq:vertex-density-variation}
+ \frac{d}{dt}F(W,z_t)
+ =E(W,z_t)^{-5/2}\int z_t'(x)
+       [L_{z_t}(x)-\kappa(W,z_t)d_{z_t}(x)]\,dx.
+\end{equation}
+If $z$ differs from one only on a set of measure $\mu$, uniformly in
+$x$ one has
+\begin{equation}\tag{83}\label{eq:density-deletion-errors}
+ |L_z(x)-L_1(x)|\leq2\mu,\qquad
+ |d_z(x)-d_1(x)|\leq\mu.
+\end{equation}
+The changes in $P$ and $E$ are at most $\mu/2$ and $\mu$,
+respectively. These estimates follow by telescoping the four or five
+vertex density factors. Keeping the row $f=W(x,\cdot)$ fixed, but
+replacing the background among the other four vertices by $W_0$, gives
+\begin{equation}\tag{84}\label{eq:background-replacement-error}
+ |L_1(x)-a^4c(p(f))|\leq3\lVert W-W_0\rVert_1.
+\end{equation}
+There are six background factors, each with the rooted prefactor $1/2$.
+
+We need a small-degree bound that does not assume triangle-freeness:
+\begin{equation}\tag{85}\label{eq:local-small-degree-link}
+ L_z(x)\leq\frac14d_z(x)^2E(W,z).
+\end{equation}
+To see this, fix the middle edge $bc$ of the rooted pentagon
+$x-a-b-c-d-x$. Drop the chord condition between $a,d$. The two
+remaining neighbor choices have masses
+\begin{align*}
+ r&=\int W(x,u)W(u,b)(1-W(u,c))z(u)\,du,\\
+ s&=\int W(x,u)W(u,c)(1-W(u,b))z(u)\,du.
+\end{align*}
+The inequality $u(1-v)+v(1-u)\leq1$ for $u,v\in[0,1]$ gives
+$r+s\leq d_z(x)$ and $rs\leq d_z(x)^2/4$. Drop the two factors
+involving the chords $xb,xc$ and integrate the middle edge, retaining
+its factor $1/2$. This proves (85).
+
+For a symmetric edge variation $H$,
+\begin{equation}\tag{86}\label{eq:edge-variation}
+ \begin{aligned}
+ DP(W)[H]&=\frac12\int q_W(x,y)H(x,y)\,dx\,dy,\\
+ DF(W)[H]&=\frac1{2E(W)^{5/2}}\int(q_W-\kappa(W))H.
+ \end{aligned}
+\end{equation}
+Here $q_W$ is the difference of two three-variable integrals: remove
+one cycle-edge factor from the induced pentagon product for the
+positive term, and remove one chord factor for the negative term.
+The five cycle edges and five chords, together with the factor $1/10$,
+give the prefactor $1/2$.
+
+For a Boolean step graphon $T$ put
+$e_x=\int|W(x,z)-T(x,z)|\,dz$ and $e=\lVert W-T\rVert_1$. Each
+of the two integrands defining $q$ has three factors incident to $x$,
+three incident to $y$, and three among the other vertices.
+Telescoping yields
+\begin{equation}\tag{87}\label{eq:edge-variation-error}
+ |q_W(x,y)-q_T(x,y)|\leq6(e_x+e_y+e).
+\end{equation}
+By Lemma~A.3,
+\begin{equation}\tag{88}\label{eq:edge-sign-margin}
+ q_{W_0}(x,y)-\kappa_0
+ =\begin{cases}
+   12a^3,&\text{adjacent types},\\
+   -18a^3,&\text{distinct nonadjacent types},\\
+   -12a^3,&\text{equal types}.
+  \end{cases}
+\end{equation}
+The pair coefficients are multiplied by $a^3$, the mass of each old
+triple. Set $g=12a^3>0$. By continuity, a Clebsch step graphon with
+class masses sufficiently close to $a$ retains these signs with margin
+at least $3g/4$.
+
+\subsection{Proof of the local theorem}
+
+\begin{proof}[Proof of Theorem A.1]
+Choose a fixed $\eta>0$ small enough that the $\eta$-balls around
+the seventeen reference rows are disjoint and
+\[
+ \frac{\eta E_0}{2}<\frac{\kappa_0}{4},\qquad
+ 12\eta<\frac g8.
+\]
+We subsequently choose $\delta_0$ sufficiently small, with $\eta$
+held fixed. Write $\delta=\lVert W-W_0\rVert_1$.
+
+\emph{Remove rows with a definite link deficit.} Let $B$ consist of
+points whose rows have distance at least $\eta$ from every reference
+row. Since the original template row is one of these rows,
+\[
+ \mu_B:=|B|\leq\delta/\eta.
+\]
+By (79) and (80), the perfect-background deficit on $B$ is at least
+$a^4\eta/17$. Along the deletion path $z_t=1-t\mathbf1_B$,
+equations (81)--(84) therefore give, uniformly for almost every
+$x\in B$,
+\[
+ L_{z_t}(x)-\kappa(W,z_t)d_{z_t}(x)
+ \leq-\frac{a^4\eta}{17}+O(\delta+\mu_B)
+ \leq-\frac{a^4\eta}{34}.
+\]
+The implicit constant depends only on the fixed template and the
+fixed $\eta$. The last inequality follows by reducing $\delta_0$.
+The edge mass stays bounded away from zero. By (82), deleting $B$
+increases $F$ by at least $c_B\mu_B$ for some $c_B>0$.
+
+\emph{Remove near-zero rows.} Among the remaining points let $Z$
+consist of rows whose original distance from zero is less than $\eta$.
+Their original degrees are at most $\eta$, and
+\[
+ \mu_Z:=|Z|\leq\frac\delta{5a-\eta},
+\]
+because each original template row has degree $5a$. Delete $Z$ after
+$B$. During this deletion its degrees are still at most $\eta$, while
+$E\leq2E_0$ and $\kappa\geq\kappa_0/2$ for sufficiently small
+$\delta_0$. By (85),
+\[
+ L_{z_t}(x)-\kappa(W,z_t)d_{z_t}(x)
+ \leq-\frac{\kappa_0}{4}d_{z_t}(x)\qquad(x\in Z).
+\]
+If $D_Z$ denotes the edge mass removed in this step, then
+\[
+ D_Z=\int_0^1\int_Z d_{z_t}(x)\,dx\,dt.
+\]
+Thus deleting $Z$ increases $F$ by at least $c_ZD_Z$ for a constant
+$c_Z>0$. The deletion of a measurable set is equivalently its
+replacement by isolates.
+
+\emph{Assign the remaining rows to clone types.} Let
+$M=[0,1]\setminus(B\cup Z)$. Every point of $M$ is within $\eta$ of
+a unique nonzero reference row. Call its type $\sigma(x)$; let
+$\tau(x)$ be its original part label, and put
+$M_i=\{x\in M:\sigma(x)=i\}$. Distinct Clebsch rows have distance
+at least $6a$, so the measure $\nu$ of the misassigned set
+$\{\sigma\ne\tau\}$ satisfies
+\[
+ \nu\leq\frac\delta{6a-\eta}.
+\]
+In particular, for $s_i=|M_i|$,
+\begin{equation}\tag{89}\label{eq:reclassified-masses}
+ |s_i-a|\leq\mu_B+\mu_Z+\nu=O(\delta).
+\end{equation}
+On $M$ let $T(x,y)=A_{\sigma(x),\sigma(y)}$ be the ideal Clebsch
+step graphon. For almost every $x\in M$,
+\begin{equation}\tag{90}\label{eq:reclassified-errors}
+ \int_M|W(x,y)-T(x,y)|\,dy\leq\eta+\nu,\qquad
+ e_M:=\lVert W|_{M^2}-T\rVert_1\leq\delta+2\nu.
+\end{equation}
+For the first inequality, the assigned reference row differs from its
+reclassified version only on the misassigned set. For the second, $T$
+differs from the original template on pairs having at least one
+misassigned endpoint.
+
+\emph{Repair all remaining edge errors.} Consider
+$W_t=T+t(W|_{M^2}-T)$ for $0\leq t\leq1$, on the measure space $M$.
+The row errors and global error remain bounded by the right-hand
+sides of (90) throughout this path. By (89), the margin for $T$ is at
+least $3g/4$. Equations (81), (87) and (90) imply
+\[
+ |(q_{W_t}-\kappa(W_t))-(q_T-\kappa(T))|
+ \leq12\eta+O(\delta)<g/4.
+\]
+Hence $q_{W_t}-\kappa(W_t)\geq g/2$ where $T=1$, and it is at most
+$-g/2$ where $T=0$. The variation $H=W|_{M^2}-T$ has the opposite
+sign on each region. From (86),
+\[
+ \frac{d}{dt}F(W_t)\leq-c_Ee_M
+\]
+for a fixed $c_E>0$. Integrating gives
+$F(T)-F(W|_{M^2})\geq c_Ee_M$.
+
+\emph{Balance the classes and estimate the distance.} Put $q=|M|$
+and $V=(\sum_i(s_i-q/16)^2)^{1/2}$. The Hessian estimate (78) applies
+by (89). Combining the four comparisons gives
+\begin{equation}\tag{91}\label{eq:four-defects}
+ F(W_0)-F(W)\geq c_B\mu_B+c_ZD_Z+c_Ee_M+c_HV^2.
+\end{equation}
+Isolating $B$ costs at most $2\mu_B$ in $L^1$, and then isolating $Z$
+costs exactly $2D_Z$. Replacing the remaining graphon by $T$ costs
+$e_M$. Within $M$, balance the class masses by moving a set of measure
+$\tfrac12\sum_i|s_i-q/16|$ between classes; atomlessness permits this
+operation. The resulting graphon belongs to $\mathcal E_{\mathrm{Cl}}$,
+and this last change costs at most $\sum_i|s_i-q/16|\leq4V$. Thus
+\[
+ d_1(W,\mathcal E_{\mathrm{Cl}})\leq2\mu_B+2D_Z+e_M+4V.
+\]
+Since $\mu_B,D_Z,e_M\leq1$, its square is at most
+$16\mu_B+16D_Z+4e_M+64V^2$. Together with (91) this proves (76),
+after multiplying by $5^{5/2}$ and adjusting the positive constant.
+
+If $R_{\mathrm{ind}}(W)=R_\ast$, all four nonnegative terms in (91)
+vanish. Thus $B$ is null, $Z$ consists of actual isolates, the
+remaining graphon is exactly $T$, and its sixteen class masses are
+equal. This proves the equality assertion without assuming that the
+distance infimum is attained. The converse follows by homogeneity.
+\end{proof}

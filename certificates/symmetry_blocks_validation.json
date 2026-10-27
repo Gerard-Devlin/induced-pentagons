@@ -1,0 +1,155 @@
+{
+  "schema": "pentagon-root-symmetry-validation-v1",
+  "status": "PASS",
+  "scope": "Exact permutation/invariance checks; numeric bases for SDP discovery only",
+  "no_loss_argument": "Reynolds averaging preserves PSD, equality-kernel support and every host coefficient. Inequivalent S3 isotypic blocks are orthogonal for each host matrix; standard +/- copies are canonically isometric and have identical host coefficients. Thus both unmerged and compressed SDP parameterizations lose no feasible host-coefficient vectors.",
+  "tolerance": 1e-12,
+  "owners": {
+    "one_root": {
+      "full_flag_dimension": 20,
+      "kernel_dimension": 18,
+      "root_automorphism_order": 1,
+      "exact_host_invariance": "PASS",
+      "exact_equality_kernel_invariance": "PASS",
+      "sectors": {
+        "trivial": 18
+      },
+      "orthonormal_error": 6.661338147750939e-16,
+      "equality_subspace_error": 0.0,
+      "max_host_cross_block": 0.0,
+      "max_standard_copy_matrix_difference": 0.0,
+      "compressed_groups": [
+        "one_root__trivial"
+      ]
+    },
+    "independent3": {
+      "full_flag_dimension": 72,
+      "kernel_dimension": 57,
+      "root_automorphism_order": 6,
+      "exact_host_invariance": "PASS",
+      "exact_equality_kernel_invariance": "PASS",
+      "sectors": {
+        "trivial": 19,
+        "sign": 2,
+        "standard_plus": 18,
+        "standard_minus": 18
+      },
+      "orthonormal_error": 1.3908396338923371e-15,
+      "equality_subspace_error": 2.164501217150061e-15,
+      "max_host_cross_block": 7.820020094404493e-17,
+      "max_standard_copy_matrix_difference": 6.938893903907228e-18,
+      "compressed_groups": [
+        "independent3__trivial",
+        "independent3__sign",
+        "independent3__standard"
+      ]
+    },
+    "edge_isolate": {
+      "full_flag_dimension": 72,
+      "kernel_dimension": 70,
+      "root_automorphism_order": 2,
+      "exact_host_invariance": "PASS",
+      "exact_equality_kernel_invariance": "PASS",
+      "sectors": {
+        "plus": 46,
+        "minus": 24
+      },
+      "orthonormal_error": 2.970027732139386e-15,
+      "equality_subspace_error": 1.9567341995839482e-15,
+      "max_host_cross_block": 1.0966030432324474e-16,
+      "max_standard_copy_matrix_difference": 0.0,
+      "compressed_groups": [
+        "edge_isolate__plus",
+        "edge_isolate__minus"
+      ]
+    },
+    "path3": {
+      "full_flag_dimension": 72,
+      "kernel_dimension": 70,
+      "root_automorphism_order": 2,
+      "exact_host_invariance": "PASS",
+      "exact_equality_kernel_invariance": "PASS",
+      "sectors": {
+        "plus": 46,
+        "minus": 24
+      },
+      "orthonormal_error": 9.992007221626409e-16,
+      "equality_subspace_error": 1.1102230246251565e-15,
+      "max_host_cross_block": 1.1561897222109475e-17,
+      "max_standard_copy_matrix_difference": 0.0,
+      "compressed_groups": [
+        "path3__plus",
+        "path3__minus"
+      ]
+    },
+    "triangle3": {
+      "full_flag_dimension": 72,
+      "kernel_dimension": 72,
+      "root_automorphism_order": 6,
+      "exact_host_invariance": "PASS",
+      "exact_equality_kernel_invariance": "PASS",
+      "sectors": {
+        "trivial": 26,
+        "sign": 2,
+        "standard_plus": 22,
+        "standard_minus": 22
+      },
+      "orthonormal_error": 1.1102230246251565e-15,
+      "equality_subspace_error": 1.1102230246251565e-15,
+      "max_host_cross_block": 1.5375651220338817e-16,
+      "max_standard_copy_matrix_difference": 4.163336342344337e-17,
+      "compressed_groups": [
+        "triangle3__trivial",
+        "triangle3__sign",
+        "triangle3__standard"
+      ]
+    }
+  },
+  "symmetric_matrix_variable_counts": {
+    "original_all_five_blocks": 9422,
+    "unmerged_symmetry_blocks": 4328,
+    "compressed_symmetry_groups": 3904
+  },
+  "npz_schema": {
+    "block_names": "Names of all unmerged PSD subspaces; owners has the corresponding original block.",
+    "U_<block>": "float64 (full_flag_dimension, small_rank) orthonormal embedding.",
+    "M_<block>": "float64 (1044,small_rank,small_rank), already divided by host sampling denominator.",
+    "kernel_coordinates_<block>": "float64 coordinates such that original B times coordinates equals U.",
+    "group_names": "Compressed group names; group_owners gives original block.",
+    "group_U_<group>": "float64 (multiplicity,full_flag_dimension,small_rank); all copies use same PSD variable.",
+    "group_M_<group>": "float64 (1044,small_rank,small_rank), sum of copy M arrays.",
+    "group_multiplicity_<group>": "int32 scalar; trace contribution is multiplicity*trace(X).",
+    "group_members_<group>": "Names of unmerged blocks within this group.",
+    "original_B_<owner>": "Original exact integer kernel basis.",
+    "original_U_<owner>": "Original reduced QR orthonormal kernel basis.",
+    "action_<owner>_<perm>": "Exact integer permutation image[i] of flag i.",
+    "projector6_trivial/sign_<owner>": "Exact integer six times the S3 projector."
+  },
+  "independent_numeric_reynolds_roundtrip": {
+    "one_root": {
+      "host_coefficient_error": 0.0,
+      "compressed_gram_error": 1.5543122344752192e-15,
+      "trace_error": 3.552713678800501e-15
+    },
+    "independent3": {
+      "host_coefficient_error": 2.7755575615628914e-17,
+      "compressed_gram_error": 1.842276331487369e-15,
+      "trace_error": 7.105427357601002e-15
+    },
+    "edge_isolate": {
+      "host_coefficient_error": 1.3877787807814457e-17,
+      "compressed_gram_error": 2.4424906541753444e-15,
+      "trace_error": 0.0
+    },
+    "path3": {
+      "host_coefficient_error": 1.0408340855860843e-17,
+      "compressed_gram_error": 1.887379141862766e-15,
+      "trace_error": 0.0
+    },
+    "triangle3": {
+      "host_coefficient_error": 5.551115123125783e-17,
+      "compressed_gram_error": 1.7763568394002505e-15,
+      "trace_error": 0.0
+    }
+  }
+}

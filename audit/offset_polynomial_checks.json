@@ -1,0 +1,268 @@
+{
+  "scope": "Independent exhaustive coverage and every-presentation polynomial audit for |j|<=2; independent Boolean profile and Hessian input checks",
+  "profiles": {
+    "paths": 480,
+    "boolean_profiles": 65536,
+    "degreewise_maxima": [
+      0,
+      0,
+      6,
+      18,
+      36,
+      60,
+      60,
+      54,
+      48,
+      44,
+      42,
+      35,
+      25,
+      18,
+      12,
+      0,
+      0
+    ],
+    "maximizers": 32,
+    "c5_templates": 192,
+    "pair_counts": "24 on edges; 12 on nonedges",
+    "two_vertex_response_checks_including_isolated_types": 578,
+    "status": "PASS"
+  },
+  "offsets": {
+    "-2": {
+      "fully_labeled_presentations": 28000,
+      "fully_labeled_branch_counts": {
+        "V=0,T=2": 20400,
+        "V=2,T=1": 6400,
+        "V=4,T=0": 1200
+      },
+      "canonical_presentations": 5460,
+      "canonical_branch_counts": {
+        "V=0,T=2": 1060,
+        "V=2,T=1": 3200,
+        "V=4,T=0": 1200
+      },
+      "independent_formula75_checks": 5460,
+      "distinct_polynomials": 8,
+      "polynomials": [
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            -6,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 320
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            -2,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 480
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            0,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 1300
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            2,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 480
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            6,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 480
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            2,
+            -2,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 960
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            2,
+            0,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 480
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            2,
+            2,
+            -48,
+            0,
+            192
+          ],
+          "multiplicity": 960
+        }
+      ],
+      "coverage_status": "PASS",
+      "polynomial_status": "PASS"
+    },
+    "-1": {
+      "fully_labeled_presentations": 160,
+      "fully_labeled_branch_counts": {
+        "V=0,T=1": 80,
+        "V=2,T=0": 80
+      },
+      "canonical_presentations": 120,
+      "canonical_branch_counts": {
+        "V=0,T=1": 40,
+        "V=2,T=0": 80
+      },
+      "independent_formula75_checks": 120,
+      "distinct_polynomials": 1,
+      "polynomials": [
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            0,
+            -24,
+            0,
+            192
+          ],
+          "multiplicity": 120
+        }
+      ],
+      "coverage_status": "PASS",
+      "polynomial_status": "PASS"
+    },
+    "0": {
+      "fully_labeled_presentations": 1,
+      "fully_labeled_branch_counts": {
+        "V=0,T=0": 1
+      },
+      "canonical_presentations": 1,
+      "canonical_branch_counts": {
+        "V=0,T=0": 1
+      },
+      "independent_formula75_checks": 1,
+      "distinct_polynomials": 1,
+      "polynomials": [
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            192
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "coverage_status": "PASS",
+      "polynomial_status": "PASS"
+    },
+    "1": {
+      "fully_labeled_presentations": 49,
+      "fully_labeled_branch_counts": {
+        "V=0,T=1": 49
+      },
+      "canonical_presentations": 33,
+      "canonical_branch_counts": {
+        "V=0,T=1": 33
+      },
+      "independent_formula75_checks": 33,
+      "distinct_polynomials": 1,
+      "polynomials": [
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            192
+          ],
+          "multiplicity": 33
+        }
+      ],
+      "coverage_status": "PASS",
+      "polynomial_status": "PASS"
+    },
+    "2": {
+      "fully_labeled_presentations": 8382,
+      "fully_labeled_branch_counts": {
+        "V=0,T=2": 8262,
+        "V=4,T=0": 120
+      },
+      "canonical_presentations": 882,
+      "canonical_branch_counts": {
+        "V=0,T=2": 762,
+        "V=4,T=0": 120
+      },
+      "independent_formula75_checks": 882,
+      "distinct_polynomials": 2,
+      "polynomials": [
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            192
+          ],
+          "multiplicity": 802
+        },
+        {
+          "ascending_coefficients": [
+            0,
+            0,
+            6,
+            0,
+            0,
+            192
+          ],
+          "multiplicity": 80
+        }
+      ],
+      "coverage_status": "PASS",
+      "polynomial_status": "PASS"
+    }
+  },
+  "status": "PASS",
+  "total_independent_polynomial_checks": 6496,
+  "offset_polynomial_records": 13,
+  "globally_distinct_polynomials": 11
+}

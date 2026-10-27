@@ -1,0 +1,6 @@
+# Exact supplied-witness verification; tested with CPython 3.13.5.
+# No SDP solver, compiler, or FLINT installation is required.
+numpy==2.3.5
+scipy==1.17.0
+sympy==1.14.0
+networkx==3.6.1

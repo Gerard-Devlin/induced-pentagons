@@ -1,0 +1,7 @@
+# Optional discovery/input-regeneration dependencies. Exact finite Clebsch,
+# profile and small-offset checks use the Python standard library only.
+-r requirements-verification.txt
+cvxpy==1.9.3
+python-flint==0.9.0
+clarabel==0.11.1
+scs==3.3.1

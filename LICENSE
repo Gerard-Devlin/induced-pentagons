@@ -1,0 +1,11 @@
+Licensing scope
+===============
+
+Source code in src/, scripts/, verify.py, Makefile, and .github/ is licensed
+under the MIT License. See LICENSE-CODE.
+
+The paper, mathematical exposition, blueprint, documentation, exact
+certificates, finite data, and verification reports are licensed under
+Creative Commons Attribution 4.0 International. See LICENSE-PAPER-DATA.
+
+Referenced works and external dependencies retain their respective licenses.
