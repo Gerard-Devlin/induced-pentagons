@@ -8,10 +8,14 @@ This Lean 4 project checks the **core finite certificate layer** of the paper.
 It is not a formalization of the complete induced-pentagon theorem, its graphon
 extension, stability, or eventual extremality.
 
+The [separate Mathlib project](paper/README.md) in `paper/` extends this layer
+with real weighted graph identities, Bernoulli multilinearity and the scalar
+optimization used in Lemma 12.1. It has its own build and axiom-audit gate.
+
 ## Run
 
 Install the toolchain pinned in `lean-toolchain` using the official Lean/Elan
-installation instructions. There are no Mathlib or third-party Lean packages.
+installation instructions. This parent project has no Mathlib or third-party Lean packages.
 From this directory run:
 
 ```sh

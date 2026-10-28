@@ -35,9 +35,14 @@ AUDITED = [
 ]
 
 
+def source_files():
+    for directory, folders, files in os.walk(FORMAL):
+        folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
+        yield from (Path(directory) / n for n in files if not n.startswith('.'))
+
+
 def fingerprints():
-    paths = [p for p in FORMAL.rglob('*') if p.is_file() and
-             not any(part.startswith('.') for part in p.relative_to(FORMAL).parts) and
+    paths = [p for p in source_files() if
              (p.suffix in {'.lean', '.json', '.toml', '.md'} or p.name == 'lean-toolchain')]
     paths += [ROOT / 'scripts/export_lean_certificate.py', Path(__file__)]
     return {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
@@ -135,8 +140,8 @@ def main():
     os.environ.setdefault('LEAN_NUM_THREADS', '2')
     run([sys.executable, str(ROOT / 'scripts/export_lean_certificate.py'), '--check'], cwd=ROOT)
     initial = fingerprints()
-    for path in FORMAL.rglob('*.lean'):
-        if '.lake' in path.relative_to(FORMAL).parts:
+    for path in source_files():
+        if path.suffix != '.lean':
             continue
         text = path.read_text(encoding='utf-8')
         if re.search(r'\b(sorry|admit|native_decide|sorryAx|ofReduceBool)\b|(?m:^\s*axiom\s)', text):

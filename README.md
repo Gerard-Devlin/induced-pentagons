@@ -1,7 +1,7 @@
 # Induced pentagons
 
 [![Exact verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml)
-[![Lean certificate verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml)
+[![Lean verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml)
 
 Research materials for **Sharp bounds, stability, and arithmetic fluctuations
 for induced pentagons**. The paper studies the sharp inequality
@@ -15,7 +15,10 @@ its Clebsch equality construction, stability, and finite-edge arithmetic.
 **Verification scope:** Python independently checks the finite inputs, and
 [the Lean project](formal/README.md) checks the core SOS and equality-span
 arithmetic on the imported exact tensors, with additional finite-graph,
-Clebsch construction, blow-up and integer-variance proofs. The graphon, compactness, stability
+Clebsch construction, blow-up and integer-variance proofs. The separate
+[Mathlib proof layer](formal/paper/README.md) adds weighted blow-up identities,
+Bernoulli multilinearity and the scalar optimization underlying Lemma 12.1.
+The graphon, compactness, stability
 and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization
 obligations; the full paper is not yet formalized.
@@ -52,7 +55,8 @@ chain and supplementary audits. Run the latter locally with `make audit`.
 
 For the kernel-checked certificate arithmetic, install the pinned Lean toolchain
 and run `make lean`, or `python scripts/verify_lean.py`. The Lean badge reports
-this finite-certificate CI workflow.
+the certificate and mathematical-component CI jobs. Run the latter separately
+with `make lean-paper`, or `python scripts/verify_lean_paper.py`.
 
 ## Layout
 

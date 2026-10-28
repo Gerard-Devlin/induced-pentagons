@@ -1,4 +1,4 @@
-name: Lean certificate verification
+name: Lean verification
 
 on:
   push:
@@ -45,3 +45,33 @@ jobs:
         with:
           name: lean-certificate-verification
           path: results/lean_verification.json
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build Mathlib-based mathematical proofs
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal/paper
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+          leanchecker: false
+          axiom-audit: true
+          axiom-audit-root: InducedPentagonsPaper
+      - name: Audit mathematical declarations
+        run: python scripts/verify_lean_paper.py --skip-build
+      - name: Upload mathematical proof verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-paper-verification
+          path: results/lean_paper_verification.json

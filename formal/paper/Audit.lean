@@ -1,0 +1,32 @@
+import InducedPentagonsPaper
+
+#print axioms InducedPentagons.Paper.toSimpleGraph_adj
+#print axioms InducedPentagons.Paper.dart_card_blowUp
+#print axioms InducedPentagons.Paper.pentagon_card_blowUp
+#print axioms InducedPentagons.Paper.pentagon_card_withIsolates
+#print axioms InducedPentagons.Paper.edgeMass_nonnegative
+#print axioms InducedPentagons.Paper.pentagonMass_nonnegative
+#print axioms InducedPentagons.Paper.edgeMass_scale
+#print axioms InducedPentagons.Paper.pentagonMass_scale
+#print axioms InducedPentagons.Paper.edgeMass_unit
+#print axioms InducedPentagons.Paper.pentagonMass_unit
+#print axioms InducedPentagons.Paper.edgeMass_blowUp
+#print axioms InducedPentagons.Paper.pentagonMass_blowUp
+#print axioms InducedPentagons.Paper.pentagonMass_withIsolates
+#print axioms InducedPentagons.Paper.squaredRatio_scale
+#print axioms InducedPentagons.Paper.squaredRatio_blowUp
+#print axioms InducedPentagons.Paper.clebsch_dart_card
+#print axioms InducedPentagons.Paper.clebsch_balanced_edgeMass
+#print axioms InducedPentagons.Paper.clebsch_blowUp_edges
+#print axioms InducedPentagons.Paper.periodicCost_add
+#print axioms InducedPentagons.Paper.periodicCost_sum
+#print axioms InducedPentagons.Paper.periodicCost_le_profileCost
+#print axioms InducedPentagons.Paper.reduced_scalar_profile
+#print axioms InducedPentagons.Paper.scalar_profile_cost
+#print axioms InducedPentagons.Paper.scalar_profile
+#print axioms InducedPentagons.Paper.bernoulliWeight_nonnegative
+#print axioms InducedPentagons.Paper.bernoulliWeight_sum
+#print axioms InducedPentagons.Paper.bernoulliExtension_le
+#print axioms InducedPentagons.Paper.bernoulliExtension_pattern
+#print axioms InducedPentagons.Paper.bernoulliExtension_patterns
+#print axioms InducedPentagons.Paper.pattern_sum_le_of_boolean_bound

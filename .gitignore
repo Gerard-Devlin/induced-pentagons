@@ -28,6 +28,6 @@ results/independent_certificate_verification.json
 results/combinatorial_input_verification.json
 results/profile_checks.json
 results/ci_*.json
-formal/.lake/
+.lake/
 *.olean
 *.ilean

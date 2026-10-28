@@ -267,10 +267,20 @@
     "formal/lake-manifest.json": "cfddeb508698b64807f6c9f161a43e98b34f1972de4451fb1788875f6c2658f9",
     "formal/lakefile.toml": "e16585d3ab7f1c7ebfc2ffee68f7aec073b8cd7b3a1d1a9adc76ffc40f4cf23b",
     "formal/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "formal/README.md": "da8fb01e17839c6ae07c73c456c20d04797ac32dd951708561bc584187d50d84",
-    "formal/STATUS.md": "6309d1ec140e0335cbf5c2c23152ec4dc68b8fbc059221ffc80c6aa9728b629d",
+    "formal/paper/Audit.lean": "50d9e3c92bbd7c8b6daccb8a662973fd4d40c050454a59643ddb2d9fc1283b5b",
+    "formal/paper/InducedPentagonsPaper/Bernoulli.lean": "6fba9fb1be9476b74e7fcaac930fba07d0a24f39b7c08bf1e2b3afb6dd83ef4c",
+    "formal/paper/InducedPentagonsPaper/FiniteGraph.lean": "114949c0010201cf4cf051070a4b6c5a0f7a198f23fbe034f84f7c7704e4b7ef",
+    "formal/paper/InducedPentagonsPaper/ScalarProfile.lean": "db2df62828c27cb32d40d2ca9ea836b8feee350b00381172dc595443ff043e11",
+    "formal/paper/InducedPentagonsPaper/WeightedGraph.lean": "e534019987d416d0bc0358dd1b507703e7949a1538bb61e803ee2518135e115c",
+    "formal/paper/InducedPentagonsPaper.lean": "a81d199b3f7530ecadec43f6ba3c7667c8d7bfe8bacc46100672415462d66e99",
+    "formal/paper/lake-manifest.json": "9d6dbb51c366cb7c89384e4c58550406416a4434155429884aa09e311b98d700",
+    "formal/paper/lakefile.toml": "b6f9d607d3b4aa40b7da62b5e45199cdf3b987c955056bfb2273ee96ec62f682",
+    "formal/paper/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "formal/paper/README.md": "2b0a417a6fbde877d2dc840bc14c78b7485596a5feed805fadfc0c4a4bc1b4a6",
+    "formal/README.md": "13b80ed010c7462e876905b67d0d5f5d5368c5f82e39af63d0e4a043c86a20e0",
+    "formal/STATUS.md": "c4ec5456447448d96bb1f3bd65f7fbea1a5be6e944765d06996f01071c5976a8",
     "scripts/export_lean_certificate.py": "5477b594c99b876d952913be4c67233cbc79fe9aca2b256077272d107fb95e00",
-    "scripts/verify_lean.py": "345e92f5a56b565235f9193b33e3ca93f9238b625ca0bad2b4188291f0837067"
+    "scripts/verify_lean.py": "6871bc9812a4282d817516b991423327d87423bff43f49d3cd6a2cd19a1de7c5"
   },
   "input_sha256": {
     "certificates/all_graph_exact_certificate.json": "e024cce41195cb99b923eeee8608f3b6e5c0035af05bb886971bdef7ea94e2ca",
@@ -279,5 +289,5 @@
     "certificates/flag_basis.npz": "2b55a44980f7d6e6c82ff9a30c7b1c0630cd58170bf697346cd4e4c405f199ea",
     "certificates/pattern_columns.npz": "169aa76d64081d63152a350df0fb627b5d7ff40f69d24eac514a25b353a36d41"
   },
-  "elapsed_seconds": 27.60316491127014
+  "elapsed_seconds": 37.94857931137085
 }

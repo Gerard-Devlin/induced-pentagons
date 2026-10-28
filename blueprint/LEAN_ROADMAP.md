@@ -6,8 +6,8 @@ imported exact tensors. It does not state the paper's graph inequality.
 
 | Layer | Current status | Obligation still required for a full formal proof |
 | --- | --- | --- |
-| Clebsch construction | Finite graph model and counts formalized | Complete normalized pentagon enumeration gives 192; degree, edges, triangles and codegrees are proved; the full balanced-blow-up cardinality formulas remain to be derived |
-| Blow-ups and isolates | Embedding correspondences formalized | Projection is injective on pentagon vertices; lift/project and add/remove-isolate maps are inverse; connect these to the full numerical weighted formulas |
+| Clebsch construction | Finite graph counts and weighted edge formula formalized | Complete normalized pentagon enumeration gives 192; degree, edges, triangles and codegrees are proved; the weighted edge formula is 40 k². Identify labelled embeddings divided by ten with the normalized cycle sum to derive 192 k⁵ |
+| Blow-ups and isolates | Correspondences, cardinalities and weighted class-mass identities formalized | Darts scale by k² and labelled pentagons by k⁵; arbitrary clone weights collapse exactly to class masses. The labelled-to-normalized pentagon convention still needs a formal bridge |
 | Exact arithmetic | Kernel checked in Lean | Rational bindings, signs, slope, 10,722 Gram entries, 1,044 host identities and four equality-span witnesses are covered by the current checker |
 | Data transcription | Reproducible export and hashes | The export is checked against JSON/NPZ; a formal parser and semantic input derivation would further reduce the transcription boundary |
 | Seven-vertex atlas | Python independent recount | Define graph-mask relabelling, prove canonical representative coverage and orbit disjointness, and establish the 1,044-host census in Lean |
@@ -17,15 +17,18 @@ imported exact tensors. It does not state the paper's graph inequality.
 | Global bound, Sections 2-5 | Not formalized | Weighted/graphon definitions, attainment, variations, trace limit, active density and positive-slope deduction |
 | Equality classification, Sections 6-7 | Arithmetic spans covered; deduction not formalized | Conditional square vanishing, triangle elimination, degree/codegree identities, and the Clebsch twin quotient |
 | Stability, Sections 8-9 and Appendix A | Not formalized | Local repair, compactness, peeling, whole-vertex rounding and the optimal exponent |
-| Arithmetic and phase law, Sections 10-12 | Elementary integral variance lemmas formalized | Square-sum parity and the nonzero balanced variance gap are proved; structural energy, graph applications, multilinear profile envelope and uniform asymptotic errors remain |
+| Arithmetic and phase law, Sections 10-12 | Integer variance, Bernoulli extension and scalar optimization formalized | Scalar Lemma 12.1 is proved from explicit profile-envelope hypotheses for arbitrary profile lists and integer offsets. The envelope's Clebsch combinatorics, Boolean bound and weighted clique inequality, structural energy, graph applications and uniform asymptotic errors remain |
 | Eventual polynomials, Sections 13-14 | Not formalized | Bounded defect reduction, counting polynomial semantics, and eventual maximization; no numerical global threshold is certified |
 
-The next dependency to formalize is the **finite graph semantics of the host and
-flag data**, then the passage from coefficient identities to the finite density
-inequality. The analytic steps need an appropriate real-analysis/measure-theory
-library, such as Mathlib, and new mathematical definitions and proofs.
+The **finite graph semantics of the host and flag data** remain a central
+dependency, followed by the passage from coefficient identities to the finite
+density inequality. The [Mathlib extension](../formal/paper/README.md) supplies
+the real-weighted finite model and completed scalar/expectation arguments.
+Attainment, variations and stability still require the measure-theoretic
+graphon development and new mathematical proofs.
 
 Incomplete paper obligations are recorded here rather than represented by
 `sorry` or unproved axioms in the Lean library. The repository's Lean badge means
-that the committed finite-certificate project builds and passes its CI checks.
+that both the committed finite-certificate and Mathlib component projects build
+and pass their CI checks.
 It must not be presented as certification of the complete manuscript.

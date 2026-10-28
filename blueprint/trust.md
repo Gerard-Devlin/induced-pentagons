@@ -29,5 +29,10 @@ The verification report binds current source, exact data, paper, blueprint,
 documentation and build configuration bytes. Changed or newly added inputs
 invalidate the binding. Hashes detect changes and do not prove the prose.
 
-The Lean badge reports the finite-certificate workflow, not the complete paper.
+The [Mathlib component project](../formal/paper/README.md) adds proofs of finite
+weighted identities, Bernoulli multilinearity and scalar profile optimization.
+Its separate report and axiom audit cover exactly the declarations listed in
+that project. The graph-specific profile envelope remains an explicit dependency.
+
+The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).

@@ -10,6 +10,7 @@ from __future__ import annotations
 import _bootstrap  # local CLI module paths only
 
 import hashlib
+import os
 from pathlib import Path
 
 VERIFIED_STATUS = 'verified_exact_computational_dependencies'
@@ -30,9 +31,11 @@ def tracked_paths(root: Path) -> list[Path]:
         base = root / name
         if not base.is_dir():
             continue
-        for path in base.rglob('*'):
-            if not path.is_file():
-                continue
+        candidates = []
+        for directory, folders, files in os.walk(base):
+            folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
+            candidates.extend(Path(directory) / n for n in files if not n.startswith('.'))
+        for path in candidates:
             rel = path.relative_to(base)
             if any(part.startswith('.') or part == '__pycache__' for part in rel.parts):
                 continue

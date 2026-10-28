@@ -1,0 +1,183 @@
+{
+  "schema": "induced-pentagons.lean-paper-verification.v1",
+  "status": "verified_lean_mathematical_components",
+  "scope": [
+    "finite weighted graph and blow-up identities",
+    "Bernoulli multilinear extension and Boolean bound transfer",
+    "scalar optimization in Lemma 12.1, with explicit envelope hypotheses"
+  ],
+  "full_paper_formalized": false,
+  "toolchain": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "axioms": {
+    "InducedPentagons.Paper.toSimpleGraph_adj": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.dart_card_blowUp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagon_card_blowUp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagon_card_withIsolates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.edgeMass_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagonMass_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.edgeMass_scale": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagonMass_scale": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.edgeMass_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagonMass_unit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.edgeMass_blowUp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagonMass_blowUp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pentagonMass_withIsolates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.squaredRatio_scale": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.squaredRatio_blowUp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_dart_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_balanced_edgeMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_blowUp_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.periodicCost_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.periodicCost_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.periodicCost_le_profileCost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.reduced_scalar_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.scalar_profile_cost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.scalar_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.bernoulliWeight_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.bernoulliWeight_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.bernoulliExtension_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.bernoulliExtension_pattern": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.bernoulliExtension_patterns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pattern_sum_le_of_boolean_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "formal/InducedPentagons/FiniteGraph.lean": "5d649cb7bae040fb41d4bb15dc805af55d2615ed7f663514a5599a9f7995a2e7",
+    "formal/InducedPentagons/Isolates.lean": "a7af42165e765e9f28429611b4260ef38b5e9a5892bb0f6b69849329e06f17a4",
+    "formal/paper/Audit.lean": "50d9e3c92bbd7c8b6daccb8a662973fd4d40c050454a59643ddb2d9fc1283b5b",
+    "formal/paper/InducedPentagonsPaper/Bernoulli.lean": "6fba9fb1be9476b74e7fcaac930fba07d0a24f39b7c08bf1e2b3afb6dd83ef4c",
+    "formal/paper/InducedPentagonsPaper/FiniteGraph.lean": "114949c0010201cf4cf051070a4b6c5a0f7a198f23fbe034f84f7c7704e4b7ef",
+    "formal/paper/InducedPentagonsPaper/ScalarProfile.lean": "db2df62828c27cb32d40d2ca9ea836b8feee350b00381172dc595443ff043e11",
+    "formal/paper/InducedPentagonsPaper/WeightedGraph.lean": "e534019987d416d0bc0358dd1b507703e7949a1538bb61e803ee2518135e115c",
+    "formal/paper/InducedPentagonsPaper.lean": "a81d199b3f7530ecadec43f6ba3c7667c8d7bfe8bacc46100672415462d66e99",
+    "formal/paper/lake-manifest.json": "9d6dbb51c366cb7c89384e4c58550406416a4434155429884aa09e311b98d700",
+    "formal/paper/lakefile.toml": "b6f9d607d3b4aa40b7da62b5e45199cdf3b987c955056bfb2273ee96ec62f682",
+    "formal/paper/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "formal/paper/README.md": "2b0a417a6fbde877d2dc840bc14c78b7485596a5feed805fadfc0c4a4bc1b4a6",
+    "scripts/verify_lean_paper.py": "dfa46cdd1e2caa681b3fff560593c030ab83019974b1a3c7c0dc043cd086f4d2"
+  },
+  "elapsed_seconds": 95.64131736755371
+}

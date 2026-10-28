@@ -30,3 +30,10 @@ replay using Lean's kernel. The badge reports the actual workflow state.
 
 The larger remaining graph-theoretic and analytic obligations are recorded in
 [the roadmap](../blueprint/LEAN_ROADMAP.md).
+
+The [Mathlib extension](paper/README.md) has a separate gate and report,
+`results/lean_paper_verification.json`. It proves weighted blow-up cardinality
+and class-mass identities, the Clebsch edge formula, Bernoulli multilinear
+extension, and the scalar profile optimization with explicit envelope
+hypotheses. These results do not close the graph-specific profile envelope or
+the paper's global inequality.

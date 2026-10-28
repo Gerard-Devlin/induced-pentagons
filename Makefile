@@ -1,7 +1,7 @@
 PYTHON ?= python3
 LABEL ?= submission_20261027
 
-.PHONY: paper submission flatten manuscript-check finite profiles offsets inputs certificate spans verify lean audit release all clean
+.PHONY: paper submission flatten manuscript-check finite profiles offsets inputs certificate spans verify lean lean-paper audit release all clean
 # A recipe fixes ordering even with make -j: the verdict binds the final PDFs
 # and flattened text, so these must be produced before the exact full check.
 all:
@@ -34,6 +34,8 @@ verify:
 	$(PYTHON) src/verify_project.py
 lean:
 	$(PYTHON) scripts/verify_lean.py
+lean-paper:
+	$(PYTHON) scripts/verify_lean_paper.py
 audit:
 	$(PYTHON) -S src/verify_foundation_identities.py
 	$(PYTHON) -S src/verify_stability_inputs.py
