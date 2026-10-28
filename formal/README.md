@@ -65,12 +65,39 @@ upper-triangular storage; the Gram expression is a sum of `weight * v_i * v_j`.
 weighted squares and vanishing of a positive square at equality. These elementary
 lemmas do not supply a graphon or real-density interpretation of the data.
 
+## Additional mathematical proofs
+
+The library also contains proofs independent of the imported certificate tensors:
+
+- `FiniteGraph.lean` defines symmetric loopless finite graphs and induced
+  pentagon embeddings. It proves the completeness of the normalized-cycle
+  enumeration, injectivity of pentagon embeddings, and projection/lifting
+  inverse laws for arbitrary blow-ups. A pentagon in a blow-up uses five
+  distinct base vertices.
+- `Construction.lean` derives the Clebsch model directly from XOR adjacency.
+  Its degree, 40 edges, triangle-freeness and codegrees are kernel checked.
+  Lean checks equality of the complete induced-cycle enumeration with a
+  candidate list, proves that it has 192 entries without duplicates, and
+  verifies the squared sharp-constant normalization. The convention chooses
+  the smallest vertex first and orders the two orientations.
+- `Isolates.lean` proves that adding any family of isolated vertices does not
+  change the induced-pentagon embeddings, using explicit inverse maps.
+- `IntegerVariance.lean` proves square-sum parity, its zero characterization,
+  and the gap `sum x_i^2 >= 2` for a nonzero integral vector whose sum is zero.
+
+The candidate Clebsch list is generated for convenience, but the proof checks
+the complete graph-defined enumeration against it. Its count is not an imported
+Python counting verdict. These results do not yet supply the general tensor
+semantics, full balanced-blow-up cardinality formulas or analytic upper bound.
+
 The generated arithmetic proofs use `decide +kernel`; the aggregate theorem
 combines those proofs. No `sorry`, assumed certificate
 axioms, `native_decide`, external solver verdicts, or compiler-evaluation axioms
 are used. `Audit.lean` prints the transitive axioms of the aggregate theorem,
 span checks, and soundness lemmas. CI also checks that corrupted input examples
 cannot be proved and rechecks the compiled environment with Lean's `leanchecker`.
+This is a separate replay using the same Lean kernel, not a second independent
+implementation of the type checker.
 The permitted ordinary Lean axioms are `propext`, `Classical.choice`, and
 `Quot.sound`; any other transitive axiom makes the audit fail.
 
@@ -104,6 +131,10 @@ lakefile.toml                     Lean/Std-only library
 InducedPentagons/Verifier.lean     Handwritten exact checker and normalizations
 InducedPentagons/FastVerifier.lean Gram rows as sums of weighted vector rows
 InducedPentagons/Soundness.lean    Generic ordered-integer SOS consequences
+InducedPentagons/FiniteGraph.lean Graph semantics, enumeration and blow-ups
+InducedPentagons/Construction.lean Direct Clebsch pentagon count
+InducedPentagons/Isolates.lean     Isolated-vertex invariance
+InducedPentagons/IntegerVariance.lean Integer lattice lemmas
 InducedPentagons/Generated/       Reproducible data and kernel proofs
 InducedPentagons.lean             Library entry point
 Audit.lean                        Transitive axiom audit

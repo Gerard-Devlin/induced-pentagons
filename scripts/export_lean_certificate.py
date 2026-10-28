@@ -217,6 +217,25 @@ def produce():
     body += 'theorem coreCertificateVerified : coreCertificateChecks = true := by\n'
     body += '  simp only [coreCertificateChecks,\n    ' + ',\n    '.join(name for name, _ in all_proofs) + ',\n    Bool.true_and]\n'
     emit('Complete.lean', imported, body)
+    def adjacent(a, b):
+        return (a ^ b) in (1, 2, 4, 8, 15)
+    neighborhoods = [[b for b in range(16) if adjacent(a, b)] for a in range(16)]
+    pentagons = []
+    for a in range(16):
+        for b in neighborhoods[a]:
+            for c in neighborhoods[b]:
+                for d in neighborhoods[c]:
+                    for e in neighborhoods[d]:
+                        p = (a, b, c, d, e)
+                        if not (a < min(b, c, d, e) and b < e):
+                            continue
+                        if all(adjacent(p[i], p[j]) == (((i + 1) % 5 == j) or ((j + 1) % 5 == i))
+                               for i in range(5) for j in range(5)):
+                            pentagons.append(p)
+    assert len(pentagons) == len(set(pentagons)) == 192
+    emit('ClebschData.lean', ['InducedPentagons.FiniteGraph'],
+         'def clebschPentagonData : List (PentagonTuple 16) :=\n  [' +
+         ',\n  '.join('\u27e8' + ', '.join(map(str, p)) + '\u27e9' for p in pentagons) + ']\n')
     manifest = {
         'schema': 'induced-pentagons.lean-export.v1',
         'lean_toolchain': 'leanprover/lean4:v4.35.0',
@@ -225,7 +244,8 @@ def produce():
         'counts': {'hosts': 1044, 'positive_squares': 184, 'positive_slacks': 826,
                    'gram_entries': sum(map(len, grams)), 'gram_rows': len(gram_proofs),
                    'host_chunks': host_chunks, 'span_witnesses': 4,
-                   'rational_scale_digits': len(str(scale))},
+                   'rational_scale_digits': len(str(scale)),
+                   'clebsch_candidate_pentagons': len(pentagons)},
         'data_denominator': 557383680,
         'generated': {name: hashlib.sha256(data).hexdigest() for name, data in sorted(pieces.items())},
     }

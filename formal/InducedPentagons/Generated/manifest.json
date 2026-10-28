@@ -17,10 +17,12 @@
     "gram_rows": 308,
     "host_chunks": 87,
     "span_witnesses": 4,
-    "rational_scale_digits": 1544
+    "rational_scale_digits": 1544,
+    "clebsch_candidate_pentagons": 192
   },
   "data_denominator": 557383680,
   "generated": {
+    "ClebschData.lean": "aea4c558dd313aedddb73ce55b2dc67692a7e9e1b54483f34fd2b7886ed1f5e0",
     "Complete.lean": "768a1cc1d55710e037c3b81468f45d5195f24735b13bc4748e3b12cbab308e12",
     "GramData.lean": "573a93b38597f02855c806d91fc93e891cf80c6e47d0d5b3116db834ebe0d70d",
     "GramData0.lean": "8721a2de76b7367ad341d4630c21b42e493266afee47af562c7818efc1d19ce6",

@@ -14,7 +14,8 @@ its Clebsch equality construction, stability, and finite-edge arithmetic.
 
 **Verification scope:** Python independently checks the finite inputs, and
 [the Lean project](formal/README.md) checks the core SOS and equality-span
-arithmetic on the imported exact tensors. The graphon, compactness, stability
+arithmetic on the imported exact tensors, with additional finite-graph,
+Clebsch construction, blow-up and integer-variance proofs. The graphon, compactness, stability
 and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization
 obligations; the full paper is not yet formalized.

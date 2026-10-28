@@ -24,6 +24,14 @@ AUDITED = [
     'InducedPentagons.integer_square_nonnegative',
     'InducedPentagons.weightedSquares_nonnegative',
     'InducedPentagons.positive_square_vanishes',
+    *(f'InducedPentagons.{name}' for name in (
+        'inducedPentagon_injective', 'blowUp_projection_injective',
+        'project_liftPentagon', 'lift_projectPentagon', 'clone_liftPentagon',
+        'mem_inducedPentagons', 'clebsch_degree', 'clebsch_edges',
+        'clebsch_triangle_free', 'clebsch_codegrees', 'clebsch_pentagon_enumeration',
+        'clebsch_pentagons', 'clebsch_pentagons_nodup', 'clebsch_sharp_normalization',
+        'pentagon_avoids_isolates', 'remove_addIsolatesPentagon', 'add_removeIsolatesPentagon',
+        'squareSum_zero_iff', 'squareSum_parity', 'balanced_integer_variance_gap')),
 ]
 
 
