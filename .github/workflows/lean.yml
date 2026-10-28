@@ -80,7 +80,7 @@ jobs:
           use-mathlib-cache: false
           leanchecker: false
           axiom-audit: true
-          axiom-audit-root: InducedPentagons.Paper
+          axiom-audit-root: InducedPentagonsPaper
       - name: Audit mathematical declarations
         run: python scripts/verify_lean_paper.py --skip-build
       - name: Upload mathematical proof verification report
