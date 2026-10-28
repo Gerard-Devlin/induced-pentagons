@@ -1,0 +1,26 @@
+{
+  "schema": "induced-pentagons.lean-profile-candidates.v1",
+  "meaning": "Candidate masks; not a computational PASS or an assumed mathematical fact",
+  "generator_sha256": "c1c59f466d1644d43f4f76f24e8370d0225b8d2879a5ad6a1d80ae4d3532a459",
+  "output_sha256": {
+    "ProfileMasks.lean": "7a0cc4e1d7bbf3c8a6af61c13fef2c1e974ebfce66228de0bed127afdf356b92",
+    "ProfilePrefixChecks00.lean": "c86a25b7d787cd33bad861354bcbb22c42de012ee422530e8b9d44be5a57edbc",
+    "ProfilePrefixChecks01.lean": "10ad851281398ee705b3686578af1f2b4137027153ef80d159f96bb5b1839c2f",
+    "ProfilePrefixChecks02.lean": "1585c53d11307e1541d1d0d237f8c2d7de9df70180b2d084255c9107d7d433bf",
+    "ProfilePrefixChecks03.lean": "bf42f89a84f0a0626630c2d2356bd7677f29ac9a25980bc75f20ab01733507af",
+    "ProfilePrefixChecks04.lean": "02e776e02b523181e54648cc30189af26793807b729b0ab763c697029e21b3c1",
+    "ProfilePrefixChecks05.lean": "6747a5f4d2f3be428bec369d9846f00b838340649b1b5441b4ca89439d9f1f71",
+    "ProfilePrefixChecks06.lean": "c7cedcfeaabfc18515d01370c0a30e95fa6eb4aaf8644b8d09ea3811f9218dfc",
+    "ProfilePrefixChecks07.lean": "97436e06d7600d6fcc6b2d18fa1f834907bb4e411f0b40ed8f9ec32198cb906e",
+    "ProfilePrefixChecks08.lean": "8d7524728a012497b1a4b99dd531146cd2bbca619e6d7273aa30e49b40886295",
+    "ProfilePrefixChecks09.lean": "e4605e691e28b6b630ee9d77ae29958ece3793b3fb9a52d617eaeb3e0d0e7bba",
+    "ProfilePrefixChecks10.lean": "1d5842ad065e5717d8f913a955f74c7cc3130a0135923bf0b066b334aa96d920",
+    "ProfilePrefixChecks11.lean": "708ad38d603e071aca4d58ab0062b2a03861ffcee1ea975f1fa861cdbe2ea2cc",
+    "ProfilePrefixChecks12.lean": "f02af5552f89ae1c373cedfb2e8821ad874ad63cfe66cd239b3d03fc5a41f504",
+    "ProfilePrefixChecks13.lean": "e78c7bcb2d5279cc5ae308837de2a36de0b1b39696fef8a98ec5347a05bfc438",
+    "ProfilePrefixChecks14.lean": "d0b47905e3062a218ca91149e7a7adab87a3caeb7aae99944fab9c6bb431cb26",
+    "ProfilePrefixChecks15.lean": "942c29798e054b4fcb45a29d68aba0d981a864b89821eef177fbf16616ea2b16",
+    "ProfilePrefixComplete.lean": "04505cfc84f8074585d326aa0b0424979f252d3dfaa612d427b2446e9d57f08b",
+    "ProfilePrefixData.lean": "1c202d5cefe0c6bbf488e877a1fcb5545a54d0cfc51666ad715c61d49ab79f45"
+  }
+}

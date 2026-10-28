@@ -3,7 +3,7 @@ public import Mathlib.Algebra.Order.Floor.Ring
 public import Mathlib.Basic.Real.Basic
 public import Mathlib.Tactic
 
-public section
+@[expose] public section
 noncomputable section
 
 /-! The scalar optimization in Lemma 12.1. The graph-specific profile envelope

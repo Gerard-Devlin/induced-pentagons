@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,7 +35,22 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'integral_weighted_clique scaled_integral_weighted_clique weighted_clique '
            'independentSubsetsFrom_complete clebsch_independent_family_bound '
            'clebsch_independent_card_le clebsch_complement_cliqueFree '
-           'clebsch_complement_weighted').split()
+           'clebsch_complement_weighted patternIndicator_le_one patternTotal_filter '
+           'patternBound_sound bernoulliExtension_patternTotal patternBound_fractional '
+           'mem_inducedPaths candidatePaths_nodup inducedPaths_nodup clebsch_inducedPaths_count '
+           'dart_sum_eq_doubleSum edgeMass_eq_orderedEdgeSum profileMaskData_exact '
+           'profileMask_literals_checked pathMask_literal_eq profileLink_mask_sum '
+           'clebsch_profile_boolean_bound profileLink_le_sixty_from_masks profileLink_le_sixty '
+           'pathValue_le_endpoints profileLink_le_endpointSum clebsch_path_endpoint_multiplicity '
+           'nonedgePairs_weight_sum clebsch_endpoint_weight_sum profileLink_le_quadratic '
+           'profileDegree_nonnegative profile_envelope scalar_profile_clebsch scalar_profile_equation58 '
+           'neighborhoodProfile_range neighborhoodProfile_degree pathValue_neighborhood '
+           'clebsch_neighborhood_path_count neighborhoodProfile_link profile_envelope_attained '
+           'path_self_maps pathTuple_pattern pathTuple_vertex_injective pathVertices_card '
+           'tupleOfPathIso_induced tupleOfPathIso_vertices inducedPathSet_iff_mem_inducedPaths '
+           'normalized_path_unique inducedPaths_vertices_injective pathSubsetEquiv '
+           'pathSetLiteral_eq profileLink_eq_setProfileLink profile_envelope_on_induced_subsets '
+           'profile_envelope_attained_on_induced_subsets scalar_profile_on_induced_subsets').split()
 
 
 def sources():
@@ -43,6 +59,7 @@ def sources():
         yield from (Path(directory) / n for n in files if not n.startswith('.'))
     yield ROOT / 'formal/InducedPentagons/FiniteGraph.lean'
     yield ROOT / 'formal/InducedPentagons/Isolates.lean'
+    yield ROOT / 'scripts/export_lean_profiles.py'
     yield Path(__file__)
 
 
@@ -71,6 +88,7 @@ def main():
     if lake is None:
         raise SystemExit('Lake is not on PATH. Install formal/paper/lean-toolchain first.')
     os.environ.setdefault('LEAN_NUM_THREADS', '2')
+    run([sys.executable, str(ROOT / 'scripts/export_lean_profiles.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -84,14 +102,13 @@ def main():
     audit = run([lake, 'env', 'lean', 'Audit.lean'], capture=True).stdout
     print(audit, end='')
     audited = {}
-    for line in audit.splitlines():
-        match = re.match(r"'([^']+)' (does not depend on any axioms|depends on axioms: \[(.*)\])", line)
-        if match:
-            names = [] if match[2].startswith('does not') else [
-                x.strip() for x in (match[3] or '').split(',') if x.strip()]
-            if set(names) - ALLOWED_AXIOMS:
-                raise RuntimeError('Unexpected transitive axioms: ' + line)
-            audited[match[1]] = names
+    for match in re.finditer(
+            r"'([^']+)' (does not depend on any axioms|depends on axioms:\s*\[([^\]]*)\])", audit):
+        names = [] if match[2].startswith('does not') else [
+            x.strip() for x in (match[3] or '').split(',') if x.strip()]
+        if set(names) - ALLOWED_AXIOMS:
+            raise RuntimeError('Unexpected transitive axioms: ' + match[0])
+        audited[match[1]] = names
     if set(audited) != {'InducedPentagons.Paper.' + n for n in AUDITED}:
         raise RuntimeError('The axiom audit did not cover exactly the required declarations')
     final = fingerprints()
@@ -103,7 +120,8 @@ def main():
                         'complete labelled Clebsch pentagon count and sharp construction equality',
                         'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
-                        'scalar optimization in Lemma 12.1, with explicit envelope hypotheses'],
+                        'graph-defined Clebsch profile envelope and neighborhood attainment',
+                        'scalar profile equation (58) with its Clebsch envelope hypotheses discharged'],
               'full_paper_formalized': False, 'toolchain': version,
               'mathlib_revision': next(p['rev'] for p in json.loads(
                   (PAPER / 'lake-manifest.json').read_text())['packages'] if p['name'] == 'mathlib'),

@@ -7,3 +7,10 @@ import InducedPentagonsPaper.SharpConstruction
 import InducedPentagonsPaper.WeightedClique
 import InducedPentagonsPaper.IndependentSets
 import InducedPentagonsPaper.ClebschComplement
+import InducedPentagonsPaper.BooleanPatternBound
+import InducedPentagonsPaper.ProfileData
+import InducedPentagonsPaper.ProfileBound
+import InducedPentagonsPaper.ProfileQuadratic
+import InducedPentagonsPaper.ProfileEnvelope
+import InducedPentagonsPaper.ProfileAttainment
+import InducedPentagonsPaper.ProfileTheorems

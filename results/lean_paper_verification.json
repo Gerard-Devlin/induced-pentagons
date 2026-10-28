@@ -6,7 +6,8 @@
     "complete labelled Clebsch pentagon count and sharp construction equality",
     "weighted clique inequality and Clebsch complement quadratic bound",
     "Bernoulli multilinear extension and Boolean bound transfer",
-    "scalar optimization in Lemma 12.1, with explicit envelope hypotheses"
+    "graph-defined Clebsch profile envelope and neighborhood attainment",
+    "scalar profile equation (58) with its Clebsch envelope hypotheses discharged"
   ],
   "full_paper_formalized": false,
   "toolchain": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
@@ -273,6 +274,242 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternIndicator_le_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternTotal_filter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternBound_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.bernoulliExtension_patternTotal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternBound_fractional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.mem_inducedPaths": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.candidatePaths_nodup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.inducedPaths_nodup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_inducedPaths_count": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.dart_sum_eq_doubleSum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.edgeMass_eq_orderedEdgeSum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileMaskData_exact": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.profileMask_literals_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathMask_literal_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileLink_mask_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_profile_boolean_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileLink_le_sixty_from_masks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileLink_le_sixty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathValue_le_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileLink_le_endpointSum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_path_endpoint_multiplicity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.nonedgePairs_weight_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_endpoint_weight_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileLink_le_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileDegree_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profile_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.scalar_profile_clebsch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.scalar_profile_equation58": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.neighborhoodProfile_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.neighborhoodProfile_degree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathValue_neighborhood": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.clebsch_neighborhood_path_count": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.neighborhoodProfile_link": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profile_envelope_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.path_self_maps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathTuple_pattern": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathTuple_vertex_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathVertices_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.tupleOfPathIso_induced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.tupleOfPathIso_vertices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.inducedPathSet_iff_mem_inducedPaths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.normalized_path_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.inducedPaths_vertices_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathSubsetEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.pathSetLiteral_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profileLink_eq_setProfileLink": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profile_envelope_on_induced_subsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.profile_envelope_attained_on_induced_subsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.scalar_profile_on_induced_subsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "allowed_standard_axioms": [
@@ -283,22 +520,56 @@
   "source_sha256": {
     "formal/InducedPentagons/FiniteGraph.lean": "5d649cb7bae040fb41d4bb15dc805af55d2615ed7f663514a5599a9f7995a2e7",
     "formal/InducedPentagons/Isolates.lean": "a7af42165e765e9f28429611b4260ef38b5e9a5892bb0f6b69849329e06f17a4",
-    "formal/paper/Audit.lean": "7f85473a807eab1d6d6dca5eea776758e453e5371ad2476d40a26db7c9fb8214",
-    "formal/paper/InducedPentagonsPaper/Bernoulli.lean": "6fba9fb1be9476b74e7fcaac930fba07d0a24f39b7c08bf1e2b3afb6dd83ef4c",
+    "formal/paper/Audit.lean": "fa3e6974c7176a03770999d157ab624a9dc6ccb82d8839ecf5ad3104b6b313d2",
+    "formal/paper/InducedPentagonsPaper/Bernoulli.lean": "6ba0c43c0f67695d33db22ba50107a27024e8a21d14dafcc9a5340132c932aef",
+    "formal/paper/InducedPentagonsPaper/BooleanPatternBound.lean": "0120e2ec91ccbf8e9f55277abf1e76d8cb3092ba570cb318130af91f1a92deff",
     "formal/paper/InducedPentagonsPaper/ClebschComplement.lean": "9526d7ea5cbd6af907b3b6f9122556648654a6742f21fbfefcb6b18eecc92d14",
     "formal/paper/InducedPentagonsPaper/FiniteGraph.lean": "114949c0010201cf4cf051070a4b6c5a0f7a198f23fbe034f84f7c7704e4b7ef",
+    "formal/paper/InducedPentagonsPaper/Generated/profile_manifest.json": "8616a95d2439825cbda7d589543c54d38d2fa0ba7ec967e1bd13591456783b3d",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfileMasks.lean": "7a0cc4e1d7bbf3c8a6af61c13fef2c1e974ebfce66228de0bed127afdf356b92",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks00.lean": "c86a25b7d787cd33bad861354bcbb22c42de012ee422530e8b9d44be5a57edbc",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks01.lean": "10ad851281398ee705b3686578af1f2b4137027153ef80d159f96bb5b1839c2f",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks02.lean": "1585c53d11307e1541d1d0d237f8c2d7de9df70180b2d084255c9107d7d433bf",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks03.lean": "bf42f89a84f0a0626630c2d2356bd7677f29ac9a25980bc75f20ab01733507af",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks04.lean": "02e776e02b523181e54648cc30189af26793807b729b0ab763c697029e21b3c1",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks05.lean": "6747a5f4d2f3be428bec369d9846f00b838340649b1b5441b4ca89439d9f1f71",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks06.lean": "c7cedcfeaabfc18515d01370c0a30e95fa6eb4aaf8644b8d09ea3811f9218dfc",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks07.lean": "97436e06d7600d6fcc6b2d18fa1f834907bb4e411f0b40ed8f9ec32198cb906e",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks08.lean": "8d7524728a012497b1a4b99dd531146cd2bbca619e6d7273aa30e49b40886295",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks09.lean": "e4605e691e28b6b630ee9d77ae29958ece3793b3fb9a52d617eaeb3e0d0e7bba",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks10.lean": "1d5842ad065e5717d8f913a955f74c7cc3130a0135923bf0b066b334aa96d920",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks11.lean": "708ad38d603e071aca4d58ab0062b2a03861ffcee1ea975f1fa861cdbe2ea2cc",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks12.lean": "f02af5552f89ae1c373cedfb2e8821ad874ad63cfe66cd239b3d03fc5a41f504",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks13.lean": "e78c7bcb2d5279cc5ae308837de2a36de0b1b39696fef8a98ec5347a05bfc438",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks14.lean": "d0b47905e3062a218ca91149e7a7adab87a3caeb7aae99944fab9c6bb431cb26",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks15.lean": "942c29798e054b4fcb45a29d68aba0d981a864b89821eef177fbf16616ea2b16",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixComplete.lean": "04505cfc84f8074585d326aa0b0424979f252d3dfaa612d427b2446e9d57f08b",
+    "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixData.lean": "1c202d5cefe0c6bbf488e877a1fcb5545a54d0cfc51666ad715c61d49ab79f45",
     "formal/paper/InducedPentagonsPaper/IndependentSets.lean": "db1f56279e6b7137a989a3dd5af32d74914d7075095a7dbaec10397b94915c4f",
+    "formal/paper/InducedPentagonsPaper/MaskPattern.lean": "503ac853fbf7348635dc0ba6f74e619a97f58ef6a9818c3e414c0f1aaaee42cc",
+    "formal/paper/InducedPentagonsPaper/OrderedEdgeSum.lean": "671fb56ce61d1ec643c40d3bd904c3f4d4493aed0d7260ee15e62dc37d44b1da",
+    "formal/paper/InducedPentagonsPaper/PathConvention.lean": "cdb9ccd55820aacb226254d0c318334b869e473ec679b11e90f1e81ee4d2bb76",
+    "formal/paper/InducedPentagonsPaper/PatternPrefix.lean": "0810404a134ff7b732eda53504130882a02e7ca59aab68dc5207b6a453843683",
     "formal/paper/InducedPentagonsPaper/PentagonCount.lean": "6d2a2ca137da9b7cf3140c23e172e18c7ca8f5b13607bd438f7bf224130a81ec",
-    "formal/paper/InducedPentagonsPaper/ScalarProfile.lean": "db2df62828c27cb32d40d2ca9ea836b8feee350b00381172dc595443ff043e11",
+    "formal/paper/InducedPentagonsPaper/ProfileAttainment.lean": "01b764d0e993b13646ae0c7599064981939712471578ea7f2f40ea04b33bf7fa",
+    "formal/paper/InducedPentagonsPaper/ProfileBound.lean": "7424f1049894af177481d18fc658a09015e6313bc7de7ccb9c7da316e696b499",
+    "formal/paper/InducedPentagonsPaper/ProfileData.lean": "2f45de397c86979d68332f4bda118eed4a8337f637a8a6705a1f60497b66ec6b",
+    "formal/paper/InducedPentagonsPaper/ProfileEnvelope.lean": "06b13bd8906d73e261bc658b8a6a14779554592ae785bb99e32079a89fe6ecff",
+    "formal/paper/InducedPentagonsPaper/ProfileMaskBound.lean": "a53e3b0cfc261c537c1a5e3f300a09046e3d2deef4bea0dfe7dafd759c49d2a6",
+    "formal/paper/InducedPentagonsPaper/ProfileMaskData.lean": "78a860a9f12005f135c7de771a45c6c6350c23a990dbe4de115c6aca8ee60a9a",
+    "formal/paper/InducedPentagonsPaper/ProfileQuadratic.lean": "115abe8c80fa2f76cfb1b22946f76a0d0b7c4740aa3afa8869111c2924c7b3fb",
+    "formal/paper/InducedPentagonsPaper/ProfileTheorems.lean": "f712d1914152c47985206ac9a84958909a5a83e66f22132bf3de2e5d474df3e0",
+    "formal/paper/InducedPentagonsPaper/ScalarProfile.lean": "233f73eafef49734c8715af20a373bb3b96b4adf789a2ccca488dbc50e6f52f8",
     "formal/paper/InducedPentagonsPaper/SharpConstruction.lean": "2dc75dc18abc663cbb8d5d7fa6df62bf3dce0bcb6322d971f7db92d1bce82409",
     "formal/paper/InducedPentagonsPaper/WeightedClique.lean": "71cff60db49d1ad97e3ea97d375f7e87a782fd7d3fc0cce24b33ccd0dbe0eba6",
     "formal/paper/InducedPentagonsPaper/WeightedGraph.lean": "e534019987d416d0bc0358dd1b507703e7949a1538bb61e803ee2518135e115c",
-    "formal/paper/InducedPentagonsPaper.lean": "b6e2722a6aa12e4c2c20280c62d635615acf0f3d834aaf8625298f8da3325598",
+    "formal/paper/InducedPentagonsPaper.lean": "bb3e885f11eac3456d97dd41e8a7b15b58510290d27275a5e25641adb2596af5",
     "formal/paper/lake-manifest.json": "9d6dbb51c366cb7c89384e4c58550406416a4434155429884aa09e311b98d700",
     "formal/paper/lakefile.toml": "b6f9d607d3b4aa40b7da62b5e45199cdf3b987c955056bfb2273ee96ec62f682",
     "formal/paper/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "formal/paper/README.md": "d2104f7b93c566ff9d80b9f64cca22efabdad23a53b3e7dc32e7b344972997af",
-    "scripts/verify_lean_paper.py": "8e23db6ad15cae265bac78b46d7b0bbbcd0166a2fe2bd089e925aebf5822756e"
+    "formal/paper/README.md": "2101cd3be7b043e1ec70792338e6f54ab0e2ef545b842181787eb253591c52e9",
+    "scripts/export_lean_profiles.py": "c1c59f466d1644d43f4f76f24e8370d0225b8d2879a5ad6a1d80ae4d3532a459",
+    "scripts/verify_lean_paper.py": "30749de11b2fe7e412dba4fa2cac19914203b847d76bbc14d0f3142bff9351c7"
   },
-  "elapsed_seconds": 93.02534985542297
+  "elapsed_seconds": 52.178160190582275
 }

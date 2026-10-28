@@ -32,7 +32,11 @@ invalidate the binding. Hashes detect changes and do not prove the prose.
 The [Mathlib component project](../formal/paper/README.md) adds proofs of finite
 weighted identities, Bernoulli multilinearity and scalar profile optimization.
 Its separate report and axiom audit cover exactly the declarations listed in
-that project. The graph-specific profile envelope remains an explicit dependency.
+that project. The later profile layer derives the graph-specific envelope from
+complete graph-defined path data, verified prefix families and a sound Boolean
+checker, and proves correspondence with induced vertex subsets. This closes
+the envelope hypotheses for Lemma 12.1, without extending the claim to the
+phase-law asymptotics or the paper's global bound.
 
 The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).

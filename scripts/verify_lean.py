@@ -153,13 +153,13 @@ def main():
     audit = run([lake, 'env', 'lean', 'Audit.lean'], capture=True).stdout
     print(audit, end='')
     audited = {}
-    for line in audit.splitlines():
-        match = re.match(r"'([^']+)' (does not depend on any axioms|depends on axioms: \[(.*)\])", line)
-        if match:
-            names = [] if match[2].startswith('does not') else [x.strip() for x in (match[3] or '').split(',') if x.strip()]
-            if set(names) - ALLOWED_AXIOMS:
-                raise RuntimeError('Unexpected transitive axioms: ' + line)
-            audited[match[1]] = names
+    for match in re.finditer(
+            r"'([^']+)' (does not depend on any axioms|depends on axioms:\s*\[([^\]]*)\])", audit):
+        names = [] if match[2].startswith('does not') else [
+            x.strip() for x in (match[3] or '').split(',') if x.strip()]
+        if set(names) - ALLOWED_AXIOMS:
+            raise RuntimeError('Unexpected transitive axioms: ' + match[0])
+        audited[match[1]] = names
     if set(audited) != set(AUDITED):
         raise RuntimeError('The transitive axiom audit did not cover exactly the required declarations')
     rejected = rejection_checks(lake)

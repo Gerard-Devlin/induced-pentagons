@@ -17,7 +17,9 @@ its Clebsch equality construction, stability, and finite-edge arithmetic.
 arithmetic on the imported exact tensors, with additional finite-graph,
 Clebsch construction, blow-up and integer-variance proofs. The separate
 [Mathlib proof layer](formal/paper/README.md) adds weighted blow-up identities,
-Bernoulli multilinearity and the scalar optimization underlying Lemma 12.1.
+Bernoulli multilinearity and full statements for the profile envelope
+(Lemma 11.1) and scalar profile inequality (Lemma 12.1 / equation (58)), including
+the induced-vertex-subset interpretation and the attaining profiles.
 The graphon, compactness, stability
 and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization

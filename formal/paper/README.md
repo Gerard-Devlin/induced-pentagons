@@ -61,7 +61,7 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   of arbitrary nonnegative profile sizes to their fractional total; exact scalar
   optimization for every integer offset; and equation (58) from the two explicit
   hypotheses `c ≤ (12/5)d²` and `c ≤ 60`, with `d ≥ 0`. The graph-specific
-  interpretation of these hypotheses is still required for the full Lemma 12.1.
+  interpretation of these hypotheses is supplied by the later profile modules.
 - `WeightedClique.lean`: the weighted clique inequality for arbitrary
   nonnegative real weights. Integral blow-ups reduce it to Mathlib's finite
   Turán theorem; normalized integer rounding and a proved limit give real weights.
@@ -70,14 +70,46 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   has at most five vertices, hence its complement has no six-clique.
 - `ClebschComplement.lean`: combines these proofs to derive
   `6 E_complement(x) ≤ (12/5)(sum x)²`, the quadratic bound used in Lemma 11.1.
+- `ProfileData.lean`, `ProfileQuadratic.lean`, and `ProfileAttainment.lean`:
+  a complete, duplicate-free graph-defined enumeration of 480 induced paths;
+  exactly six paths per nonadjacent endpoint pair; the quadratic profile bound;
+  and the neighborhood profiles attaining it at every degree in `[0,5]`.
+- `BooleanPatternBound.lean`, `PatternPrefix.lean`, and the profile mask modules:
+  a sound Boolean branch checker, exact graph-to-mask and literal correspondence,
+  and 256 checked prefix families proving the uniform bound sixty. Each prefix
+  family is separately proved equal to the relevant filter of the original
+  masks. Eight Boolean case splits exhaust all prefixes. Bernoulli extension
+  then gives the bound for all fractional profiles.
+- `PathConvention.lean`: a bijection between canonical path tuples and vertex
+  subsets whose induced simple graph is isomorphic to the four-vertex path.
+  Within-subset degree identifies endpoints and internal vertices, and the two
+  profile polynomials are proved equal.
+- `ProfileTheorems.lean`: the full profile-envelope statement and its attaining
+  construction (Lemma 11.1), plus the scalar profile statement in exactly the
+  form of equation (58) (Lemma 12.1), using the induced-vertex-subset convention.
+  The Clebsch envelope hypotheses of the earlier scalar component are discharged.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
 The Clebsch numerical formula now follows from a direct labelled count, alongside
 the standalone project's separate 192-cycle normalized enumeration. A general
 bijection between the two cycle conventions, including equality of arbitrary
 weighted normalized-cycle polynomials, remains to be supplied.
-The profile-to-complement comparison, finite Boolean profile bound and
-attainment profiles are still required to close the profile-envelope dependency.
+The profile envelope and scalar profile dependencies are now closed. The
+separate Boolean equality catalogue in the Python verification report is not
+claimed as a Lean equality-classification theorem.
+
+## Reproduce the profile candidates
+
+```sh
+python scripts/export_lean_profiles.py --check
+```
+
+Run this command from the repository root. The generated lists are candidates:
+Lean proves their equality with graph-defined data and filtered prefix families,
+then independently checks each remaining Boolean branch problem in its kernel.
+The exporter supplies no assumed counts or proof verdicts. Its manifest binds
+the generator and all nineteen generated modules. The mathematical verification
+gate runs this regeneration check before building and auditing the proofs.
 
 The complete paper is **not yet formalized**. See the
 [coverage roadmap](../../blueprint/LEAN_ROADMAP.md). This project contains only

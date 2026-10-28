@@ -38,5 +38,13 @@ exact sharp-constant construction equality, Bernoulli multilinear
 extension, and the scalar profile optimization with explicit envelope
 hypotheses. It also proves the real weighted clique inequality, the Clebsch
 independence bound of five and the resulting weighted complement bound.
-These results do not close the graph-specific profile envelope or
-the paper's global inequality.
+The later profile layer closes the envelope hypotheses: the complete 480-path
+enumeration, endpoint multiplicities, 256 sound checked prefix families and
+Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain
+the quadratic bound. A proved path-to-induced-subset bijection and polynomial
+identity connect these results to the manuscript's convention. Thus Lemmas 11.1
+and 12.1, including equation (58), have corresponding complete Lean statements.
+
+The paper's global inequality, equality classification, stability and phase-law
+asymptotics still require the obligations in the roadmap. They are not implied
+by these profile lemmas or by a successful certificate arithmetic build.

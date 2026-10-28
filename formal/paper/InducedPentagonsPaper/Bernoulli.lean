@@ -4,7 +4,7 @@ public import Mathlib.Basic.Real.Basic
 public import Mathlib.Data.Fintype.BigOperators
 public import Mathlib.Tactic
 
-public section
+@[expose] public section
 noncomputable section
 open scoped BigOperators
 
