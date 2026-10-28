@@ -15,3 +15,6 @@ import InducedPentagonsPaper.ProfileQuadratic
 import InducedPentagonsPaper.ProfileEnvelope
 import InducedPentagonsPaper.ProfileAttainment
 import InducedPentagonsPaper.ProfileTheorems
+import InducedPentagonsPaper.AtlasCertificate
+import InducedPentagonsPaper.PatternSemantics
+import InducedPentagonsPaper.AtlasInterpretation

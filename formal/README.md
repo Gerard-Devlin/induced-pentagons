@@ -118,11 +118,13 @@ the files and fails on any difference, including stale or extra generated module
 This binds the transcription to the repository inputs; hashes do not prove that
 those inputs have their intended graph-theoretic meaning.
 
-The seven-vertex atlas's exhaustiveness, primitive-pattern counts, canonical flag
-bases and tensor sampling interpretation are **not yet established in Lean**.
-They remain independently recounted by the existing Python gate. Thus this layer
-is a kernel-checked certificate arithmetic result on imported tensors, not a
-kernel-checked theorem about every finite graph or graphon.
+The standalone arithmetic checker does not establish the atlas or tensor
+semantics. The [Mathlib extension](paper/README.md) separately proves universal
+seven-vertex atlas coverage and equality with the certificate's host array.
+Pairwise nonisomorphism, the orbit census, primitive-pattern counts, canonical
+flag bases and tensor sampling interpretation remain to be established in Lean;
+the Python gate independently recounts them. Thus this arithmetic layer remains
+a result on imported tensors, rather than the paper's graph inequality.
 
 See [the remaining formalization work](../blueprint/LEAN_ROADMAP.md) for the precise
 gaps between this project and a full paper formalization.

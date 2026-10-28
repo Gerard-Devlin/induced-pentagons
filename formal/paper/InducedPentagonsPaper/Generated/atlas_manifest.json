@@ -1,0 +1,35 @@
+{
+  "schema": "induced-pentagons.lean-atlas-witnesses.v1",
+  "meaning": "Candidate masks and permutations; all coverage assertions are proved in Lean",
+  "generator_sha256": "e7db30d0113f422018ffeb74f0305a41938fe1732b378073f7f6d1a774079c9f",
+  "input_sha256": {
+    "certificates/graph_atlas_7.json": "cebb00a0385a0a1ac574b59937e97abf8f2391303a78e813f4f1a62326b0804c"
+  },
+  "output_sha256": {
+    "AtlasChecks5_00.lean": "ef8b6ce681f8428584282f4ab03e1d99ed5551366cc32ab2036e88aa7662294d",
+    "AtlasChecks5_01.lean": "4fbaff2925bf048bc5ed1c0f3c73f019aa70e01ca8b1fecb987e1f2243e52aa3",
+    "AtlasChecks5_02.lean": "6f6299ea5a0e5a70f5fe8b70db9c1c53b08ab23f08b3e50d79869767e5c60632",
+    "AtlasChecks5_03.lean": "de6492a8fb9cd049152d2c4f0350772f7beec5306e4f41280f071cf89c9fe4a2",
+    "AtlasChecks6_00.lean": "e82f38977ca2c9748cedee8c356af1a8db45eeb45a785e176e0a140669ce4a0b",
+    "AtlasChecks6_01.lean": "63d3a717b838ffc3567afc2df283f17a93366183ab2f744fe38b8af3bd8b134e",
+    "AtlasChecks6_02.lean": "e6af7ccbb3d8eeb58427b60d1b20ce441341c0e8cce577e0849013929ff45a39",
+    "AtlasChecks6_03.lean": "0d3683f18d9898be433eaadbce1ea705a425b5b13c30f8faa01432f84298e2fc",
+    "AtlasChecks6_04.lean": "a57aebc7fe8a6aae97dd67a33b3033b1f9ed5176761c0e5b9ced9bda4e0b7aaf",
+    "AtlasChecks6_05.lean": "e9fbf0a3a1884c9981b0b67113329e139f8e2baf8e0ab795dc2a1dee5c352ef8",
+    "AtlasChecks6_06.lean": "cac7b473422e3666944e0a130ad0533c8892b4c90fe0b44343ccc5a8a60aace3",
+    "AtlasChecks6_07.lean": "38a20d4f5020ef3b4b3ac45819d3ec8a63bd5b4d15a8cda674ea9c8c3a358589",
+    "AtlasChecks6_08.lean": "fce79abb38f24b91fd5fc75551f8aa443bb32281a930b615d3f880021d84d77e",
+    "AtlasChecks6_09.lean": "9052031d0815bb86da2e3797626ada4c750e17de2a64e458f68bfa9e3c28db7a",
+    "AtlasChecks6_10.lean": "da53972a352c74f65b11691485124d266d2ae20e3ebc7c5814a8182f6bfdcf3d",
+    "AtlasChecks6_11.lean": "a40c5374b1316e1d09c29c545eb2e333bfb46245e4195e42f457192e81b57591",
+    "AtlasChecks6_12.lean": "1b6f4dbdc325224c21bcab8a0d847960b9102b11168c0f12bcd8a0bfde21e542",
+    "AtlasChecks6_13.lean": "ecab9a43a2661374886ff6db7a6f748b10fa7e2a612928e02f48089c06a5a4d1",
+    "AtlasChecks6_14.lean": "f6035f1d49e944033ded4318f27f78e7d688434c68cf823bb159b64640dda84d",
+    "AtlasChecks6_15.lean": "bf57418f9e0ff7129370f8be3a90cb164819e8c706145fd2b59741a62a65db57",
+    "AtlasChecksSmall.lean": "e2f73216f95130b90322fc32dd4da711822b256b87a5d2e0e5b6977771f73177",
+    "AtlasCoverage.lean": "caac203a67eb5a746fbff32ad30c0ecedb6331751af3e668f34a2c8e3631dac8",
+    "AtlasMasks.lean": "a144128108a4e1ecd6e6475b8383777c3dd532fe7688ceaa8a02ddc80d152b4e",
+    "AtlasRows6.lean": "5a91d32ae81dc13b0f02fce6711614f97fff3a5cbc0ad433f28c68c4b3403c29",
+    "AtlasRowsSmall.lean": "cf7e0f67497652ae7e523bb0bbce3a0e2d6d135c5a641dcb6c635210aa0a0307"
+  }
+}

@@ -13,7 +13,10 @@ output has no role in accepting the exact witness.
 The Python implementation relies on Python and its installed libraries.
 The separate [Lean project](../formal/README.md) rechecks the core SOS and
 equality-span arithmetic in Lean's kernel on the imported exact tensors.
-It does not yet prove the atlas enumeration or tensor interpretation in Lean.
+The standalone checker does not prove the tensor interpretation. The separate
+Mathlib extension now proves universal atlas coverage, with an explicit kernel
+equality to the certificate's actual host list. Canonical minimality, pairwise
+nonisomorphism and the automorphism/orbit census remain separate obligations.
 Independent counting routes, Linux/Windows CI and 24 malformed-input rejection
 cases provide additional implementation checks for the Python layer.
 
@@ -37,6 +40,9 @@ complete graph-defined path data, verified prefix families and a sound Boolean
 checker, and proves correspondence with induced vertex subsets. This closes
 the envelope hypotheses for Lemma 12.1, without extending the claim to the
 phase-law asymptotics or the paper's global bound.
+Its partial-pattern injection model and isomorphism invariance provide finite
+semantics for later count proofs. They do not yet certify the saved primitive
+count columns or the flag-product tensors.
 
 The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).

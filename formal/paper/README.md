@@ -29,6 +29,7 @@ From the repository root, the build, forbidden-proof scan, transitive axiom audi
 and source fingerprint gate is:
 
 ```sh
+python -m pip install numpy==2.3.5
 python scripts/verify_lean_paper.py
 ```
 
@@ -96,6 +97,24 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   construction (Lemma 11.1), plus the scalar profile statement in exactly the
   form of equation (58) (Lemma 12.1), using the induced-vertex-subset convention.
   The Clebsch envelope hypotheses of the earlier scalar component are discharged.
+- `FiniteAtlas.lean` and the generated atlas modules: Boolean graph equivalences,
+  lexicographic edge masks, restriction and one-vertex extension, complete
+  enumeration of the possible new neighborhoods, and a sound permutation
+  checker. All 11,291 extension witnesses through order seven are checked in the
+  kernel, proving coverage of every seven-vertex graph by the 1,044 listed masks.
+- `AtlasCertificate.lean`: the proved atlas list equals the actual host array in
+  the arithmetic certificate; hence every seven-vertex graph is isomorphic to
+  one of those certificate hosts. It also ties the five-vertex mask interpretation
+  to the existing `edge5` helper and checks rejection of noninjective maps,
+  incorrect adjacency, and absent targets.
+- `PatternSemantics.lean`: finite injection counts for partial required-edge and
+  nonedge patterns, explicit equivalences under graph isomorphism, and weighted
+  isomorphism invariance. The complete five-cycle pattern is identified with
+  the earlier pentagon embeddings, including its weighted factor of ten.
+- `AtlasInterpretation.lean`: represents arbitrary Mathlib simple graphs by the
+  Boolean model and transfers the seven-vertex coverage theorem to them.
+  Injection counts of every partial pattern on every seven-vertex graph reduce
+  to a host on the actual certificate list.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
 The general convention bridge proves that this is the induced-subset count,
@@ -105,6 +124,10 @@ have a proved connection through these general identities.
 The profile envelope and scalar profile dependencies are now closed. The
 separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.
+Atlas coverage does not yet prove pairwise nonisomorphism of the 1,044 masks,
+their canonical minimality or their stored automorphism orders. The generic
+pattern model does not yet certify the 22 stored primitive count columns or
+the flag-product tensors.
 
 ## Reproduce the profile candidates
 
@@ -118,6 +141,20 @@ then independently checks each remaining Boolean branch problem in its kernel.
 The exporter supplies no assumed counts or proof verdicts. Its manifest binds
 the generator and all nineteen generated modules. The mathematical verification
 gate runs this regeneration check before building and auditing the proofs.
+
+## Reproduce the atlas candidates
+
+```sh
+python scripts/export_lean_atlas.py --check
+```
+
+The exporter builds candidate representatives recursively and records an explicit
+permutation for each one-vertex extension. The final masks must match the
+committed JSON atlas. Its manifest binds that input, the exporter and all 25
+generated modules. Lean checks the candidate maps, target membership and every
+adjacency relation; a general induction then proves coverage for arbitrary
+Boolean graphs. A separate kernel equality connects these masks to the
+certificate host array. No Python coverage verdict is assumed.
 
 The complete paper is **not yet formalized**. See the
 [coverage roadmap](../../blueprint/LEAN_ROADMAP.md). This project contains only

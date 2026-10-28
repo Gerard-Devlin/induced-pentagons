@@ -23,6 +23,8 @@ the induced-vertex-subset interpretation and the attaining profiles.
 The general pentagon counting convention is also proved: the labelled sum
 divided by ten equals the canonical-cycle and induced-subset polynomials for
 arbitrary real vertex weights.
+The finite atlas layer proves every seven-vertex graph is isomorphic to a host
+on the actual certificate list, using kernel-checked extension witnesses.
 The graphon, compactness, stability
 and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization

@@ -59,7 +59,18 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'embeddingOfPentagonIso_vertices embeddingFibreEquiv embeddingFibre_card '
            'pentagonEmbedding_product pentagonMass_eq_setMass pentagonSet_card_eq_normalized_length '
            'pentagonMass_eq_normalized_length pentagonMass_eq_normalizedMass labelled_length_eq_ten_mul_normalized '
-           'clebsch_induced_pentagonSet_card ').split()
+           'clebsch_induced_pentagonSet_card '
+           'BooleanGraphEquiv.toSimpleGraphIso graphExtensionEquiv atlasCovers_zero '
+           'atlasCovers_succ small_neighborhoods_complete atlasWitnessCheck_sound '
+           'atlasRowCheck_sound atlasExtends_of_rows atlas7_covers '
+           'atlas7_count atlas7_masks_nodup seven_vertex_graph_isomorphic_to_atlas '
+           'atlas7_eq_certificate_hosts seven_vertex_graph_isomorphic_to_certificate_host certificate_host_count '
+           'edge5_eq_maskGraph atlasWitnessCheck_rejects_noninjective atlasWitnessCheck_rejects_wrong_graph '
+           'atlasRowCheck_rejects_missing_target patternSatisfies_comp_equiv_iff patternInjectionEquiv '
+           'patternInjectionCount_isomorphic satisfies_completePattern_iff pentagonPattern_satisfies_iff '
+           'pentagonPatternEquiv pentagonPattern_count patternInjectionWeight_isomorphic '
+           'pentagonPattern_weight '
+           'toSimpleGraph_boolGraphOfSimpleGraph seven_vertex_simpleGraph_isomorphic_to_certificate_host patternInjectionCount_reduced_to_certificate ').split()
 
 
 def sources():
@@ -68,7 +79,11 @@ def sources():
         yield from (Path(directory) / n for n in files if not n.startswith('.'))
     yield ROOT / 'formal/InducedPentagons/FiniteGraph.lean'
     yield ROOT / 'formal/InducedPentagons/Isolates.lean'
+    yield ROOT / 'formal/InducedPentagons/Verifier.lean'
+    yield ROOT / 'formal/InducedPentagons/Generated/Inputs.lean'
+    yield ROOT / 'certificates/graph_atlas_7.json'
     yield ROOT / 'scripts/export_lean_profiles.py'
+    yield ROOT / 'scripts/export_lean_atlas.py'
     yield Path(__file__)
 
 
@@ -98,6 +113,7 @@ def main():
         raise SystemExit('Lake is not on PATH. Install formal/paper/lean-toolchain first.')
     os.environ.setdefault('LEAN_NUM_THREADS', '2')
     run([sys.executable, str(ROOT / 'scripts/export_lean_profiles.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_atlas.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -128,6 +144,8 @@ def main():
               'scope': ['finite weighted graph and blow-up identities',
                         'complete labelled Clebsch pentagon count and sharp construction equality',
                         'general labelled, canonical and induced-subset weighted pentagon conventions',
+                        'universal seven-vertex atlas coverage bound to actual certificate hosts',
+                        'generic partial-pattern injection semantics and isomorphism invariance',
                         'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'graph-defined Clebsch profile envelope and neighborhood attainment',

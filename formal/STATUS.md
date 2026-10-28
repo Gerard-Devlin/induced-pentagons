@@ -43,6 +43,13 @@ bijectively to induced five-cycle vertex subsets. Each subset has exactly ten
 labelled embeddings. The labelled sum divided by ten equals the subset and
 canonical-tuple polynomials for arbitrary real vertex weights, connecting the
 two independent Clebsch counts.
+The finite atlas layer proves that every seven-vertex graph is isomorphic to a
+host from the actual certificate array. It checks 11,291 one-vertex extension
+witnesses, then applies a general coverage induction. Distinctness of the 1,044
+mask integers is proved; pairwise nonisomorphism and the automorphism/orbit
+census remain to be formalized. A generic required-edge/nonedge injection model
+and its isomorphism invariance supply the first part of the pattern semantics;
+the stored primitive counts and flag tensors still need their semantic proofs.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain

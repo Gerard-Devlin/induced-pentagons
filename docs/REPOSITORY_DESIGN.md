@@ -15,8 +15,10 @@ and continuous integration. Inspected examples:
 
 Here `src/` contains Python exact-certificate verifiers, `scripts/` contains
 generation and search tools, and `paper/`, `blueprint/`, `certificates/` hold
-the mathematical artifacts. The project has no Lean theorem library;
-`blueprint/trust.md` states its actual checking boundary.
+the mathematical artifacts. `formal/` contains the standalone Lean certificate
+library and the separate Mathlib mathematical proof layer, with pinned
+dependencies, generated candidates, kernel proofs and axiom audits.
+`blueprint/trust.md` states their actual checking boundary.
 
 Temporary files and local environments are ignored. `.gitattributes` preserves
 literal bytes across Windows and Unix checkouts for integrity verification.
