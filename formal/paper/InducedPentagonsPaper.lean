@@ -4,3 +4,6 @@ import InducedPentagonsPaper.WeightedGraph
 import InducedPentagonsPaper.Bernoulli
 import InducedPentagonsPaper.PentagonCount
 import InducedPentagonsPaper.SharpConstruction
+import InducedPentagonsPaper.WeightedClique
+import InducedPentagonsPaper.IndependentSets
+import InducedPentagonsPaper.ClebschComplement

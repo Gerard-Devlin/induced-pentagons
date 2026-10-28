@@ -30,7 +30,11 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'clebsch_pentagon_card clebsch_balanced_pentagonMass clebsch_blowUp_pentagons '
            'sharpConstant_positive sharpConstant_sq clebsch_balanced_squared_equality '
            'clebsch_balanced_sharp_equality clebsch_squaredRatio_unit '
-           'clebsch_balanced_squaredRatio').split()
+           'clebsch_balanced_squaredRatio cliqueFree_comap natCast_dart_card_sigma '
+           'integral_weighted_clique scaled_integral_weighted_clique weighted_clique '
+           'independentSubsetsFrom_complete clebsch_independent_family_bound '
+           'clebsch_independent_card_le clebsch_complement_cliqueFree '
+           'clebsch_complement_weighted').split()
 
 
 def sources():
@@ -97,6 +101,7 @@ def main():
               'status': 'verified_lean_mathematical_components',
               'scope': ['finite weighted graph and blow-up identities',
                         'complete labelled Clebsch pentagon count and sharp construction equality',
+                        'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'scalar optimization in Lemma 12.1, with explicit envelope hypotheses'],
               'full_paper_formalized': False, 'toolchain': version,

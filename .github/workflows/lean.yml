@@ -50,11 +50,25 @@ jobs:
     timeout-minutes: 45
     env:
       LEAN_NUM_THREADS: 2
+      MATHLIB_CACHE_GET_URL: ""
+      MATHLIB_NO_CACHE_ON_UPDATE: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - name: Install the pinned mathematical proof toolchain
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal/paper
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: false
+          use-github-cache: false
+      - name: Fetch only imported Mathlib dependencies
+        run: python scripts/fetch_mathlib_cache.py
       - name: Build Mathlib-based mathematical proofs
         uses: leanprover/lean-action@v1
         with:
@@ -63,10 +77,10 @@ jobs:
           build: true
           test: false
           lint: false
-          use-mathlib-cache: true
+          use-mathlib-cache: false
           leanchecker: false
           axiom-audit: true
-          axiom-audit-root: InducedPentagonsPaper
+          axiom-audit-root: InducedPentagons.Paper
       - name: Audit mathematical declarations
         run: python scripts/verify_lean_paper.py --skip-build
       - name: Upload mathematical proof verification report

@@ -17,7 +17,7 @@ imported exact tensors. It does not state the paper's graph inequality.
 | Global bound, Sections 2-5 | Not formalized | Weighted/graphon definitions, attainment, variations, trace limit, active density and positive-slope deduction |
 | Equality classification, Sections 6-7 | Arithmetic spans covered; deduction not formalized | Conditional square vanishing, triangle elimination, degree/codegree identities, and the Clebsch twin quotient |
 | Stability, Sections 8-9 and Appendix A | Not formalized | Local repair, compactness, peeling, whole-vertex rounding and the optimal exponent |
-| Arithmetic and phase law, Sections 10-12 | Integer variance, Bernoulli extension and scalar optimization formalized | Scalar Lemma 12.1 is proved from explicit profile-envelope hypotheses for arbitrary profile lists and integer offsets. The envelope's Clebsch combinatorics, Boolean bound and weighted clique inequality, structural energy, graph applications and uniform asymptotic errors remain |
+| Arithmetic and phase law, Sections 10-12 | Integer variance, Bernoulli extension, weighted clique bound and scalar optimization formalized | Scalar Lemma 12.1 is proved from explicit envelope hypotheses. Clebsch independence at most five and its weighted complement bound are proved. The profile-to-complement comparison, Boolean profile bound, attainment profiles, structural energy, graph applications and uniform asymptotic errors remain |
 | Eventual polynomials, Sections 13-14 | Not formalized | Bounded defect reduction, counting polynomial semantics, and eventual maximization; no numerical global threshold is certified |
 
 The **finite graph semantics of the host and flag data** remain a central

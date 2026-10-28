@@ -44,3 +44,13 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.clebsch_balanced_sharp_equality
 #print axioms InducedPentagons.Paper.clebsch_squaredRatio_unit
 #print axioms InducedPentagons.Paper.clebsch_balanced_squaredRatio
+#print axioms InducedPentagons.Paper.cliqueFree_comap
+#print axioms InducedPentagons.Paper.natCast_dart_card_sigma
+#print axioms InducedPentagons.Paper.integral_weighted_clique
+#print axioms InducedPentagons.Paper.scaled_integral_weighted_clique
+#print axioms InducedPentagons.Paper.weighted_clique
+#print axioms InducedPentagons.Paper.independentSubsetsFrom_complete
+#print axioms InducedPentagons.Paper.clebsch_independent_family_bound
+#print axioms InducedPentagons.Paper.clebsch_independent_card_le
+#print axioms InducedPentagons.Paper.clebsch_complement_cliqueFree
+#print axioms InducedPentagons.Paper.clebsch_complement_weighted

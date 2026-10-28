@@ -14,7 +14,9 @@ From this directory, with the pinned Lean toolchain installed:
 
 ```sh
 lake update
-lake exe cache get Mathlib.Combinatorics.SimpleGraph.Finite Mathlib.Tactic
+cd ../..
+python scripts/fetch_mathlib_cache.py
+cd formal/paper
 lake build
 lake env lean Audit.lean
 ```
@@ -60,14 +62,22 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   optimization for every integer offset; and equation (58) from the two explicit
   hypotheses `c ≤ (12/5)d²` and `c ≤ 60`, with `d ≥ 0`. The graph-specific
   interpretation of these hypotheses is still required for the full Lemma 12.1.
+- `WeightedClique.lean`: the weighted clique inequality for arbitrary
+  nonnegative real weights. Integral blow-ups reduce it to Mathlib's finite
+  Turán theorem; normalized integer rounding and a proved limit give real weights.
+- `IndependentSets.lean`: completeness of a pruned independent-set enumeration;
+  a kernel check on that complete family proves every Clebsch independent set
+  has at most five vertices, hence its complement has no six-clique.
+- `ClebschComplement.lean`: combines these proofs to derive
+  `6 E_complement(x) ≤ (12/5)(sum x)²`, the quadratic bound used in Lemma 11.1.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
 The Clebsch numerical formula now follows from a direct labelled count, alongside
 the standalone project's separate 192-cycle normalized enumeration. A general
 bijection between the two cycle conventions, including equality of arbitrary
 weighted normalized-cycle polynomials, remains to be supplied.
-The finite Boolean profile bound, weighted clique inequality and their Clebsch
-interpretation are also still required to close the profile-envelope dependency.
+The profile-to-complement comparison, finite Boolean profile bound and
+attainment profiles are still required to close the profile-envelope dependency.
 
 The complete paper is **not yet formalized**. See the
 [coverage roadmap](../../blueprint/LEAN_ROADMAP.md). This project contains only

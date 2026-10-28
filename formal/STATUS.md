@@ -36,5 +36,7 @@ The [Mathlib extension](paper/README.md) has a separate gate and report,
 and class-mass identities, the Clebsch edge and pentagon formulas with the
 exact sharp-constant construction equality, Bernoulli multilinear
 extension, and the scalar profile optimization with explicit envelope
-hypotheses. These results do not close the graph-specific profile envelope or
+hypotheses. It also proves the real weighted clique inequality, the Clebsch
+independence bound of five and the resulting weighted complement bound.
+These results do not close the graph-specific profile envelope or
 the paper's global inequality.
