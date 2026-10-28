@@ -33,7 +33,8 @@ The larger remaining graph-theoretic and analytic obligations are recorded in
 
 The [Mathlib extension](paper/README.md) has a separate gate and report,
 `results/lean_paper_verification.json`. It proves weighted blow-up cardinality
-and class-mass identities, the Clebsch edge formula, Bernoulli multilinear
+and class-mass identities, the Clebsch edge and pentagon formulas with the
+exact sharp-constant construction equality, Bernoulli multilinear
 extension, and the scalar profile optimization with explicit envelope
 hypotheses. These results do not close the graph-specific profile envelope or
 the paper's global inequality.

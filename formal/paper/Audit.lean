@@ -30,3 +30,17 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.bernoulliExtension_pattern
 #print axioms InducedPentagons.Paper.bernoulliExtension_patterns
 #print axioms InducedPentagons.Paper.pattern_sum_le_of_boolean_bound
+#print axioms InducedPentagons.Paper.mem_labelledPentagons
+#print axioms InducedPentagons.Paper.candidateWalks_nodup
+#print axioms InducedPentagons.Paper.labelledPentagons_nodup
+#print axioms InducedPentagons.Paper.pentagon_card_eq_labelled_length
+#print axioms InducedPentagons.Paper.clebsch_labelled_pentagons
+#print axioms InducedPentagons.Paper.clebsch_pentagon_card
+#print axioms InducedPentagons.Paper.clebsch_balanced_pentagonMass
+#print axioms InducedPentagons.Paper.clebsch_blowUp_pentagons
+#print axioms InducedPentagons.Paper.sharpConstant_positive
+#print axioms InducedPentagons.Paper.sharpConstant_sq
+#print axioms InducedPentagons.Paper.clebsch_balanced_squared_equality
+#print axioms InducedPentagons.Paper.clebsch_balanced_sharp_equality
+#print axioms InducedPentagons.Paper.clebsch_squaredRatio_unit
+#print axioms InducedPentagons.Paper.clebsch_balanced_squaredRatio

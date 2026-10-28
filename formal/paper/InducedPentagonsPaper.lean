@@ -2,3 +2,5 @@ import InducedPentagonsPaper.FiniteGraph
 import InducedPentagonsPaper.ScalarProfile
 import InducedPentagonsPaper.WeightedGraph
 import InducedPentagonsPaper.Bernoulli
+import InducedPentagonsPaper.PentagonCount
+import InducedPentagonsPaper.SharpConstruction

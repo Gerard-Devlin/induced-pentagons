@@ -47,7 +47,7 @@
         "source": "Explicit mathematical formulas in Sections 2 and 4",
         "saved_metadata_cannot_redefine_patterns_or_denominators": true
       },
-      "seconds": 2.1784136295318604,
+      "seconds": 1.6849493980407715,
       "input_sha256": {
         "pattern_columns.npz": "169aa76d64081d63152a350df0fb627b5d7ff40f69d24eac514a25b353a36d41",
         "flag_basis.npz": "2b55a44980f7d6e6c82ff9a30c7b1c0630cd58170bf697346cd4e4c405f199ea",
@@ -73,7 +73,7 @@
       "method": "Raw primitive pattern densities; complete integer Gram matrices; Python arbitrary-precision contractions",
       "imports_production_verifier": false,
       "certificate_sha256": "e024cce41195cb99b923eeee8608f3b6e5c0035af05bb886971bdef7ea94e2ca",
-      "seconds": 1.6293740272521973
+      "seconds": 1.8262758255004883
     },
     "equality_spans": {
       "status": "verified_exact",
@@ -824,7 +824,7 @@
     }
   },
   "sha256_scope": "Source, exact data, canonical and flattened paper/PDFs, and documentation; hashes bind bytes, not a machine formalization of the text.",
-  "elapsed_seconds": 64.332102060318,
+  "elapsed_seconds": 59.49076986312866,
   "sha256": {
     ".gitattributes": "9cbeb09502fe6bce9236896d69b7d0953b299acfbc21e1b3dc50566e6ffe3ccc",
     ".github/workflows/lean.yml": "402ac2c83ef4bc72ef71eb56a4a2107acf8deb0258c3056042d0c1798a6f5e0a",
@@ -835,7 +835,7 @@
     "LICENSE-PAPER-DATA": "db32ef70b2f0583f2c4a7c428eeadbc0a68a164e1828f25e7b9bab6700716ed2",
     "Makefile": "5c7b6b1e6673ef36b078479cba47e4cf5e47bd396a6ae3653c5dae12af91fad2",
     "README.md": "bc26511f8ef955ec15c48df9cff08bff054f7f0f71d0a20f267e9d55b3067819",
-    "blueprint/LEAN_ROADMAP.md": "fa4755237b2bbaebc57725dc0bc005e1b405e377daf346ef5f3d1fed586e4120",
+    "blueprint/LEAN_ROADMAP.md": "9d468a807410f3e59196623856f66f8c8b232c01a7a1cd4cde11973cedc72cf9",
     "blueprint/README.md": "96c784173ec14b19e9debd97cc82ae5c1f78d46a4f11315560a19f7c120c0cf2",
     "blueprint/claims.md": "65e24ff8363826a3756476c2c91f1a15e3dcfea33f33678abe6079eb208b5e83",
     "blueprint/proof_dependencies.txt": "d1809d8cb15ec423394b55704578405c708db75537d131aa5e16c620a2293a4b",
@@ -974,17 +974,19 @@
     "formal/InducedPentagons/Soundness.lean": "9cbd59707b900f567f5c559b4b905250cd1c7c1f5173b010e1768f3e6ffd8968",
     "formal/InducedPentagons/Verifier.lean": "2cbcd67dea6f04b5eaa482a834b9cd9317d9918bd1ff29676f72543bd9e731e0",
     "formal/README.md": "13b80ed010c7462e876905b67d0d5f5d5368c5f82e39af63d0e4a043c86a20e0",
-    "formal/STATUS.md": "c4ec5456447448d96bb1f3bd65f7fbea1a5be6e944765d06996f01071c5976a8",
+    "formal/STATUS.md": "bf2922d25f7052f1991f83b994a97333f2372ec031a00d123cbcd4bf6f146263",
     "formal/lake-manifest.json": "cfddeb508698b64807f6c9f161a43e98b34f1972de4451fb1788875f6c2658f9",
     "formal/lakefile.toml": "e16585d3ab7f1c7ebfc2ffee68f7aec073b8cd7b3a1d1a9adc76ffc40f4cf23b",
     "formal/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "formal/paper/Audit.lean": "50d9e3c92bbd7c8b6daccb8a662973fd4d40c050454a59643ddb2d9fc1283b5b",
-    "formal/paper/InducedPentagonsPaper.lean": "a81d199b3f7530ecadec43f6ba3c7667c8d7bfe8bacc46100672415462d66e99",
+    "formal/paper/Audit.lean": "d343df56f00d83f18aa7135aff7414bd1fd5896a7cecdf90588bb75be3be4408",
+    "formal/paper/InducedPentagonsPaper.lean": "879dec3e87dc7500b96b4706fd5524b4f481dbf41606e6cc7fbc5370af3b5f0d",
     "formal/paper/InducedPentagonsPaper/Bernoulli.lean": "6fba9fb1be9476b74e7fcaac930fba07d0a24f39b7c08bf1e2b3afb6dd83ef4c",
     "formal/paper/InducedPentagonsPaper/FiniteGraph.lean": "114949c0010201cf4cf051070a4b6c5a0f7a198f23fbe034f84f7c7704e4b7ef",
+    "formal/paper/InducedPentagonsPaper/PentagonCount.lean": "6d2a2ca137da9b7cf3140c23e172e18c7ca8f5b13607bd438f7bf224130a81ec",
     "formal/paper/InducedPentagonsPaper/ScalarProfile.lean": "db2df62828c27cb32d40d2ca9ea836b8feee350b00381172dc595443ff043e11",
+    "formal/paper/InducedPentagonsPaper/SharpConstruction.lean": "2dc75dc18abc663cbb8d5d7fa6df62bf3dce0bcb6322d971f7db92d1bce82409",
     "formal/paper/InducedPentagonsPaper/WeightedGraph.lean": "e534019987d416d0bc0358dd1b507703e7949a1538bb61e803ee2518135e115c",
-    "formal/paper/README.md": "2b0a417a6fbde877d2dc840bc14c78b7485596a5feed805fadfc0c4a4bc1b4a6",
+    "formal/paper/README.md": "92a1bdc87290a08150a11d6f350746735e754713c8782e947d37d01e9b1c0fab",
     "formal/paper/lake-manifest.json": "9d6dbb51c366cb7c89384e4c58550406416a4434155429884aa09e311b98d700",
     "formal/paper/lakefile.toml": "b6f9d607d3b4aa40b7da62b5e45199cdf3b987c955056bfb2273ee96ec62f682",
     "formal/paper/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
@@ -1030,7 +1032,7 @@
     "scripts/search_certificate_csdp_eliminated.py": "c6222c6365461dd39dc7bb35e270f0420cf0de3f3f4d3bbe6f62aa66a2ff7631",
     "scripts/search_certificate_symmetry.py": "cfdf396f29e6b632c1508564e2dec480fd069815b4f91e7b18473665988a885c",
     "scripts/verify_lean.py": "6871bc9812a4282d817516b991423327d87423bff43f49d3cd6a2cd19a1de7c5",
-    "scripts/verify_lean_paper.py": "dfa46cdd1e2caa681b3fff560593c030ab83019974b1a3c7c0dc043cd086f4d2",
+    "scripts/verify_lean_paper.py": "b4c018179921eac59e0bfa0594ea9243ef1094779083beb0b48441ef7fcc6477",
     "src/_bootstrap.py": "05e85e719523cb2b2ee504ac5b499b1b308e8e74d0a48de358ff2cc9e58b0f8c",
     "src/audit_equality_spans.py": "7303ba9896cff184c52640a90650fd4cb557c2061d842fd10753cb0a32612f5b",
     "src/audit_equality_support.py": "43ea41558e0e5f6770df5d848d4a966d105e01ddb2ec3eca5a23f729ef092472",

@@ -6,7 +6,7 @@ imported exact tensors. It does not state the paper's graph inequality.
 
 | Layer | Current status | Obligation still required for a full formal proof |
 | --- | --- | --- |
-| Clebsch construction | Finite graph counts and weighted edge formula formalized | Complete normalized pentagon enumeration gives 192; degree, edges, triangles and codegrees are proved; the weighted edge formula is 40 k². Identify labelled embeddings divided by ten with the normalized cycle sum to derive 192 k⁵ |
+| Clebsch construction | Counts, balanced formulas and sharp equality formalized | Independent complete enumerations give 192 normalized cycles and 1,920 labelled embeddings; weighted formulas are 40 k² and 192 k⁵, with the exact sharp-constant equality. The general weighted labelled-to-normalized convention bridge remains |
 | Blow-ups and isolates | Correspondences, cardinalities and weighted class-mass identities formalized | Darts scale by k² and labelled pentagons by k⁵; arbitrary clone weights collapse exactly to class masses. The labelled-to-normalized pentagon convention still needs a formal bridge |
 | Exact arithmetic | Kernel checked in Lean | Rational bindings, signs, slope, 10,722 Gram entries, 1,044 host identities and four equality-span witnesses are covered by the current checker |
 | Data transcription | Reproducible export and hashes | The export is checked against JSON/NPZ; a formal parser and semantic input derivation would further reduce the transcription boundary |

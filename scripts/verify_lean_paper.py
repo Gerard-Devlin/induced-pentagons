@@ -24,7 +24,13 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'periodicCost_sum periodicCost_le_profileCost reduced_scalar_profile '
            'scalar_profile_cost scalar_profile bernoulliWeight_nonnegative '
            'bernoulliWeight_sum bernoulliExtension_le bernoulliExtension_pattern '
-           'bernoulliExtension_patterns pattern_sum_le_of_boolean_bound').split()
+           'bernoulliExtension_patterns pattern_sum_le_of_boolean_bound '
+           'mem_labelledPentagons candidateWalks_nodup labelledPentagons_nodup '
+           'pentagon_card_eq_labelled_length clebsch_labelled_pentagons '
+           'clebsch_pentagon_card clebsch_balanced_pentagonMass clebsch_blowUp_pentagons '
+           'sharpConstant_positive sharpConstant_sq clebsch_balanced_squared_equality '
+           'clebsch_balanced_sharp_equality clebsch_squaredRatio_unit '
+           'clebsch_balanced_squaredRatio').split()
 
 
 def sources():
@@ -90,6 +96,7 @@ def main():
     report = {'schema': 'induced-pentagons.lean-paper-verification.v1',
               'status': 'verified_lean_mathematical_components',
               'scope': ['finite weighted graph and blow-up identities',
+                        'complete labelled Clebsch pentagon count and sharp construction equality',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'scalar optimization in Lemma 12.1, with explicit envelope hypotheses'],
               'full_paper_formalized': False, 'toolchain': version,

@@ -44,6 +44,13 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   sums, their nonnegativity and degree-two/degree-five homogeneity; exact collapse
   to class masses; invariance of the squared ratio under nonzero scaling; and the
   Clebsch edge formula `40 k²`, including balanced finite blow-ups.
+- `PentagonCount.lean`: a complete duplicate-free enumeration of labelled
+  embeddings for any finite graph, its cardinality interpretation, and the
+  kernel-checked Clebsch count of 1,920 labelled embeddings. This proves the
+  weighted and balanced-blow-up pentagon formula `192 k⁵`.
+- `SharpConstruction.lean`: the exact constant `3/(50 sqrt(10))`, its squared
+  value, and the balanced Clebsch equality `C = c* E² sqrt(E)` for nonnegative
+  class weights. The squared ratio is `9/25000` for nonzero balanced weights.
 - `Bernoulli.lean`: independent Bernoulli weights sum to one; Boolean cylinder
   expectations equal their multilinear monomials; finite sums preserve that
   identity; every Boolean bound transfers to the fractional polynomial. No
@@ -55,8 +62,10 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   interpretation of these hypotheses is still required for the full Lemma 12.1.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
-Its identification with the existing 192 normalized Clebsch cycles, and thus
-the numerical balanced pentagon formula `192 k⁵`, remain separate obligations.
+The Clebsch numerical formula now follows from a direct labelled count, alongside
+the standalone project's separate 192-cycle normalized enumeration. A general
+bijection between the two cycle conventions, including equality of arbitrary
+weighted normalized-cycle polynomials, remains to be supplied.
 The finite Boolean profile bound, weighted clique inequality and their Clebsch
 interpretation are also still required to close the profile-envelope dependency.
 
