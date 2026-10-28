@@ -8,7 +8,7 @@ imported exact tensors. It does not state the paper's graph inequality.
 | --- | --- | --- |
 | Clebsch construction | Finite graph model and counts formalized | Complete normalized pentagon enumeration gives 192; degree, edges, triangles and codegrees are proved; the full balanced-blow-up cardinality formulas remain to be derived |
 | Blow-ups and isolates | Embedding correspondences formalized | Projection is injective on pentagon vertices; lift/project and add/remove-isolate maps are inverse; connect these to the full numerical weighted formulas |
-| Exact arithmetic | Implemented in Lean | Rational bindings, signs, slope, 10,722 Gram entries, 1,044 host identities and four equality-span witnesses are covered by the current checker |
+| Exact arithmetic | Kernel checked in Lean | Rational bindings, signs, slope, 10,722 Gram entries, 1,044 host identities and four equality-span witnesses are covered by the current checker |
 | Data transcription | Reproducible export and hashes | The export is checked against JSON/NPZ; a formal parser and semantic input derivation would further reduce the transcription boundary |
 | Seven-vertex atlas | Python independent recount | Define graph-mask relabelling, prove canonical representative coverage and orbit disjointness, and establish the 1,044-host census in Lean |
 | Primitive patterns and flag tensors | Python independent recount | Prove injection counts, rooted canonicalization, disjoint-extension products, and all normalizations from finite graph definitions |

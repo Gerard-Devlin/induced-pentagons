@@ -1,7 +1,7 @@
 # Induced pentagons
 
 [![Exact verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml)
-[![Lean certificate verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml/badge.svg?branch=lean-certificate-work)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml)
+[![Lean certificate verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml)
 
 Research materials for **Sharp bounds, stability, and arithmetic fluctuations
 for induced pentagons**. The paper studies the sharp inequality
@@ -20,8 +20,8 @@ and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization
 obligations; the full paper is not yet formalized.
 
-The current [Lean checkpoint](formal/STATUS.md) records completed component
-checks and the aggregate certificate build still in progress.
+The [Lean verification status](formal/STATUS.md) records the checked certificate
+and mathematical components.
 
 ## Read the proof
 

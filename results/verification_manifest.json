@@ -47,7 +47,7 @@
         "source": "Explicit mathematical formulas in Sections 2 and 4",
         "saved_metadata_cannot_redefine_patterns_or_denominators": true
       },
-      "seconds": 1.9690163135528564,
+      "seconds": 2.177605152130127,
       "input_sha256": {
         "pattern_columns.npz": "169aa76d64081d63152a350df0fb627b5d7ff40f69d24eac514a25b353a36d41",
         "flag_basis.npz": "2b55a44980f7d6e6c82ff9a30c7b1c0630cd58170bf697346cd4e4c405f199ea",
@@ -73,7 +73,7 @@
       "method": "Raw primitive pattern densities; complete integer Gram matrices; Python arbitrary-precision contractions",
       "imports_production_verifier": false,
       "certificate_sha256": "e024cce41195cb99b923eeee8608f3b6e5c0035af05bb886971bdef7ea94e2ca",
-      "seconds": 1.3658628463745117
+      "seconds": 1.5018112659454346
     },
     "equality_spans": {
       "status": "verified_exact",
@@ -824,7 +824,7 @@
     }
   },
   "sha256_scope": "Source, exact data, canonical and flattened paper/PDFs, and documentation; hashes bind bytes, not a machine formalization of the text.",
-  "elapsed_seconds": 57.03040885925293,
+  "elapsed_seconds": 55.92901611328125,
   "sha256": {
     ".gitattributes": "9cbeb09502fe6bce9236896d69b7d0953b299acfbc21e1b3dc50566e6ffe3ccc",
     ".github/workflows/lean.yml": "a7968ebf94ef91b90577933dcc6868b930f5671a17dfb8f4e6614eb8993d2b78",
@@ -834,8 +834,8 @@
     "LICENSE-CODE": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
     "LICENSE-PAPER-DATA": "db32ef70b2f0583f2c4a7c428eeadbc0a68a164e1828f25e7b9bab6700716ed2",
     "Makefile": "f5a4f04adcfb3e22307c7ad986cf50f261a3554c634b85402da860a9c25a54b1",
-    "README.md": "b561c7b84fcc6b35db4548fa8fc8d3cf49986acb5fa638535f38f34c77a9d71e",
-    "blueprint/LEAN_ROADMAP.md": "5326c45e4a394c31faa9a00a8265cae018dc49d08f4e26ff151c4877df3df91f",
+    "README.md": "2bae0baefd63443ce32bbd1e69539b928506d77c1a6193e65e84e378896ee989",
+    "blueprint/LEAN_ROADMAP.md": "def687a6b4f64e5c20e7de2e8c909e7bf7bf37ec069e0a84fcad4fd31f9adc3e",
     "blueprint/README.md": "24964a026070a12dee6a18dafd1a27cb2de8deaf9300381d3a1515dae21a31f0",
     "blueprint/claims.md": "65e24ff8363826a3756476c2c91f1a15e3dcfea33f33678abe6079eb208b5e83",
     "blueprint/proof_dependencies.txt": "d1809d8cb15ec423394b55704578405c708db75537d131aa5e16c620a2293a4b",
@@ -973,8 +973,8 @@
     "formal/InducedPentagons/Isolates.lean": "a7af42165e765e9f28429611b4260ef38b5e9a5892bb0f6b69849329e06f17a4",
     "formal/InducedPentagons/Soundness.lean": "9cbd59707b900f567f5c559b4b905250cd1c7c1f5173b010e1768f3e6ffd8968",
     "formal/InducedPentagons/Verifier.lean": "2cbcd67dea6f04b5eaa482a834b9cd9317d9918bd1ff29676f72543bd9e731e0",
-    "formal/README.md": "ef8d16c3a344b0793f08298e21cbae6fc75ef843bce83de177ab5e00f8018eec",
-    "formal/STATUS.md": "9e5f9256c0bda9ae53c68ba59427ae3df2754c5ae98c5a7480302551714a1562",
+    "formal/README.md": "da8fb01e17839c6ae07c73c456c20d04797ac32dd951708561bc584187d50d84",
+    "formal/STATUS.md": "6309d1ec140e0335cbf5c2c23152ec4dc68b8fbc059221ffc80c6aa9728b629d",
     "formal/lake-manifest.json": "cfddeb508698b64807f6c9f161a43e98b34f1972de4451fb1788875f6c2658f9",
     "formal/lakefile.toml": "e16585d3ab7f1c7ebfc2ffee68f7aec073b8cd7b3a1d1a9adc76ffc40f4cf23b",
     "formal/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
@@ -1019,7 +1019,7 @@
     "scripts/search_certificate_csdp.py": "99d6b84d8d1ce36901a72e5144873524a94ce60a0e064d9f455937ec7f59f6ff",
     "scripts/search_certificate_csdp_eliminated.py": "c6222c6365461dd39dc7bb35e270f0420cf0de3f3f4d3bbe6f62aa66a2ff7631",
     "scripts/search_certificate_symmetry.py": "cfdf396f29e6b632c1508564e2dec480fd069815b4f91e7b18473665988a885c",
-    "scripts/verify_lean.py": "ceb56b28dd0066ccebce45757eae1f9a941550227a613ac00364fd0dcc9304b5",
+    "scripts/verify_lean.py": "345e92f5a56b565235f9193b33e3ca93f9238b625ca0bad2b4188291f0837067",
     "src/_bootstrap.py": "05e85e719523cb2b2ee504ac5b499b1b308e8e74d0a48de358ff2cc9e58b0f8c",
     "src/audit_equality_spans.py": "7303ba9896cff184c52640a90650fd4cb557c2061d842fd10753cb0a32612f5b",
     "src/audit_equality_support.py": "43ea41558e0e5f6770df5d848d4a966d105e01ddb2ec3eca5a23f729ef092472",

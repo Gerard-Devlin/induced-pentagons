@@ -1,8 +1,8 @@
 # Lean certificate verification
 
-**Progress checkpoint:** see [STATUS.md](STATUS.md) for the locally completed
-checks and the aggregate build that is still in progress. The coverage below
-describes the implemented checker; a full PASS requires the complete build.
+See [STATUS.md](STATUS.md) for the checked components and the separate
+verification report. A full PASS requires the complete build, axiom audit and
+corruption rejection gate.
 
 This Lean 4 project checks the **core finite certificate layer** of the paper.
 It is not a formalization of the complete induced-pentagon theorem, its graphon

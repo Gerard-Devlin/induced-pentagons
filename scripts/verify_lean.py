@@ -80,9 +80,9 @@ example : checkHost certificate gramData badHost = true := by decide +kernel
 def badSpan : SpanWitness :=
   let t := span0.terms[0]!
   let q := t.coefficient
-  let q' := { q with numerator := q.numerator + (q.denominator : Int),
-                    scaled := q.scaled + (span0.scale : Int) }
-  { span0 with terms := span0.terms.set! 0 { t with coefficient := q' } }
+  let q1 : Coefficient := { q with numerator := q.numerator + (q.denominator : Int) }
+  let q2 : Coefficient := { q1 with scaled := q.scaled + (span0.scale : Int) }
+  { span0 with terms := span0.terms.set! 0 { t with coefficient := q2 } }
 example : checkSpan certificate badSpan = true := by decide +kernel
 ''',
     }
@@ -96,14 +96,26 @@ example : checkSpan certificate badSpan = true := by decide +kernel
     try:
         for name, text in cases.items():
             path = work / f'{name}.lean'
-            path.write_text(prefix + text, encoding='utf-8')
             print('Checking Lean rejection: ' + name, flush=True)
+            claim = re.search(r'\nexample : (.+) = true := by decide \+kernel\s*$', text)
+            if claim is None:
+                raise RuntimeError('Malformed rejection test template: ' + name)
+            target = claim[1]
+            control = (prefix + text[:claim.start()] +
+                       f'\ntheorem corrupted_input_rejected : {target} = false := by decide +kernel\n')
+            # First require an actual kernel proof of false, so a parsing or
+            # reduction failure cannot masquerade as rejecting corrupted data.
+            path.write_text(control, encoding='utf-8')
+            run([lake, 'env', 'lean', str(path)], capture=True)
+            path.write_text(control + f'\nexample : {target} = true := by\n'
+                            '  rw [corrupted_input_rejected]\n  decide +kernel\n', encoding='utf-8')
             result = subprocess.run([lake, 'env', 'lean', str(path)], cwd=FORMAL,
                                     capture_output=True, text=True, encoding='utf-8', errors='replace')
             output = result.stdout + result.stderr
             if result.returncode == 0 or 'decide' not in output or 'is false' not in output:
                 raise RuntimeError(f'{name}: corruption did not fail as a false Lean proposition:\n{output}')
-            records.append({'case': name, 'status': 'rejected_as_false', 'exit_code': result.returncode})
+            records.append({'case': name, 'status': 'rejected_as_false',
+                            'false_control_kernel_checked': True, 'exit_code': result.returncode})
     finally:
         temporary.cleanup()
     return records
@@ -161,7 +173,7 @@ def main():
               'source_sha256': final, 'input_sha256': manifest['inputs'],
               'elapsed_seconds': time.time() - started}
     output = ROOT / 'results/lean_verification.json'
-    output.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+    output.write_bytes((json.dumps(report, indent=2) + '\n').encode('utf-8'))
     print(json.dumps({'status': report['status'], 'output': str(output),
                       'rejections': len(rejected), 'seconds': round(report['elapsed_seconds'], 2)}, indent=2))
 

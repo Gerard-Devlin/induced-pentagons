@@ -1,9 +1,9 @@
-# Formalization checkpoint
+# Formalization status
 
-This progress branch contains a working Lean/Std checker and reproducibly
-generated candidate proofs for the complete core finite certificate layer.
+The complete core finite-certificate build has passed locally with Lean 4.35.0.
+The generated arithmetic proofs are checked by Lean kernel reduction.
 
-Locally checked with Lean 4.35.0 at this checkpoint:
+Locally checked components:
 
 - Rational bindings, coefficient signs, equality-kernel vectors and slope margin.
 - Triangle-domination, degree, and both codegree span witnesses.
@@ -18,11 +18,15 @@ Locally checked with Lean 4.35.0 at this checkpoint:
 - Integer square-sum parity, zero characterization and the nonzero balanced
   integer-variance gap of at least two.
 
-All 10,722 Gram entries have also been checked. The all-host build is still
-running. **There is not yet
-a successful verdict for the complete Lean certificate layer at this checkpoint.**
-The CI badge reports the actual workflow state, not an asserted proof status.
-The project contains no placeholder proofs for the pending arithmetic checks.
+All 10,722 Gram entries and all 1,044 host identities have been checked, and the
+aggregate theorem `Generated.coreCertificateVerified` has compiled successfully.
+
+`python scripts/verify_lean.py` additionally audits the transitive axioms of
+29 declarations and requires Lean to reject four deliberately corrupted inputs.
+Its successful report is `results/lean_verification.json`. The permitted ordinary
+Lean axioms are `propext`, `Classical.choice` and `Quot.sound`; placeholder or
+compiler-evaluation axioms are not permitted. GitHub CI also performs a standalone
+replay using Lean's kernel. The badge reports the actual workflow state.
 
 The larger remaining graph-theoretic and analytic obligations are recorded in
 [the roadmap](../blueprint/LEAN_ROADMAP.md).
