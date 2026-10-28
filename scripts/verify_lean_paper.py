@@ -70,7 +70,17 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'patternInjectionCount_isomorphic satisfies_completePattern_iff pentagonPattern_satisfies_iff '
            'pentagonPatternEquiv pentagonPattern_count patternInjectionWeight_isomorphic '
            'pentagonPattern_weight '
-           'toSimpleGraph_boolGraphOfSimpleGraph seven_vertex_simpleGraph_isomorphic_to_certificate_host patternInjectionCount_reduced_to_certificate ').split()
+           'toSimpleGraph_boolGraphOfSimpleGraph seven_vertex_simpleGraph_isomorphic_to_certificate_host patternInjectionCount_reduced_to_certificate '
+           'prefixMatches_iff prefixSatisfies_restrict prefixSatisfies_full_iff '
+           'extendPrefix_injective_iff mem_patternPrefixes patternPrefixes_nodup '
+           'mem_patternInjectionEnumeration patternEnumerationEquiv patternInjectionCount_eq_enumeration_length '
+           'stepMatches_iff_prefix fastPatternPrefixes_eq fastPatternEnumeration_count '
+           'primitiveSemanticCounts_eq_enumerated primitiveRowCheck_sound orderedSpecsCheck_sound '
+           'primitiveSemanticCounts_eq_fast fastPrimitiveRowCheck_sound unconstrainedPattern_count '
+           'patternInjectionCount_le_total patternInjectionDensity_nonnegative patternInjectionDensity_le_one '
+           'primitivePatternSpecs_count primitivePatternSpecs_ordered primitivePattern_denominators '
+           'primitive_empty_count_values primitive_empty_host_semantics primitive_complete_count_values '
+           'primitive_complete_host_semantics primitive_changed_count_rejected ').split()
 
 
 def sources():
@@ -84,6 +94,12 @@ def sources():
     yield ROOT / 'certificates/graph_atlas_7.json'
     yield ROOT / 'scripts/export_lean_profiles.py'
     yield ROOT / 'scripts/export_lean_atlas.py'
+    yield ROOT / 'scripts/export_lean_patterns.py'
+    yield ROOT / 'scripts/export_lean_certificate.py'
+    yield ROOT / 'src/proof_specification.py'
+    yield ROOT / 'certificates/pattern_columns.json'
+    yield ROOT / 'formal/InducedPentagons/Generated/manifest.json'
+    yield from (ROOT / 'formal/InducedPentagons/Generated').glob('HostData*.lean')
     yield Path(__file__)
 
 
@@ -114,6 +130,7 @@ def main():
     os.environ.setdefault('LEAN_NUM_THREADS', '2')
     run([sys.executable, str(ROOT / 'scripts/export_lean_profiles.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_atlas.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_patterns.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -146,11 +163,18 @@ def main():
                         'general labelled, canonical and induced-subset weighted pentagon conventions',
                         'universal seven-vertex atlas coverage bound to actual certificate hosts',
                         'generic partial-pattern injection semantics and isomorphism invariance',
+                        'complete prefix enumeration and proved ordered-step optimization',
+                        'injection denominators, density bounds and explicit specifications of all 22 primitives',
+                        'all 22 stored primitive counts on the empty and complete certificate hosts only',
                         'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'graph-defined Clebsch profile envelope and neighborhood attainment',
                         'scalar profile equation (58) with its Clebsch envelope hypotheses discharged'],
-              'full_paper_formalized': False, 'toolchain': version,
+              'full_paper_formalized': False,
+              'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 2,
+                                        'verified_hosts': ['empty', 'complete'],
+                                        'remaining_hosts': 1042, 'full_table_verified': False},
+              'toolchain': version,
               'mathlib_revision': next(p['rev'] for p in json.loads(
                   (PAPER / 'lake-manifest.json').read_text())['packages'] if p['name'] == 'mathlib'),
               'axioms': audited, 'allowed_standard_axioms': sorted(ALLOWED_AXIOMS),

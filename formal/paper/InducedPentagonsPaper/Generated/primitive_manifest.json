@@ -1,0 +1,13 @@
+{
+  "schema": "induced-pentagons.lean-primitive-patterns.v1",
+  "meaning": "Explicit required-edge/nonedge specifications; no count verdict is assumed",
+  "generator_sha256": "5f91fbfbfdabe2d2b0603d453da4cd3d34a980a4a5ca086e5e5be9ec27aa02e5",
+  "input_sha256": {
+    "src/proof_specification.py": "313b8e220df2de87451e5283d9733ff7afab867e5b40ac9febacaded5c54869e",
+    "certificates/pattern_columns.json": "c82185fc92f3033d2dd024ead6f32bfd68ba3dac7fd9e9259598e4e7d4849251"
+  },
+  "output_sha256": {
+    "PrimitivePatterns.lean": "5e21a6bd18945d9faeb7df4182343b6988fd27abf295970525388abbf2492cf3",
+    "PrimitiveExamples.lean": "11276384365a41febccf38c8f7748028f0f6eea37f53598d18900fa3b320c819"
+  }
+}

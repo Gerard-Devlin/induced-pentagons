@@ -18,3 +18,5 @@ import InducedPentagonsPaper.ProfileTheorems
 import InducedPentagonsPaper.AtlasCertificate
 import InducedPentagonsPaper.PatternSemantics
 import InducedPentagonsPaper.AtlasInterpretation
+import InducedPentagonsPaper.PatternNormalization
+import InducedPentagonsPaper.Generated.PrimitiveExamples

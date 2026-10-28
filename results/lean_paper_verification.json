@@ -7,12 +7,25 @@
     "general labelled, canonical and induced-subset weighted pentagon conventions",
     "universal seven-vertex atlas coverage bound to actual certificate hosts",
     "generic partial-pattern injection semantics and isomorphism invariance",
+    "complete prefix enumeration and proved ordered-step optimization",
+    "injection denominators, density bounds and explicit specifications of all 22 primitives",
+    "all 22 stored primitive counts on the empty and complete certificate hosts only",
     "weighted clique inequality and Clebsch complement quadratic bound",
     "Bernoulli multilinear extension and Boolean bound transfer",
     "graph-defined Clebsch profile envelope and neighborhood attainment",
     "scalar profile equation (58) with its Clebsch envelope hypotheses discharged"
   ],
   "full_paper_formalized": false,
+  "primitive_count_table": {
+    "patterns_specified": 22,
+    "hosts_verified": 2,
+    "verified_hosts": [
+      "empty",
+      "complete"
+    ],
+    "remaining_hosts": 1042,
+    "full_table_verified": false
+  },
   "toolchain": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
   "axioms": {
@@ -766,6 +779,126 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "InducedPentagons.Paper.prefixMatches_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.prefixSatisfies_restrict": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.prefixSatisfies_full_iff": [],
+    "InducedPentagons.Paper.extendPrefix_injective_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.mem_patternPrefixes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternPrefixes_nodup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.mem_patternInjectionEnumeration": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternEnumerationEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternInjectionCount_eq_enumeration_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.stepMatches_iff_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.fastPatternPrefixes_eq": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.fastPatternEnumeration_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.primitiveSemanticCounts_eq_enumerated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.primitiveRowCheck_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.orderedSpecsCheck_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.primitiveSemanticCounts_eq_fast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.fastPrimitiveRowCheck_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.unconstrainedPattern_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternInjectionCount_le_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternInjectionDensity_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.patternInjectionDensity_le_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.primitivePatternSpecs_count": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.primitivePatternSpecs_ordered": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.primitivePattern_denominators": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.primitive_empty_count_values": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.primitive_empty_host_semantics": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.primitive_complete_count_values": [
+      "propext"
+    ],
+    "InducedPentagons.Paper.primitive_complete_host_semantics": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InducedPentagons.Paper.primitive_changed_count_rejected": [
+      "propext"
     ]
   },
   "allowed_standard_axioms": [
@@ -775,11 +908,100 @@
   ],
   "source_sha256": {
     "certificates/graph_atlas_7.json": "cebb00a0385a0a1ac574b59937e97abf8f2391303a78e813f4f1a62326b0804c",
+    "certificates/pattern_columns.json": "c82185fc92f3033d2dd024ead6f32bfd68ba3dac7fd9e9259598e4e7d4849251",
     "formal/InducedPentagons/FiniteGraph.lean": "5d649cb7bae040fb41d4bb15dc805af55d2615ed7f663514a5599a9f7995a2e7",
+    "formal/InducedPentagons/Generated/HostData000.lean": "12f859f74d84a9fc2b1cf936029cae6e72158da626032122296afda44dadfa0b",
+    "formal/InducedPentagons/Generated/HostData001.lean": "3f95456cee6ffac74f5b3b804003ac2efb344ca122b1cfb9dd135200550ade48",
+    "formal/InducedPentagons/Generated/HostData002.lean": "005c60be07c53291073d5b496b402f47149bc51e8d60d21be70cff84b292b92a",
+    "formal/InducedPentagons/Generated/HostData003.lean": "0833e7b819bb8ee09ec267152522fd49876f83e311c74500c41a142678256197",
+    "formal/InducedPentagons/Generated/HostData004.lean": "481100d67a2c858794a6105ec028a5777a08fbc292548beb286cd16fac345523",
+    "formal/InducedPentagons/Generated/HostData005.lean": "cf51989e319ee84952d9382d03e46fdb764a60428a17a48efab33e6da6c7c41f",
+    "formal/InducedPentagons/Generated/HostData006.lean": "9d4e4f670850d5505373c39ac1f199adec17c0ffaa0bca5614050203dae32828",
+    "formal/InducedPentagons/Generated/HostData007.lean": "61c04d18ccbfe136eb5127df10cbfec06f48ad66f67d3c20165578537c78aca5",
+    "formal/InducedPentagons/Generated/HostData008.lean": "c72fbde6151a617ebac28ee506ce68b45adbaf82d980143e2f170252cc79e54b",
+    "formal/InducedPentagons/Generated/HostData009.lean": "fb253f6064fa31e51e40646356f2b286a0b4da1cd5dfb42e406d63f706b1480a",
+    "formal/InducedPentagons/Generated/HostData010.lean": "1732648edb6b26934269957d4577a31336636adcc8505751daf96ab445a2c1c9",
+    "formal/InducedPentagons/Generated/HostData011.lean": "d073e12b496ed8b3cbb18aae186ccd45798cb5a69388d7b9ab5469eb3fccc111",
+    "formal/InducedPentagons/Generated/HostData012.lean": "d13376f88482dc3c553c1e5c32af30964a709a78d5c538456606ab9449801fc9",
+    "formal/InducedPentagons/Generated/HostData013.lean": "a8d1778a930f82e3a022afd4c0e24c829188c693abd87642f89adad99655712b",
+    "formal/InducedPentagons/Generated/HostData014.lean": "b4e6c2bba8c30ba17b6892d6d8b1fa613afbb21bbe1d50f65d0a3a63a944158c",
+    "formal/InducedPentagons/Generated/HostData015.lean": "1b268209023268fecaac54b995e300e0d1fdce26cbfd3846a534c8c100c8e1f8",
+    "formal/InducedPentagons/Generated/HostData016.lean": "c6d562407939c91ae3b62fcdb7bdc1945541a7f18dab1c38d6e6ca8b254309a3",
+    "formal/InducedPentagons/Generated/HostData017.lean": "1828c56053689b8503748f98690a0447a1a10e4bc0101581e58f419110b5d288",
+    "formal/InducedPentagons/Generated/HostData018.lean": "89b250445cbe6914566070b2a049b77c726b13b91999ca08eaa5a5fb4ee57fb3",
+    "formal/InducedPentagons/Generated/HostData019.lean": "54cc22871ca461193dca185de3544580e0481275482ba26aa842770bab982b35",
+    "formal/InducedPentagons/Generated/HostData020.lean": "f5797684d50488e2021b558cb4cfe8bded66299eeb247b91a989ea4a620b3cf4",
+    "formal/InducedPentagons/Generated/HostData021.lean": "8af1f6cc631f53ecb3d36b0851ab943cb17cca9d745be60e2bcafb2958cdd458",
+    "formal/InducedPentagons/Generated/HostData022.lean": "850953beb2874be42c367ed1d9b3f59787300ceb69e271656170bc2ebaa00ca4",
+    "formal/InducedPentagons/Generated/HostData023.lean": "bad0d8be3ee258e866f9fe2279a86150cf58dfa3423e3df12c838e0f038ce757",
+    "formal/InducedPentagons/Generated/HostData024.lean": "3f2b49228b4125a40617d1896ba12b6010a15e9fd6833282c6bf305cf9d1a5e2",
+    "formal/InducedPentagons/Generated/HostData025.lean": "f6dbacb6a939b3b6de8a7915d152c77bfab20e442606defd0ad4e2b4d9e6f979",
+    "formal/InducedPentagons/Generated/HostData026.lean": "f02f259895c3fa05fcdedee4c7eba52acbeba7938cee7c5bc934702dd39c2d98",
+    "formal/InducedPentagons/Generated/HostData027.lean": "d3be06115fda37dbc93688682f7eaa5a7edfab52d84baead12a5d5375c5a4b06",
+    "formal/InducedPentagons/Generated/HostData028.lean": "56b0a5e8d9713d394318d8052957b16500621f30910c1261ee9994b02f79c888",
+    "formal/InducedPentagons/Generated/HostData029.lean": "3f9447ce50c90079508d90ccced90f42411ed71d703fcb823ff8174dbfa58684",
+    "formal/InducedPentagons/Generated/HostData030.lean": "3a016bb05049bbd6c4ac8c3b747b98d3e13f636d60cda79f899e0c3117972cc5",
+    "formal/InducedPentagons/Generated/HostData031.lean": "d66411e80a0f399a7afb5c979810393ccfa6b75f1e69d031c8cba98165596fe4",
+    "formal/InducedPentagons/Generated/HostData032.lean": "2d3eac23797e31606e82edb0f2a554aa44a650a9978b34c76621f3767a73a853",
+    "formal/InducedPentagons/Generated/HostData033.lean": "178e28e3cec68bcf7bc72fa29204474376182cac0d076f505ae4d8f3ab04e35f",
+    "formal/InducedPentagons/Generated/HostData034.lean": "bf20ba2c75529f9d996646180f6e69dae5257cf9ca2ea02fe113d31aaad9fe09",
+    "formal/InducedPentagons/Generated/HostData035.lean": "ba223d00fa62542efbf145ea1205c7f950ed9ab0525c9b8c8e857b81067473d7",
+    "formal/InducedPentagons/Generated/HostData036.lean": "6b5b8b63e8cf16fde08b38eafdae67d6b2c6b31d68b6e1d11fb6d9fe71c78d15",
+    "formal/InducedPentagons/Generated/HostData037.lean": "c67c39a4f437ba754fe57ef268c9621d0f934ecb8734c6c2039a944df1ffcd86",
+    "formal/InducedPentagons/Generated/HostData038.lean": "a2202c264880251369531f2e61a5e81cac13feb986592e18794cfa9e0941d895",
+    "formal/InducedPentagons/Generated/HostData039.lean": "2f82e6eff52432b653c135a07b1b10497fd009d82fc1362a1bbdd42bfa497a5f",
+    "formal/InducedPentagons/Generated/HostData040.lean": "1fa3ee481c0230187dd5936126289975188b5808f6205132465b54f4d124402f",
+    "formal/InducedPentagons/Generated/HostData041.lean": "f8e90e9d7e3912dcac3637173f5db53279def74b8584dc4866252c8e8957e6ac",
+    "formal/InducedPentagons/Generated/HostData042.lean": "572b7e4972885107d84a81a89bf58f23b526993f11bedd0e0f7e54660666f474",
+    "formal/InducedPentagons/Generated/HostData043.lean": "8ad27936d83859e52250bf424a5e4914276e4bed506187aed10e948030c282e0",
+    "formal/InducedPentagons/Generated/HostData044.lean": "a28b9165292fc9f0e02bfb15b7ce008d51679f32da3bcb9e991d28984b1a8177",
+    "formal/InducedPentagons/Generated/HostData045.lean": "98a95f916da8edd677ea45f300bd40146976b7041df03395df1e7c81392292b7",
+    "formal/InducedPentagons/Generated/HostData046.lean": "6544fff78ff3ddeb470459f1fcf78266988502a5ae1bd5f94c6d012237b001e8",
+    "formal/InducedPentagons/Generated/HostData047.lean": "f96c9b4d76d007580d594ed304432c63fe2a9f139acf6bb822f39c230e8e41fc",
+    "formal/InducedPentagons/Generated/HostData048.lean": "9338983d7f0ca85df7de9e1e69422f7ef3b04244ac0e2a5a3c33d47e4bf6a82c",
+    "formal/InducedPentagons/Generated/HostData049.lean": "2f8837e2b6e80c37480bc07906f8a5cac696d667fc2421049b51df0b6c9c1c1f",
+    "formal/InducedPentagons/Generated/HostData050.lean": "d4a6f88f08b9aeee4ce26c69336252d3b6849ba06ac8a79f1c9c69b65966d963",
+    "formal/InducedPentagons/Generated/HostData051.lean": "40997566581a413e339d056985f8233f6ad8a5f814f357453d030e3bcfeee94d",
+    "formal/InducedPentagons/Generated/HostData052.lean": "c8deab5745a0a24aab6ff2a99c5e5778853c03814cdd68740b562d277c9a916b",
+    "formal/InducedPentagons/Generated/HostData053.lean": "acd74c2f98d85d21eafc310ebdbde13dc5b8c3f1912446723767e71cdd464a47",
+    "formal/InducedPentagons/Generated/HostData054.lean": "203821a6edb8e4fdd6b4d9b7e81395d822354f4677aaa83f661b665e68ab3ad8",
+    "formal/InducedPentagons/Generated/HostData055.lean": "799be6bb3f7adf8d4d91a328ede1074d92d571437ce4eac291f39e2fac658c25",
+    "formal/InducedPentagons/Generated/HostData056.lean": "aae1949984e32e4136c581f31c99ee577e3d5d1a2353e0f2107b47f502d675ed",
+    "formal/InducedPentagons/Generated/HostData057.lean": "1024c12b9a0d8ab1ca49fec8afa5c58414d20b4e0aaf4970dc1d35bdd217df39",
+    "formal/InducedPentagons/Generated/HostData058.lean": "93b118047ee15a57020b26f3b41f23df0c4c9a7e9ba02f97ae39066859f9af26",
+    "formal/InducedPentagons/Generated/HostData059.lean": "8ce56c866af6a3692f9b9292350845154a96e4f32e86e7c80c2a2c78c5a6d8c6",
+    "formal/InducedPentagons/Generated/HostData060.lean": "e32e50b79897c357be8fcfd2898bbfbc28b025015e92a5e1e330669ff1d195e9",
+    "formal/InducedPentagons/Generated/HostData061.lean": "89b31390829140f857dd5c91387c7c5ed0d76dc1fa04817ed9a59cedffd6e2d4",
+    "formal/InducedPentagons/Generated/HostData062.lean": "9abd2e40b4ccee281444a7ef712befd6d063a45aaa7855a93ab620223959874f",
+    "formal/InducedPentagons/Generated/HostData063.lean": "31cda2bcd8a202231b4929c9a36fad17e6209a5387a43b556e35f0d4e5ea6f1f",
+    "formal/InducedPentagons/Generated/HostData064.lean": "4570fa13bfa6e7dc585d4f03ab46267b77f00a9d6d74c03a590b11d969664a67",
+    "formal/InducedPentagons/Generated/HostData065.lean": "9929e304eed354127cbfb16fd3e8ef52d8a7303588b6398d2aec0cba53b89301",
+    "formal/InducedPentagons/Generated/HostData066.lean": "601ae4a69b6e9a570cd2005e79feeaffb650cb07494d30e4dec8484b6257baf8",
+    "formal/InducedPentagons/Generated/HostData067.lean": "071d97dc30a59c156ed2341db5a90963665dccbf810b33990f05755df5219e7c",
+    "formal/InducedPentagons/Generated/HostData068.lean": "714b8f186d412e5852e8f3c6653239b97057dab3a3b20baae8061b0738b8a3f6",
+    "formal/InducedPentagons/Generated/HostData069.lean": "90a4023a3355fbedd34b47c84a4cd9e01cc2f8af91feeb8dd86c85662f7f6c1b",
+    "formal/InducedPentagons/Generated/HostData070.lean": "525016cef42d2440b4ba06a46789cb1955a9424ff64ca25032f7cfd5984c4bfd",
+    "formal/InducedPentagons/Generated/HostData071.lean": "63e3ca46eefca86e42bf23989cfaf0abeeab08d740231ea8624b5a28ec3d7112",
+    "formal/InducedPentagons/Generated/HostData072.lean": "510ded3e562ba9fac88e50a5a3816fa19d1dd95532a06ae8020bc47d6534fe7f",
+    "formal/InducedPentagons/Generated/HostData073.lean": "e4e293715368e89dfe6d08ef5d662dd2e52525ae00447cc81aab6d3b4fc35d97",
+    "formal/InducedPentagons/Generated/HostData074.lean": "44021a18116023fcef0e2a8b5f2a6775db481a513891cb1834ae3b0c0c2a42cc",
+    "formal/InducedPentagons/Generated/HostData075.lean": "7610576d9ef413a900c73248653e029df21f6a68e94b2d8cd4f624a20c88557f",
+    "formal/InducedPentagons/Generated/HostData076.lean": "cfce8e451c91d30cf47e63e903ce03a21a31b9ae0f2ab6127fd99fb16f4577f6",
+    "formal/InducedPentagons/Generated/HostData077.lean": "94eb104f5317f18c1247600460eda5a5f1f447e74a2dc93b0341347a8c5bfe57",
+    "formal/InducedPentagons/Generated/HostData078.lean": "5ceb2e7b553d949a403ca4a44ba426f0d031a084f2889f4332eb7e1551f2ecd7",
+    "formal/InducedPentagons/Generated/HostData079.lean": "fee3f371fe687bf86d687373639a192e78772c7cbf084f59c670087dc703f0f3",
+    "formal/InducedPentagons/Generated/HostData080.lean": "1107726ea14ef94aef76d03560a175921947636e47e7b1779c5bc65f69847cef",
+    "formal/InducedPentagons/Generated/HostData081.lean": "70448cd548d8f8ffdcac22afb05cbdb65cc871538f86ffedb80f6b48f373f7c2",
+    "formal/InducedPentagons/Generated/HostData082.lean": "d59cd52a58fb6875335c390ec9d691aed856ed6b6fd5d49828acbb86eaed6b0b",
+    "formal/InducedPentagons/Generated/HostData083.lean": "d402a812295e13a4eb4e9b0c830154eaa58e7b4436592c3e980038b23bcecb76",
+    "formal/InducedPentagons/Generated/HostData084.lean": "80d737ca8efe4c0876a20bd1615c23b22b6d7ad99e8bf5b413d5c2f6c01e8e16",
+    "formal/InducedPentagons/Generated/HostData085.lean": "9db4d9f29db4728c6435e6ba220ab1facdf1e359282500ef29bb9b19f49a7438",
+    "formal/InducedPentagons/Generated/HostData086.lean": "76829203cae0eb68b4baa3c542f804db49a9d398e707fb51792f5ff9070c8475",
     "formal/InducedPentagons/Generated/Inputs.lean": "24e79bf1e8e245d6ff69cff5a5d1c7a413267518636e380d4974fc4de671f54a",
+    "formal/InducedPentagons/Generated/manifest.json": "36dc2bfa58ce98177c7b939f037414600340c585763a880f846ad5612445e0d8",
     "formal/InducedPentagons/Isolates.lean": "a7af42165e765e9f28429611b4260ef38b5e9a5892bb0f6b69849329e06f17a4",
     "formal/InducedPentagons/Verifier.lean": "2cbcd67dea6f04b5eaa482a834b9cd9317d9918bd1ff29676f72543bd9e731e0",
-    "formal/paper/Audit.lean": "a911e22a85d7df6c22d4a4db4ea80eb5bdf710c196d4ae3ee8d5a41341e27706",
+    "formal/paper/Audit.lean": "779aff8b3381f8971f5604214c26d6b2b17bae1fb88c6760c764e24db3b93532",
     "formal/paper/InducedPentagonsPaper/AtlasCertificate.lean": "992e8ed31aef8fb528b6300e1c6ef6e4dc6107594e68181e3b4382698d8ecc52",
     "formal/paper/InducedPentagonsPaper/AtlasInterpretation.lean": "54b4525413e47426bf37b239d55d889a27caaa9c17581e8beab7c683b8373770",
     "formal/paper/InducedPentagonsPaper/Bernoulli.lean": "6ba0c43c0f67695d33db22ba50107a27024e8a21d14dafcc9a5340132c932aef",
@@ -814,6 +1036,9 @@
     "formal/paper/InducedPentagonsPaper/Generated/AtlasMasks.lean": "a144128108a4e1ecd6e6475b8383777c3dd532fe7688ceaa8a02ddc80d152b4e",
     "formal/paper/InducedPentagonsPaper/Generated/AtlasRows6.lean": "5a91d32ae81dc13b0f02fce6711614f97fff3a5cbc0ad433f28c68c4b3403c29",
     "formal/paper/InducedPentagonsPaper/Generated/AtlasRowsSmall.lean": "cf7e0f67497652ae7e523bb0bbce3a0e2d6d135c5a641dcb6c635210aa0a0307",
+    "formal/paper/InducedPentagonsPaper/Generated/primitive_manifest.json": "2cb06369f22515d22ca20df6af665b7ff6206f50d1a970e9614a81444565c2a5",
+    "formal/paper/InducedPentagonsPaper/Generated/PrimitiveExamples.lean": "11276384365a41febccf38c8f7748028f0f6eea37f53598d18900fa3b320c819",
+    "formal/paper/InducedPentagonsPaper/Generated/PrimitivePatterns.lean": "5e21a6bd18945d9faeb7df4182343b6988fd27abf295970525388abbf2492cf3",
     "formal/paper/InducedPentagonsPaper/Generated/profile_manifest.json": "8616a95d2439825cbda7d589543c54d38d2fa0ba7ec967e1bd13591456783b3d",
     "formal/paper/InducedPentagonsPaper/Generated/ProfileMasks.lean": "7a0cc4e1d7bbf3c8a6af61c13fef2c1e974ebfce66228de0bed127afdf356b92",
     "formal/paper/InducedPentagonsPaper/Generated/ProfilePrefixChecks00.lean": "c86a25b7d787cd33bad861354bcbb22c42de012ee422530e8b9d44be5a57edbc",
@@ -838,11 +1063,16 @@
     "formal/paper/InducedPentagonsPaper/MaskPattern.lean": "503ac853fbf7348635dc0ba6f74e619a97f58ef6a9818c3e414c0f1aaaee42cc",
     "formal/paper/InducedPentagonsPaper/OrderedEdgeSum.lean": "671fb56ce61d1ec643c40d3bd904c3f4d4493aed0d7260ee15e62dc37d44b1da",
     "formal/paper/InducedPentagonsPaper/PathConvention.lean": "cdb9ccd55820aacb226254d0c318334b869e473ec679b11e90f1e81ee4d2bb76",
+    "formal/paper/InducedPentagonsPaper/PatternEnumeration.lean": "aea6a5bf6497f0d940ca212586766e9fb4ed8798f9c9b9379a6439e69eb2e112",
+    "formal/paper/InducedPentagonsPaper/PatternNormalization.lean": "b7a7279857e42507bf90e40dbf6ece547c1044c4363813151eec24f0e3d93e4c",
     "formal/paper/InducedPentagonsPaper/PatternPrefix.lean": "0810404a134ff7b732eda53504130882a02e7ca59aab68dc5207b6a453843683",
     "formal/paper/InducedPentagonsPaper/PatternSemantics.lean": "57975fff389ddee041344747397228bf1ed0eb2325b45d83a7d3b202651d895b",
+    "formal/paper/InducedPentagonsPaper/PatternSteps.lean": "9d140959755ef4166d1f2b3fc86af1c68a45c38e201ac93460aa632da550b06a",
     "formal/paper/InducedPentagonsPaper/PentagonConvention.lean": "26349b030472586cbc2e9eb8688862f535ac67cc2741f86775639ff14b0be3b0",
     "formal/paper/InducedPentagonsPaper/PentagonCount.lean": "6d2a2ca137da9b7cf3140c23e172e18c7ca8f5b13607bd438f7bf224130a81ec",
     "formal/paper/InducedPentagonsPaper/PentagonSubsetCount.lean": "70468b3b875115ae9211f61b88dd0b1bd212635dfebdc34b8f64cfaa1c9eb8cf",
+    "formal/paper/InducedPentagonsPaper/PrimitiveCounts.lean": "dee4d72f0c6cb020d70c7e949de417a17aa72f8f51b3b313209aab380f818ac5",
+    "formal/paper/InducedPentagonsPaper/PrimitiveFast.lean": "9619004a1f10eec551f87f979fc74f67e573dff5f94a359828999bf356547498",
     "formal/paper/InducedPentagonsPaper/ProfileAttainment.lean": "01b764d0e993b13646ae0c7599064981939712471578ea7f2f40ea04b33bf7fa",
     "formal/paper/InducedPentagonsPaper/ProfileBound.lean": "7424f1049894af177481d18fc658a09015e6313bc7de7ccb9c7da316e696b499",
     "formal/paper/InducedPentagonsPaper/ProfileData.lean": "2f45de397c86979d68332f4bda118eed4a8337f637a8a6705a1f60497b66ec6b",
@@ -855,14 +1085,17 @@
     "formal/paper/InducedPentagonsPaper/SharpConstruction.lean": "2dc75dc18abc663cbb8d5d7fa6df62bf3dce0bcb6322d971f7db92d1bce82409",
     "formal/paper/InducedPentagonsPaper/WeightedClique.lean": "71cff60db49d1ad97e3ea97d375f7e87a782fd7d3fc0cce24b33ccd0dbe0eba6",
     "formal/paper/InducedPentagonsPaper/WeightedGraph.lean": "e534019987d416d0bc0358dd1b507703e7949a1538bb61e803ee2518135e115c",
-    "formal/paper/InducedPentagonsPaper.lean": "1fdcf7caadf76d8ccab29d1e68d1a8838f0380aa689f7bdd027dc8c99e8750b5",
+    "formal/paper/InducedPentagonsPaper.lean": "b1fd83b2439b57ca2239043a90cac4cdf4e6e2386260080219ec1161944d2622",
     "formal/paper/lake-manifest.json": "9d6dbb51c366cb7c89384e4c58550406416a4434155429884aa09e311b98d700",
     "formal/paper/lakefile.toml": "b6f9d607d3b4aa40b7da62b5e45199cdf3b987c955056bfb2273ee96ec62f682",
     "formal/paper/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "formal/paper/README.md": "28426c1a27fe6b343c4ed22ea33b220ab39615c200d10fdc6402b770488a7493",
+    "formal/paper/README.md": "e3726d1e160c042e32a916a46f8eef9e80da568db28feef50fe102a6cccfd6fe",
     "scripts/export_lean_atlas.py": "e7db30d0113f422018ffeb74f0305a41938fe1732b378073f7f6d1a774079c9f",
+    "scripts/export_lean_certificate.py": "453bb39770d8f1e85a604ebca2b29ffb4bf8e3e58235dd3f5360e329f73c00ff",
+    "scripts/export_lean_patterns.py": "5f91fbfbfdabe2d2b0603d453da4cd3d34a980a4a5ca086e5e5be9ec27aa02e5",
     "scripts/export_lean_profiles.py": "c1c59f466d1644d43f4f76f24e8370d0225b8d2879a5ad6a1d80ae4d3532a459",
-    "scripts/verify_lean_paper.py": "4642e11e8f3f36777e45edee68f06c5efafcf892697ff00be7de895143a68f7d"
+    "scripts/verify_lean_paper.py": "422351ee77388c7b5bba827590829a134c4ed96d223cf0ce6d7fe3884ab7fc75",
+    "src/proof_specification.py": "313b8e220df2de87451e5283d9733ff7afab867e5b40ac9febacaded5c54869e"
   },
-  "elapsed_seconds": 89.00486731529236
+  "elapsed_seconds": 79.87806296348572
 }

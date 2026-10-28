@@ -41,8 +41,10 @@ checker, and proves correspondence with induced vertex subsets. This closes
 the envelope hypotheses for Lemma 12.1, without extending the claim to the
 phase-law asymptotics or the paper's global bound.
 Its partial-pattern injection model and isomorphism invariance provide finite
-semantics for later count proofs. They do not yet certify the saved primitive
-count columns or the flag-product tensors.
+semantics for count proofs. Complete duplicate-free prefix enumeration and its
+ordered-step optimization now support kernel checks of all 22 saved primitive
+counts on the empty and complete hosts. The other 1,042 host rows and the
+flag-product tensors remain uncertified in Lean.
 
 The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).

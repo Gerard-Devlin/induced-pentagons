@@ -115,6 +115,20 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   Boolean model and transfers the seven-vertex coverage theorem to them.
   Injection counts of every partial pattern on every seven-vertex graph reduce
   to a host on the actual certificate list.
+- `PatternEnumeration.lean` and `PatternSteps.lean`: a complete duplicate-free
+  injection enumeration, pruning repeats and failed constraints at every prefix.
+  The ordered-step version checks only constraints newly made decidable; its
+  output is proved equal to the full prefix checker.
+- `PatternNormalization.lean`: the unconstrained injection count is the falling
+  factorial, every pattern count is bounded by it, and the resulting rational
+  injection density lies in `[0,1]`.
+- `PrimitiveCounts.lean`, `PrimitiveFast.lean`, and `Generated/PrimitivePatterns.lean`:
+  all 22 explicit required-edge/nonedge specifications from the normative
+  specification, their ordering precondition, the exact injection denominators,
+  and sound host-row checkers linked to the mathematical counts.
+- `Generated/PrimitiveExamples.lean`: all 22 counts for each of the empty and
+  complete seven-vertex hosts, connected directly to the shared certificate
+  host rows. A changed count with the original array length is rejected.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
 The general convention bridge proves that this is the induced-subset count,
@@ -126,8 +140,8 @@ separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.
 Atlas coverage does not yet prove pairwise nonisomorphism of the 1,044 masks,
 their canonical minimality or their stored automorphism orders. The generic
-pattern model does not yet certify the 22 stored primitive count columns or
-the flag-product tensors.
+primitive checker has certified two of the 1,044 host rows. The other 1,042
+rows and the flag-product tensors are not yet certified in Lean.
 
 ## Reproduce the profile candidates
 
@@ -155,6 +169,19 @@ generated modules. Lean checks the candidate maps, target membership and every
 adjacency relation; a general induction then proves coverage for arbitrary
 Boolean graphs. A separate kernel equality connects these masks to the
 certificate host array. No Python coverage verdict is assumed.
+
+## Reproduce the primitive pattern specifications
+
+```sh
+python scripts/export_lean_patterns.py --check
+```
+
+This exporter takes the explicit patterns from `src/proof_specification.py`,
+checks their correspondence with the saved metadata and emits the Lean
+specifications and two host-row examples. The supplied numerical values are
+candidates: Lean recomputes them from the proved enumeration and separately
+connects them to the actual `HostData` rows. The manifest binds the specification,
+metadata, exporter and generated modules. No supplied counting verdict is used.
 
 The complete paper is **not yet formalized**. See the
 [coverage roadmap](../../blueprint/LEAN_ROADMAP.md). This project contains only

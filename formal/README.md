@@ -107,9 +107,13 @@ The permitted ordinary Lean axioms are `propext`, `Classical.choice`, and
 
 ## Input correspondence and trust boundary
 
-The generated input file embeds the rational coefficients, square vectors,
+The generated data modules embed the rational coefficients, square vectors,
 host masks, raw primitive counts, fixed-density counts and sparse tensor entries
-from the existing JSON and NPZ inputs. The exporter builds candidate Gram tables;
+from the existing JSON and NPZ inputs. Raw host rows are defined once in the
+`Generated/HostData*.lean` modules; the `Hosts*.lean` modules import those same
+definitions for their arithmetic checks. The Mathlib semantic checkers can thus
+use the original host data without depending on the arithmetic proof batches.
+The exporter builds candidate Gram tables;
 Lean independently recomputes every entry. A wrong candidate does not yield a proof.
 
 `Generated/manifest.json` records SHA256 values for all five source input files
@@ -121,7 +125,7 @@ those inputs have their intended graph-theoretic meaning.
 The standalone arithmetic checker does not establish the atlas or tensor
 semantics. The [Mathlib extension](paper/README.md) separately proves universal
 seven-vertex atlas coverage and equality with the certificate's host array.
-Pairwise nonisomorphism, the orbit census, primitive-pattern counts, canonical
+Pairwise nonisomorphism, the orbit census, the remaining primitive-pattern counts, canonical
 flag bases and tensor sampling interpretation remain to be established in Lean;
 the Python gate independently recounts them. Thus this arithmetic layer remains
 a result on imported tensors, rather than the paper's graph inequality.
@@ -142,6 +146,8 @@ InducedPentagons/Construction.lean Direct Clebsch pentagon count
 InducedPentagons/Isolates.lean     Isolated-vertex invariance
 InducedPentagons/IntegerVariance.lean Integer lattice lemmas
 InducedPentagons/Generated/       Reproducible data and kernel proofs
+  HostData*.lean                 Shared raw host rows
+  Hosts*.lean                    Arithmetic checks on those same rows
 InducedPentagons.lean             Library entry point
 Audit.lean                        Transitive axiom audit
 ```

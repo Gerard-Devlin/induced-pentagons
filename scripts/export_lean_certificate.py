@@ -172,11 +172,13 @@ def produce():
         name = f'hosts_{chunk:03d}_checked'
         expr = f'checkHostChunk certificate gramData {chunk * 12} hostChunk{chunk:03d}'
         # A chain of batches bounds simultaneous kernel jobs and peak memory.
-        host_imports = ['InducedPentagons.Generated.GramData',
+        emit(f'HostData{chunk:03d}.lean', ['InducedPentagons.Verifier'],
+             f'def hostChunk{chunk:03d} : Array HostRow := ' + array(rows, True) + '\n')
+        host_imports = [f'InducedPentagons.Generated.HostData{chunk:03d}',
+                        'InducedPentagons.Generated.GramData',
                         f'InducedPentagons.Generated.Hosts{chunk - 1:03d}' if chunk else
                         'InducedPentagons.Generated.GramProofs4']
         emit(f'Hosts{chunk:03d}.lean', host_imports,
-             f'def hostChunk{chunk:03d} : Array HostRow := ' + array(rows, True) + '\n\n' +
              f'theorem {name} : {expr} = true := by decide +kernel\n')
         host_proofs.append((name, expr))
 

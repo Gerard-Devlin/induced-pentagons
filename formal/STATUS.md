@@ -49,7 +49,12 @@ witnesses, then applies a general coverage induction. Distinctness of the 1,044
 mask integers is proved; pairwise nonisomorphism and the automorphism/orbit
 census remain to be formalized. A generic required-edge/nonedge injection model
 and its isomorphism invariance supply the first part of the pattern semantics;
-the stored primitive counts and flag tensors still need their semantic proofs.
+the remaining stored primitive counts and flag tensors still need their semantic proofs.
+The next layer now proves complete duplicate-free prefix enumeration and its
+ordered-step optimization, supplies all 22 primitive specifications, and proves
+the falling-factorial injection normalization and density bounds. All 22 saved
+counts on the empty and complete hosts are checked and linked to the shared
+certificate rows. The other 1,042 rows remain to be checked in Lean.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain

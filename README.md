@@ -25,6 +25,8 @@ divided by ten equals the canonical-cycle and induced-subset polynomials for
 arbitrary real vertex weights.
 The finite atlas layer proves every seven-vertex graph is isomorphic to a host
 on the actual certificate list, using kernel-checked extension witnesses.
+The primitive-pattern layer proves a complete injection enumerator and its
+normalization; it currently checks all 22 stored counts on two example hosts.
 The graphon, compactness, stability
 and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization
