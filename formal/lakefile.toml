@@ -1,0 +1,6 @@
+name = "inducedPentagons"
+version = "0.1.0"
+defaultTargets = ["InducedPentagons"]
+
+[[lean_lib]]
+name = "InducedPentagons"

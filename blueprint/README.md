@@ -23,3 +23,7 @@ contains locators generated from the canonical LaTeX sources.
 
 The analytic rows are mathematical arguments, not proof-assistant declarations.
 See the [claims map](claims.md) and [trust boundary](trust.md).
+
+The [Lean certificate layer](../formal/README.md) covers the exact SOS arithmetic
+and equality-span witnesses on imported tensors. The [Lean roadmap](LEAN_ROADMAP.md)
+records the finite-graph semantics and analytic proofs still to be formalized.

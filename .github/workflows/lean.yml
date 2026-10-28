@@ -1,0 +1,47 @@
+name: Lean certificate verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements-verification.txt
+      - name: Install export dependency
+        run: python -m pip install numpy==2.3.5
+      - name: Confirm generated Lean inputs match exact certificates
+        run: python scripts/export_lean_certificate.py --check
+      - name: Build and independently recheck the Lean environment
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: false
+          leanchecker: true
+          axiom-audit: true
+          axiom-audit-root: InducedPentagons
+      - name: Audit transitive axioms and reject corrupted inputs
+        run: python scripts/verify_lean.py --skip-build
+      - name: Upload Lean verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-certificate-verification
+          path: results/lean_verification.json

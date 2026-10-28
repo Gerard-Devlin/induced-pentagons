@@ -26,7 +26,7 @@ def tracked_paths(root: Path) -> list[Path]:
     """The immutable inputs and reader-facing artifacts bound by a full run."""
     root = Path(root)
     paths = []
-    for name in ('src', 'scripts', 'certificates', 'paper', 'blueprint', 'docs', 'audit'):
+    for name in ('src', 'scripts', 'certificates', 'paper', 'blueprint', 'docs', 'audit', 'formal'):
         base = root / name
         if not base.is_dir():
             continue
@@ -46,6 +46,8 @@ def tracked_paths(root: Path) -> list[Path]:
             if name == 'paper' and path.suffix not in ('.tex', '.bib', '.bbl', '.bst', '.sty', '.cls', '.pdf', '.png'):
                 continue
             if name in ('docs', 'originals') and path.suffix not in ('.txt', '.md', '.json', '.pdf'):
+                continue
+            if name == 'formal' and path.suffix not in ('.lean', '.toml', '.md', '.json') and path.name != 'lean-toolchain':
                 continue
             paths.append(path)
     for pattern in ('README.md', 'verify.py', 'Makefile', 'requirements-*.txt',

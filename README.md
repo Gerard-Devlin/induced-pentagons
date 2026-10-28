@@ -1,6 +1,7 @@
 # Induced pentagons
 
 [![Exact verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml)
+[![Lean certificate verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml/badge.svg?branch=lean-certificate-work)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml)
 
 Research materials for **Sharp bounds, stability, and arithmetic fluctuations
 for induced pentagons**. The paper studies the sharp inequality
@@ -11,10 +12,15 @@ I5(G) <= 3 / (50 sqrt(10)) * m^(5/2),
 
 its Clebsch equality construction, stability, and finite-edge arithmetic.
 
-**Verification scope:** the programs check exact finite certificates and
-computational inputs. The graphon, compactness, stability and eventual
-extremality arguments are mathematical proofs in the paper. This repository
-does not contain a Lean, Isabelle or HOL formalization.
+**Verification scope:** Python independently checks the finite inputs, and
+[the Lean project](formal/README.md) checks the core SOS and equality-span
+arithmetic on the imported exact tensors. The graphon, compactness, stability
+and eventual-extremality arguments remain mathematical proofs in the paper.
+The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization
+obligations; the full paper is not yet formalized.
+
+The current [Lean checkpoint](formal/STATUS.md) records completed component
+checks and the aggregate certificate build still in progress.
 
 ## Read the proof
 
@@ -22,6 +28,7 @@ does not contain a Lean, Isabelle or HOL formalization.
 - [Proof blueprint](blueprint/README.md): stages and dependencies
 - [Claims and certificates](blueprint/claims.md): evidence for each result
 - [Trust boundary](blueprint/trust.md): what a verification PASS establishes
+- [Lean certificate layer](formal/README.md) and [remaining obligations](blueprint/LEAN_ROADMAP.md)
 
 ## Verify
 
@@ -42,11 +49,16 @@ Run with assertions enabled. No SDP solver, C++ compiler or TeX installation
 is required to check supplied witnesses. Linux and Windows CI run the finite
 chain and supplementary audits. Run the latter locally with `make audit`.
 
+For the kernel-checked certificate arithmetic, install the pinned Lean toolchain
+and run `make lean`, or `python scripts/verify_lean.py`. The Lean badge reports
+this finite-certificate CI workflow.
+
 ## Layout
 
 ```text
 paper/          Anonymous PDF, modular LaTeX, bibliography and figure
 blueprint/      Proof route, statement index, evidence map and trust boundary
+formal/         Lean/Std certificate checker, generated inputs and kernel proofs
 certificates/   Exact witnesses, graph/flag tensors and finite construction data
 src/            Exact verifiers and mathematical specifications
 scripts/        Input generators, numerical searches, paper and package tools

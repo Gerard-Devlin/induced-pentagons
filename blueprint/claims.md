@@ -31,11 +31,16 @@ risk; they still rely on the stated interpretation of the formulas.
 
 ## What a successful run does not establish
 
-This is not a Lean, Isabelle, or HOL formalization. The infinite-dimensional
+The [Lean certificate layer](../formal/README.md) checks the SOS and equality-span
+arithmetic on imported exact tensors. It does not formalize the tensor recount
+or the whole paper. The infinite-dimensional
 variation, trace-limit, compactness, local repair, and eventual-extremality
 arguments require mathematical reading. The fixed-offset program computes
 eventual polynomials; it does not certify a numerical threshold `k_0(j)`.
 Finite checks at selected class sizes cannot supply that missing threshold.
+
+The complete [remaining Lean obligations](LEAN_ROADMAP.md) distinguish imported
+finite data, certificate arithmetic, and the unformalized analytic deductions.
 
 Numerical SDP output is discovery material. It is unnecessary for checking the
 supplied witnesses and is not accepted as evidence of the exact inequality.

@@ -1,0 +1,11 @@
+import InducedPentagons
+
+#print axioms InducedPentagons.Generated.coreCertificateVerified
+#print axioms InducedPentagons.Generated.metadata_checked
+#print axioms InducedPentagons.Generated.span_0_checked
+#print axioms InducedPentagons.Generated.span_1_checked
+#print axioms InducedPentagons.Generated.span_2_checked
+#print axioms InducedPentagons.Generated.span_3_checked
+#print axioms InducedPentagons.integer_square_nonnegative
+#print axioms InducedPentagons.weightedSquares_nonnegative
+#print axioms InducedPentagons.positive_square_vanishes

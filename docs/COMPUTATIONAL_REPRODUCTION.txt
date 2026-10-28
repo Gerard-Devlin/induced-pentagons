@@ -128,3 +128,20 @@ The complete verification manifest binds current source, manuscript and exact
 data bytes. The package manifest checks every included file. A stale verification
 result cannot be used to label a changed package as verified. SHA256 integrity
 checks detect byte changes; they do not replace the mathematical verification.
+
+8. Lean finite certificate layer
+
+  python scripts/export_lean_certificate.py --check
+  python scripts/verify_lean.py
+
+The separate formal/ project pins Lean 4.35.0 and uses only Lean/Std. It checks
+the rational bindings, coefficient signs, slope margin, supplied equality
+kernels, all 10,722 Gram coefficients, all 1,044 host identities and the
+triangle/degree/two-codegree span witnesses by kernel reduction. It does not
+use Python PASS values as proofs. The generated source is bound to the five
+original exact JSON/NPZ inputs by reproducible export and SHA256 values.
+
+This is not yet a formal recount of graphs and tensors or a formalization of
+the analytic paper. See formal/README.md and blueprint/LEAN_ROADMAP.md. The
+Python and Lean verification verdicts are separate: fingerprinting Lean source
+in a Python report does not establish that it has compiled in Lean.
