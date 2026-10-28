@@ -50,6 +50,14 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   embeddings for any finite graph, its cardinality interpretation, and the
   kernel-checked Clebsch count of 1,920 labelled embeddings. This proves the
   weighted and balanced-blow-up pentagon formula `192 k⁵`.
+- `CycleSymmetry.lean`, `PentagonConvention.lean`, and `PentagonSubsetCount.lean`:
+  exactly ten adjacency-preserving self-maps of the five-cycle; a bijection
+  between canonical cycle tuples and vertex subsets inducing a five-cycle;
+  and exactly ten labelled embeddings over each such subset. For arbitrary
+  real vertex weights, the labelled sum divided by ten equals both the
+  induced-subset polynomial and the canonical-tuple polynomial. In particular,
+  the labelled count is ten times the canonical count for every finite graph,
+  and the Clebsch graph has 192 induced five-cycle vertex subsets.
 - `SharpConstruction.lean`: the exact constant `3/(50 sqrt(10))`, its squared
   value, and the balanced Clebsch equality `C = c* E² sqrt(E)` for nonnegative
   class weights. The squared ratio is `9/25000` for nonzero balanced weights.
@@ -90,10 +98,10 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   The Clebsch envelope hypotheses of the earlier scalar component are discharged.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
-The Clebsch numerical formula now follows from a direct labelled count, alongside
-the standalone project's separate 192-cycle normalized enumeration. A general
-bijection between the two cycle conventions, including equality of arbitrary
-weighted normalized-cycle polynomials, remains to be supplied.
+The general convention bridge proves that this is the induced-subset count,
+with the same identity for arbitrary real vertex weights. The direct labelled
+Clebsch count and the standalone 192-cycle normalized enumeration therefore
+have a proved connection through these general identities.
 The profile envelope and scalar profile dependencies are now closed. The
 separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.

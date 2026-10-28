@@ -38,6 +38,11 @@ exact sharp-constant construction equality, Bernoulli multilinear
 extension, and the scalar profile optimization with explicit envelope
 hypotheses. It also proves the real weighted clique inequality, the Clebsch
 independence bound of five and the resulting weighted complement bound.
+For every finite graph, canonical pentagon tuples are proved to correspond
+bijectively to induced five-cycle vertex subsets. Each subset has exactly ten
+labelled embeddings. The labelled sum divided by ten equals the subset and
+canonical-tuple polynomials for arbitrary real vertex weights, connecting the
+two independent Clebsch counts.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain

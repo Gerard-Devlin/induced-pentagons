@@ -50,7 +50,16 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'tupleOfPathIso_induced tupleOfPathIso_vertices inducedPathSet_iff_mem_inducedPaths '
            'normalized_path_unique inducedPaths_vertices_injective pathSubsetEquiv '
            'pathSetLiteral_eq profileLink_eq_setProfileLink profile_envelope_on_induced_subsets '
-           'profile_envelope_attained_on_induced_subsets scalar_profile_on_induced_subsets').split()
+           'profile_envelope_attained_on_induced_subsets scalar_profile_on_induced_subsets '
+           'cycleSymmetry_card cycleSymmetry_bijective cycleRotate_pattern '
+           'cycle_rooted_self_maps canonicalTuple_iff mem_inducedPentagons_iff '
+           'inducedPentagons_nodup pentagonVertices_card exists_canonical_pentagon '
+           'tupleOfPentagonIso_induced tupleOfPentagonIso_vertices inducedPentagonSet_iff_mem_inducedPentagons '
+           'normalized_pentagon_unique inducedPentagons_vertices_injective pentagonSubsetEquiv '
+           'embeddingOfPentagonIso_vertices embeddingFibreEquiv embeddingFibre_card '
+           'pentagonEmbedding_product pentagonMass_eq_setMass pentagonSet_card_eq_normalized_length '
+           'pentagonMass_eq_normalized_length pentagonMass_eq_normalizedMass labelled_length_eq_ten_mul_normalized '
+           'clebsch_induced_pentagonSet_card ').split()
 
 
 def sources():
@@ -118,6 +127,7 @@ def main():
               'status': 'verified_lean_mathematical_components',
               'scope': ['finite weighted graph and blow-up identities',
                         'complete labelled Clebsch pentagon count and sharp construction equality',
+                        'general labelled, canonical and induced-subset weighted pentagon conventions',
                         'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'graph-defined Clebsch profile envelope and neighborhood attainment',

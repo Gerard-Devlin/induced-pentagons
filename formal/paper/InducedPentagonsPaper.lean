@@ -3,6 +3,7 @@ import InducedPentagonsPaper.ScalarProfile
 import InducedPentagonsPaper.WeightedGraph
 import InducedPentagonsPaper.Bernoulli
 import InducedPentagonsPaper.PentagonCount
+import InducedPentagonsPaper.PentagonSubsetCount
 import InducedPentagonsPaper.SharpConstruction
 import InducedPentagonsPaper.WeightedClique
 import InducedPentagonsPaper.IndependentSets

@@ -22,10 +22,11 @@ contains locators generated from the canonical LaTeX sources.
 | Eventual polynomials | Section 14 | Bounded defects | 6,496 small-offset presentations and exact formulas |
 
 Most analytic rows remain mathematical arguments in the manuscript. The
-[Mathlib component project](../formal/paper/README.md) now proves the scalar
-profile optimization from explicit envelope hypotheses and the general
-Bernoulli multilinearity step; its remaining graph-specific dependencies are
-listed separately.
+[Mathlib component project](../formal/paper/README.md) proves the full profile
+envelope and scalar profile statements, including the induced-subset
+interpretation and attaining profiles. It also proves the general equivalence
+of labelled, canonical and induced-subset pentagon polynomials. The remaining
+graph and analytic dependencies are listed in the coverage roadmap.
 See the [claims map](claims.md) and [trust boundary](trust.md).
 
 The [Lean certificate layer](../formal/README.md) covers the exact SOS arithmetic

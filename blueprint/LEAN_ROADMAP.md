@@ -6,8 +6,8 @@ imported exact tensors. It does not state the paper's graph inequality.
 
 | Layer | Current status | Obligation still required for a full formal proof |
 | --- | --- | --- |
-| Clebsch construction | Counts, balanced formulas and sharp equality formalized | Independent complete enumerations give 192 normalized cycles and 1,920 labelled embeddings; weighted formulas are 40 k² and 192 k⁵, with the exact sharp-constant equality. The general weighted labelled-to-normalized convention bridge remains |
-| Blow-ups and isolates | Correspondences, cardinalities and weighted class-mass identities formalized | Darts scale by k² and labelled pentagons by k⁵; arbitrary clone weights collapse exactly to class masses. The labelled-to-normalized pentagon convention still needs a formal bridge |
+| Clebsch construction | Counts, balanced formulas, counting conventions and sharp equality formalized | Complete enumerations give 192 induced five-cycle subsets and 1,920 labelled embeddings. A general bijection and ten-element fibres prove the weighted labelled/canonical/subset identities; balanced formulas are 40 k² and 192 k⁵, with the exact sharp-constant equality |
+| Blow-ups and isolates | Correspondences, cardinalities and weighted class-mass identities formalized | Darts scale by k² and labelled pentagons by k⁵; arbitrary clone weights collapse exactly to class masses. The general convention theorem transfers pentagon identities to induced subsets and canonical tuples |
 | Exact arithmetic | Kernel checked in Lean | Rational bindings, signs, slope, 10,722 Gram entries, 1,044 host identities and four equality-span witnesses are covered by the current checker |
 | Data transcription | Reproducible export and hashes | The export is checked against JSON/NPZ; a formal parser and semantic input derivation would further reduce the transcription boundary |
 | Seven-vertex atlas | Python independent recount | Define graph-mask relabelling, prove canonical representative coverage and orbit disjointness, and establish the 1,044-host census in Lean |
