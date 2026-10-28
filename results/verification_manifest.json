@@ -47,7 +47,7 @@
         "source": "Explicit mathematical formulas in Sections 2 and 4",
         "saved_metadata_cannot_redefine_patterns_or_denominators": true
       },
-      "seconds": 2.1057960987091064,
+      "seconds": 4.458129405975342,
       "input_sha256": {
         "pattern_columns.npz": "169aa76d64081d63152a350df0fb627b5d7ff40f69d24eac514a25b353a36d41",
         "flag_basis.npz": "2b55a44980f7d6e6c82ff9a30c7b1c0630cd58170bf697346cd4e4c405f199ea",
@@ -73,7 +73,7 @@
       "method": "Raw primitive pattern densities; complete integer Gram matrices; Python arbitrary-precision contractions",
       "imports_production_verifier": false,
       "certificate_sha256": "e024cce41195cb99b923eeee8608f3b6e5c0035af05bb886971bdef7ea94e2ca",
-      "seconds": 1.5836503505706787
+      "seconds": 1.406705379486084
     },
     "equality_spans": {
       "status": "verified_exact",
@@ -824,10 +824,10 @@
     }
   },
   "sha256_scope": "Source, exact data, canonical and flattened paper/PDFs, and documentation; hashes bind bytes, not a machine formalization of the text.",
-  "elapsed_seconds": 59.136802196502686,
+  "elapsed_seconds": 74.571768283844,
   "sha256": {
     ".gitattributes": "9cbeb09502fe6bce9236896d69b7d0953b299acfbc21e1b3dc50566e6ffe3ccc",
-    ".github/workflows/lean.yml": "56c44922b4c5900f9c08cb57437bfc0d436a79f9a0fe5298d7a7bdee7c54ca05",
+    ".github/workflows/lean.yml": "edda0062c5d2beb13b816e175f599fdfedcaf24778e217b0113ba09523cf3d6a",
     ".github/workflows/verify.yml": "07ed6368c00d91bb3ccbf0fbdc0adcda0986f0a965fab303aaa6d5e2bfc7b64a",
     ".gitignore": "8d1fe321a5642bfb7cd6bd5b41609a7b745d22cc798e7bd267702b4c15b7e27f",
     "LICENSE": "25af5261fcbbec0e18ee75c4e92407248c0ed4f27ad1ea46a9ca1ad537972f7f",
