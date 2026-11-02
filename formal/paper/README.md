@@ -129,6 +129,18 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
 - `Generated/PrimitiveExamples.lean`: all 22 counts for each of the empty and
   complete seven-vertex hosts, connected directly to the shared certificate
   host rows. A changed count with the original array length is rejected.
+- `Generated/PrimitiveRows000.lean` through `PrimitiveRows086.lean`,
+  `Generated/PrimitiveComplete.lean`, `PrimitiveTable.lean`, and
+  `PrimitiveCertificate.lean`: all 22,968 counts on all 1,044 actual certificate
+  rows, their exact indices and masks, and universal count and normalized-density
+  semantics for arbitrary seven-vertex Boolean graphs and Mathlib simple graphs.
+- `GraphEncoding.lean`: graph-to-mask encoding with a proved adjacency identity;
+  the lexicographic pair-index separation and bounds for orders four and five.
+- `RootedFlags.lean`, `RootedFlagSeparation.lean`, and generated `Flag*.lean`:
+  root-preserving graph equivalences; all 576 coverage witnesses for the five
+  actual flag bases; complete root-preserving permutation lists; arbitrary-graph
+  coverage; and pairwise rooted nonisomorphism. Wrong adjacency and a map moving
+  a root are rejected. These are basis theorems, not flag-product count theorems.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
 The general convention bridge proves that this is the induced-subset count,
@@ -139,9 +151,9 @@ The profile envelope and scalar profile dependencies are now closed. The
 separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.
 Atlas coverage does not yet prove pairwise nonisomorphism of the 1,044 masks,
-their canonical minimality or their stored automorphism orders. The generic
-primitive checker has certified two of the 1,044 host rows. The other 1,042
-rows and the flag-product tensors are not yet certified in Lean.
+their canonical minimality or their stored automorphism orders. All primitive
+host rows and all five rooted flag bases are certified. The flag-product
+tensors, fixed-density counts and their sampling interpretation remain.
 
 ## Reproduce the profile candidates
 
@@ -178,10 +190,31 @@ python scripts/export_lean_patterns.py --check
 
 This exporter takes the explicit patterns from `src/proof_specification.py`,
 checks their correspondence with the saved metadata and emits the Lean
-specifications and two host-row examples. The supplied numerical values are
+specifications, two endpoint examples and the complete 1,044-row table in 87
+batches. Eight import chains bound concurrent kernel jobs. The supplied values are
 candidates: Lean recomputes them from the proved enumeration and separately
 connects them to the actual `HostData` rows. The manifest binds the specification,
 metadata, exporter and generated modules. No supplied counting verdict is used.
+
+## Reproduce the rooted flag candidates
+
+```sh
+python scripts/export_lean_flags.py --check
+```
+
+This exporter reads the normative five flag specifications and the stored basis
+masks, and supplies candidate root-preserving isomorphisms. Lean checks all 576
+witnesses, equality of their sources with the complete relevant mask families,
+and equality of the basis lists with the actual certificate blocks. The graph
+encoding theorem transfers coverage to arbitrary graphs. Lean checks completeness
+of the root-preserving permutation lists and separation of every pair of basis
+members. This proves uniqueness up to rooted isomorphism; numerical minimality
+of each mask is not needed or claimed. The manifest binds the exporter, the
+normative specification, the NPZ input and all seven generated modules.
+
+The complete primitive-table build is substantially larger than the old two-host
+examples. The paper CI job allows 180 minutes for a cold build, followed by its
+transitive axiom audit; subsequent local builds reuse current compiled modules.
 
 The complete paper is **not yet formalized**. See the
 [coverage roadmap](../../blueprint/LEAN_ROADMAP.md). This project contains only

@@ -125,8 +125,11 @@ those inputs have their intended graph-theoretic meaning.
 The standalone arithmetic checker does not establish the atlas or tensor
 semantics. The [Mathlib extension](paper/README.md) separately proves universal
 seven-vertex atlas coverage and equality with the certificate's host array.
-Pairwise nonisomorphism, the orbit census, the remaining primitive-pattern counts, canonical
-flag bases and tensor sampling interpretation remain to be established in Lean;
+The Mathlib extension also checks all 22,968 primitive-pattern counts, with
+universal count and density transfer, and proves coverage and pairwise rooted
+nonisomorphism for all five actual flag bases. Pairwise nonisomorphism of the
+seven-vertex atlas, the orbit census and tensor sampling interpretation remain
+to be established in Lean;
 the Python gate independently recounts them. Thus this arithmetic layer remains
 a result on imported tensors, rather than the paper's graph inequality.
 

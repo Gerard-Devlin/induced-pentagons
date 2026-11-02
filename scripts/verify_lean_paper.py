@@ -81,6 +81,24 @@ AUDITED = ('toSimpleGraph_adj dart_card_blowUp pentagon_card_blowUp '
            'primitivePatternSpecs_count primitivePatternSpecs_ordered primitivePattern_denominators '
            'primitive_empty_count_values primitive_empty_host_semantics primitive_complete_count_values '
            'primitive_complete_host_semantics primitive_changed_count_rejected ').split()
+AUDITED += ('primitiveSemanticCounts_isomorphic primitiveSemanticDensities_eq_zipWith '
+            'primitiveSemanticDensities_isomorphic primitiveSemanticDensities_bounds '
+            'primitive_counts_reduced_to_verified_rows primitive_certificate_rows_semantics '
+            'primitive_certificate_rows_masks primitive_certificate_rows_indices '
+            'primitive_certificate_rows_count primitive_certificate_rows_masks_nodup '
+            'primitive_certificate_row_width '
+            'primitive_certificate_densities primitive_counts_on_all_seven_vertex_graphs '
+            'primitive_densities_on_all_seven_vertex_graphs primitive_counts_on_all_seven_vertex_simpleGraphs '
+            'foldr_or_testBit rawGraphEncoding_testBit rawGraphEncoding_at_pair '
+            'graphEncoding_congr graphEncoding_adj graphEncoding_equiv '
+            'edgeIndexSeparated_four edgeIndexBounded_four edgeIndexSeparated_five edgeIndexBounded_five '
+            'rootedWitnessCheck_sound rootedFlagBasisCovers_of_rows rootedBasisSeparatedCheck_sound '
+            'rootedPermutationCodes4_complete rootedPermutationCodes5_complete '
+            'rootedWitnessCheck_rejects_moved_root rootedWitnessCheck_rejects_wrong_adjacency').split()
+for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangle3'):
+    AUDITED += [f'flag_basis_{_flag_name}_{suffix}' for suffix in
+                ('certificate', 'count', 'nodup', 'types_checked', 'covers', 'separated')]
+    AUDITED += [f'certificate_flag_basis_{_flag_name}_{suffix}' for suffix in ('covers', 'separated')]
 
 
 def sources():
@@ -95,9 +113,11 @@ def sources():
     yield ROOT / 'scripts/export_lean_profiles.py'
     yield ROOT / 'scripts/export_lean_atlas.py'
     yield ROOT / 'scripts/export_lean_patterns.py'
+    yield ROOT / 'scripts/export_lean_flags.py'
     yield ROOT / 'scripts/export_lean_certificate.py'
     yield ROOT / 'src/proof_specification.py'
     yield ROOT / 'certificates/pattern_columns.json'
+    yield ROOT / 'certificates/flag_basis.npz'
     yield ROOT / 'formal/InducedPentagons/Generated/manifest.json'
     yield from (ROOT / 'formal/InducedPentagons/Generated').glob('HostData*.lean')
     yield Path(__file__)
@@ -131,6 +151,7 @@ def main():
     run([sys.executable, str(ROOT / 'scripts/export_lean_profiles.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_atlas.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_patterns.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_flags.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -165,15 +186,20 @@ def main():
                         'generic partial-pattern injection semantics and isomorphism invariance',
                         'complete prefix enumeration and proved ordered-step optimization',
                         'injection denominators, density bounds and explicit specifications of all 22 primitives',
-                        'all 22 stored primitive counts on the empty and complete certificate hosts only',
+                        'all 22968 stored primitive counts on all 1044 certificate hosts, with universal count and density transfer',
+                        'all five actual rooted flag bases: arbitrary-graph coverage and pairwise rooted nonisomorphism',
                         'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'graph-defined Clebsch profile envelope and neighborhood attainment',
                         'scalar profile equation (58) with its Clebsch envelope hypotheses discharged'],
               'full_paper_formalized': False,
-              'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 2,
-                                        'verified_hosts': ['empty', 'complete'],
-                                        'remaining_hosts': 1042, 'full_table_verified': False},
+              'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 1044,
+                                        'counts_verified': 22968, 'remaining_hosts': 0,
+                                        'full_table_verified': True},
+              'rooted_flag_bases': {'blocks_verified': 5, 'basis_sizes': [20, 72, 72, 72, 72],
+                                    'coverage_witnesses': 576, 'coverage_verified': True,
+                                    'pairwise_rooted_nonisomorphism_verified': True,
+                                    'flag_product_tensors_verified': False},
               'toolchain': version,
               'mathlib_revision': next(p['rev'] for p in json.loads(
                   (PAPER / 'lake-manifest.json').read_text())['packages'] if p['name'] == 'mathlib'),

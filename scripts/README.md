@@ -9,6 +9,8 @@ Run from the repository root. Checking supplied witnesses uses `python verify.py
 | Rationalization | `../src/rationalize_certificate.py` | Checking dependencies; optional FLINT |
 | Equality spans | `../src/generate_equality_spans.py` | SymPy; optional FLINT |
 | Finite export | `export_finite_data.py` | Python standard library |
+| Lean primitive counts | `export_lean_patterns.py --check` | Python standard library; Lean independently checks all 1,044 rows |
+| Lean rooted flag bases | `export_lean_flags.py --check` | NumPy; Lean independently checks coverage and separation |
 | Paper | `build_paper.py`, `flatten_latex.py`, `make_phase_figure.py` | TeX; Matplotlib for figures |
 | Archive | `package_checkpoint.py --label LABEL --require-verified` | Current complete verification manifest |
 

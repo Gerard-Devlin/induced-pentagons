@@ -47,7 +47,7 @@ jobs:
           path: results/lean_verification.json
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 180
     env:
       LEAN_NUM_THREADS: 2
       MATHLIB_CACHE_GET_URL: ""

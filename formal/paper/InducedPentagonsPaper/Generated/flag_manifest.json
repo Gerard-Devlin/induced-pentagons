@@ -1,0 +1,19 @@
+{
+  "schema": "induced-pentagons.lean-rooted-flags.v1",
+  "meaning": "Candidate rooted isomorphisms; Lean checks every witness and coverage source",
+  "generator_sha256": "03acb974792f7698c2f9760b8982e96f669bf0b841febdc2deb6580bfcbcd78e",
+  "input_sha256": {
+    "src/proof_specification.py": "313b8e220df2de87451e5283d9733ff7afab867e5b40ac9febacaded5c54869e",
+    "certificates/flag_basis.npz": "2b55a44980f7d6e6c82ff9a30c7b1c0630cd58170bf697346cd4e4c405f199ea"
+  },
+  "output_sha256": {
+    "FlagBasis_one_root.lean": "e31650a390edbc052314e086a75dd5b41778e97135d895e031fba4553cf26e93",
+    "FlagBasis_independent3.lean": "9c6d912738c18b5a0db87cbda91a5dd9327add6bb2fe77befb358435b24c5c8c",
+    "FlagBasis_edge_isolate.lean": "8fc46ecc0fdd31b703c0f1d1bbc3c048351d401bf4552772acbcf6b412badc33",
+    "FlagBasis_path3.lean": "9fd199b689fd3cda84de7617f118e0481601596166da8149215228cac732e607",
+    "FlagBasis_triangle3.lean": "5c21ed53902cc57d07ea4f611eab0bcd914be08d87895de340cc69b2b62661d0",
+    "FlagBases.lean": "64419041491905233e66559ab4f914a7df7b6b8ca41007f393d4fd161404d850",
+    "FlagSeparation.lean": "ef52dc2e92888286250177c1f744bc0de0443088cb8732c09370c6b24b218951"
+  },
+  "witnesses": 576
+}

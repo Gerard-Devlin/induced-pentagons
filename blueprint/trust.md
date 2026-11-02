@@ -42,9 +42,13 @@ the envelope hypotheses for Lemma 12.1, without extending the claim to the
 phase-law asymptotics or the paper's global bound.
 Its partial-pattern injection model and isomorphism invariance provide finite
 semantics for count proofs. Complete duplicate-free prefix enumeration and its
-ordered-step optimization now support kernel checks of all 22 saved primitive
-counts on the empty and complete hosts. The other 1,042 host rows and the
-flag-product tensors remain uncertified in Lean.
+ordered-step optimization support kernel checks of all 22,968 saved primitive
+counts on all 1,044 hosts. The complete table is connected to arbitrary
+seven-vertex graphs, including normalized injection densities. All five actual
+rooted flag bases have arbitrary-graph coverage and pairwise rooted
+nonisomorphism proofs, using 576 checked coverage witnesses and complete lists
+of root-preserving permutations. The flag-product tensors remain uncertified
+in Lean.
 
 The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).
