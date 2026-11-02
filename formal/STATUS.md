@@ -46,8 +46,10 @@ two independent Clebsch counts.
 The finite atlas layer proves that every seven-vertex graph is isomorphic to a
 host from the actual certificate array. It checks 11,291 one-vertex extension
 witnesses, then applies a general coverage induction. Distinctness of the 1,044
-mask integers is proved; pairwise nonisomorphism and the automorphism/orbit
-census remain to be formalized. A generic required-edge/nonedge injection model
+mask integers and pairwise nonisomorphism are proved, giving a unique certificate
+representative for every seven-vertex graph. Canonical minimality and the
+automorphism/orbit census remain to be formalized. A generic required-edge/nonedge
+injection model
 and its isomorphism invariance supply the first part of the pattern semantics;
 the later modules supply the stored primitive counts and rooted flag bases.
 Flag-product tensors still need their semantic proofs.
@@ -69,8 +71,17 @@ semantics, including the edge on the two omitted vertices. The 34 counts partiti
 the five-subsets; their normalized densities sum to one. The actual fixed columns
 of the arithmetic certificate equal the corresponding density differences after
 division by the common data denominator. These counts and identities transfer
-to every seven-vertex graph. Flag-product tensor counts and their sampling
-normalization still need semantic proofs.
+to every seven-vertex graph. Complete saved flag-product tensor counts and the
+remaining sampling bridges still need semantic proofs.
+The flag classifiers now return proved indices into the actual certificate bases.
+Ordered root injections and disjoint unordered extension sets form the joint
+sample model. A complete executable enumeration agrees with its abstract finite
+cardinality, giving the certificate denominators 140 and 1,260. Induced rooted
+flag-pair counts have exact isomorphism semantics, symmetry and count bounds.
+The two saved nonzero tensor entries on the empty host have direct kernel
+recounts bound to the actual raw row. This does not check its implicit zeros or
+the other hosts. The full tensor table, upper-triangular combination, graph
+isomorphism transfer and the full-permutation fiber bridge remain open.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain

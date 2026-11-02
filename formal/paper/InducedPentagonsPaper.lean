@@ -23,3 +23,7 @@ import InducedPentagonsPaper.Generated.PrimitiveExamples
 import InducedPentagonsPaper.PrimitiveCertificate
 import InducedPentagonsPaper.Generated.FlagSeparation
 import InducedPentagonsPaper.FixedDensityCertificate
+import InducedPentagonsPaper.AtlasSeparation
+import InducedPentagonsPaper.FlagProductSemantics
+import InducedPentagonsPaper.JointFlagEnumeration
+import InducedPentagonsPaper.FlagProductExamples

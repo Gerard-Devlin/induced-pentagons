@@ -171,10 +171,27 @@ have a proved connection through these general identities.
 The profile envelope and scalar profile dependencies are now closed. The
 separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.
-Atlas coverage does not yet prove pairwise nonisomorphism of the 1,044 masks,
-their canonical minimality or their stored automorphism orders. All primitive
+Atlas coverage and pairwise nonisomorphism now give a unique certificate host
+for every seven-vertex Boolean graph and Mathlib simple graph. Canonical
+minimality and stored automorphism orders are still unproved. All primitive
 host rows, all five rooted flag bases and all fixed-density entries are certified.
-The flag-product tensors and their sampling interpretation remain.
+The complete flag-product tensor table and its full sampling interpretation remain.
+
+The later flag-product prerequisites are proved in `FlagIndex.lean`,
+`JointFlagSampling.lean`, `JointFlagGraphs.lean`, `JointFlagEnumeration.lean`
+and `FlagProductSemantics.lean`. The checked classifiers give indices into each
+actual certificate basis, and these indices characterize rooted isomorphism.
+A joint sample is an ordered root injection plus an unordered extension subset;
+the other extension subset is its disjoint complement. A complete executable
+enumeration equals the full abstract sample space. Root-type guards depend only
+on roots, and swapping the two extension sets is an involution. Thus oriented
+flag-pair counts have proved rooted-isomorphism semantics, symmetry and bounds.
+The sample totals 140 and 1,260 equal the actual certificate block denominators;
+they include all root injections, with incompatible root types contributing zero.
+`FlagProductExamples.lean` directly recounts the two saved nonzero entries on
+the empty host and binds them to its actual `HostData` row. Its implicit zeros
+and the other 1,043 hosts remain unchecked. The upper-triangular combination,
+universal count transfer and full-permutation fiber bridge also remain open.
 
 ## Reproduce the profile candidates
 
@@ -202,6 +219,19 @@ generated modules. Lean checks the candidate maps, target membership and every
 adjacency relation; a general induction then proves coverage for arbitrary
 Boolean graphs. A separate kernel equality connects these masks to the
 certificate host array. No Python coverage verdict is assumed.
+
+## Reproduce the host-separation candidates
+
+```sh
+python scripts/export_lean_host_codes.py --check
+```
+
+The exporter proposes integer encodings of the 90 existing count invariants and
+a sorted order of the 1,044 hosts. Lean checks the encoding of every actual raw
+row, a permutation of the complete list and strict increase of the codes.
+`AtlasSeparation.lean` combines these checks with the proved count invariance to
+prove pairwise nonisomorphism and unique representatives. Code injectivity on all
+possible vectors is not assumed or needed for this separation implication.
 
 ## Reproduce the primitive pattern specifications
 
@@ -232,6 +262,19 @@ of the root-preserving permutation lists and separation of every pair of basis
 members. This proves uniqueness up to rooted isomorphism; numerical minimality
 of each mask is not needed or claimed. The manifest binds the exporter, the
 normative specification, the NPZ input and all seven generated modules.
+
+## Reproduce the indexed flag classifiers
+
+```sh
+python scripts/export_lean_flag_indices.py --check
+```
+
+The exporter supplies 4,160 lookup slots, including all 576 valid-root masks.
+Lean checks each valid-root witness and its output index against the actual
+certificate basis. Invalid-root slots are guarded. Generic theorems prove that
+the returned index characterizes rooted isomorphism and is invariant under it.
+A changed index is rejected even when the old graph-isomorphism witness remains
+unchanged. The manifest binds the exporter, specification, NPZ and six modules.
 
 ## Reproduce the fixed-density candidates
 

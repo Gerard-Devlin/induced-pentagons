@@ -15,8 +15,10 @@ The separate [Lean project](../formal/README.md) rechecks the core SOS and
 equality-span arithmetic in Lean's kernel on the imported exact tensors.
 The standalone checker does not prove the tensor interpretation. The separate
 Mathlib extension now proves universal atlas coverage, with an explicit kernel
-equality to the certificate's actual host list. Canonical minimality, pairwise
-nonisomorphism and the automorphism/orbit census remain separate obligations.
+equality to the certificate's actual host list. Verified invariant count codes
+now prove pairwise nonisomorphism, hence uniqueness of each certificate
+representative. Canonical minimality and the automorphism/orbit census remain
+separate obligations.
 Independent counting routes, Linux/Windows CI and 24 malformed-input rejection
 cases provide additional implementation checks for the Python layer.
 
@@ -51,7 +53,13 @@ of root-preserving permutations. All 70,992 fixed-density entries have standard
 induced-subset semantics, including the omitted-pair edge condition. The 34
 five-vertex types partition the five-subsets, and the actual fixed certificate
 columns have proved probability-density interpretations. The flag-product
-tensors remain uncertified in Lean.
+tensor table remains uncertified in Lean. Checked classifiers now produce
+indices into the actual five certificate bases. The joint-sample model has a
+complete executable enumeration, exact rooted-isomorphism pair semantics,
+left/right symmetry and proved sample sizes matching the actual denominators.
+Two nonzero empty-host tensor entries are recounted and bound to the raw row;
+implicit zeros and remaining hosts have not been checked. The full-permutation
+fiber bridge and the upper-triangular tensor interpretation remain open.
 
 The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).

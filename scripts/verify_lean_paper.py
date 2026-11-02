@@ -125,6 +125,32 @@ AUDITED += ('rootedClassify_sound rootedClassify_eq_iff rootedClassify_isomorphi
             'fixed_certificate_rows_semantics').split()
 
 
+AUDITED += ('graphCountCode_isomorphic rowCountCode_semantics increasingHostCodes_pairwise '
+            'pairwiseHostCodes_separate increasingHostCodes_separate storedHostCodes_binding '
+            'storedHostCodes_permutation sortedHostCodes_checked certificate_hosts_pairwise_nonisomorphic '
+            'seven_vertex_graph_unique_certificate_host seven_vertex_simpleGraph_unique_certificate_host '
+            'flagIndex_sound flagIndex_eq_iff flagIndex_isomorphic indexedFlag_wrong_index_rejected '
+            'flagRootVertices_card jointFlag_left_choice_card jointFlagSample_card '
+            'jointFlagSample_one_root_card jointFlagSample_three_roots_card '
+            'JointFlagSample.left_card JointFlagSample.roots_left_disjoint '
+            'JointFlagSample.right_available JointFlagSample.right_card JointFlagSample.swap_right '
+            'JointFlagSample.swap_swap jointFlagPairCount_symmetric jointFlagPairCount_le '
+            'JointFlagSample.vertex_root JointFlagSample.vertex_free JointFlagSample.free_vertex_mem '
+            'JointFlagSample.vertex_injective JointFlagSample.vertex_mem jointFlagGraph_rootType '
+            'jointFlagGraph_swap_rootType jointFlagPair_classifier_iff jointFlagPairCount_semantics '
+            'mem_flagRootFunctions flagRootEmbeddingList_nodup mem_flagRootEmbeddingFinset '
+            'mem_jointLeftChoices mem_jointFlagSamples jointFlagSamples_eq_univ jointFlagSamples_card '
+            'enumeratedJointFlagPairCount_eq flagProduct_empty_one_root_value '
+            'flagProduct_empty_independent3_value flagProduct_empty_nonzero_entries').split()
+for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangle3'):
+    AUDITED += [f'indexedFlagBasis_{_flag_name}_{suffix}' for suffix in
+                ('toList', 'injective', 'certificate', 'certificateAt', 'separated')]
+    AUDITED += [f'indexedFlagLookup_{_flag_name}_checked']
+    AUDITED += [f'indexedFlag_{_flag_name}_{suffix}' for suffix in ('sound', 'eq_iff', 'isomorphic')]
+    AUDITED += [f'flagProductCount_{_flag_name}_{suffix}' for suffix in ('semantics', 'symmetric', 'le')]
+    AUDITED += [f'flagProductDenominator_{_flag_name}']
+
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
@@ -139,6 +165,8 @@ def sources():
     yield ROOT / 'scripts/export_lean_patterns.py'
     yield ROOT / 'scripts/export_lean_flags.py'
     yield ROOT / 'scripts/export_lean_fixed.py'
+    yield ROOT / 'scripts/export_lean_flag_indices.py'
+    yield ROOT / 'scripts/export_lean_host_codes.py'
     yield ROOT / 'scripts/export_lean_certificate.py'
     yield ROOT / 'src/proof_specification.py'
     yield ROOT / 'certificates/pattern_columns.json'
@@ -179,6 +207,8 @@ def main():
     run([sys.executable, str(ROOT / 'scripts/export_lean_patterns.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_flags.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_fixed.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_flag_indices.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_host_codes.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -209,12 +239,15 @@ def main():
               'scope': ['finite weighted graph and blow-up identities',
                         'complete labelled Clebsch pentagon count and sharp construction equality',
                         'general labelled, canonical and induced-subset weighted pentagon conventions',
-                        'universal seven-vertex atlas coverage bound to actual certificate hosts',
+                        'universal seven-vertex atlas coverage and pairwise nonisomorphism bound to actual certificate hosts',
+                        'every seven-vertex graph has a unique certificate host up to isomorphism',
                         'generic partial-pattern injection semantics and isomorphism invariance',
                         'complete prefix enumeration and proved ordered-step optimization',
                         'injection denominators, density bounds and explicit specifications of all 22 primitives',
                         'all 22968 stored primitive counts on all 1044 certificate hosts, with universal count and density transfer',
-                        'all five actual rooted flag bases: arbitrary-graph coverage and pairwise rooted nonisomorphism',
+                        'all five actual rooted flag bases: coverage, separation and checked classifiers into actual tensor basis indices',
+                        'complete executable joint flag sampling, rooted-isomorphism pair semantics, symmetry, bounds and actual denominators',
+                        'direct kernel recounts of the two saved nonzero tensor entries on the empty host; zero entries and remaining hosts are not yet checked',
                         'all 70992 fixed-density entries on all 1044 hosts, with induced-subset semantics and normalized probabilities',
                         'the 34 actual five-vertex types form a complete separated basis; the fixed certificate columns have exact density semantics',
                         'weighted clique inequality and Clebsch complement quadratic bound',
@@ -222,12 +255,25 @@ def main():
                         'graph-defined Clebsch profile envelope and neighborhood attainment',
                         'scalar profile equation (58) with its Clebsch envelope hypotheses discharged'],
               'full_paper_formalized': False,
+              'seven_vertex_atlas': {'coverage_verified': True, 'pairwise_nonisomorphism_verified': True,
+                                     'unique_certificate_representative_verified': True,
+                                     'canonical_minimality_verified': False, 'automorphism_orbit_census_verified': False},
+              'joint_flag_sampling': {'complete_executable_enumeration_verified': True,
+                                      'denominators': [140, 1260, 1260, 1260, 1260],
+                                      'actual_certificate_denominators_verified': True,
+                                      'rooted_isomorphism_pair_count_semantics_verified': True,
+                                      'swap_symmetry_verified': True,
+                                      'empty_host_nonzero_entries_recounted': 2,
+                                      'empty_host_zero_entries_verified': False,
+                                      'full_saved_tensor_table_verified': False,
+                                      'full_permutation_fiber_bridge_verified': False},
               'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 1044,
                                         'counts_verified': 22968, 'remaining_hosts': 0,
                                         'full_table_verified': True},
               'rooted_flag_bases': {'blocks_verified': 5, 'basis_sizes': [20, 72, 72, 72, 72],
                                     'coverage_witnesses': 576, 'coverage_verified': True,
                                     'pairwise_rooted_nonisomorphism_verified': True,
+                                    'actual_basis_index_classifiers_verified': True,
                                     'flag_product_tensors_verified': False},
               'fixed_density_table': {'types_verified': 34, 'classification_witnesses': 1024,
                                       'hosts_verified': 1044, 'induced_entries_verified': 35496,

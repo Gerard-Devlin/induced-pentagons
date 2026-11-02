@@ -1,0 +1,19 @@
+{
+  "schema": "induced-pentagons.lean-indexed-flags.v1",
+  "meaning": "Candidate rooted witnesses and basis indices; every valid-root slot is checked by Lean",
+  "generator_sha256": "51f244e7537b978a16372cb5a3d45598a7223f8dc253337c4e89d74939171813",
+  "input_sha256": {
+    "src/proof_specification.py": "313b8e220df2de87451e5283d9733ff7afab867e5b40ac9febacaded5c54869e",
+    "certificates/flag_basis.npz": "2b55a44980f7d6e6c82ff9a30c7b1c0630cd58170bf697346cd4e4c405f199ea"
+  },
+  "output_sha256": {
+    "IndexedFlag_one_root.lean": "bf5c15fea2fec93117ab52dcd889d31c59d75245b657a2774da616654817d036",
+    "IndexedFlag_independent3.lean": "62fd9f0fb457942d4320d7d798ab4a2e5108d4fe5904bccdbd5057418053ba36",
+    "IndexedFlag_edge_isolate.lean": "fb5ca09acd65d5eff5f06a34d7661e7da66f42ae8fb8e94ca38a9dcdf4bb787b",
+    "IndexedFlag_path3.lean": "0c34d94d931a97eb554384eaf8e48321acc670f9d7bd8769e68f7f80e807f646",
+    "IndexedFlag_triangle3.lean": "498612daed2ac5cdcf5154e58649367f1bcdfd0f4de3e9c558b17b4d4bc976ab",
+    "IndexedFlagTables.lean": "fa3a55017386c2dbff594345a5ce334d5d452828f49922717b20d624abb8d38f"
+  },
+  "lookup_slots": 4160,
+  "valid_root_slots": 576
+}

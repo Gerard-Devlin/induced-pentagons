@@ -1,0 +1,11 @@
+{
+  "schema": "induced-pentagons.lean-host-codes.v1",
+  "meaning": "Candidate invariant codes and ordering; Lean checks data binding, permutation and strict order",
+  "generator_sha256": "79df24000aaa122fd03e16cd69528030a0a86acba7f12287d681bbf586c5e9da",
+  "input_sha256": {
+    "certificates/pattern_columns.npz": "169aa76d64081d63152a350df0fb627b5d7ff40f69d24eac514a25b353a36d41"
+  },
+  "output_sha256": {
+    "HostCodeData.lean": "15411ff0a53f22790e9eadb1fcd7b1a4e596319be708ae7faf61ed58d61013d5"
+  }
+}
