@@ -22,3 +22,4 @@ import InducedPentagonsPaper.PatternNormalization
 import InducedPentagonsPaper.Generated.PrimitiveExamples
 import InducedPentagonsPaper.PrimitiveCertificate
 import InducedPentagonsPaper.Generated.FlagSeparation
+import InducedPentagonsPaper.FixedDensityCertificate

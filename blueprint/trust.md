@@ -47,8 +47,11 @@ counts on all 1,044 hosts. The complete table is connected to arbitrary
 seven-vertex graphs, including normalized injection densities. All five actual
 rooted flag bases have arbitrary-graph coverage and pairwise rooted
 nonisomorphism proofs, using 576 checked coverage witnesses and complete lists
-of root-preserving permutations. The flag-product tensors remain uncertified
-in Lean.
+of root-preserving permutations. All 70,992 fixed-density entries have standard
+induced-subset semantics, including the omitted-pair edge condition. The 34
+five-vertex types partition the five-subsets, and the actual fixed certificate
+columns have proved probability-density interpretations. The flag-product
+tensors remain uncertified in Lean.
 
 The Lean badge reports the certificate and component-proof jobs, not the complete paper.
 See [the formalization roadmap](LEAN_ROADMAP.md).

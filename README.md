@@ -29,6 +29,8 @@ The primitive-pattern layer proves a complete injection enumerator and its
 normalization, checks all 22,968 stored counts on all 1,044 hosts, and transfers
 the resulting counts and densities to every seven-vertex graph. The five actual
 rooted flag bases have proved coverage and pairwise rooted nonisomorphism.
+The fixed-density layer checks all 70,992 induced-subset and complementary-edge
+counts, their normalization, and the exact meaning of the 34 fixed certificate columns.
 The graphon, compactness, stability
 and eventual-extremality arguments remain mathematical proofs in the paper.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization

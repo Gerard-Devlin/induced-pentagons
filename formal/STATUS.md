@@ -61,8 +61,16 @@ the saved counts divided by the specified falling factorials.
 The five actual rooted flag bases have arbitrary-graph coverage and pairwise
 rooted nonisomorphism proofs. Their sizes are 20, 72, 72, 72 and 72. All 576
 coverage witnesses and the complete root-preserving permutation lists are
-kernel checked. The flag-product tensor counts and their normalization still
-need semantic proofs.
+kernel checked.
+The 34 actual five-vertex types have a checked classification of all 1,024
+labelled masks and pairwise nonisomorphism certified by nine exact pattern-count
+invariants. All 70,992 fixed-density entries on all 1,044 hosts have induced-subset
+semantics, including the edge on the two omitted vertices. The 34 counts partition
+the five-subsets; their normalized densities sum to one. The actual fixed columns
+of the arithmetic certificate equal the corresponding density differences after
+division by the common data denominator. These counts and identities transfer
+to every seven-vertex graph. Flag-product tensor counts and their sampling
+normalization still need semantic proofs.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain

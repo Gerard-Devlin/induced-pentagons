@@ -141,6 +141,27 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   actual flag bases; complete root-preserving permutation lists; arbitrary-graph
   coverage; and pairwise rooted nonisomorphism. Wrong adjacency and a map moving
   a root are rejected. These are basis theorems, not flag-product count theorems.
+- `RootedClassification.lean`, `PatternSeparation.lean`, `FiveVertexTypes.lean`,
+  and `Generated/FixedTypeData.lean`: a checked lookup for all 1,024 labelled
+  five-vertex graphs; classification by the certificate's actual 34 masks; and
+  pairwise nonisomorphism, certified by nine exact pattern-count invariants.
+- `SubsetGraphs.lean`, `FixedDensity.lean`, and `FixedDensityIsomorphism.lean`:
+  the sorted subset graph is proved isomorphic to Mathlib's induced graph;
+  subset checks are exactly the induced-graph-type predicate; both kinds of
+  counts are proved to be cardinalities of those subsets and invariant under
+  graph isomorphism. A structurally recursive insertion sort is proved equal
+  to Mathlib's canonical sort and permits reduction in the kernel.
+- `Generated/FixedRows000.lean` through `FixedRows086.lean`,
+  `Generated/FixedComplete.lean`, and `FixedDensityCertificate.lean`: all 35,496
+  induced-type counts and all 35,496 complementary-edge counts on the actual
+  1,044 host rows, with transfer to every seven-vertex graph. Two same-length
+  corrupted arrays are rejected.
+- `FixedDensityNormalization.lean` and `FixedColumnAlgebra.lean`: the 34 types
+  partition the five-subsets, normalized type densities sum to one, and the
+  actual fixed certificate columns have their exact rational density meanings.
+  On seven-vertex hosts the complementary-edge condition concerns exactly the
+  two omitted vertices; no identification with an outside-edge sampling density
+  for larger graphs is claimed by this subset-count model.
 
 The pentagon mass uses the standard labelled-embedding sum divided by ten.
 The general convention bridge proves that this is the induced-subset count,
@@ -152,8 +173,8 @@ separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.
 Atlas coverage does not yet prove pairwise nonisomorphism of the 1,044 masks,
 their canonical minimality or their stored automorphism orders. All primitive
-host rows and all five rooted flag bases are certified. The flag-product
-tensors, fixed-density counts and their sampling interpretation remain.
+host rows, all five rooted flag bases and all fixed-density entries are certified.
+The flag-product tensors and their sampling interpretation remain.
 
 ## Reproduce the profile candidates
 
@@ -211,6 +232,20 @@ of the root-preserving permutation lists and separation of every pair of basis
 members. This proves uniqueness up to rooted isomorphism; numerical minimality
 of each mask is not needed or claimed. The manifest binds the exporter, the
 normative specification, the NPZ input and all seven generated modules.
+
+## Reproduce the fixed-density candidates
+
+```sh
+python scripts/export_lean_fixed.py --check
+```
+
+The exporter supplies 1,024 graph-classification witnesses, candidate invariant
+signatures and all 70,992 fixed-density entries from the saved NPZ input. Lean
+checks the witnesses and signatures, proves classification correctness, then
+recounts the actual five-subsets of every host. Raw `HostData` equalities bind
+the results to the arithmetic certificate. Eight import chains bound concurrent
+kernel jobs. The manifest binds the exporter, its inputs and all 89 generated
+modules. No numerical classification or counting verdict from Python is assumed.
 
 The complete primitive-table build is substantially larger than the old two-host
 examples. The paper CI job allows 180 minutes for a cold build, followed by its

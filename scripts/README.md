@@ -11,6 +11,7 @@ Run from the repository root. Checking supplied witnesses uses `python verify.py
 | Finite export | `export_finite_data.py` | Python standard library |
 | Lean primitive counts | `export_lean_patterns.py --check` | Python standard library; Lean independently checks all 1,044 rows |
 | Lean rooted flag bases | `export_lean_flags.py --check` | NumPy; Lean independently checks coverage and separation |
+| Lean fixed-density counts | `export_lean_fixed.py --check` | NumPy; Lean checks the 34 types and all 70,992 entries |
 | Paper | `build_paper.py`, `flatten_latex.py`, `make_phase_figure.py` | TeX; Matplotlib for figures |
 | Archive | `package_checkpoint.py --label LABEL --require-verified` | Current complete verification manifest |
 

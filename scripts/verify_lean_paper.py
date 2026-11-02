@@ -99,6 +99,30 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
     AUDITED += [f'flag_basis_{_flag_name}_{suffix}' for suffix in
                 ('certificate', 'count', 'nodup', 'types_checked', 'covers', 'separated')]
     AUDITED += [f'certificate_flag_basis_{_flag_name}_{suffix}' for suffix in ('covers', 'separated')]
+AUDITED += ('rootedClassify_sound rootedClassify_eq_iff rootedClassify_isomorphic '
+            'patternSignatureSeparationCheck_sound kernelSort_eq_sort subsetVertex_eq_orderEmb '
+            'inducedGraphTypeSet_card inducedGraphTypeSet_iff_subsetGraphIso complementEdgeCheck_iff '
+            'five_subset_complement_card fiveGraphType_sound fiveGraphType_eq_iff fiveGraphType_isomorphic '
+            'fiveGraphType_certificate_mem fixed_type_certificate_separated fixedSubsetCheck_iff '
+            'fixedComplementSubsetCheck_iff fixedDensityCount_semantics fixedComplementCount_semantics '
+            'fixedDensityCounts_semantics fixedComplementCounts_semantics fixedDensityCount_le '
+            'fixedComplementCount_le five_subsets_of_seven_count inducedGraphTypeSet_image_iff '
+            'complementEdge_image_iff inducedTypeSetCount_isomorphic inducedTypeComplementCount_isomorphic '
+            'fixedDensityCount_isomorphic fixedComplementCount_isomorphic fixedDensityCounts_isomorphic '
+            'fixedComplementCounts_isomorphic fixedDensityCounts_sum fiveTypeDensity_nonnegative '
+            'fiveTypeComplementDensity_nonnegative fiveTypeDensity_le_one fiveTypeComplementDensity_le '
+            'fiveTypeDensities_sum freeColumns_fixedAt fixedColumn_scale certificate_data_denominator '
+            'freeColumns_fixed_normalized fixed_certificate_induced_values fixed_certificate_complement_values '
+            'fixed_certificate_induced_semantics '
+            'fixed_certificate_complement_semantics fixed_certificate_row_widths '
+            'fixed_certificate_counts_sum fixed_certificate_entry_values fixed_certificate_free_column '
+            'fixed_certificate_density_values fixed_counts_on_all_seven_vertex_graphs '
+            'fixed_semantic_counts_on_all_seven_vertex_graphs fixed_counts_on_all_seven_vertex_simpleGraphs '
+            'fixed_changed_induced_count_rejected fixed_changed_complement_count_rejected '
+            'fixed_type_lookup_checked fixedSignatureSpecs_ordered fixed_signature_data_masks '
+            'fixed_signature_data_semantics fixed_signature_data_separated fixed_types_separated '
+            'fixed_type_masks_certificate fixed_type_masks_count fixed_type_masks_nodup '
+            'fixed_certificate_rows_semantics').split()
 
 
 def sources():
@@ -114,9 +138,11 @@ def sources():
     yield ROOT / 'scripts/export_lean_atlas.py'
     yield ROOT / 'scripts/export_lean_patterns.py'
     yield ROOT / 'scripts/export_lean_flags.py'
+    yield ROOT / 'scripts/export_lean_fixed.py'
     yield ROOT / 'scripts/export_lean_certificate.py'
     yield ROOT / 'src/proof_specification.py'
     yield ROOT / 'certificates/pattern_columns.json'
+    yield ROOT / 'certificates/pattern_columns.npz'
     yield ROOT / 'certificates/flag_basis.npz'
     yield ROOT / 'formal/InducedPentagons/Generated/manifest.json'
     yield from (ROOT / 'formal/InducedPentagons/Generated').glob('HostData*.lean')
@@ -152,6 +178,7 @@ def main():
     run([sys.executable, str(ROOT / 'scripts/export_lean_atlas.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_patterns.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_flags.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_fixed.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -188,6 +215,8 @@ def main():
                         'injection denominators, density bounds and explicit specifications of all 22 primitives',
                         'all 22968 stored primitive counts on all 1044 certificate hosts, with universal count and density transfer',
                         'all five actual rooted flag bases: arbitrary-graph coverage and pairwise rooted nonisomorphism',
+                        'all 70992 fixed-density entries on all 1044 hosts, with induced-subset semantics and normalized probabilities',
+                        'the 34 actual five-vertex types form a complete separated basis; the fixed certificate columns have exact density semantics',
                         'weighted clique inequality and Clebsch complement quadratic bound',
                         'Bernoulli multilinear extension and Boolean bound transfer',
                         'graph-defined Clebsch profile envelope and neighborhood attainment',
@@ -200,6 +229,12 @@ def main():
                                     'coverage_witnesses': 576, 'coverage_verified': True,
                                     'pairwise_rooted_nonisomorphism_verified': True,
                                     'flag_product_tensors_verified': False},
+              'fixed_density_table': {'types_verified': 34, 'classification_witnesses': 1024,
+                                      'hosts_verified': 1044, 'induced_entries_verified': 35496,
+                                      'complement_entries_verified': 35496, 'total_entries_verified': 70992,
+                                      'subset_denominator': 21, 'full_table_verified': True,
+                                      'arbitrary_graph_transfer_verified': True,
+                                      'fixed_free_columns_semantics_verified': True},
               'toolchain': version,
               'mathlib_revision': next(p['rev'] for p in json.loads(
                   (PAPER / 'lake-manifest.json').read_text())['packages'] if p['name'] == 'mathlib'),

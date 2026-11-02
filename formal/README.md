@@ -132,6 +132,8 @@ seven-vertex atlas, the orbit census and tensor sampling interpretation remain
 to be established in Lean;
 the Python gate independently recounts them. Thus this arithmetic layer remains
 a result on imported tensors, rather than the paper's graph inequality.
+The extension also checks all 70,992 fixed-density entries, their induced-subset
+meaning and normalization, and the resulting 34 fixed-column identities.
 
 See [the remaining formalization work](../blueprint/LEAN_ROADMAP.md) for the precise
 gaps between this project and a full paper formalization.
