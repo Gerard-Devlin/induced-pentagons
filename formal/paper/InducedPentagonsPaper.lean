@@ -48,3 +48,4 @@ import InducedPentagonsPaper.FlagProductDensity
 import InducedPentagonsPaper.WeightedBoundary
 import InducedPentagonsPaper.WeightedNormalization
 import InducedPentagonsPaper.FlagProductExpectation
+import InducedPentagonsPaper.ClebschExpansion

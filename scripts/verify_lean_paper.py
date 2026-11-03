@@ -287,6 +287,13 @@ AUDITED += (
     'fastTrieTensorRowCheck_triangle3_density '
 ).split()
 AUDITED += ('jointFlagPairCount_contraction jointFlagPairCount_contraction_nonnegative jointFlagFullPermutation_sum jointFlagFullPermutation_expectation flagProduct_one_root_expectation flagProduct_one_root_permutation_expectation').split()
+AUDITED += ('pentagon_product_translate clebsch_pentagon_linear_sum '
+            'clebsch_pentagon_quadratic_sum clebsch_pentagonMass_translate '
+            'clebsch_pentagonMass_centered').split()
+
+AUDITED += ('pentagonCubic_abs_le pentagonQuartic_abs_le pentagonQuintic_abs_le '
+            'clebschPentagonRemainder_abs_le clebschPentagonRemainder_cubic_bound '
+            'clebsch_coordinate_le_sqrt_variance clebsch_pentagonMass_quadratic_error').split()
 
 def sources():
     for directory, folders, files in os.walk(PAPER):

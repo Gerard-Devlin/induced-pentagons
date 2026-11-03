@@ -75,6 +75,13 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   the actual 16-vertex Clebsch adjacency matrix, yielding the spectral interval
   and the variance penalty used by the phase law. Centering the class sizes
   also gives the exact expansion of their edge mass about the balanced template.
+- `ClebschExpansion.lean`: the exact second-order expansion of the graph-defined
+  weighted Clebsch pentagon count about a constant class size. The complete
+  192-pentagon enumeration certifies every linear and quadratic coefficient;
+  cubic, quartic, and quintic terms form an explicit polynomial remainder.
+  If the Euclidean displacement radius is at most the constant class size, the
+  absolute remainder is at most 3072 times the squared class size times the
+  cubed radius, with no asymptotic assumption.
 - `PhaseArithmetic.lean`: subadditivity and the exact Lipschitz constant for the
   edge penalty; spectral-interval and edit-cost bounds; explicit error propagation
   through the scalar reduction of equations (62), (63), and (67); and the exact
