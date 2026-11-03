@@ -43,3 +43,4 @@ import InducedPentagonsPaper.FlagTensorKeyList
 import InducedPentagonsPaper.AtlasCensusExamples
 import InducedPentagonsPaper.SigmaBlowUp
 import InducedPentagonsPaper.ClebschSpectral
+import InducedPentagonsPaper.FlagProductDensity

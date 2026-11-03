@@ -243,6 +243,42 @@ AUDITED += (
 
 AUDITED += ('census_empty_automorphisms census_single_edge_automorphisms census_middle_automorphisms census_empty_orbit census_single_edge_orbit census_middle_orbit').split()
 
+AUDITED += (
+    'jointFlagPairDensity_nonneg '
+    'jointFlagPairDensity_le_one '
+    'jointFlagPairDensity_symmetric '
+    'flagProductDensity_one_root_eq '
+    'flagProductDensity_one_root_nonneg '
+    'flagProductDensity_one_root_le_one '
+    'flagProductDensity_one_root_symmetric '
+    'flagProductDensity_one_root_certificate_denominator '
+    'fastTrieTensorRowCheck_one_root_density '
+    'flagProductDensity_independent3_eq '
+    'flagProductDensity_independent3_nonneg '
+    'flagProductDensity_independent3_le_one '
+    'flagProductDensity_independent3_symmetric '
+    'flagProductDensity_independent3_certificate_denominator '
+    'fastTrieTensorRowCheck_independent3_density '
+    'flagProductDensity_edge_isolate_eq '
+    'flagProductDensity_edge_isolate_nonneg '
+    'flagProductDensity_edge_isolate_le_one '
+    'flagProductDensity_edge_isolate_symmetric '
+    'flagProductDensity_edge_isolate_certificate_denominator '
+    'fastTrieTensorRowCheck_edge_isolate_density '
+    'flagProductDensity_path3_eq '
+    'flagProductDensity_path3_nonneg '
+    'flagProductDensity_path3_le_one '
+    'flagProductDensity_path3_symmetric '
+    'flagProductDensity_path3_certificate_denominator '
+    'fastTrieTensorRowCheck_path3_density '
+    'flagProductDensity_triangle3_eq '
+    'flagProductDensity_triangle3_nonneg '
+    'flagProductDensity_triangle3_le_one '
+    'flagProductDensity_triangle3_symmetric '
+    'flagProductDensity_triangle3_certificate_denominator '
+    'fastTrieTensorRowCheck_triangle3_density '
+).split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
@@ -349,7 +385,7 @@ def main():
                         'automorphism enumerator semantics and labelled orbit-cardinality formula; stored census still unchecked',
                         'all 41 primitive, positive and fixed density columns share a verified host and its integer identity',
                         'finite fixed-graph weighted compactness, extremum attainment and integral-to-real bound transfer',
-                        'quantitative scalar phase reduction with explicit graph-theoretic hypotheses and exact coefficient range',
+                        'quantitative scalar phase reduction and exact coefficient range, with actual Clebsch spectral bounds and centered edge expansion',
                         'all 70992 fixed-density entries on all 1044 hosts, with induced-subset semantics and normalized probabilities',
                         'the 34 actual five-vertex types form a complete separated basis; the fixed certificate columns have exact density semantics',
                         'weighted clique inequality and Clebsch complement quadratic bound',
@@ -359,7 +395,8 @@ def main():
               'full_paper_formalized': False,
               'seven_vertex_atlas': {'coverage_verified': True, 'pairwise_nonisomorphism_verified': True,
                                      'unique_certificate_representative_verified': True,
-                                     'canonical_minimality_verified': False, 'automorphism_orbit_census_verified': False},
+                                     'canonical_minimality_verified': False, 'automorphism_orbit_census_verified': False,
+                                     'census_example_masks_verified': [0, 1, 42479]},
               'joint_flag_sampling': {'complete_executable_enumeration_verified': True,
                                       'denominators': [140, 1260, 1260, 1260, 1260],
                                       'actual_certificate_denominators_verified': True,
@@ -372,7 +409,8 @@ def main():
                                       'graph_isomorphism_transfer_verified': True,
                                       'conditional_upper_triangle_and_zero_semantics_verified': True,
                                       'conditional_symmetric_gram_contraction_verified': True,
-                                      'reusable_sample_geometry_verified': True},
+                                      'reusable_sample_geometry_verified': True,
+                                      'conditional_normalized_density_semantics_verified': True},
               'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 1044,
                                         'counts_verified': 22968, 'remaining_hosts': 0,
                                         'full_table_verified': True},
