@@ -458,3 +458,12 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.reduced_scalar_profile_sharp
 #print axioms InducedPentagons.Paper.phaseCoefficient_continuous
 #print axioms InducedPentagons.Paper.phaseCoefficient_range
+#print axioms InducedPentagons.Paper.clebsch_spectral_upper_identity
+#print axioms InducedPentagons.Paper.clebsch_spectral_lower_identity
+#print axioms InducedPentagons.Paper.clebsch_spectral_interval
+#print axioms InducedPentagons.Paper.clebschQuadratic_eq_twice_edgeMass
+#print axioms InducedPentagons.Paper.clebsch_phase_variance_penalty
+#print axioms InducedPentagons.Paper.centered_class_sum
+#print axioms InducedPentagons.Paper.clebsch_edgeMass_translate
+#print axioms InducedPentagons.Paper.clebsch_edgeMass_centered
+#print axioms InducedPentagons.Paper.clebsch_centered_spectral_interval

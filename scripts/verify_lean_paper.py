@@ -151,6 +151,11 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
     AUDITED += [f'flagProductDenominator_{_flag_name}']
 
 
+AUDITED += ('clebsch_spectral_upper_identity clebsch_spectral_lower_identity '
+            'clebsch_spectral_interval clebschQuadratic_eq_twice_edgeMass '
+            'clebsch_phase_variance_penalty centered_class_sum clebsch_edgeMass_translate '
+            'clebsch_edgeMass_centered clebsch_centered_spectral_interval').split()
+
 AUDITED += ('edgePhasePenalty_nonnegative edgePhasePenalty_scale '
             'edgePhasePenalty_add edgePhasePenalty_le_add_abs '
             'edgePhasePenalty_lipschitz edgePhasePenalty_le_variance '
