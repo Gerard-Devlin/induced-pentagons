@@ -2,6 +2,7 @@
 
 [![Exact verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/verify.yml)
 [![Lean verification](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml/badge.svg)](https://github.com/Gerard-Devlin/induced-pentagons/actions/workflows/lean.yml)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.40691v1-b31b1b.svg)](https://arxiv.org/abs/2610.40691v1)
 
 Research materials for **Sharp bounds, stability, and arithmetic fluctuations
 for induced pentagons**. The paper studies the sharp inequality
