@@ -30,3 +30,4 @@ import InducedPentagonsPaper.FlagProductExamples
 import InducedPentagonsPaper.WeightedGraphLimits
 import InducedPentagonsPaper.WeightedApproximation
 import InducedPentagonsPaper.SigmaBlowUp
+import InducedPentagonsPaper.WeightedBoundary
