@@ -153,9 +153,9 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
 
 AUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRatio '
             'tendsto_edgeMass tendsto_pentagonMass tendsto_squaredRatio '
-            'unitMassWeights_coordinate_le_one isClosed_unitMassWeights '
+            'unitMassWeights_nonempty unitMassWeights_coordinate_le_one isClosed_unitMassWeights '
             'isCompact_unitMassWeights isCompact_unitMassWeights_edgeMass '
-            'exists_max_pentagonMass').split()
+            'exists_max_pentagonMass exists_max_edgeMass').split()
 
 
 def sources():
