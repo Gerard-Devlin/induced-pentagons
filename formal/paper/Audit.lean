@@ -465,3 +465,14 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.jointFlagFullPermutation_pair_count
 #print axioms InducedPentagons.Paper.jointFlagSample_card_mul_factorial_sq
 #print axioms InducedPentagons.Paper.jointFlagFullPermutation_probability
+#print axioms InducedPentagons.Paper.continuous_edgeMass
+#print axioms InducedPentagons.Paper.continuous_pentagonMass
+#print axioms InducedPentagons.Paper.continuousAt_squaredRatio
+#print axioms InducedPentagons.Paper.tendsto_edgeMass
+#print axioms InducedPentagons.Paper.tendsto_pentagonMass
+#print axioms InducedPentagons.Paper.tendsto_squaredRatio
+#print axioms InducedPentagons.Paper.unitMassWeights_coordinate_le_one
+#print axioms InducedPentagons.Paper.isClosed_unitMassWeights
+#print axioms InducedPentagons.Paper.isCompact_unitMassWeights
+#print axioms InducedPentagons.Paper.isCompact_unitMassWeights_edgeMass
+#print axioms InducedPentagons.Paper.exists_max_pentagonMass
