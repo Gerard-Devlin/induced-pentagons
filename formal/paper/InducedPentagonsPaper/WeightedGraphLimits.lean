@@ -50,6 +50,15 @@ theorem tendsto_squaredRatio (g : Graph V) {α : Type*} {l : Filter α}
 def unitMassWeights (V : Type) [Fintype V] : Set (V → ℝ) :=
   {x | (∀ v, 0 ≤ x v) ∧ ∑ v, x v = 1}
 
+theorem unitMassWeights_nonempty [Nonempty V] : (unitMassWeights V).Nonempty := by
+  classical
+  let v₀ : V := Classical.choice (inferInstance : Nonempty V)
+  let x : V → ℝ := fun v => if v = v₀ then 1 else 0
+  refine ⟨x, ?_, ?_⟩
+  · intro v
+    dsimp [x]
+    split_ifs <;> norm_num
+  · simp [x]
 theorem unitMassWeights_coordinate_le_one {x : V → ℝ}
     (hx : x ∈ unitMassWeights V) (v : V) : x v ≤ 1 := by
   calc
@@ -69,6 +78,13 @@ theorem isCompact_unitMassWeights : IsCompact (unitMassWeights V) := by
   intro x hx
   exact ⟨hx.1, fun v => unitMassWeights_coordinate_le_one hx v⟩
 
+/-- A finite graph's edge polynomial attains its maximum on the unit mass simplex. -/
+theorem exists_max_edgeMass (g : Graph V) [Nonempty V] :
+    ∃ x ∈ unitMassWeights V, ∀ y ∈ unitMassWeights V,
+      edgeMass g y ≤ edgeMass g x := by
+  obtain ⟨x, hx, hmax⟩ := isCompact_unitMassWeights.exists_isMaxOn
+    unitMassWeights_nonempty (continuous_edgeMass g).continuousOn
+  exact ⟨x, hx, fun y hy => hmax hy⟩
 /-- Fixing the edge mass cuts out a compact subset of the weight simplex. -/
 theorem isCompact_unitMassWeights_edgeMass (g : Graph V) (e : ℝ) :
     IsCompact {x ∈ unitMassWeights V | edgeMass g x = e} :=
