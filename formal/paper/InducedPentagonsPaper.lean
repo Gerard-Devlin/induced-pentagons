@@ -34,3 +34,9 @@ import InducedPentagonsPaper.JointFlagPermutation
 import InducedPentagonsPaper.PhaseArithmetic
 import InducedPentagonsPaper.FlagProductIsomorphism
 import InducedPentagonsPaper.WeightedApproximation
+import InducedPentagonsPaper.PrimitiveColumnAlgebra
+import InducedPentagonsPaper.HostIdentity
+import InducedPentagonsPaper.DensityIdentity
+import InducedPentagonsPaper.AtlasOrbit
+import InducedPentagonsPaper.FlagTensorContraction
+import InducedPentagonsPaper.FlagTensorKeyList

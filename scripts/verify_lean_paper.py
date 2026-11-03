@@ -182,6 +182,58 @@ AUDITED += ('edgePhasePenalty_nonnegative edgePhasePenalty_scale '
             'reduced_scalar_profile_sharp phaseCoefficient_continuous '
             'phaseCoefficient_range').split()
 
+
+# Semantic bridges, census foundations, and proven tensor geometry.
+AUDITED += (
+    'certificate_pattern_denominators '
+    'primitive_free_column0 '
+    'primitive_free_column1 '
+    'primitive_free_column2 '
+    'primitive_positive_column0 '
+    'primitive_positive_column1 '
+    'primitive_positive_column2 '
+    'primitive_positive_column3 '
+    'primitive_hostLeft_normalized '
+    'primitive_certificate_density_entry '
+    'checkHost_identity '
+    'checkHostChunk_identity '
+    'certificate_host_identities '
+    'host_identity_on_all_seven_vertex_graphs '
+    'graphPrimitiveDensity_isomorphic '
+    'graphPrimitiveDensity_certificate '
+    'freePrimitiveColumns_certificate '
+    'positiveColumns_certificate '
+    'semanticFreePrimitiveColumns_isomorphic '
+    'semanticPositiveColumns_isomorphic '
+    'semanticFixedColumn_isomorphic '
+    'fixedColumn_certificate '
+    'density_columns_on_all_seven_vertex_graphs '
+    'censusPattern_ordered '
+    'censusPattern_satisfies_iff '
+    'censusAutomorphismCount_semantics '
+    'censusAutomorphismCount_pos '
+    'census_orbit_mul_automorphisms '
+    'census_orbit_card '
+    'sum_symmetric_upper_triangle '
+    'symmetric_count_contraction '
+    'fastTrieTensorRowCheck_one_root_contraction '
+    'fastTrieTensorRowCheck_independent3_contraction '
+    'fastTrieTensorRowCheck_edge_isolate_contraction '
+    'fastTrieTensorRowCheck_path3_contraction '
+    'fastTrieTensorRowCheck_triangle3_contraction '
+    'vertexPairKeys_eq '
+    'geometryFlagTensorKeys_eq '
+    'geometryTrieTensorCheck_eq '
+    'checkedTensorKeyList_eq '
+    'geometryFlagTensorKeyList_eq '
+    'fastTrieTensorCheck_of_keyList '
+    'tensorVertexPairs_one_checked '
+    'tensorVertexPairs_three_checked '
+    'censusPatternIsoEquiv '
+    'censusIsoTotalEquiv '
+    'censusIsoClassProdEquiv '
+).split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
@@ -198,6 +250,8 @@ def sources():
     yield ROOT / 'scripts/export_lean_fixed.py'
     yield ROOT / 'scripts/export_lean_flag_indices.py'
     yield ROOT / 'scripts/export_lean_host_codes.py'
+    yield ROOT / 'scripts/export_lean_tensor_geometry.py'
+    yield ROOT / 'scripts/verify_lean_paper.py'
     yield ROOT / 'scripts/export_lean_certificate.py'
     yield ROOT / 'src/proof_specification.py'
     yield ROOT / 'certificates/pattern_columns.json'
@@ -240,6 +294,7 @@ def main():
     run([sys.executable, str(ROOT / 'scripts/export_lean_fixed.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_flag_indices.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_host_codes.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_tensor_geometry.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -279,6 +334,13 @@ def main():
                         'all five actual rooted flag bases: coverage, separation and checked classifiers into actual tensor basis indices',
                         'complete executable joint flag sampling, rooted-isomorphism pair semantics, symmetry, bounds and actual denominators',
                         'direct kernel recounts of the two saved nonzero tensor entries on the empty host; zero entries and remaining hosts are not yet checked',
+                        'upper-triangular and omitted-zero soundness conditional on row checks, including symmetric Gram contraction',
+                        'complete permutation-sampling fiber bridge and graph-isomorphism transport for all five flag products',
+                        'kernel-checked reusable tensor sampling geometry and equivalent integer key-list checker',
+                        'automorphism enumerator semantics and labelled orbit-cardinality formula; stored census still unchecked',
+                        'all 41 primitive, positive and fixed density columns share a verified host and its integer identity',
+                        'finite fixed-graph weighted compactness, extremum attainment and integral-to-real bound transfer',
+                        'quantitative scalar phase reduction with explicit graph-theoretic hypotheses and exact coefficient range',
                         'all 70992 fixed-density entries on all 1044 hosts, with induced-subset semantics and normalized probabilities',
                         'the 34 actual five-vertex types form a complete separated basis; the fixed certificate columns have exact density semantics',
                         'weighted clique inequality and Clebsch complement quadratic bound',
@@ -297,7 +359,11 @@ def main():
                                       'empty_host_nonzero_entries_recounted': 2,
                                       'empty_host_zero_entries_verified': False,
                                       'full_saved_tensor_table_verified': False,
-                                      'full_permutation_fiber_bridge_verified': False},
+                                      'full_permutation_fiber_bridge_verified': True,
+                                      'graph_isomorphism_transfer_verified': True,
+                                      'conditional_upper_triangle_and_zero_semantics_verified': True,
+                                      'conditional_symmetric_gram_contraction_verified': True,
+                                      'reusable_sample_geometry_verified': True},
               'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 1044,
                                         'counts_verified': 22968, 'remaining_hosts': 0,
                                         'full_table_verified': True},
