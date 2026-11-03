@@ -279,6 +279,11 @@ AUDITED += (
     'fastTrieTensorRowCheck_triangle3_density '
 ).split()
 
+for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangle3'):
+    AUDITED += [f'flagProductDensity_{_flag_name}_isomorphic',
+                f'fastTrieTensorRowCheck_{_flag_name}_normalized_contraction']
+AUDITED += ['flagProductDensities_reduced_to_certificate']
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
