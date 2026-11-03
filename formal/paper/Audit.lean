@@ -511,3 +511,13 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.flagProductCount_path3_isomorphic
 #print axioms InducedPentagons.Paper.flagProductCount_triangle3_isomorphic
 #print axioms InducedPentagons.Paper.flagProductCounts_reduced_to_certificate
+#print axioms InducedPentagons.Paper.jointFlagPairCount_sum
+#print axioms InducedPentagons.Paper.jointFlagPairCount_sum_le
+#print axioms InducedPentagons.Paper.jointFlagPairCount_sum_eq_rootCount
+#print axioms InducedPentagons.Paper.jointRootCheck_one_root
+#print axioms InducedPentagons.Paper.flagProductCount_one_root_sum
+#print axioms InducedPentagons.Paper.flagProductCount_independent3_sum_le
+#print axioms InducedPentagons.Paper.flagProductCount_edge_isolate_sum_le
+#print axioms InducedPentagons.Paper.flagProductCount_path3_sum_le
+#print axioms InducedPentagons.Paper.flagProductCount_triangle3_sum_le
+#print axioms InducedPentagons.Paper.flagProductProbability_one_root_sum
