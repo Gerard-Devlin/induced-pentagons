@@ -57,7 +57,7 @@ to be formalized. A generic required-edge/nonedge
 injection model
 and its isomorphism invariance supply the first part of the pattern semantics;
 the later modules supply the stored primitive counts and rooted flag bases.
-Flag-product tensors still need their semantic proofs.
+The saved flag-product tensor table still requires complete per-row kernel recounts.
 The next layer proves complete duplicate-free prefix enumeration and its
 ordered-step optimization, supplies all 22 primitive specifications, and proves
 the falling-factorial injection normalization and density bounds. All 22,968
@@ -76,8 +76,9 @@ semantics, including the edge on the two omitted vertices. The 34 counts partiti
 the five-subsets; their normalized densities sum to one. The actual fixed columns
 of the arithmetic certificate equal the corresponding density differences after
 division by the common data denominator. These counts and identities transfer
-to every seven-vertex graph. Complete saved flag-product tensor counts and the
-remaining sampling bridges still need semantic proofs.
+to every seven-vertex graph. The complete saved flag-product tensor table still needs its kernel recounts.
+All 41 primitive, positive and fixed columns now share a single verified host
+for every seven-vertex graph, together with that host's integer identity.
 The flag classifiers now return proved indices into the actual certificate bases.
 Ordered root injections and disjoint unordered extension sets form the joint
 sample model. A complete executable enumeration agrees with its abstract finite
@@ -88,8 +89,14 @@ recounts bound to the actual raw row. This does not check its implicit zeros or
 the other hosts. The joint samples now transport bijectively under host graph isomorphisms,
 including their rooted induced graphs and right-hand extension sets. All five
 flag-product counts are invariant under isomorphism and reduce simultaneously
-to one certificate host. The full tensor table, upper-triangular combination
-and full-permutation fiber bridge remain open.
+to one certificate host. The full-permutation sampling bridge is proved: each
+one-root sample has 36 permutation preimages, and each three-root sample has
+4, yielding the same normalized probabilities. Conditional on a row check,
+upper-triangular entries, omitted zeros, symmetric Gram contractions and all
+five normalized flag densities now have exact semantic interpretations.
+Host-independent sample geometry is precomputed and kernel checked, with an
+integer-key-list bridge for faster recounting. These theorems do not replace
+the still-pending checks of all 1,044 actual tensor rows.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain
@@ -100,3 +107,10 @@ and 12.1, including equation (58), have corresponding complete Lean statements.
 The paper's global inequality, equality classification, stability and phase-law
 asymptotics still require the obligations in the roadmap. They are not implied
 by these profile lemmas or by a successful certificate arithmetic build.
+
+Additional integrated components include compactness and attainment for finite
+fixed-graph weight simplexes; integer-to-real approximation and variable-size
+blow-up reductions; and quantitative scalar phase arithmetic. Actual Clebsch
+square-sum identities prove the spectral interval and centered edge expansion
+used by the phase reduction. Graphon attainment, the global bound and the
+structural/counting errors needed for the full phase law remain open.
