@@ -439,3 +439,12 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.flagProductCount_triangle3_symmetric
 #print axioms InducedPentagons.Paper.flagProductCount_triangle3_le
 #print axioms InducedPentagons.Paper.flagProductDenominator_triangle3
+#print axioms InducedPentagons.Paper.censusPattern_ordered
+#print axioms InducedPentagons.Paper.censusPattern_satisfies_iff
+#print axioms InducedPentagons.Paper.censusPatternIsoEquiv
+#print axioms InducedPentagons.Paper.censusAutomorphismCount_semantics
+#print axioms InducedPentagons.Paper.censusAutomorphismCount_pos
+#print axioms InducedPentagons.Paper.censusIsoTotalEquiv
+#print axioms InducedPentagons.Paper.censusIsoClassProdEquiv
+#print axioms InducedPentagons.Paper.census_orbit_mul_automorphisms
+#print axioms InducedPentagons.Paper.census_orbit_card

@@ -151,6 +151,9 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
     AUDITED += [f'flagProductDenominator_{_flag_name}']
 
 
+AUDITED += ('censusPattern_ordered censusPattern_satisfies_iff censusPatternIsoEquiv censusAutomorphismCount_semantics censusAutomorphismCount_pos censusIsoTotalEquiv censusIsoClassProdEquiv census_orbit_mul_automorphisms census_orbit_card').split()
+
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
