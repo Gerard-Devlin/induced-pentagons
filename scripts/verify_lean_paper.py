@@ -295,6 +295,11 @@ AUDITED += ('pentagonCubic_abs_le pentagonQuartic_abs_le pentagonQuintic_abs_le 
             'clebschPentagonRemainder_abs_le clebschPentagonRemainder_cubic_bound '
             'clebsch_coordinate_le_sqrt_variance clebsch_pentagonMass_quadratic_error').split()
 
+for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangle3'):
+    AUDITED += [f'flagProductDensity_{_flag_name}_isomorphic',
+                f'fastTrieTensorRowCheck_{_flag_name}_normalized_contraction']
+AUDITED += ['flagProductDensities_reduced_to_certificate']
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
