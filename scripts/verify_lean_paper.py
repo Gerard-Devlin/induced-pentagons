@@ -158,7 +158,10 @@ AUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRat
             'exists_max_pentagonMass exists_max_edgeMass '
             'roundedWeights_nonnegative tendsto_roundedWeights '
             'tendsto_edgeMass_roundedWeights tendsto_pentagonMass_roundedWeights '
-            'squared_pentagon_bound_of_integral squared_pentagon_bound_integral_iff').split()
+            'squared_pentagon_bound_of_integral squared_pentagon_bound_integral_iff '
+            'pentagonSigmaEquiv natCast_pentagon_card_sigma edgeMass_sigmaBlowUp_unit '
+            'pentagonMass_sigmaBlowUp_unit squared_pentagon_bound_of_sigmaBlowUp '
+            'squared_pentagon_bound_of_unweighted').split()
 
 
 def sources():

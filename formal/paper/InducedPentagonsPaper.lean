@@ -29,3 +29,4 @@ import InducedPentagonsPaper.JointFlagEnumeration
 import InducedPentagonsPaper.FlagProductExamples
 import InducedPentagonsPaper.WeightedGraphLimits
 import InducedPentagonsPaper.WeightedApproximation
+import InducedPentagonsPaper.SigmaBlowUp

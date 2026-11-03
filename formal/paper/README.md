@@ -308,3 +308,8 @@ separate obligations in the roadmap.
 The rounded-weight bridge also proves that any homogeneous squared pentagon
 bound checked for all nonnegative integer weights is equivalent to its real
 nonnegative-weight form.
+
+Variable-size integral blow-ups now have exact pentagon-count semantics through
+an explicit dependent equivalence. Together with rounded-weight convergence,
+this gives a proved reduction from a universal unweighted finite-graph squared
+pentagon bound to its universal nonnegative real-weighted version.
