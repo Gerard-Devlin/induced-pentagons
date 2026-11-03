@@ -161,6 +161,17 @@ AUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRat
 
 AUDITED += ['JointFlagSample.permutationFiberEquiv', 'jointFlagFullPermutation_fiber_card', 'jointFlagFullPermutation_one_root_fiber_card', 'jointFlagFullPermutation_three_roots_fiber_card', 'jointFlagFullPermutation_predicate_card', 'jointFlagFullPermutation_pair_count', 'jointFlagSample_card_mul_factorial_sq', 'jointFlagFullPermutation_probability']
 
+AUDITED += ('edgePhasePenalty_nonnegative edgePhasePenalty_scale '
+            'edgePhasePenalty_add edgePhasePenalty_le_add_abs '
+            'edgePhasePenalty_lipschitz edgePhasePenalty_le_variance '
+            'edgePhasePenalty_le_edit_cost phaseCoefficient_eq_phaseCost '
+            'phaseCoefficient_nonnegative phaseCoefficient_le '
+            'phaseCoefficient_maximum phaseCoefficient_endpoints '
+            'phase_edge_residual phase_integer_offset '
+            'phase_edge_residual_error phase_deficit_reduction '
+            'reduced_scalar_profile_sharp phaseCoefficient_continuous '
+            'phaseCoefficient_range').split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
