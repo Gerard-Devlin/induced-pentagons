@@ -27,4 +27,5 @@ import InducedPentagonsPaper.AtlasSeparation
 import InducedPentagonsPaper.FlagProductSemantics
 import InducedPentagonsPaper.JointFlagEnumeration
 import InducedPentagonsPaper.FlagProductExamples
-import InducedPentagonsPaper.FlagTensorEntries
+import InducedPentagonsPaper.FlagTensorEntries`r`nimport InducedPentagonsPaper.WeightedGraphLimits
+
