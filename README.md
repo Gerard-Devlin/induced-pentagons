@@ -25,15 +25,18 @@ The general pentagon counting convention is also proved: the labelled sum
 divided by ten equals the canonical-cycle and induced-subset polynomials for
 arbitrary real vertex weights.
 The finite atlas layer proves every seven-vertex graph is isomorphic to a host
-on the actual certificate list, using kernel-checked extension witnesses.
+on the actual certificate list, using kernel-checked extension witnesses. All
+1,044 stored automorphism orders and orbit sizes are also kernel checked.
 The primitive-pattern layer proves a complete injection enumerator and its
 normalization, checks all 22,968 stored counts on all 1,044 hosts, and transfers
 the resulting counts and densities to every seven-vertex graph. The five actual
 rooted flag bases have proved coverage and pairwise rooted nonisomorphism.
 The fixed-density layer checks all 70,992 induced-subset and complementary-edge
 counts, their normalization, and the exact meaning of the 34 fixed certificate columns.
-The graphon, compactness, stability
-and eventual-extremality arguments remain mathematical proofs in the paper.
+Finite weighted compactness, normalization, exact flag-sampling bridges and
+Clebsch quadratic expansions are also formalized. The complete saved flag-product
+tensor recounts, graphon arguments, equality classification, stability and
+eventual extremality remain open formalization obligations.
 The [Lean roadmap](blueprint/LEAN_ROADMAP.md) records the remaining formalization
 obligations; the full paper is not yet formalized.
 

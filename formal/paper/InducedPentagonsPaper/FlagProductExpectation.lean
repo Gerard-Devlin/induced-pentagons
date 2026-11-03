@@ -1,5 +1,5 @@
 import InducedPentagonsPaper.FlagProductNormalization
-import InducedPentagonsPaper.JointFlagPermutation
+import InducedPentagonsPaper.JointFlagExpectation
 
 namespace InducedPentagons.Paper
 
@@ -31,24 +31,6 @@ theorem jointFlagPairCount_contraction_nonnegative {n roots free dimension : Nat
     0 ≤ (∑ i, ∑ j, (jointFlagPairCount hn valid classify i j : ℚ) * coeff i j) := by
   rw [jointFlagPairCount_contraction]
   exact Finset.sum_nonneg (fun x _ => hcoeff _ _)
-/-- Any sample statistic has the same expectation under a uniform permutation. -/
-theorem jointFlagFullPermutation_sum {n roots free : Nat}
-    (hn : n = roots + 2 * free) (f : JointFlagSample n roots free → ℚ) :
-    (∑ e : Equiv.Perm (Fin n), f (jointFlagSampleOfPermutation hn e)) =
-      (free.factorial ^ 2 : ℚ) * ∑ x : JointFlagSample n roots free, f x := by
-  classical
-  let E := Equiv.sigmaFiberEquiv (jointFlagSampleOfPermutation hn)
-  have he := Fintype.sum_equiv E
-    (fun y => f y.1) (fun e => f (jointFlagSampleOfPermutation hn e)) (by
-      intro y
-      change f y.1 = f (jointFlagSampleOfPermutation hn y.2.val)
-      rw [y.2.property])
-  rw [← he, Fintype.sum_sigma]
-  simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]
-  simp only [← Nat.card_eq_fintype_card, jointFlagFullPermutation_fiber_card hn]
-  push_cast
-  rw [Finset.mul_sum]
-
 theorem jointFlagFullPermutation_expectation {n roots free : Nat}
     (hn : n = roots + 2 * free) (f : JointFlagSample n roots free → ℚ) :
     (∑ e : Equiv.Perm (Fin n), f (jointFlagSampleOfPermutation hn e)) / n.factorial =

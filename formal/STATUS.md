@@ -52,8 +52,10 @@ complete induced-pattern enumeration counts graph automorphisms, and labelled
 isomorphism-class size times automorphism order equals the vertex factorial.
 The empty, single-edge and middle atlas hosts have direct kernel-checked
 automorphism counts 5,040, 240 and 4 and resulting orbit sizes 1, 21 and 1,260.
-Canonical minimality and the complete stored automorphism/orbit census remain
-to be formalized. A generic required-edge/nonedge
+The complete stored automorphism/orbit census is now kernel checked for all
+1,044 hosts, bound to the JSON input by reproducible export, and transferred to
+arbitrary seven-vertex graphs. The labelled orbit sizes sum to 2,097,152.
+Canonical minimality remains to be formalized. A generic required-edge/nonedge
 injection model
 and its isomorphism invariance supply the first part of the pattern semantics;
 the later modules supply the stored primitive counts and rooted flag bases.
@@ -114,3 +116,14 @@ blow-up reductions; and quantitative scalar phase arithmetic. Actual Clebsch
 square-sum identities prove the spectral interval and centered edge expansion
 used by the phase reduction. Graphon attainment, the global bound and the
 structural/counting errors needed for the full phase law remain open.
+
+At the 2026-11-03 pause checkpoint, the integrated library also includes exact
+flag contraction expectations, normalized density isomorphism transfer, the
+actual certificate target as induced pentagon density, and the certificate
+Gram quadratic as a nonnegative weighted sum of squares. Its conditional-density
+nonnegativity theorem retains an explicit product-average hypothesis; the
+independent-sampling/limit argument and cached Gram soundness bridge remain open.
+Zero-edge boundary and unit-simplex normalization reductions are proved.
+The actual Clebsch pentagon polynomial has a proved second-order expansion
+and an explicit cubic remainder bound. Full tensor recounts and the global
+bound, equality, stability and eventual-polynomial arguments remain unfinished.

@@ -300,6 +300,71 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
                 f'fastTrieTensorRowCheck_{_flag_name}_normalized_contraction']
 AUDITED += ['flagProductDensities_reduced_to_certificate']
 
+AUDITED += (
+    'fullPermutationFlagPairCount_semantics '
+    'fullPermutationFlagPairProbability_semantics '
+    'flagProductCount_one_root_permutations '
+    'flagProductCount_one_root_permutation_probability '
+    'flagProductCount_independent3_permutations '
+    'flagProductCount_independent3_permutation_probability '
+    'flagProductCount_edge_isolate_permutations '
+    'flagProductCount_edge_isolate_permutation_probability '
+    'flagProductCount_path3_permutations '
+    'flagProductCount_path3_permutation_probability '
+    'flagProductCount_triangle3_permutations '
+    'flagProductCount_triangle3_permutation_probability '
+    'JointFlagSample.orderingEquiv '
+    'JointFlagSample.vertex_orderingEquiv '
+    'JointFlagSample.orderedGraphEquiv '
+    'permutationLeftFlagEquiv '
+    'permutationRightFlagEquiv '
+    'permutationLeftFlag_rootType '
+    'permutationBlockPairHasTypes_iff '
+    'jointFlagPositionEquiv_root_val '
+    'jointFlagPositionEquiv_left_val '
+    'jointFlagPositionEquiv_right_val '
+    'fullPermutationBlockPair_probability '
+    'primitivePentagon_satisfies_iff '
+    'primitivePentagon_count '
+    'primitivePentagon_count_eq_ten_subsets '
+    'primitivePentagon_density '
+    'primitivePentagon_density_seven '
+    'primitive_target_entry '
+    'certificate_target_density '
+    'certificate_hostLeft_pentagon_count '
+    'primitivePentagon_weight '
+    'primitivePentagonEquiv '
+    'gramEntry_eq_square_sum '
+    'certificateQuadratic_eq_squares '
+    'checkSquare_scaled_positive '
+    'metadata_square_checks '
+    'sourceQuadratic_nonnegative '
+    'certificateQuadratic_nonnegative '
+    'actual_certificateQuadratic_nonnegative '
+    'conditionalSquareAverage_nonnegative '
+    'actual_conditionalSquareAverage_nonnegative '
+    'conditional_product_contraction '
+    'actual_densityGramContraction_nonnegative '
+    'normalizedCertificateQuadratic_nonnegative '
+    'actual_normalizedCertificateQuadratic_nonnegative '
+    'actual_normalizedDensityGramContraction_nonnegative '
+    'jointFlagFullPermutation_average '
+    'jointFlagFullPermutation_one_root_average '
+    'jointFlagFullPermutation_three_roots_average '
+    'atlasCensusRowCheck_sound '
+    'census_automorphisms_isomorphic '
+    'censusAutomorphismCount_isomorphic '
+    'census_orbit_isomorphic '
+    'censusAutomorphismIsoEquiv '
+    'atlas_census_on_all_seven_vertex_graphs '
+    'atlas_census_on_all_seven_vertex_simpleGraphs '
+    'atlas_census_rows_checked '
+    'atlas_census_hosts '
+    'atlas_census_count '
+    'atlas_census_semantics '
+    'atlas_census_labelled_total '
+).split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
@@ -317,6 +382,7 @@ def sources():
     yield ROOT / 'scripts/export_lean_flag_indices.py'
     yield ROOT / 'scripts/export_lean_host_codes.py'
     yield ROOT / 'scripts/export_lean_tensor_geometry.py'
+    yield ROOT / 'scripts/export_lean_census.py'
     yield ROOT / 'scripts/verify_lean_paper.py'
     yield ROOT / 'scripts/export_lean_certificate.py'
     yield ROOT / 'src/proof_specification.py'
@@ -361,6 +427,7 @@ def main():
     run([sys.executable, str(ROOT / 'scripts/export_lean_flag_indices.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_host_codes.py'), '--check'])
     run([sys.executable, str(ROOT / 'scripts/export_lean_tensor_geometry.py'), '--check'])
+    run([sys.executable, str(ROOT / 'scripts/export_lean_census.py'), '--check'])
     initial = fingerprints()
     for path in sources():
         if path.suffix == '.lean' and re.search(
@@ -403,7 +470,7 @@ def main():
                         'upper-triangular and omitted-zero soundness conditional on row checks, including symmetric Gram contraction',
                         'complete permutation-sampling fiber bridge and graph-isomorphism transport for all five flag products',
                         'kernel-checked reusable tensor sampling geometry and equivalent integer key-list checker',
-                        'automorphism enumerator semantics and labelled orbit-cardinality formula; stored census still unchecked',
+                        'complete kernel-checked automorphism and orbit census for all 1044 hosts, bound to the source JSON and transferred to arbitrary seven-vertex graphs',
                         'all 41 primitive, positive and fixed density columns share a verified host and its integer identity',
                         'finite fixed-graph weighted compactness, extremum attainment and integral-to-real bound transfer',
                         'quantitative scalar phase reduction and exact coefficient range, with actual Clebsch spectral bounds and centered edge expansion',
@@ -416,7 +483,7 @@ def main():
               'full_paper_formalized': False,
               'seven_vertex_atlas': {'coverage_verified': True, 'pairwise_nonisomorphism_verified': True,
                                      'unique_certificate_representative_verified': True,
-                                     'canonical_minimality_verified': False, 'automorphism_orbit_census_verified': False,
+                                     'canonical_minimality_verified': False, 'automorphism_orbit_census_verified': True, 'census_hosts_verified': 1044,
                                      'census_example_masks_verified': [0, 1, 42479]},
               'joint_flag_sampling': {'complete_executable_enumeration_verified': True,
                                       'denominators': [140, 1260, 1260, 1260, 1260],
@@ -431,7 +498,9 @@ def main():
                                       'conditional_upper_triangle_and_zero_semantics_verified': True,
                                       'conditional_symmetric_gram_contraction_verified': True,
                                       'reusable_sample_geometry_verified': True,
-                                      'conditional_normalized_density_semantics_verified': True},
+                                      'conditional_normalized_density_semantics_verified': True,
+                                      'normalized_density_isomorphism_transfer_verified': True,
+                                      'exact_sample_expectation_bridge_verified': True},
               'primitive_count_table': {'patterns_specified': 22, 'hosts_verified': 1044,
                                         'counts_verified': 22968, 'remaining_hosts': 0,
                                         'full_table_verified': True},
