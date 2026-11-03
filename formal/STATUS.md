@@ -80,8 +80,11 @@ cardinality, giving the certificate denominators 140 and 1,260. Induced rooted
 flag-pair counts have exact isomorphism semantics, symmetry and count bounds.
 The two saved nonzero tensor entries on the empty host have direct kernel
 recounts bound to the actual raw row. This does not check its implicit zeros or
-the other hosts. The full tensor table, upper-triangular combination, graph
-isomorphism transfer and the full-permutation fiber bridge remain open.
+the other hosts. The joint samples now transport bijectively under host graph isomorphisms,
+including their rooted induced graphs and right-hand extension sets. All five
+flag-product counts are invariant under isomorphism and reduce simultaneously
+to one certificate host. The full tensor table, upper-triangular combination
+and full-permutation fiber bridge remain open.
 The later profile layer closes the envelope hypotheses: the complete 480-path
 enumeration, endpoint multiplicities, 256 sound checked prefix families and
 Bernoulli extension prove both profile upper bounds. Neighborhood profiles attain
