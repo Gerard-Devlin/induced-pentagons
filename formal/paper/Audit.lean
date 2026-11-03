@@ -457,3 +457,11 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.fastTrieTensorRowCheck_path3_omitted
 #print axioms InducedPentagons.Paper.fastTrieTensorRowCheck_triangle3
 #print axioms InducedPentagons.Paper.fastTrieTensorRowCheck_triangle3_omitted
+#print axioms InducedPentagons.Paper.JointFlagSample.permutationFiberEquiv
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_fiber_card
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_one_root_fiber_card
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_three_roots_fiber_card
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_predicate_card
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_pair_count
+#print axioms InducedPentagons.Paper.jointFlagSample_card_mul_factorial_sq
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_probability

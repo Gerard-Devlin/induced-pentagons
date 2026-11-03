@@ -151,7 +151,7 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
     AUDITED += [f'flagProductDenominator_{_flag_name}']
 
 
-AUDITED += ['jointFlagPairKeys_count_upper', 'flagTensorKeys_count_one_root', 'flagTensorKeys_count_independent3', 'flagTensorKeys_count_edge_isolate', 'flagTensorKeys_count_path3', 'flagTensorKeys_count_triangle3', 'weightedCountAt_eq_zero_of_absent', 'rawFlagTensorCount_eq_zero_of_absent', 'fastTrieTensorRowCheck_one_root', 'fastTrieTensorRowCheck_one_root_omitted', 'fastTrieTensorRowCheck_independent3', 'fastTrieTensorRowCheck_independent3_omitted', 'fastTrieTensorRowCheck_edge_isolate', 'fastTrieTensorRowCheck_edge_isolate_omitted', 'fastTrieTensorRowCheck_path3', 'fastTrieTensorRowCheck_path3_omitted', 'fastTrieTensorRowCheck_triangle3', 'fastTrieTensorKeys_count_triangle3_omitted', 'fastTrieTensorRowCheck_triangle3_omitted']`r`n`r`nAUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRatio '`r`n            'tendsto_edgeMass tendsto_pentagonMass tendsto_squaredRatio '`r`n            'unitMassWeights_coordinate_le_one isClosed_unitMassWeights '`r`n            'isCompact_unitMassWeights isCompact_unitMassWeights_edgeMass '`r`n            'exists_max_pentagonMass').split()
+AUDITED += ['jointFlagPairKeys_count_upper', 'flagTensorKeys_count_one_root', 'flagTensorKeys_count_independent3', 'flagTensorKeys_count_edge_isolate', 'flagTensorKeys_count_path3', 'flagTensorKeys_count_triangle3', 'weightedCountAt_eq_zero_of_absent', 'rawFlagTensorCount_eq_zero_of_absent', 'fastTrieTensorRowCheck_one_root', 'fastTrieTensorRowCheck_one_root_omitted', 'fastTrieTensorRowCheck_independent3', 'fastTrieTensorRowCheck_independent3_omitted', 'fastTrieTensorRowCheck_edge_isolate', 'fastTrieTensorRowCheck_edge_isolate_omitted', 'fastTrieTensorRowCheck_path3', 'fastTrieTensorRowCheck_path3_omitted', 'fastTrieTensorRowCheck_triangle3', 'fastTrieTensorRowCheck_triangle3_omitted']`n`nAUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRatio '`r`n            'tendsto_edgeMass tendsto_pentagonMass tendsto_squaredRatio '`r`n            'unitMassWeights_coordinate_le_one isClosed_unitMassWeights '`r`n            'isCompact_unitMassWeights isCompact_unitMassWeights_edgeMass '`r`n            'exists_max_pentagonMass').split()\n\nAUDITED += ['JointFlagSample.permutationFiberEquiv', 'jointFlagFullPermutation_fiber_card', 'jointFlagFullPermutation_one_root_fiber_card', 'jointFlagFullPermutation_three_roots_fiber_card', 'jointFlagFullPermutation_predicate_card', 'jointFlagFullPermutation_pair_count', 'jointFlagSample_card_mul_factorial_sq', 'jointFlagFullPermutation_probability']
 
 def sources():
     for directory, folders, files in os.walk(PAPER):
@@ -296,4 +296,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
 
