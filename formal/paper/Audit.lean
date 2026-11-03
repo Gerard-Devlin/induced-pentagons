@@ -566,3 +566,9 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.censusPatternIsoEquiv
 #print axioms InducedPentagons.Paper.censusIsoTotalEquiv
 #print axioms InducedPentagons.Paper.censusIsoClassProdEquiv
+#print axioms InducedPentagons.Paper.census_empty_automorphisms
+#print axioms InducedPentagons.Paper.census_single_edge_automorphisms
+#print axioms InducedPentagons.Paper.census_middle_automorphisms
+#print axioms InducedPentagons.Paper.census_empty_orbit
+#print axioms InducedPentagons.Paper.census_single_edge_orbit
+#print axioms InducedPentagons.Paper.census_middle_orbit

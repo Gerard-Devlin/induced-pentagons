@@ -47,8 +47,13 @@ The finite atlas layer proves that every seven-vertex graph is isomorphic to a
 host from the actual certificate array. It checks 11,291 one-vertex extension
 witnesses, then applies a general coverage induction. Distinctness of the 1,044
 mask integers and pairwise nonisomorphism are proved, giving a unique certificate
-representative for every seven-vertex graph. Canonical minimality and the
-automorphism/orbit census remain to be formalized. A generic required-edge/nonedge
+representative for every seven-vertex graph. Generic automorphism enumeration and orbit cardinality are proved: the
+complete induced-pattern enumeration counts graph automorphisms, and labelled
+isomorphism-class size times automorphism order equals the vertex factorial.
+The empty, single-edge and middle atlas hosts have direct kernel-checked
+automorphism counts 5,040, 240 and 4 and resulting orbit sizes 1, 21 and 1,260.
+Canonical minimality and the complete stored automorphism/orbit census remain
+to be formalized. A generic required-edge/nonedge
 injection model
 and its isomorphism invariance supply the first part of the pattern semantics;
 the later modules supply the stored primitive counts and rooted flag bases.

@@ -234,6 +234,8 @@ AUDITED += (
     'censusIsoClassProdEquiv '
 ).split()
 
+AUDITED += ('census_empty_automorphisms census_single_edge_automorphisms census_middle_automorphisms census_empty_orbit census_single_edge_orbit census_middle_orbit').split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']

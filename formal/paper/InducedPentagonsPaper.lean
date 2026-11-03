@@ -40,3 +40,4 @@ import InducedPentagonsPaper.DensityIdentity
 import InducedPentagonsPaper.AtlasOrbit
 import InducedPentagonsPaper.FlagTensorContraction
 import InducedPentagonsPaper.FlagTensorKeyList
+import InducedPentagonsPaper.AtlasCensusExamples
