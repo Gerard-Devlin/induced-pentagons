@@ -1,0 +1,3 @@
+import InducedPentagonsPaper.Generated.TensorExample_empty
+import InducedPentagonsPaper.Generated.TensorExample_middle
+import InducedPentagonsPaper.Generated.TensorExample_complete
