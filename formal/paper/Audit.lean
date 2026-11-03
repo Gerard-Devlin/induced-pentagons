@@ -591,3 +591,9 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.clebsch_edgeMass_translate
 #print axioms InducedPentagons.Paper.clebsch_edgeMass_centered
 #print axioms InducedPentagons.Paper.clebsch_centered_spectral_interval
+#print axioms InducedPentagons.Paper.jointFlagPairCount_contraction
+#print axioms InducedPentagons.Paper.jointFlagPairCount_contraction_nonnegative
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_sum
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_expectation
+#print axioms InducedPentagons.Paper.flagProduct_one_root_expectation
+#print axioms InducedPentagons.Paper.flagProduct_one_root_permutation_expectation

@@ -244,6 +244,8 @@ AUDITED += (
 
 AUDITED += ('census_empty_automorphisms census_single_edge_automorphisms census_middle_automorphisms census_empty_orbit census_single_edge_orbit census_middle_orbit').split()
 
+AUDITED += ('jointFlagPairCount_contraction jointFlagPairCount_contraction_nonnegative jointFlagFullPermutation_sum jointFlagFullPermutation_expectation flagProduct_one_root_expectation flagProduct_one_root_permutation_expectation').split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
