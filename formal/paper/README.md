@@ -71,6 +71,10 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   optimization for every integer offset; and equation (58) from the two explicit
   hypotheses `c ≤ (12/5)d²` and `c ≤ 60`, with `d ≥ 0`. The graph-specific
   interpretation of these hypotheses is supplied by the later profile modules.
+- `ClebschSpectral.lean`: direct kernel checked sum-of-squares identities for
+  the actual 16-vertex Clebsch adjacency matrix, yielding the spectral interval
+  and the variance penalty used by the phase law. Centering the class sizes
+  also gives the exact expansion of their edge mass about the balanced template.
 - `PhaseArithmetic.lean`: subadditivity and the exact Lipschitz constant for the
   edge penalty; spectral-interval and edit-cost bounds; explicit error propagation
   through the scalar reduction of equations (62), (63), and (67); and the exact
@@ -316,3 +320,8 @@ separate obligations in the roadmap.
 The rounded-weight bridge also proves that any homogeneous squared pentagon
 bound checked for all nonnegative integer weights is equivalent to its real
 nonnegative-weight form.
+
+Variable-size integral blow-ups now have exact pentagon-count semantics through
+an explicit dependent equivalence. Together with rounded-weight convergence,
+this gives a proved reduction from a universal unweighted finite-graph squared
+pentagon bound to its universal nonnegative real-weighted version.
