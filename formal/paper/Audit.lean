@@ -511,6 +511,16 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.flagProductCount_path3_isomorphic
 #print axioms InducedPentagons.Paper.flagProductCount_triangle3_isomorphic
 #print axioms InducedPentagons.Paper.flagProductCounts_reduced_to_certificate
+#print axioms InducedPentagons.Paper.jointFlagPairCount_sum
+#print axioms InducedPentagons.Paper.jointFlagPairCount_sum_le
+#print axioms InducedPentagons.Paper.jointFlagPairCount_sum_eq_rootCount
+#print axioms InducedPentagons.Paper.jointRootCheck_one_root
+#print axioms InducedPentagons.Paper.flagProductCount_one_root_sum
+#print axioms InducedPentagons.Paper.flagProductCount_independent3_sum_le
+#print axioms InducedPentagons.Paper.flagProductCount_edge_isolate_sum_le
+#print axioms InducedPentagons.Paper.flagProductCount_path3_sum_le
+#print axioms InducedPentagons.Paper.flagProductCount_triangle3_sum_le
+#print axioms InducedPentagons.Paper.flagProductProbability_one_root_sum
 #print axioms InducedPentagons.Paper.unitMassWeights_nonempty
 #print axioms InducedPentagons.Paper.exists_max_edgeMass
 #print axioms InducedPentagons.Paper.roundedWeights_nonnegative
@@ -620,3 +630,9 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.flagProductDensity_triangle3_symmetric
 #print axioms InducedPentagons.Paper.flagProductDensity_triangle3_certificate_denominator
 #print axioms InducedPentagons.Paper.fastTrieTensorRowCheck_triangle3_density
+#print axioms InducedPentagons.Paper.jointFlagPairCount_contraction
+#print axioms InducedPentagons.Paper.jointFlagPairCount_contraction_nonnegative
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_sum
+#print axioms InducedPentagons.Paper.jointFlagFullPermutation_expectation
+#print axioms InducedPentagons.Paper.flagProduct_one_root_expectation
+#print axioms InducedPentagons.Paper.flagProduct_one_root_permutation_expectation

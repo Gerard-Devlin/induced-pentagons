@@ -196,6 +196,7 @@ AUDITED += ('edgePhasePenalty_nonnegative edgePhasePenalty_scale '
             'reduced_scalar_profile_sharp phaseCoefficient_continuous '
             'phaseCoefficient_range').split()
 
+AUDITED += ('jointFlagPairCount_sum jointFlagPairCount_sum_le jointFlagPairCount_sum_eq_rootCount jointRootCheck_one_root flagProductCount_one_root_sum flagProductCount_independent3_sum_le flagProductCount_edge_isolate_sum_le flagProductCount_path3_sum_le flagProductCount_triangle3_sum_le flagProductProbability_one_root_sum').split()
 
 # Semantic bridges, census foundations, and proven tensor geometry.
 AUDITED += (
@@ -285,6 +286,7 @@ AUDITED += (
     'flagProductDensity_triangle3_certificate_denominator '
     'fastTrieTensorRowCheck_triangle3_density '
 ).split()
+AUDITED += ('jointFlagPairCount_contraction jointFlagPairCount_contraction_nonnegative jointFlagFullPermutation_sum jointFlagFullPermutation_expectation flagProduct_one_root_expectation flagProduct_one_root_permutation_expectation').split()
 
 def sources():
     for directory, folders, files in os.walk(PAPER):
