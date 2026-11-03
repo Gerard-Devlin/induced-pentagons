@@ -127,10 +127,11 @@ semantics. The [Mathlib extension](paper/README.md) separately proves universal
 seven-vertex atlas coverage and equality with the certificate's host array.
 The Mathlib extension also checks all 22,968 primitive-pattern counts, with
 universal count and density transfer, and proves coverage and pairwise rooted
-nonisomorphism for all five actual flag bases. Pairwise nonisomorphism of the
-seven-vertex atlas, the orbit census and tensor sampling interpretation remain
-to be established in Lean;
-the Python gate independently recounts them. Thus this arithmetic layer remains
+nonisomorphism for all five actual flag bases. It also proves pairwise
+nonisomorphism of the seven-vertex atlas and checks all 1,044 stored automorphism
+orders and orbit sizes. Tensor sampling semantics and full-permutation bridges
+are proved, while the complete saved tensor table still needs kernel recounts.
+The Python gate independently recounts these inputs. Thus this arithmetic layer remains
 a result on imported tensors, rather than the paper's graph inequality.
 The extension also checks all 70,992 fixed-density entries, their induced-subset
 meaning and normalization, and the resulting 34 fixed-column identities.

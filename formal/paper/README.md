@@ -191,10 +191,11 @@ The profile envelope and scalar profile dependencies are now closed. The
 separate Boolean equality catalogue in the Python verification report is not
 claimed as a Lean equality-classification theorem.
 Atlas coverage and pairwise nonisomorphism now give a unique certificate host
-for every seven-vertex Boolean graph and Mathlib simple graph. Canonical
-minimality and stored automorphism orders are still unproved. All primitive
+for every seven-vertex Boolean graph and Mathlib simple graph. All 1,044 stored
+automorphism orders and orbit sizes are kernel checked and bound to the JSON
+input; canonical minimality remains open. All primitive
 host rows, all five rooted flag bases and all fixed-density entries are certified.
-The complete flag-product tensor table and its full sampling interpretation remain.
+The complete saved flag-product tensor table still requires its per-row kernel recounts.
 
 The later flag-product prerequisites are proved in `FlagIndex.lean`,
 `JointFlagSampling.lean`, `JointFlagGraphs.lean`, `JointFlagEnumeration.lean`
@@ -209,8 +210,9 @@ The sample totals 140 and 1,260 equal the actual certificate block denominators;
 they include all root injections, with incompatible root types contributing zero.
 `FlagProductExamples.lean` directly recounts the two saved nonzero entries on
 the empty host and binds them to its actual `HostData` row. Its implicit zeros
-and the other 1,043 hosts remain unchecked. The upper-triangular combination,
-universal count transfer and full-permutation fiber bridge also remain open.
+and the other 1,043 hosts remain unchecked. Upper-triangular and omitted-zero
+soundness are proved conditional on row checks. Universal count/density transfer,
+full-permutation fiber counts and exact sampling expectations are proved.
 
 ## Reproduce the profile candidates
 
@@ -342,3 +344,10 @@ Nonnegative vertex weights are formally normalized by their total mass. The
 squared pentagon inequality on the unit simplex is equivalent to its statement
 for every nonnegative real weight vector, with the zero vector and empty vertex
 types handled explicitly.
+
+The complete atlas census can be reproduced with
+`python scripts/export_lean_census.py --check`. Its 44 row modules independently
+check all stored automorphism orders and orbit sizes; `CensusComplete.lean` binds
+the rows to the certificate host list and proves the total labelled count
+2,097,152. `AtlasCensusCertificate.lean` transfers these counts to arbitrary
+seven-vertex graphs.
