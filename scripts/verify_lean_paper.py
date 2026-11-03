@@ -164,7 +164,11 @@ AUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRat
             'squared_pentagon_bound_of_unweighted '
             'dart_weight_eq_zero_of_edgeMass_eq_zero pentagonMass_eq_zero_of_edgeMass_eq_zero '
             'sharp_bound_iff_squared edgeMass_pos_of_pentagonMass_pos '
-            'sharp_bound_iff_squaredRatio').split()
+            'sharp_bound_iff_squaredRatio '
+            'weights_eq_zero_of_sum_eq_zero normalizedWeights_mem_unitMass '
+            'edgeMass_normalizedWeights pentagonMass_normalizedWeights '
+            'squaredRatio_normalizedWeights squared_pentagon_bound_of_unitMass '
+            'squared_pentagon_bound_unitMass_iff').split()
 
 
 def sources():

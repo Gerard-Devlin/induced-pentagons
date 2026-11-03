@@ -31,3 +31,4 @@ import InducedPentagonsPaper.WeightedGraphLimits
 import InducedPentagonsPaper.WeightedApproximation
 import InducedPentagonsPaper.SigmaBlowUp
 import InducedPentagonsPaper.WeightedBoundary
+import InducedPentagonsPaper.WeightedNormalization
