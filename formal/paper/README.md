@@ -325,3 +325,13 @@ Variable-size integral blow-ups now have exact pentagon-count semantics through
 an explicit dependent equivalence. Together with rounded-weight convergence,
 this gives a proved reduction from a universal unweighted finite-graph squared
 pentagon bound to its universal nonnegative real-weighted version.
+
+The zero-edge boundary is proved directly: nonnegative weights with zero edge
+mass have zero pentagon mass. The sharp square-root bound is equivalent to its
+squared polynomial form everywhere, and to the normalized squared-ratio form
+on positive edge mass.
+
+Nonnegative vertex weights are formally normalized by their total mass. The
+squared pentagon inequality on the unit simplex is equivalent to its statement
+for every nonnegative real weight vector, with the zero vector and empty vertex
+types handled explicitly.

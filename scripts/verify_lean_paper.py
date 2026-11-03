@@ -170,7 +170,14 @@ AUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRat
             'squared_pentagon_bound_of_integral squared_pentagon_bound_integral_iff '
             'pentagonSigmaEquiv natCast_pentagon_card_sigma edgeMass_sigmaBlowUp_unit '
             'pentagonMass_sigmaBlowUp_unit squared_pentagon_bound_of_sigmaBlowUp '
-            'squared_pentagon_bound_of_unweighted').split()
+            'squared_pentagon_bound_of_unweighted '
+            'dart_weight_eq_zero_of_edgeMass_eq_zero pentagonMass_eq_zero_of_edgeMass_eq_zero '
+            'sharp_bound_iff_squared edgeMass_pos_of_pentagonMass_pos '
+            'sharp_bound_iff_squaredRatio '
+            'weights_eq_zero_of_sum_eq_zero normalizedWeights_mem_unitMass '
+            'edgeMass_normalizedWeights pentagonMass_normalizedWeights '
+            'squaredRatio_normalizedWeights squared_pentagon_bound_of_unitMass '
+            'squared_pentagon_bound_unitMass_iff').split()
 
 AUDITED += ['JointFlagSample.permutationFiberEquiv', 'jointFlagFullPermutation_fiber_card', 'jointFlagFullPermutation_one_root_fiber_card', 'jointFlagFullPermutation_three_roots_fiber_card', 'jointFlagFullPermutation_predicate_card', 'jointFlagFullPermutation_pair_count', 'jointFlagSample_card_mul_factorial_sq', 'jointFlagFullPermutation_probability']
 AUDITED += ('clebsch_spectral_upper_identity clebsch_spectral_lower_identity '
