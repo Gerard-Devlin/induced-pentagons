@@ -154,6 +154,9 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
 AUDITED += ('censusPattern_ordered censusPattern_satisfies_iff censusPatternIsoEquiv censusAutomorphismCount_semantics censusAutomorphismCount_pos censusIsoTotalEquiv censusIsoClassProdEquiv census_orbit_mul_automorphisms census_orbit_card').split()
 
 
+AUDITED += ('census_empty_automorphisms census_single_edge_automorphisms census_middle_automorphisms census_empty_orbit census_single_edge_orbit census_middle_orbit').split()
+
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']

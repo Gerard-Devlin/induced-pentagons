@@ -50,7 +50,9 @@ mask integers and pairwise nonisomorphism are proved, giving a unique certificat
 representative for every seven-vertex graph. Generic automorphism enumeration and orbit cardinality are proved: the
 complete induced-pattern enumeration counts graph automorphisms, and labelled
 isomorphism-class size times automorphism order equals the vertex factorial.
-Canonical minimality and the actual stored automorphism/orbit census remain
+The empty, single-edge and middle atlas hosts have direct kernel-checked
+automorphism counts 5,040, 240 and 4 and resulting orbit sizes 1, 21 and 1,260.
+Canonical minimality and the complete stored automorphism/orbit census remain
 to be formalized. A generic required-edge/nonedge
 injection model
 and its isomorphism invariance supply the first part of the pattern semantics;
