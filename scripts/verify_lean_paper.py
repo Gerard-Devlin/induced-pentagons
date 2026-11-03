@@ -155,7 +155,10 @@ AUDITED += ('continuous_edgeMass continuous_pentagonMass continuousAt_squaredRat
             'tendsto_edgeMass tendsto_pentagonMass tendsto_squaredRatio '
             'unitMassWeights_nonempty unitMassWeights_coordinate_le_one isClosed_unitMassWeights '
             'isCompact_unitMassWeights isCompact_unitMassWeights_edgeMass '
-            'exists_max_pentagonMass exists_max_edgeMass').split()
+            'exists_max_pentagonMass exists_max_edgeMass '
+            'roundedWeights_nonnegative tendsto_roundedWeights '
+            'tendsto_edgeMass_roundedWeights tendsto_pentagonMass_roundedWeights '
+            'squared_pentagon_bound_of_integral squared_pentagon_bound_integral_iff').split()
 
 
 def sources():

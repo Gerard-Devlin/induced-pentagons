@@ -304,3 +304,7 @@ at positive edge mass. Nonnegative unit-mass weights form a compact set; at ever
 feasible prescribed edge mass, the pentagon polynomial attains a maximum.
 These are fixed finite-graph results. Graphon attainment and trace limits remain
 separate obligations in the roadmap.
+
+The rounded-weight bridge also proves that any homogeneous squared pentagon
+bound checked for all nonnegative integer weights is equivalent to its real
+nonnegative-weight form.

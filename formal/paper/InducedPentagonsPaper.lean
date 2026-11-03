@@ -28,3 +28,4 @@ import InducedPentagonsPaper.FlagProductSemantics
 import InducedPentagonsPaper.JointFlagEnumeration
 import InducedPentagonsPaper.FlagProductExamples
 import InducedPentagonsPaper.WeightedGraphLimits
+import InducedPentagonsPaper.WeightedApproximation
