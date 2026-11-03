@@ -32,3 +32,4 @@ import InducedPentagonsPaper.WeightedGraphLimits
 
 import InducedPentagonsPaper.JointFlagPermutation
 import InducedPentagonsPaper.PhaseArithmetic
+import InducedPentagonsPaper.FlagProductIsomorphism
