@@ -79,7 +79,10 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   weighted Clebsch pentagon count about a constant class size. The complete
   192-pentagon enumeration certifies every linear and quadratic coefficient;
   cubic, quartic, and quintic terms form an explicit polynomial remainder.
-- PhaseArithmetic.lean: subadditivity and the exact Lipschitz constant for the
+  If the Euclidean displacement radius is at most the constant class size, the
+  absolute remainder is at most 3072 times the squared class size times the
+  cubed radius, with no asymptotic assumption.
+- `PhaseArithmetic.lean`: subadditivity and the exact Lipschitz constant for the
   edge penalty; spectral-interval and edit-cost bounds; explicit error propagation
   through the scalar reduction of equations (62), (63), and (67); and the exact
   quadratic error in replacing class-size discrepancy by its phase and integer

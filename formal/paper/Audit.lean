@@ -473,3 +473,10 @@ import InducedPentagonsPaper
 #print axioms InducedPentagons.Paper.clebsch_pentagon_quadratic_sum
 #print axioms InducedPentagons.Paper.clebsch_pentagonMass_translate
 #print axioms InducedPentagons.Paper.clebsch_pentagonMass_centered
+#print axioms InducedPentagons.Paper.pentagonCubic_abs_le
+#print axioms InducedPentagons.Paper.pentagonQuartic_abs_le
+#print axioms InducedPentagons.Paper.pentagonQuintic_abs_le
+#print axioms InducedPentagons.Paper.clebschPentagonRemainder_abs_le
+#print axioms InducedPentagons.Paper.clebschPentagonRemainder_cubic_bound
+#print axioms InducedPentagons.Paper.clebsch_coordinate_le_sqrt_variance
+#print axioms InducedPentagons.Paper.clebsch_pentagonMass_quadratic_error

@@ -171,6 +171,10 @@ AUDITED += ('pentagon_product_translate clebsch_pentagon_linear_sum '
             'clebsch_pentagon_quadratic_sum clebsch_pentagonMass_translate '
             'clebsch_pentagonMass_centered').split()
 
+AUDITED += ('pentagonCubic_abs_le pentagonQuartic_abs_le pentagonQuintic_abs_le '
+            'clebschPentagonRemainder_abs_le clebschPentagonRemainder_cubic_bound '
+            'clebsch_coordinate_le_sqrt_variance clebsch_pentagonMass_quadratic_error').split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
