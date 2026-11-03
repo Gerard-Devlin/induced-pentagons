@@ -167,6 +167,10 @@ AUDITED += ('edgePhasePenalty_nonnegative edgePhasePenalty_scale '
             'reduced_scalar_profile_sharp phaseCoefficient_continuous '
             'phaseCoefficient_range').split()
 
+AUDITED += ('pentagon_product_translate clebsch_pentagon_linear_sum '
+            'clebsch_pentagon_quadratic_sum clebsch_pentagonMass_translate '
+            'clebsch_pentagonMass_centered').split()
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']

@@ -29,3 +29,4 @@ import InducedPentagonsPaper.JointFlagEnumeration
 import InducedPentagonsPaper.FlagProductExamples
 import InducedPentagonsPaper.PhaseArithmetic
 import InducedPentagonsPaper.ClebschSpectral
+import InducedPentagonsPaper.ClebschExpansion
