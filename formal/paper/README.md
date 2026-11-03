@@ -297,3 +297,10 @@ transitive axiom audit; subsequent local builds reuse current compiled modules.
 The complete paper is **not yet formalized**. See the
 [coverage roadmap](../../blueprint/LEAN_ROADMAP.md). This project contains only
 completed component proofs, with remaining obligations kept in the roadmap.
+
+The finite weighted-graph analysis layer proves continuity of edge and pentagon
+polynomials, coordinatewise limit transfer, and continuity of the squared ratio
+at positive edge mass. Nonnegative unit-mass weights form a compact set; at every
+feasible prescribed edge mass, the pentagon polynomial attains a maximum.
+These are fixed finite-graph results. Graphon attainment and trace limits remain
+separate obligations in the roadmap.
