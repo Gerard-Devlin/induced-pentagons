@@ -151,6 +151,8 @@ for _flag_name in ('one_root', 'independent3', 'edge_isolate', 'path3', 'triangl
     AUDITED += [f'flagProductDenominator_{_flag_name}']
 
 
+AUDITED += ['jointFlagPairKeys_count_upper', 'flagTensorKeys_count_one_root', 'flagTensorKeys_count_independent3', 'flagTensorKeys_count_edge_isolate', 'flagTensorKeys_count_path3', 'flagTensorKeys_count_triangle3', 'weightedCountAt_eq_zero_of_absent', 'rawFlagTensorCount_eq_zero_of_absent', 'fastTrieTensorRowCheck_one_root', 'fastTrieTensorRowCheck_one_root_omitted', 'fastTrieTensorRowCheck_independent3', 'fastTrieTensorRowCheck_independent3_omitted', 'fastTrieTensorRowCheck_edge_isolate', 'fastTrieTensorRowCheck_edge_isolate_omitted', 'fastTrieTensorRowCheck_path3', 'fastTrieTensorRowCheck_path3_omitted', 'fastTrieTensorRowCheck_triangle3', 'fastTrieTensorRowCheck_triangle3_omitted']
+
 def sources():
     for directory, folders, files in os.walk(PAPER):
         folders[:] = [n for n in folders if not n.startswith('.') and n != '__pycache__']
