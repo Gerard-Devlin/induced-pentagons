@@ -71,6 +71,14 @@ ordinary axioms are `propext`, `Classical.choice` and `Quot.sound`.
   optimization for every integer offset; and equation (58) from the two explicit
   hypotheses `c ≤ (12/5)d²` and `c ≤ 60`, with `d ≥ 0`. The graph-specific
   interpretation of these hypotheses is supplied by the later profile modules.
+- `PhaseArithmetic.lean`: subadditivity and the exact Lipschitz constant for the
+  edge penalty; spectral-interval and edit-cost bounds; explicit error propagation
+  through the scalar reduction of equations (62), (63), and (67); and the exact
+  quadratic error in replacing class-size discrepancy by its phase and integer
+  offset. The scalar optimum is attained in both phase regions. Its normalized
+  coefficient is continuous and has exactly the range `[0, 1/120]`. The graph
+  counting, stability hypotheses, and uniform asymptotic estimates needed by the
+  full phase-law theorem remain separate obligations.
 - `WeightedClique.lean`: the weighted clique inequality for arbitrary
   nonnegative real weights. Integral blow-ups reduce it to Mathlib's finite
   Turán theorem; normalized integer rounding and a proved limit give real weights.
